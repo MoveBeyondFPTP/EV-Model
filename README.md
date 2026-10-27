@@ -27,6 +27,7 @@ The 2018 and 2022 baselines are built once and then reused. Raw files never get 
 - Days before Election Day are computed from each ballot's return date. Ballots accepted after Election Day are counted on day 0.
 - Prior-cycle curves are rebuilt from the final files, so they can differ slightly from what was published on each day at the time.
 - The "final early vote if pace holds" tile scales today's count by how the remaining days went in each prior cycle.
+- The preliminary projection starts from the last comparable result for each race (set in `pipeline/states/<state>.json`) and moves it by part of the change in the early electorate's party mix. How much it counts is calibrated on a past pair of cycles (2020 to 2024 for NC) and shrunk toward 50%.
 - Party is voter registration. "Third party" groups Libertarian, Green, No Labels, Justice for All and others.
 - Rules differ by cycle (photo ID, the end of the three-day mail ballot grace period, early voting schedules), so treat differences from 2018 and 2022 with care.
 
