@@ -138,6 +138,14 @@ a { color: var(--accent); }
 .proj .method p { margin: 0 0 8px; }
 .proj .method ol { margin: 0 0 8px; padding-left: 20px; }
 .proj .method li { margin-bottom: 4px; }
+table.blocks { margin-top: 12px; font-size: 14px; }
+table.blocks td { padding: 7px 0; vertical-align: top; white-space: normal; }
+table.blocks td:last-child { text-align: right; white-space: nowrap; font-weight: 600; padding-left: 12px; }
+table.blocks td .muted { font-size: 12.5px; }
+table.blocks tr.total td { border-top: 2px solid var(--border); border-bottom: none; font-size: 15px; }
+.proj details.polls { margin-top: 10px; }
+.proj details.polls table { font-size: 13px; }
+.proj .proj-races { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
 .linkbtn { font: inherit; font-size: 14px; background: none; border: none; padding: 4px 0; color: var(--accent); cursor: pointer; }
 </style>
 </head>
@@ -156,7 +164,7 @@ a { color: var(--accent); }
   <div class="callout" id="error"></div>
 
   <div class="card proj" id="proj" hidden>
-    <div class="proj-head"><span class="eyebrow">Preliminary projection</span><span class="muted">Based only on who has voted early so far. Not a forecast.</span></div>
+    <div class="proj-head"><span class="eyebrow">Preliminary projection</span><span class="muted">National environment, race polling and early-vote turnout combined. Not a forecast.</span></div>
     <div class="proj-races" id="projRaces"></div>
     <details><summary>How this is calculated</summary><div class="method" id="projMethod"></div></details>
   </div>
@@ -265,7 +273,7 @@ a { color: var(--accent); }
   const css = name => getComputedStyle(document.documentElement).getPropertyValue(name).trim();
   const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
-  let D = {}, C = {}, MAN, cur, DAY, charts = {};
+  let D = {}, C = {}, MAN, POLLS = null, REG = {}, cur, DAY, charts = {};
 
   function cumsum(a) { let s = 0; return a.map(v => (s += v)); }
   // Value of a daily series at a given days-out, cumulative through that day.
@@ -306,44 +314,57 @@ a { color: var(--accent); }
     years.forEach((y, i) => { if (res[i]) D[y] = res[i]; });
     const cal = await Promise.all(calYears.map(get));
     calYears.forEach((y, i) => { if (cal[i]) C[y] = cal[i]; });
+    [POLLS, REG] = await Promise.all([get("polls"), get("registration")]);
+    REG = REG || {};
     cur = D[man.current];
     if (!cur) throw new Error("No 2026 data yet.");
     DAY = cur.as_of_days_out;
   }
 
   // ---------- Preliminary projection ----------
-  // Start from a past result for the same office, then move it by part of the
-  // change in the early electorate's party mix versus that year at the same
-  // day before the election. Only part, because much of an early-vote shift
-  // is voters changing *when* they vote, not who turns out.
+  // A. Environment: the state's most recent result, moved by the change in the
+  //    national generic ballot since then (uniform swing).
+  // B. Polls: blend A with the race's own polling average, leaning on polls
+  //    more as more of them come in.
+  // C. Early vote: a small turnout adjustment. Compare how much more Democratic
+  //    the early electorate is than the registered pool, against the same
+  //    comparison in the last midterm. Counted at 25%, capped at ±2 points.
   const P_ASSUME = { dem: 0.92, rep: 0.92, una: 0.50, oth: 0.45 };
-  // Share of the early-vote shift to count. Taken from the calibration pair
-  // (how much of that cycle's shift showed up in the result), shrunk halfway
-  // toward a neutral 50% because one past cycle is thin evidence.
-  const W_PRIOR = 0.5, W_MIN = 0.15, W_MAX = 0.75, P_UNA = [0.45, 0.50, 0.55];
-  let P_WEIGHT = W_PRIOR, P_WEIGHTS = [W_MIN, W_PRIOR, W_MAX], CAL = null;
-  function calibrate() {
-    const cal = MAN.calibration;
-    CAL = null; P_WEIGHT = W_PRIOR;
-    if (!(cal && C[cal.from.year] && C[cal.to.year] && C[cal.from.year].days_out[0] >= DAY)) return;
-    const sh = implied(C[cal.to.year], DAY, P_ASSUME) - implied(C[cal.from.year], DAY, P_ASSUME);
-    const move = cal.to.margin - cal.from.margin;
-    const observed = Math.abs(sh) > 0.5 ? Math.max(0, Math.min(1, move / sh)) : null;
-    if (observed != null) P_WEIGHT = Math.max(W_MIN, Math.min(W_MAX, (observed + W_PRIOR) / 2));
-    P_WEIGHTS = [W_MIN, P_WEIGHT, W_MAX];
-    CAL = { cal, sh, move, observed };
-  }
+  const C_WEIGHT = 0.25, C_WEIGHTS = [0, 0.25, 0.5], C_CAP = 2, POLL_W_MAX = 0.8;
   const lastName = n => n.trim().split(/\s+/).pop();
+  const clamp = (x, lo, hi) => Math.max(lo, Math.min(hi, x));
   function implied(data, day, a) { return margin(partyCounts(data, day), a); }
+  function regMargin(y, a) { const r = REG[y]; return r ? margin(r, a) : null; }
+  // How much more Democratic the early electorate is than registration, in implied-margin points.
+  function excess(data, regYear, day, a = P_ASSUME) {
+    const rm = regMargin(regYear, a);
+    return data && rm != null ? implied(data, day, a) - rm : null;
+  }
+  function turnoutSignal() {
+    const by = MAN.baselines[0];
+    const a = excess(cur, cur.year, DAY), b = excess(D[by], by, DAY);
+    return a == null || b == null ? null : { value: a - b, now: a, then: b, year: by };
+  }
+  function environment() {
+    const g = POLLS && POLLS.generic && POLLS.generic.avg;
+    const env = MAN.environment, prior = MAN.national && MAN.national.prior;
+    if (g == null || !env || !prior) return null;
+    return { generic: g, n: POLLS.generic.n, prior, env, swing: g - prior.margin, margin: env.margin + (g - prior.margin) };
+  }
   function projectRace(race) {
-    const base = D[race.baseline.year];
-    if (!base) return null;
-    const run = (w, a) => race.baseline.margin + w * (implied(cur, DAY, a) - implied(base, DAY, a));
-    const center = run(P_WEIGHT, P_ASSUME);
+    const A = environment();
+    const pr = POLLS && POLLS.races && POLLS.races[race.office];
+    const P = pr && pr.avg != null ? pr : null;
+    if (!A && !P) return null;
+    const wp = P ? (A ? Math.min(POLL_W_MAX, P.n / (P.n + 2)) : 1) : 0;
+    const start = P && A ? wp * P.avg + (1 - wp) * A.margin : P ? P.avg : A.margin;
+    const sig = turnoutSignal();
+    const adjAt = k => sig ? clamp(k * sig.value, -C_CAP, C_CAP) : 0;
+    const adj = adjAt(C_WEIGHT);
+    const starts = [start]; if (A) starts.push(A.margin); if (P) starts.push(P.avg);
     const all = [];
-    for (const w of P_WEIGHTS) for (const u of P_UNA) all.push(run(w, { ...P_ASSUME, una: u }));
-    return { center, lo: Math.min(...all), hi: Math.max(...all),
-             shift: implied(cur, DAY, P_ASSUME) - implied(base, DAY, P_ASSUME) };
+    for (const st of starts) for (const k of C_WEIGHTS) all.push(st + adjAt(k));
+    return { A, P, wp, start, sig, adj, center: start + adj, lo: Math.min(...all), hi: Math.max(...all) };
   }
   function nameMargin(m, race) {
     if (Math.abs(m) < 0.05) return "Even";
@@ -353,53 +374,71 @@ a { color: var(--accent); }
     const leader = p.center > 0 ? lastName(race.dem) : lastName(race.rep);
     if (p.lo < 0 && p.hi > 0) return Math.abs(p.center) < 0.5 ? "Toss-up" : `Toss-up, slight edge ${leader}`;
     const a = Math.abs(p.center);
-    return `${a < 3 ? "Tilt" : a < 6 ? "Lean" : "Likely"} ${leader}`;
+    return `${a < 3 ? "Tilt" : a < 7 ? "Lean" : a < 12 ? "Likely" : "Solid"} ${leader}`;
   }
-  const signed = (m, dLabel = "D", rLabel = "R") => Math.abs(m) < 0.05 ? "even" : `${m > 0 ? dLabel : rLabel} +${Math.abs(m).toFixed(1)}`;
+  const signed = (m, dLabel = "D", rLabel = "R") => m == null || !isFinite(m) ? "–" : Math.abs(m) < 0.05 ? "even" : `${m > 0 ? dLabel : rLabel} +${Math.abs(m).toFixed(1)}`;
+  const shortDate = iso => new Date(iso + "T12:00:00").toLocaleDateString("en-US", { month: "short", day: "numeric" });
+  const POP = { lv: "Likely voters", rv: "Registered voters", a: "Adults" };
+
   function projection() {
-    calibrate();
     const races = (MAN.races || []).map(r => ({ race: r, p: projectRace(r) })).filter(x => x.p);
     const box = document.getElementById("proj");
     if (!races.length) { box.hidden = true; return; }
     box.hidden = false;
-    const SPAN = 10;
-    const pos = m => 50 - Math.max(-SPAN, Math.min(SPAN, m)) / SPAN * 50;  // D on the left
+    const SPAN = 15;
+    const pos = m => 50 - clamp(m, -SPAN, SPAN) / SPAN * 50;  // D on the left
     document.getElementById("projRaces").innerHTML = races.map(({ race, p }) => {
       const lead = p.center > 0.05 ? "d" : p.center < -0.05 ? "r" : "";
+      const tossup = p.lo < 0 && p.hi > 0;
       const left = pos(p.hi), right = pos(p.lo);
+      const nm = m => esc(nameMargin(m, race));
+      const rows = [];
+      if (p.A) rows.push(["Environment", `${esc(p.A.env.label)} (${signed(p.A.env.margin)}), shifted ${signed(p.A.swing)} for the national mood`, nm(p.A.margin)]);
+      if (p.P) rows.push(["Polling average", `${p.P.n} poll${p.P.n === 1 ? "" : "s"}, last ${p.P.window_days} days`, nm(p.P.avg)]);
+      if (p.A && p.P) rows.push(["Blend", `${Math.round(p.wp * 100)}% polls, ${Math.round((1 - p.wp) * 100)}% environment`, nm(p.start)]);
+      rows.push(["Early-vote turnout", p.sig ? `Early voters vs. registered voters, compared with ${p.sig.year}` : "Not available yet", p.sig ? `${p.adj >= 0 ? "+" : "−"}${Math.abs(p.adj).toFixed(1)} ${p.adj >= 0 ? "D" : "R"}` : "–"]);
+      const pollList = p.P ? `<details class="polls"><summary>Polls in the average</summary><div class="table-wrap"><table><thead><tr><th>Pollster</th><th>Ended</th><th>Sample</th><th>${esc(lastName(race.dem))}</th><th>${esc(lastName(race.rep))}</th><th>Margin</th></tr></thead><tbody>${
+        p.P.polls.map(x => `<tr><td>${x.url ? `<a href="${esc(x.url)}" rel="noopener" target="_blank">${esc(x.pollster)}</a>` : esc(x.pollster)}${x.partisan ? " <span class=muted>(partisan)</span>" : ""}</td><td>${shortDate(x.end_date)}</td><td>${x.sample_size ? fmt(x.sample_size) + " " : ""}${(x.population || "").toUpperCase()}</td><td>${x.dem}%</td><td>${x.rep}%</td><td class="${x.margin > 0 ? "d" : "r"}">${nm(x.margin)}</td></tr>`).join("")
+      }</tbody></table></div></details>` : "";
       return `<div class="race">
         <div class="office">${esc(race.office)}${race.note ? ` · ${esc(race.note)}` : ""}</div>
-        <div class="call ${p.lo < 0 && p.hi > 0 ? "" : lead}">${esc(nameMargin(p.center, race))}</div>
+        <div class="call ${tossup ? "" : lead}">${nm(p.center)}</div>
         <div class="rating">${esc(rating(p, race))}</div>
-        <div class="scale" role="img" aria-label="Projected margin ${esc(nameMargin(p.center, race))}, range ${esc(nameMargin(p.hi, race))} to ${esc(nameMargin(p.lo, race))}">
+        <div class="scale" role="img" aria-label="Projected margin ${nm(p.center)}, range ${nm(p.hi)} to ${nm(p.lo)}">
           <div class="track"></div><div class="mid"></div>
           <div class="band" style="left:${left}%;width:${Math.max(right - left, 1)}%"></div>
           <div class="dot" style="left:${pos(p.center)}%;background:${lead ? `var(--${lead === "d" ? "dem" : "rep"})` : "var(--text-3)"}"></div>
         </div>
         <div class="scale-labels"><span>${esc(lastName(race.dem))} (D) +${SPAN}</span><span>Even</span><span>${esc(lastName(race.rep))} (R) +${SPAN}</span></div>
-        <div class="range">Plausible range under these assumptions: ${esc(nameMargin(p.lo, race))} to ${esc(nameMargin(p.hi, race))}. Starting point: ${esc(race.baseline.label)}, ${signed(race.baseline.margin)}.</div>
+        <div class="range">Range across the inputs: ${nm(p.lo)} to ${nm(p.hi)}</div>
+        <table class="blocks"><tbody>${rows.map(([k, d, v]) => `<tr><td><b>${k}</b><div class="muted">${d}</div></td><td>${v}</td></tr>`).join("")}
+          <tr class="total"><td><b>Projection</b></td><td>${nm(p.center)}</td></tr></tbody></table>
+        ${pollList}
       </div>`;
     }).join("");
 
-    // Method + calibration
-    const first = races[0];
-    const by = first.race.baseline.year;
-    const pctW = w => Math.round(w * 100) + "%";
-    let calText = "";
-    if (CAL) {
-      const { cal, sh, move, observed } = CAL;
-      calText = `<p><strong>Where the ${pctW(P_WEIGHT)} comes from.</strong> At this point in ${cal.to.year}, the early vote was ${signed(sh)} compared with ${cal.from.year}, using the same assumptions. The ${esc(cal.to.label)} result actually moved ${signed(move)} (from ${signed(cal.from.margin)} to ${signed(cal.to.margin)}), so ${observed != null ? `only about ${pctW(observed)} of the early-vote shift showed up in the result` : "the early-vote shift was too small to learn from"}. That was a year when Republicans deliberately moved to early voting, which may make it unusually low, so the projection meets it halfway with a neutral 50%. Counting a flat 50% would have projected ${esc(signed(cal.from.margin + 0.5 * sh))} for ${cal.to.year}.</p>`;
+    // ---- Method text
+    const p0 = races[0].p;
+    const A = p0.A, sig = p0.sig;
+    const cal = MAN.calibration;
+    let backtest = "";
+    if (cal && C[cal.from.year] && C[cal.to.year] && REG[cal.from.year] && REG[cal.to.year] && cal.from.national_margin != null && C[cal.from.year].days_out[0] >= DAY) {
+      const s = excess(C[cal.to.year], cal.to.year, DAY) - excess(C[cal.from.year], cal.from.year, DAY);
+      const stateMove = cal.to.margin - cal.from.margin, natMove = cal.to.national_margin - cal.from.national_margin;
+      const rel = stateMove - natMove;
+      const adjCal = clamp(C_WEIGHT * s, -C_CAP, C_CAP);
+      const right = Math.sign(adjCal) === Math.sign(rel) && Math.abs(adjCal) > 0.05;
+      backtest = `<p><strong>How the early-vote adjustment did in ${cal.to.year}.</strong> At this point in ${cal.to.year}, the early electorate was ${signed(s)} compared with ${cal.from.year}, relative to registration. The adjustment would have moved the projection ${signed(adjCal)}. In fact ${esc(MAN.name)} ran ${signed(rel)} relative to the national swing (the state moved ${signed(stateMove)}, the nation ${signed(natMove)}), so the early vote pointed the <strong>${right ? "right" : "wrong"}</strong> way. That’s why it gets a small weight and a cap.</p>`;
     }
-    let html = `<ol>
-      <li><strong>Start from the last comparable result</strong>: ${esc(first.race.baseline.label)}, ${signed(first.race.baseline.margin)}.</li>
-      <li><strong>Turn early ballots into an implied margin</strong>, assuming ${P_ASSUME.dem * 100}% of registered Democrats and Republicans vote for their party’s candidate and unaffiliated voters split evenly. Do the same for ${by}’s early ballots ${DAY} days out.</li>
-      <li><strong>Measure the shift.</strong> Right now the 2026 early vote is ${signed(first.p.shift)} compared with ${by} at the same point.</li>
-      <li><strong>Count ${pctW(P_WEIGHT)} of that shift</strong> and add it to the starting point. Most early voters would vote anyway, so much of any shift is people changing <em>when</em> they vote rather than who turns out.</li>
+    const pollsN = races.filter(r => r.p.P).map(r => r.p.P.n);
+    document.getElementById("projMethod").innerHTML = `<ol>
+      <li><strong>Environment.</strong> ${A ? `Start from ${esc(A.env.label)}, ${signed(A.env.margin)}. Nationally that year was ${signed(A.prior.margin)}; the generic congressional ballot now averages ${signed(A.generic)} (${A.n} polls). Shifting the state by that ${signed(A.swing)} gives ${signed(A.margin)}. This assumes the state moves with the nation, which isn’t always true.` : "Generic-ballot polling isn’t available right now, so this step is skipped."}</li>
+      <li><strong>Polls.</strong> Blend in each race’s own polling average, which captures the candidates themselves. The more polls, the more weight they get: n ÷ (n + 2), up to ${Math.round(POLL_W_MAX * 100)}%.</li>
+      <li><strong>Early-vote turnout.</strong> ${sig ? `Under the same party-loyalty assumptions as the panel below, early voters are ${signed(sig.now)} compared with all registered voters, versus ${signed(sig.then)} at this point in ${sig.year}. That ${signed(sig.value)} difference is a turnout signal that registration changes can’t explain. It counts at ${Math.round(C_WEIGHT * 100)}%, capped at ±${C_CAP} points, because polls of likely voters already reflect much of the enthusiasm it measures.` : "Needs registration data, which isn’t loaded yet."}</li>
     </ol>
-    ${calText}
-    <p>The range covers counting ${pctW(W_MIN)} to ${pctW(W_MAX)} of the shift and unaffiliated voters splitting anywhere from 45/55 to 55/45. It leaves out polls, candidate quality, voters who switch parties, and the Election Day vote, which hasn’t happened yet.</p>
-    <p class="muted">This rests on one past test, so treat it as a rough rule of thumb, not a validated model. 2026 will add a second test.</p>`;
-    document.getElementById("projMethod").innerHTML = html;
+    ${backtest}
+    <p>The range runs between the environment-only and polls-only figures, with the early-vote adjustment counted at zero to double. Real polling misses can be larger. The projection leaves out late-deciding voters and the Election Day vote, which hasn’t happened yet.</p>
+    <p class="muted">Polls: <a href="${esc((POLLS && POLLS.source_url) || "https://votehub.com/polls/")}">VoteHub</a> (CC BY 4.0), averaged here: ${esc((POLLS && POLLS.method) || "")} Polls fetched ${POLLS ? new Date(POLLS.fetched_at).toLocaleString("en-US", { dateStyle: "medium", timeStyle: "short" }) : "–"}.</p>`;
   }
 
   function header() {

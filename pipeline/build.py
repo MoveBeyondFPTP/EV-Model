@@ -299,6 +299,8 @@ def main():
         "baselines": [y for y in cfg["baselines"] if have(y)],
         "calibration": cal if cal and have(cal["from"]["year"]) and have(cal["to"]["year"]) else None,
         "races": cfg.get("races", []),
+        "environment": cfg.get("environment"),
+        "national": json.loads((ROOT / "pipeline" / "national.json").read_text()),
         "source_page": cfg.get("source_page"),
         "updated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
     }

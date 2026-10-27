@@ -49,7 +49,7 @@ def pick(answers, key_d, key_r):
     return d, r
 
 
-def average(polls, key_d, key_r, today: date):
+def average(polls, key_d, key_r, today: date, windows=(WINDOW_DAYS, FALLBACK_DAYS), min_polls=MIN_POLLS):
     rows = []
     for p in polls:
         try:
@@ -72,13 +72,13 @@ def average(polls, key_d, key_r, today: date):
             "partisan": bool(p.get("partisan") or p.get("internal")),
             "url": p.get("url"),
         })
-    for window in (WINDOW_DAYS, FALLBACK_DAYS):
+    for window in windows:
         recent = [r for r in rows if r["age"] <= window]
         best = {}
         for r in sorted(recent, key=lambda r: (r["age"], POP_RANK.get(r["population"], 3))):
             best.setdefault(r["pollster"].lower(), r)  # one per pollster: newest, then LV first
         chosen = list(best.values())
-        if len(chosen) >= MIN_POLLS or window == FALLBACK_DAYS:
+        if len(chosen) >= min_polls or window == windows[-1]:
             break
     if not chosen:
         return {"avg": None, "n": 0, "window_days": None, "polls": []}
@@ -120,7 +120,9 @@ def main():
     }
     try:
         g = fetch("generic-ballot", nat["generic_ballot"]["subject"], since)
-        out["generic"] = average(g, lambda c: c.startswith("dem"), lambda c: c.startswith("rep"), today)
+        # National polls are sparser in VoteHub, so look back further for at least 5.
+        out["generic"] = average(g, lambda c: c.startswith("dem"), lambda c: c.startswith("rep"), today,
+                                 windows=(30, 45, 60), min_polls=5)
         log(f"generic ballot: {out['generic']['avg']} from {out['generic']['n']} polls")
     except Exception as e:
         log(f"!! generic ballot failed: {e!r}")
