@@ -2,9 +2,9 @@ name: Probe data sources
 on:
   push:
     branches: [main]
-    paths: ["pipeline/probe.py"]
+    paths: ["pipeline/probe.py", ".github/workflows/probe.yml"]
 permissions:
-  contents: read
+  contents: write
 jobs:
   probe:
     runs-on: ubuntu-latest
@@ -13,4 +13,15 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
       - run: pip install requests
-      - run: python pipeline/probe.py
+      - run: python pipeline/probe.py > probe_output.txt 2>&1 || true
+      - name: Save output to probe branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+          cp probe_output.txt /tmp/out.txt
+          git checkout --orphan probe
+          git rm -rfq .
+          cp /tmp/out.txt probe_output.txt
+          git add probe_output.txt
+          git commit -qm "probe output"
+          git push -f origin probe
