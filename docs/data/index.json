@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-27T23:09:12+00:00",
+ "generated_at": "2026-10-27T23:10:23+00:00",
  "generic": {
   "avg": 8.31,
   "n": 6,
@@ -87,6 +87,7 @@
  },
  "prior": {
   "label": "2024 national presidential vote",
+  "year": 2024,
   "margin": -1.5
  },
  "states": [
@@ -104,11 +105,11 @@
      "rep": "Sullivan",
      "dem_party": "D",
      "rep_party": "R",
-     "center": -3.88,
+     "center": -0.88,
      "lo": -3.88,
-     "hi": -3.88,
-     "rating": "Lean Sullivan",
-     "n_polls": 0
+     "hi": 1.12,
+     "rating": "Toss-up, slight edge Sullivan",
+     "n_polls": 3
     },
     {
      "id": "governor",
@@ -118,11 +119,11 @@
      "rep": "Republicans",
      "dem_party": "D",
      "rep_party": "R",
-     "center": -3.88,
+     "center": 2.78,
      "lo": -3.88,
-     "hi": -3.88,
-     "rating": "Lean Republicans",
-     "n_polls": 0
+     "hi": 6.11,
+     "rating": "Toss-up, slight edge Kreiss-Tomkins",
+     "n_polls": 4
     },
     {
      "id": "measure2",
@@ -132,11 +133,11 @@
      "rep": "Yes",
      "dem_party": null,
      "rep_party": null,
-     "center": 5.14,
+     "center": 5.29,
      "lo": 5.14,
-     "hi": 5.14,
+     "hi": 5.44,
      "rating": "Leans No",
-     "n_polls": 0
+     "n_polls": 2
     }
    ]
   },
@@ -190,11 +191,11 @@
      "rep": "Collins",
      "dem_party": "D",
      "rep_party": "R",
-     "center": 7.6,
+     "center": 9.46,
      "lo": 7.6,
-     "hi": 7.6,
+     "hi": 10.2,
      "rating": "Likely Ossoff",
-     "n_polls": 0
+     "n_polls": 5
     },
     {
      "id": "governor",
@@ -204,11 +205,11 @@
      "rep": "Jackson",
      "dem_party": "D",
      "rep_party": "R",
-     "center": 7.6,
-     "lo": 7.6,
+     "center": 0.92,
+     "lo": -1.3,
      "hi": 7.6,
-     "rating": "Likely Bottoms",
-     "n_polls": 0
+     "rating": "Toss-up, slight edge Bottoms",
+     "n_polls": 6
     }
    ]
   },
@@ -226,11 +227,11 @@
      "rep": "Collins",
      "dem_party": "D",
      "rep_party": "R",
-     "center": 16.9,
-     "lo": 16.9,
+     "center": 5.61,
+     "lo": 2.38,
      "hi": 16.9,
-     "rating": "Solid Jackson",
-     "n_polls": 0
+     "rating": "Lean Jackson",
+     "n_polls": 7
     },
     {
      "id": "governor",
@@ -240,11 +241,11 @@
      "rep": "Charles",
      "dem_party": "D",
      "rep_party": "R",
-     "center": 16.9,
-     "lo": 16.9,
+     "center": 10.73,
+     "lo": 8.26,
      "hi": 16.9,
-     "rating": "Solid Pingree",
-     "n_polls": 0
+     "rating": "Likely Pingree",
+     "n_polls": 5
     }
    ]
   },
@@ -262,11 +263,11 @@
      "rep": "Rogers",
      "dem_party": "D",
      "rep_party": "R",
-     "center": 8.37,
-     "lo": 8.37,
+     "center": 4.07,
+     "lo": 3.0,
      "hi": 8.37,
-     "rating": "Likely El-Sayed",
-     "n_polls": 0
+     "rating": "Lean El-Sayed",
+     "n_polls": 10
     },
     {
      "id": "governor",
@@ -276,11 +277,11 @@
      "rep": "James",
      "dem_party": "D",
      "rep_party": "R",
-     "center": 8.37,
-     "lo": 8.37,
+     "center": 8.08,
+     "lo": 7.98,
      "hi": 8.37,
      "rating": "Likely Benson",
-     "n_polls": 0
+     "n_polls": 6
     }
    ]
   },
@@ -320,11 +321,11 @@
      "rep": "Ricketts",
      "dem_party": "I",
      "rep_party": "R",
-     "center": 3.12,
-     "lo": 3.12,
+     "center": 0.08,
+     "lo": -1.94,
      "hi": 3.12,
-     "rating": "Lean Osborn",
-     "n_polls": 0
+     "rating": "Toss-up",
+     "n_polls": 3
     },
     {
      "id": "governor",
@@ -334,11 +335,11 @@
      "rep": "Pillen",
      "dem_party": "D",
      "rep_party": "R",
-     "center": -11.03,
+     "center": -9.24,
      "lo": -11.03,
-     "hi": -11.03,
+     "hi": -7.45,
      "rating": "Likely Pillen",
-     "n_polls": 0
+     "n_polls": 2
     }
    ]
   },
@@ -356,11 +357,11 @@
      "rep": "Paxton",
      "dem_party": "D",
      "rep_party": "R",
-     "center": -4.07,
+     "center": 1.16,
      "lo": -4.07,
-     "hi": -4.07,
-     "rating": "Lean Paxton",
-     "n_polls": 0
+     "hi": 2.47,
+     "rating": "Toss-up, slight edge Talarico",
+     "n_polls": 13
     },
     {
      "id": "governor",
@@ -370,11 +371,11 @@
      "rep": "Abbott",
      "dem_party": "D",
      "rep_party": "R",
-     "center": -4.07,
+     "center": -2.97,
      "lo": -4.07,
-     "hi": -4.07,
-     "rating": "Lean Abbott",
-     "n_polls": 0
+     "hi": -2.7,
+     "rating": "Tilt Abbott",
+     "n_polls": 12
     }
    ]
   },
@@ -392,11 +393,11 @@
      "rep": "Tiffany",
      "dem_party": "D",
      "rep_party": "R",
-     "center": 8.94,
-     "lo": 8.94,
+     "center": 6.51,
+     "lo": 4.09,
      "hi": 8.94,
-     "rating": "Likely Crowley",
-     "n_polls": 0
+     "rating": "Lean Crowley",
+     "n_polls": 2
     }
    ]
   }

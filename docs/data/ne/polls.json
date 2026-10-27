@@ -1,0 +1,88 @@
+{
+ "source": "VoteHub",
+ "source_url": "https://votehub.com/polls/",
+ "license": "CC BY 4.0",
+ "method": "One poll per pollster from the last 30 days (60 if fewer than 3), likely voters preferred, weighted by recency (half-life 14 days) and sample size; partisan or internal polls count half. Margins are two-party.",
+ "fetched_at": "2026-10-27T23:10:22+00:00",
+ "races": {
+  "senate": {
+   "avg": -1.94,
+   "n": 3,
+   "window_days": 60,
+   "polls": [
+    {
+     "pollster": "Echelon Insights",
+     "end_date": "2026-10-23",
+     "age": 4,
+     "population": "lv",
+     "sample_size": 407,
+     "dem": 46.0,
+     "rep": 47.0,
+     "margin": -1.08,
+     "partisan": false,
+     "url": "https://netchoice.org/netchoice-echelon-insights-poll-voters-rank-ai-regulation-far-behind-cost-of-living-want-one-national-ai-standard/",
+     "weight": 0.676
+    },
+    {
+     "pollster": "National Public Affairs",
+     "end_date": "2026-10-18",
+     "age": 9,
+     "population": "lv",
+     "sample_size": 598,
+     "dem": 47.0,
+     "rep": 50.0,
+     "margin": -3.09,
+     "partisan": false,
+     "url": "https://backend.natpublicaffairs.com/media/NE_Tracker_R2_Trend_Memo_102226.7.pdf",
+     "weight": 0.639
+    },
+    {
+     "pollster": "GBAO Strategies",
+     "end_date": "2026-09-08",
+     "age": 49,
+     "population": "lv",
+     "sample_size": 800,
+     "dem": 47.0,
+     "rep": 46.0,
+     "margin": 1.08,
+     "partisan": true,
+     "url": "https://www.washingtonsun.com/newsletters/panic-week",
+     "weight": 0.051
+    }
+   ]
+  },
+  "governor": {
+   "avg": -7.45,
+   "n": 2,
+   "window_days": 60,
+   "polls": [
+    {
+     "pollster": "Echelon Insights",
+     "end_date": "2026-10-23",
+     "age": 4,
+     "population": "lv",
+     "sample_size": 407,
+     "dem": 40.0,
+     "rep": 47.0,
+     "margin": -8.05,
+     "partisan": false,
+     "url": "https://netchoice.org/netchoice-echelon-insights-poll-voters-rank-ai-regulation-far-behind-cost-of-living-want-one-national-ai-standard/",
+     "weight": 0.676
+    },
+    {
+     "pollster": "National Public Affairs",
+     "end_date": "2026-10-18",
+     "age": 9,
+     "population": "lv",
+     "sample_size": 598,
+     "dem": 41.0,
+     "rep": 47.0,
+     "margin": -6.82,
+     "partisan": false,
+     "url": "https://backend.natpublicaffairs.com/media/NE_Tracker_R2_Trend_Memo_102226.7.pdf",
+     "weight": 0.639
+    }
+   ]
+  }
+ }
+}

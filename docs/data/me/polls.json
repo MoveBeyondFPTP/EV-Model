@@ -1,0 +1,179 @@
+{
+ "source": "VoteHub",
+ "source_url": "https://votehub.com/polls/",
+ "license": "CC BY 4.0",
+ "method": "One poll per pollster from the last 30 days (60 if fewer than 3), likely voters preferred, weighted by recency (half-life 14 days) and sample size; partisan or internal polls count half. Margins are two-party.",
+ "fetched_at": "2026-10-27T23:10:22+00:00",
+ "races": {
+  "senate": {
+   "avg": 2.38,
+   "n": 7,
+   "window_days": 30,
+   "polls": [
+    {
+     "pollster": "Marist University",
+     "end_date": "2026-10-25",
+     "age": 2,
+     "population": "lv",
+     "sample_size": 1449,
+     "dem": 49.0,
+     "rep": 47.0,
+     "margin": 2.08,
+     "partisan": false,
+     "url": "https://maristpoll.marist.edu/polls/the-midterm-elections-in-maine-october-2026/",
+     "weight": 1.359
+    },
+    {
+     "pollster": "Echelon Insights",
+     "end_date": "2026-10-23",
+     "age": 4,
+     "population": "lv",
+     "sample_size": 413,
+     "dem": 51.0,
+     "rep": 44.0,
+     "margin": 7.37,
+     "partisan": false,
+     "url": "https://netchoice.org/netchoice-echelon-insights-poll-voters-rank-ai-regulation-far-behind-cost-of-living-want-one-national-ai-standard/",
+     "weight": 0.681
+    },
+    {
+     "pollster": "Beacon Research/Shaw & Co. Research",
+     "end_date": "2026-10-20",
+     "age": 7,
+     "population": "lv",
+     "sample_size": 1514,
+     "dem": 49.0,
+     "rep": 49.0,
+     "margin": 0.0,
+     "partisan": false,
+     "url": "https://www.foxnews.com/politics/fox-news-poll-nail-biter-maine-senate-race",
+     "weight": 1.061
+    },
+    {
+     "pollster": "InsiderAdvantage",
+     "end_date": "2026-10-14",
+     "age": 13,
+     "population": "lv",
+     "sample_size": 1200,
+     "dem": 49.0,
+     "rep": 47.0,
+     "margin": 2.08,
+     "partisan": false,
+     "url": "https://insideradvantage.com/insideradvantage-senate-surveys-texas-paxton-49-talarico-48-kansas-marshall-48-hamilton-47-maine-jackson-49-collins-47/",
+     "weight": 0.743
+    },
+    {
+     "pollster": "The Washington Post/George Mason University School of Policy and Government",
+     "end_date": "2026-10-05",
+     "age": 22,
+     "population": "lv",
+     "sample_size": 800,
+     "dem": 50.0,
+     "rep": 45.0,
+     "margin": 5.26,
+     "partisan": false,
+     "url": "https://www.washingtonpost.com/tablet/2026/10/09/sept-30-oct-5-2026-washington-post-schar-school-poll-maine-voters",
+     "weight": 0.389
+    },
+    {
+     "pollster": "Wedgewood Polls",
+     "end_date": "2026-10-01",
+     "age": 26,
+     "population": "lv",
+     "sample_size": 400,
+     "dem": 52.0,
+     "rep": 48.0,
+     "margin": 4.0,
+     "partisan": false,
+     "url": "https://drive.google.com/file/d/1sycfLKEWvUxaW7oNYTdih5DzlXlcmtXC/view",
+     "weight": 0.225
+    },
+    {
+     "pollster": "co/efficient",
+     "end_date": "2026-09-30",
+     "age": 27,
+     "population": "lv",
+     "sample_size": 1240,
+     "dem": 46.0,
+     "rep": 48.0,
+     "margin": -2.13,
+     "partisan": false,
+     "url": "https://battlegrounds.coefficient.org/me/",
+     "weight": 0.378
+    }
+   ]
+  },
+  "governor": {
+   "avg": 8.26,
+   "n": 5,
+   "window_days": 30,
+   "polls": [
+    {
+     "pollster": "Marist University",
+     "end_date": "2026-10-25",
+     "age": 2,
+     "population": "lv",
+     "sample_size": 1449,
+     "dem": 44.0,
+     "rep": 44.0,
+     "margin": 0.0,
+     "partisan": false,
+     "url": "https://maristpoll.marist.edu/polls/the-midterm-elections-in-maine-october-2026/",
+     "weight": 1.359
+    },
+    {
+     "pollster": "Echelon Insights",
+     "end_date": "2026-10-23",
+     "age": 4,
+     "population": "lv",
+     "sample_size": 413,
+     "dem": 51.0,
+     "rep": 38.0,
+     "margin": 14.61,
+     "partisan": false,
+     "url": "https://netchoice.org/netchoice-echelon-insights-poll-voters-rank-ai-regulation-far-behind-cost-of-living-want-one-national-ai-standard/",
+     "weight": 0.681
+    },
+    {
+     "pollster": "Beacon Research/Shaw & Co. Research",
+     "end_date": "2026-10-20",
+     "age": 7,
+     "population": "lv",
+     "sample_size": 1514,
+     "dem": 49.0,
+     "rep": 39.0,
+     "margin": 11.36,
+     "partisan": false,
+     "url": "https://www.foxnews.com/politics/fox-news-poll-nail-biter-maine-senate-race",
+     "weight": 1.061
+    },
+    {
+     "pollster": "The Washington Post/George Mason University School of Policy and Government",
+     "end_date": "2026-10-05",
+     "age": 22,
+     "population": "lv",
+     "sample_size": 800,
+     "dem": 49.0,
+     "rep": 36.0,
+     "margin": 15.29,
+     "partisan": false,
+     "url": "https://www.washingtonpost.com/tablet/2026/10/09/sept-30-oct-5-2026-washington-post-schar-school-poll-maine-voters",
+     "weight": 0.389
+    },
+    {
+     "pollster": "co/efficient",
+     "end_date": "2026-09-30",
+     "age": 27,
+     "population": "lv",
+     "sample_size": 1240,
+     "dem": 47.0,
+     "rep": 38.0,
+     "margin": 10.59,
+     "partisan": false,
+     "url": "https://battlegrounds.coefficient.org/me/",
+     "weight": 0.378
+    }
+   ]
+  }
+ }
+}

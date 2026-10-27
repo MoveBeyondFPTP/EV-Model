@@ -32,10 +32,10 @@
    },
    "comparison_result": null,
    "projection": {
-    "center": -3.88,
+    "center": -0.88,
     "lo": -3.88,
-    "hi": -3.88,
-    "rating": "Lean Sullivan",
+    "hi": 1.12,
+    "rating": "Toss-up, slight edge Sullivan",
     "environment": {
      "label": "2024 president (AK)",
      "base": -13.69,
@@ -46,9 +46,13 @@
      "margin": -3.88,
      "note": null
     },
-    "polls": null,
-    "poll_weight": 0.0,
-    "start": -3.88,
+    "polls": {
+     "avg": 1.12,
+     "n": 3,
+     "window_days": 30
+    },
+    "poll_weight": 0.6,
+    "start": -0.88,
     "early_vote": null
    }
   },
@@ -77,10 +81,10 @@
    },
    "comparison_result": null,
    "projection": {
-    "center": -3.88,
+    "center": 2.78,
     "lo": -3.88,
-    "hi": -3.88,
-    "rating": "Lean Republicans",
+    "hi": 6.11,
+    "rating": "Toss-up, slight edge Kreiss-Tomkins",
     "environment": {
      "label": "2024 president (AK)",
      "base": -13.69,
@@ -91,9 +95,13 @@
      "margin": -3.88,
      "note": null
     },
-    "polls": null,
-    "poll_weight": 0.0,
-    "start": -3.88,
+    "polls": {
+     "avg": 6.11,
+     "n": 4,
+     "window_days": 30
+    },
+    "poll_weight": 0.667,
+    "start": 2.78,
     "early_vote": null
    }
   },
@@ -112,9 +120,9 @@
    },
    "comparison_result": null,
    "projection": {
-    "center": 5.14,
+    "center": 5.29,
     "lo": 5.14,
-    "hi": 5.14,
+    "hi": 5.44,
     "rating": "Leans No",
     "environment": {
      "label": "2024 Ballot Measure 2 (same repeal)",
@@ -126,15 +134,19 @@
      "margin": 5.14,
      "note": "Repeal is backed mainly by Republicans, but the 2024 vote ran far closer than the presidential race (Trump +13.7, repeal failed by 0.2), so only half of the national swing is applied."
     },
-    "polls": null,
-    "poll_weight": 0.0,
-    "start": 5.14,
+    "polls": {
+     "avg": 5.44,
+     "n": 2,
+     "window_days": 60
+    },
+    "poll_weight": 0.5,
+    "start": 5.29,
     "early_vote": null
    }
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-10-27T23:09:12+00:00",
+ "generated_at": "2026-10-27T23:10:23+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,

@@ -29,10 +29,10 @@
    },
    "comparison_result": null,
    "projection": {
-    "center": 16.9,
-    "lo": 16.9,
+    "center": 5.61,
+    "lo": 2.38,
     "hi": 16.9,
-    "rating": "Solid Jackson",
+    "rating": "Lean Jackson",
     "environment": {
      "label": "2024 president (ME)",
      "base": 7.09,
@@ -43,9 +43,13 @@
      "margin": 16.9,
      "note": null
     },
-    "polls": null,
-    "poll_weight": 0.0,
-    "start": 16.9,
+    "polls": {
+     "avg": 2.38,
+     "n": 7,
+     "window_days": 30
+    },
+    "poll_weight": 0.778,
+    "start": 5.61,
     "early_vote": null
    }
   },
@@ -72,10 +76,10 @@
    },
    "comparison_result": null,
    "projection": {
-    "center": 16.9,
-    "lo": 16.9,
+    "center": 10.73,
+    "lo": 8.26,
     "hi": 16.9,
-    "rating": "Solid Pingree",
+    "rating": "Likely Pingree",
     "environment": {
      "label": "2024 president (ME)",
      "base": 7.09,
@@ -86,15 +90,19 @@
      "margin": 16.9,
      "note": null
     },
-    "polls": null,
-    "poll_weight": 0.0,
-    "start": 16.9,
+    "polls": {
+     "avg": 8.26,
+     "n": 5,
+     "window_days": 30
+    },
+    "poll_weight": 0.714,
+    "start": 10.73,
     "early_vote": null
    }
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-10-27T23:09:12+00:00",
+ "generated_at": "2026-10-27T23:10:23+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,

@@ -1,0 +1,231 @@
+{
+ "source": "VoteHub",
+ "source_url": "https://votehub.com/polls/",
+ "license": "CC BY 4.0",
+ "method": "One poll per pollster from the last 30 days (60 if fewer than 3), likely voters preferred, weighted by recency (half-life 14 days) and sample size; partisan or internal polls count half. Margins are two-party.",
+ "fetched_at": "2026-10-27T23:10:22+00:00",
+ "races": {
+  "senate": {
+   "avg": 3.0,
+   "n": 10,
+   "window_days": 30,
+   "polls": [
+    {
+     "pollster": "InsiderAdvantage",
+     "end_date": "2026-10-22",
+     "age": 5,
+     "population": "lv",
+     "sample_size": 1200,
+     "dem": 47.0,
+     "rep": 46.0,
+     "margin": 1.08,
+     "partisan": false,
+     "url": "https://insideradvantage.com/insideradvantage-senate-surveys-mi-el-sayed-47-rogers-46-ia-hinson-47-turek-45-oh-brown-47-husted-44/",
+     "weight": 1.104
+    },
+    {
+     "pollster": "Glengariff Group, Inc.",
+     "end_date": "2026-10-22",
+     "age": 5,
+     "population": "lv",
+     "sample_size": 600,
+     "dem": 51.4,
+     "rep": 45.1,
+     "margin": 6.53,
+     "partisan": false,
+     "url": "https://www.detroitnews.com/story/news/politics/2026/10/27/jocelyn-bensons-lead-over-john-james-grows-in-michigan-governor-race/92441176007/",
+     "weight": 0.781
+    },
+    {
+     "pollster": "Michigan State University Institute for Public Policy and Social Research/YouGov",
+     "end_date": "2026-10-19",
+     "age": 8,
+     "population": "lv",
+     "sample_size": 836,
+     "dem": 48.0,
+     "rep": 45.5,
+     "margin": 2.67,
+     "partisan": false,
+     "url": "https://ippsr.msu.edu/news/msu-poll-shows-benson-large-lead-while-el-sayed-roger-race-tight",
+     "weight": 0.794
+    },
+    {
+     "pollster": "Marist University",
+     "end_date": "2026-10-18",
+     "age": 9,
+     "population": "lv",
+     "sample_size": null,
+     "dem": 50.0,
+     "rep": 48.0,
+     "margin": 2.04,
+     "partisan": false,
+     "url": "https://maristpoll.marist.edu/polls/midterm-elections-in-michigan-october-2026/",
+     "weight": 0.64
+    },
+    {
+     "pollster": "The Tyson Group",
+     "end_date": "2026-10-08",
+     "age": 19,
+     "population": "lv",
+     "sample_size": 600,
+     "dem": 44.0,
+     "rep": 46.0,
+     "margin": -2.22,
+     "partisan": true,
+     "url": "https://www.breitbart.com/politics/2026/10/15/exclusive-poll-shows-mike-rogers-edging-out-abdul-el-sayed-in-michigan-senate-race/",
+     "weight": 0.195
+    },
+    {
+     "pollster": "Mitchell Research & Communications",
+     "end_date": "2026-10-01",
+     "age": 26,
+     "population": "lv",
+     "sample_size": 682,
+     "dem": 46.0,
+     "rep": 41.0,
+     "margin": 5.75,
+     "partisan": false,
+     "url": "https://wwmt.com/news/michigan-politics/mitchell-poll-michigan-us-senate-election-abdul-el-sayed-mike-rogers-politics-government-vote-polls-state",
+     "weight": 0.294
+    },
+    {
+     "pollster": "Z to A Research",
+     "end_date": "2026-10-01",
+     "age": 26,
+     "population": "lv",
+     "sample_size": 483,
+     "dem": 49.0,
+     "rep": 42.0,
+     "margin": 7.69,
+     "partisan": true,
+     "url": "https://x.com/rbrtraining/status/2108302504446337272",
+     "weight": 0.124
+    },
+    {
+     "pollster": "Trafalgar Group",
+     "end_date": "2026-09-30",
+     "age": 27,
+     "population": "lv",
+     "sample_size": 1085,
+     "dem": 47.0,
+     "rep": 45.0,
+     "margin": 2.17,
+     "partisan": true,
+     "url": "https://www.thetrafalgargroup.org/news/mi-senate-general-1001/",
+     "weight": 0.177
+    },
+    {
+     "pollster": "Beacon Research/Shaw & Co. Research",
+     "end_date": "2026-09-28",
+     "age": 29,
+     "population": "lv",
+     "sample_size": 1028,
+     "dem": 50.0,
+     "rep": 49.0,
+     "margin": 1.01,
+     "partisan": false,
+     "url": "https://www.foxnews.com/politics/fox-news-poll-michigan-voters-split-between-el-sayed-rogers",
+     "weight": 0.311
+    },
+    {
+     "pollster": "Guidant Polling and Strategy",
+     "end_date": "2026-09-27",
+     "age": 30,
+     "population": "lv",
+     "sample_size": 800,
+     "dem": 48.0,
+     "rep": 43.0,
+     "margin": 5.49,
+     "partisan": false,
+     "url": "https://x.com/burgessev/status/2107923538392776875?s=20",
+     "weight": 0.261
+    }
+   ]
+  },
+  "governor": {
+   "avg": 7.98,
+   "n": 6,
+   "window_days": 30,
+   "polls": [
+    {
+     "pollster": "Guidant Polling and Strategy",
+     "end_date": "2026-10-27",
+     "age": 0,
+     "population": "lv",
+     "sample_size": 800,
+     "dem": 50.0,
+     "rep": 45.0,
+     "margin": 5.26,
+     "partisan": false,
+     "url": "https://x.com/burgessev/status/2107923538392776875?s=20",
+     "weight": 1.155
+    },
+    {
+     "pollster": "Glengariff Group, Inc.",
+     "end_date": "2026-10-22",
+     "age": 5,
+     "population": "lv",
+     "sample_size": 600,
+     "dem": 51.4,
+     "rep": 44.5,
+     "margin": 7.19,
+     "partisan": false,
+     "url": "https://www.detroitnews.com/story/news/politics/2026/10/27/jocelyn-bensons-lead-over-john-james-grows-in-michigan-governor-race/92441176007/",
+     "weight": 0.781
+    },
+    {
+     "pollster": "Michigan State University Institute for Public Policy and Social Research/YouGov",
+     "end_date": "2026-10-19",
+     "age": 8,
+     "population": "lv",
+     "sample_size": 836,
+     "dem": 53.3,
+     "rep": 40.9,
+     "margin": 13.16,
+     "partisan": false,
+     "url": "https://ippsr.msu.edu/news/msu-poll-shows-benson-large-lead-while-el-sayed-roger-race-tight",
+     "weight": 0.794
+    },
+    {
+     "pollster": "Marist University",
+     "end_date": "2026-10-18",
+     "age": 9,
+     "population": "lv",
+     "sample_size": null,
+     "dem": 51.0,
+     "rep": 45.0,
+     "margin": 6.25,
+     "partisan": false,
+     "url": "https://maristpoll.marist.edu/polls/midterm-elections-in-michigan-october-2026/",
+     "weight": 0.64
+    },
+    {
+     "pollster": "Z to A Research",
+     "end_date": "2026-10-01",
+     "age": 26,
+     "population": "lv",
+     "sample_size": 483,
+     "dem": 50.0,
+     "rep": 40.0,
+     "margin": 11.11,
+     "partisan": true,
+     "url": "https://x.com/rbrtraining/status/2108302504446337272",
+     "weight": 0.124
+    },
+    {
+     "pollster": "Beacon Research/Shaw & Co. Research",
+     "end_date": "2026-09-28",
+     "age": 29,
+     "population": "lv",
+     "sample_size": 1028,
+     "dem": 54.0,
+     "rep": 45.0,
+     "margin": 9.09,
+     "partisan": false,
+     "url": "https://www.foxnews.com/politics/fox-news-poll-michigan-voters-split-between-el-sayed-rogers",
+     "weight": 0.311
+    }
+   ]
+  }
+ }
+}

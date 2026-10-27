@@ -29,10 +29,10 @@
    },
    "comparison_result": null,
    "projection": {
-    "center": -4.07,
+    "center": 1.16,
     "lo": -4.07,
-    "hi": -4.07,
-    "rating": "Lean Paxton",
+    "hi": 2.47,
+    "rating": "Toss-up, slight edge Talarico",
     "environment": {
      "label": "2024 president (TX)",
      "base": -13.88,
@@ -43,9 +43,13 @@
      "margin": -4.07,
      "note": null
     },
-    "polls": null,
-    "poll_weight": 0.0,
-    "start": -4.07,
+    "polls": {
+     "avg": 2.47,
+     "n": 13,
+     "window_days": 30
+    },
+    "poll_weight": 0.8,
+    "start": 1.16,
     "early_vote": null
    }
   },
@@ -72,10 +76,10 @@
    },
    "comparison_result": null,
    "projection": {
-    "center": -4.07,
+    "center": -2.97,
     "lo": -4.07,
-    "hi": -4.07,
-    "rating": "Lean Abbott",
+    "hi": -2.7,
+    "rating": "Tilt Abbott",
     "environment": {
      "label": "2024 president (TX)",
      "base": -13.88,
@@ -86,15 +90,19 @@
      "margin": -4.07,
      "note": null
     },
-    "polls": null,
-    "poll_weight": 0.0,
-    "start": -4.07,
+    "polls": {
+     "avg": -2.7,
+     "n": 12,
+     "window_days": 30
+    },
+    "poll_weight": 0.8,
+    "start": -2.97,
     "early_vote": null
    }
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-10-27T23:09:12+00:00",
+ "generated_at": "2026-10-27T23:10:23+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,
