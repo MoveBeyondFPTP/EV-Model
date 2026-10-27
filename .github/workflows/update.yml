@@ -44,21 +44,23 @@ jobs:
 
       - name: Early vote data (each state with a source)
         run: |
+          mkdir -p docs/data/logs
+          : > docs/data/logs/early_vote.log
           status=0
           for f in pipeline/states/*.json; do
             code=$(basename "$f" .json)
-            python pipeline/build.py --state "$code" ${{ inputs.force && '--force' || '' }} || status=1
-            python pipeline/registration.py --state "$code" ${{ inputs.force && '--force' || '' }} || status=1
+            python pipeline/build.py --state "$code" ${{ inputs.force && '--force' || '' }} 2>&1 | tee -a docs/data/logs/early_vote.log; [ "${PIPESTATUS[0]}" = 0 ] || status=1
+            python pipeline/registration.py --state "$code" ${{ inputs.force && '--force' || '' }} 2>&1 | tee -a docs/data/logs/early_vote.log; [ "${PIPESTATUS[0]}" = 0 ] || status=1
           done
           exit $status
 
       - name: Polling averages (VoteHub)
         if: always()
-        run: python pipeline/polls.py
+        run: python pipeline/polls.py 2>&1 | tee docs/data/logs/polls.log
 
       - name: Projections
         if: always()
-        run: python pipeline/project.py
+        run: python pipeline/project.py 2>&1 | tee docs/data/logs/projections.log
 
       - name: Commit changes
         if: always()
