@@ -16,7 +16,7 @@ from pathlib import Path
 import requests
 
 ROOT = Path(__file__).resolve().parent.parent
-H = {"User-Agent": "EV-Model (github.com/MoveBeyondFPTP/EV-Model)"}
+H = {"User-Agent": "Mozilla/5.0 (compatible; EV-Model/1.0; +https://github.com/MoveBeyondFPTP/EV-Model)"}
 
 PARTY_COLS = ["party_cd", "party_code", "party"]
 COUNT_COLS = ["total_voters", "voters", "count"]

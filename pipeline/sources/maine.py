@@ -14,7 +14,7 @@ import sys
 import pandas as pd
 import requests
 
-H = {"User-Agent": "EV-Model (github.com/MoveBeyondFPTP/EV-Model)"}
+H = {"User-Agent": "Mozilla/5.0 (compatible; EV-Model/1.0; +https://github.com/MoveBeyondFPTP/EV-Model)"}
 COUNTIES = {"AND": "Androscoggin", "ARO": "Aroostook", "CUM": "Cumberland", "FRA": "Franklin", "HAN": "Hancock",
             "KEN": "Kennebec", "KNO": "Knox", "LIN": "Lincoln", "OXF": "Oxford", "PEN": "Penobscot",
             "PIS": "Piscataquis", "SAG": "Sagadahoc", "SOM": "Somerset", "WAL": "Waldo", "WAS": "Washington",
