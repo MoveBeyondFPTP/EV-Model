@@ -1,0 +1,111 @@
+{
+ "state": "MI",
+ "code": "mi",
+ "name": "Michigan",
+ "election_date": "2026-11-03",
+ "has_early_vote": false,
+ "turnout_signal": null,
+ "races": [
+  {
+   "id": "senate",
+   "office": "U.S. Senate",
+   "type": "candidate",
+   "note": "Open seat (Gary Peters retiring)",
+   "dem": {
+    "name": "Abdul El-Sayed",
+    "short": "El-Sayed",
+    "party": "D",
+    "match": [
+     "el-sayed",
+     "el sayed",
+     "elsayed"
+    ]
+   },
+   "rep": {
+    "name": "Mike Rogers",
+    "short": "Rogers",
+    "party": "R",
+    "match": [
+     "rogers"
+    ]
+   },
+   "comparison_result": null,
+   "projection": {
+    "center": 8.37,
+    "lo": 8.37,
+    "hi": 8.37,
+    "rating": "Likely El-Sayed",
+    "environment": {
+     "label": "2024 president (MI)",
+     "base": -1.44,
+     "national_then": -1.5,
+     "generic": 8.31,
+     "swing_factor": 1.0,
+     "swing": 9.81,
+     "margin": 8.37,
+     "note": null
+    },
+    "polls": null,
+    "poll_weight": 0.0,
+    "start": 8.37,
+    "early_vote": null
+   }
+  },
+  {
+   "id": "governor",
+   "office": "Governor",
+   "type": "candidate",
+   "note": "Open seat (Gretchen Whitmer term-limited)",
+   "dem": {
+    "name": "Jocelyn Benson",
+    "short": "Benson",
+    "party": "D",
+    "match": [
+     "benson"
+    ]
+   },
+   "rep": {
+    "name": "John James",
+    "short": "James",
+    "party": "R",
+    "match": [
+     "james"
+    ]
+   },
+   "comparison_result": null,
+   "projection": {
+    "center": 8.37,
+    "lo": 8.37,
+    "hi": 8.37,
+    "rating": "Likely Benson",
+    "environment": {
+     "label": "2024 president (MI)",
+     "base": -1.44,
+     "national_then": -1.5,
+     "generic": 8.31,
+     "swing_factor": 1.0,
+     "swing": 9.81,
+     "margin": 8.37,
+     "note": null
+    },
+    "polls": null,
+    "poll_weight": 0.0,
+    "start": 8.37,
+    "early_vote": null
+   }
+  }
+ ],
+ "ev_notes": [],
+ "generated_at": "2026-10-27T23:09:12+00:00",
+ "assumptions": {
+  "dem": 0.92,
+  "rep": 0.92,
+  "una": 0.5,
+  "oth": 0.45
+ },
+ "constants": {
+  "c_weight": 0.25,
+  "c_cap": 2.0,
+  "poll_weight_max": 0.8
+ }
+}

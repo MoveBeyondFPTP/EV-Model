@@ -1,0 +1,109 @@
+{
+ "state": "CO",
+ "code": "co",
+ "name": "Colorado",
+ "election_date": "2026-11-03",
+ "has_early_vote": false,
+ "turnout_signal": null,
+ "races": [
+  {
+   "id": "senate",
+   "office": "U.S. Senate",
+   "type": "candidate",
+   "note": "Incumbent John Hickenlooper (D)",
+   "dem": {
+    "name": "John Hickenlooper",
+    "short": "Hickenlooper",
+    "party": "D",
+    "match": [
+     "hickenlooper"
+    ]
+   },
+   "rep": {
+    "name": "Mark Baisley",
+    "short": "Baisley",
+    "party": "R",
+    "match": [
+     "baisley"
+    ]
+   },
+   "comparison_result": null,
+   "projection": {
+    "center": 21.1,
+    "lo": 21.1,
+    "hi": 21.1,
+    "rating": "Solid Hickenlooper",
+    "environment": {
+     "label": "2024 president (CO)",
+     "base": 11.29,
+     "national_then": -1.5,
+     "generic": 8.31,
+     "swing_factor": 1.0,
+     "swing": 9.81,
+     "margin": 21.1,
+     "note": null
+    },
+    "polls": null,
+    "poll_weight": 0.0,
+    "start": 21.1,
+    "early_vote": null
+   }
+  },
+  {
+   "id": "governor",
+   "office": "Governor",
+   "type": "candidate",
+   "note": "Open seat (Jared Polis term-limited)",
+   "dem": {
+    "name": "Phil Weiser",
+    "short": "Weiser",
+    "party": "D",
+    "match": [
+     "weiser"
+    ]
+   },
+   "rep": {
+    "name": "Victor Marx",
+    "short": "Marx",
+    "party": "R",
+    "match": [
+     "marx"
+    ]
+   },
+   "comparison_result": null,
+   "projection": {
+    "center": 21.1,
+    "lo": 21.1,
+    "hi": 21.1,
+    "rating": "Solid Weiser",
+    "environment": {
+     "label": "2024 president (CO)",
+     "base": 11.29,
+     "national_then": -1.5,
+     "generic": 8.31,
+     "swing_factor": 1.0,
+     "swing": 9.81,
+     "margin": 21.1,
+     "note": null
+    },
+    "polls": null,
+    "poll_weight": 0.0,
+    "start": 21.1,
+    "early_vote": null
+   }
+  }
+ ],
+ "ev_notes": [],
+ "generated_at": "2026-10-27T23:09:12+00:00",
+ "assumptions": {
+  "dem": 0.92,
+  "rep": 0.92,
+  "una": 0.5,
+  "oth": 0.45
+ },
+ "constants": {
+  "c_weight": 0.25,
+  "c_cap": 2.0,
+  "poll_weight_max": 0.8
+ }
+}

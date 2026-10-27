@@ -16,7 +16,6 @@ from pathlib import Path
 import requests
 
 ROOT = Path(__file__).resolve().parent.parent
-OUT = ROOT / "docs" / "data" / "registration.json"
 H = {"User-Agent": "EV-Model (github.com/MoveBeyondFPTP/EV-Model)"}
 
 PARTY_COLS = ["party_cd", "party_code", "party"]
@@ -58,7 +57,9 @@ def main():
     ap.add_argument("--force", action="store_true")
     args = ap.parse_args()
     cfg = json.loads((ROOT / "pipeline" / "states" / f"{args.state}.json").read_text())
-    reg = cfg.get("registration")
+    reg = (cfg.get("early_vote") or {}).get("registration")
+    OUT = ROOT / "docs" / "data" / args.state / "registration.json"
+    OUT.parent.mkdir(parents=True, exist_ok=True)
     if not reg:
         log("No registration config; skipping")
         return

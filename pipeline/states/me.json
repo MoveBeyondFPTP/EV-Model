@@ -1,0 +1,64 @@
+{
+  "state": "ME",
+  "name": "Maine",
+  "current": 2026,
+  "election_date": "2026-11-03",
+  "environment": {
+    "label": "2024 president (ME)",
+    "year": 2024,
+    "margin": 7.09,
+    "national_margin": -1.5
+  },
+  "polls": {
+    "subject": "2026 Maine"
+  },
+  "races": [
+    {
+      "id": "senate",
+      "office": "U.S. Senate",
+      "type": "candidate",
+      "poll_type": "us-senator",
+      "dem": {
+        "name": "Troy Jackson",
+        "short": "Jackson",
+        "party": "D",
+        "match": [
+          "jackson"
+        ]
+      },
+      "rep": {
+        "name": "Susan Collins",
+        "short": "Collins",
+        "party": "R",
+        "match": [
+          "collins"
+        ]
+      },
+      "note": "Incumbent Susan Collins (R); ranked-choice general election"
+    },
+    {
+      "id": "governor",
+      "office": "Governor",
+      "type": "candidate",
+      "poll_type": "governor",
+      "dem": {
+        "name": "Hannah Pingree",
+        "short": "Pingree",
+        "party": "D",
+        "match": [
+          "pingree"
+        ]
+      },
+      "rep": {
+        "name": "Robert Charles",
+        "short": "Charles",
+        "party": "R",
+        "match": [
+          "charles"
+        ]
+      },
+      "note": "Open seat (Janet Mills term-limited); independent Rick Bennett also running"
+    }
+  ],
+  "early_vote": null
+}

@@ -1,0 +1,109 @@
+{
+ "state": "GA",
+ "code": "ga",
+ "name": "Georgia",
+ "election_date": "2026-11-03",
+ "has_early_vote": false,
+ "turnout_signal": null,
+ "races": [
+  {
+   "id": "senate",
+   "office": "U.S. Senate",
+   "type": "candidate",
+   "note": "Incumbent Jon Ossoff (D)",
+   "dem": {
+    "name": "Jon Ossoff",
+    "short": "Ossoff",
+    "party": "D",
+    "match": [
+     "ossoff"
+    ]
+   },
+   "rep": {
+    "name": "Mike Collins",
+    "short": "Collins",
+    "party": "R",
+    "match": [
+     "collins"
+    ]
+   },
+   "comparison_result": null,
+   "projection": {
+    "center": 7.6,
+    "lo": 7.6,
+    "hi": 7.6,
+    "rating": "Likely Ossoff",
+    "environment": {
+     "label": "2024 president (GA)",
+     "base": -2.21,
+     "national_then": -1.5,
+     "generic": 8.31,
+     "swing_factor": 1.0,
+     "swing": 9.81,
+     "margin": 7.6,
+     "note": null
+    },
+    "polls": null,
+    "poll_weight": 0.0,
+    "start": 7.6,
+    "early_vote": null
+   }
+  },
+  {
+   "id": "governor",
+   "office": "Governor",
+   "type": "candidate",
+   "note": "Open seat (Brian Kemp term-limited)",
+   "dem": {
+    "name": "Keisha Lance Bottoms",
+    "short": "Bottoms",
+    "party": "D",
+    "match": [
+     "bottoms"
+    ]
+   },
+   "rep": {
+    "name": "Rick Jackson",
+    "short": "Jackson",
+    "party": "R",
+    "match": [
+     "jackson"
+    ]
+   },
+   "comparison_result": null,
+   "projection": {
+    "center": 7.6,
+    "lo": 7.6,
+    "hi": 7.6,
+    "rating": "Likely Bottoms",
+    "environment": {
+     "label": "2024 president (GA)",
+     "base": -2.21,
+     "national_then": -1.5,
+     "generic": 8.31,
+     "swing_factor": 1.0,
+     "swing": 9.81,
+     "margin": 7.6,
+     "note": null
+    },
+    "polls": null,
+    "poll_weight": 0.0,
+    "start": 7.6,
+    "early_vote": null
+   }
+  }
+ ],
+ "ev_notes": [],
+ "generated_at": "2026-10-27T23:09:12+00:00",
+ "assumptions": {
+  "dem": 0.92,
+  "rep": 0.92,
+  "una": 0.5,
+  "oth": 0.45
+ },
+ "constants": {
+  "c_weight": 0.25,
+  "c_cap": 2.0,
+  "poll_weight_max": 0.8
+ }
+}

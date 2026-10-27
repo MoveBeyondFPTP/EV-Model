@@ -1,0 +1,98 @@
+{
+ "state": "NC",
+ "code": "nc",
+ "name": "North Carolina",
+ "election_date": "2026-11-03",
+ "has_early_vote": true,
+ "turnout_signal": {
+  "value": 10.55,
+  "now": 14.18,
+  "then": 3.63,
+  "year": 2022,
+  "day": 8,
+  "as_of": "2026-10-26",
+  "backtest": {
+   "from": 2020,
+   "to": 2024,
+   "label": "2024 president",
+   "signal": -5.3,
+   "adjustment": -1.33,
+   "state_move": -1.89,
+   "national_move": -6.04,
+   "relative": 4.15,
+   "right_direction": false
+  }
+ },
+ "races": [
+  {
+   "id": "senate",
+   "office": "U.S. Senate",
+   "type": "candidate",
+   "note": "Open seat (Thom Tillis retiring)",
+   "dem": {
+    "name": "Roy Cooper",
+    "short": "Cooper",
+    "party": "D",
+    "match": [
+     "cooper"
+    ]
+   },
+   "rep": {
+    "name": "Michael Whatley",
+    "short": "Whatley",
+    "party": "R",
+    "match": [
+     "whatley"
+    ]
+   },
+   "comparison_result": {
+    "year": 2022,
+    "label": "2022 U.S. Senate",
+    "margin": -3.3
+   },
+   "projection": {
+    "center": 12.57,
+    "lo": 6.55,
+    "hi": 13.58,
+    "rating": "Solid Cooper",
+    "environment": {
+     "label": "2024 president (NC)",
+     "base": -3.26,
+     "national_then": -1.5,
+     "generic": 8.31,
+     "swing_factor": 1.0,
+     "swing": 9.81,
+     "margin": 6.55,
+     "note": null
+    },
+    "polls": {
+     "avg": 11.58,
+     "n": 8,
+     "window_days": 30
+    },
+    "poll_weight": 0.8,
+    "start": 10.57,
+    "early_vote": {
+     "adjustment": 2.0,
+     "weight": 0.25,
+     "cap": 2.0
+    }
+   }
+  }
+ ],
+ "ev_notes": [
+  "Rules change. Photo ID applies in 2026 but not in 2018 or 2022, and mail ballots now must arrive by the close of polls instead of within the old three-day grace period. Early voting schedules and sites also vary by cycle."
+ ],
+ "generated_at": "2026-10-27T23:09:12+00:00",
+ "assumptions": {
+  "dem": 0.92,
+  "rep": 0.92,
+  "una": 0.5,
+  "oth": 0.45
+ },
+ "constants": {
+  "c_weight": 0.25,
+  "c_cap": 2.0,
+  "poll_weight_max": 0.8
+ }
+}

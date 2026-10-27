@@ -1,0 +1,64 @@
+{
+  "state": "GA",
+  "name": "Georgia",
+  "current": 2026,
+  "election_date": "2026-11-03",
+  "environment": {
+    "label": "2024 president (GA)",
+    "year": 2024,
+    "margin": -2.21,
+    "national_margin": -1.5
+  },
+  "polls": {
+    "subject": "2026 Georgia"
+  },
+  "races": [
+    {
+      "id": "senate",
+      "office": "U.S. Senate",
+      "type": "candidate",
+      "poll_type": "us-senator",
+      "dem": {
+        "name": "Jon Ossoff",
+        "short": "Ossoff",
+        "party": "D",
+        "match": [
+          "ossoff"
+        ]
+      },
+      "rep": {
+        "name": "Mike Collins",
+        "short": "Collins",
+        "party": "R",
+        "match": [
+          "collins"
+        ]
+      },
+      "note": "Incumbent Jon Ossoff (D)"
+    },
+    {
+      "id": "governor",
+      "office": "Governor",
+      "type": "candidate",
+      "poll_type": "governor",
+      "dem": {
+        "name": "Keisha Lance Bottoms",
+        "short": "Bottoms",
+        "party": "D",
+        "match": [
+          "bottoms"
+        ]
+      },
+      "rep": {
+        "name": "Rick Jackson",
+        "short": "Jackson",
+        "party": "R",
+        "match": [
+          "jackson"
+        ]
+      },
+      "note": "Open seat (Brian Kemp term-limited)"
+    }
+  ],
+  "early_vote": null
+}

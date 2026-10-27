@@ -19,7 +19,6 @@ from pathlib import Path
 import requests
 
 ROOT = Path(__file__).resolve().parent.parent
-OUT = ROOT / "docs" / "data" / "polls.json"
 API = "https://api.votehub.com/polls"
 H = {"User-Agent": "EV-Model (github.com/MoveBeyondFPTP/EV-Model)"}
 
@@ -34,22 +33,25 @@ def log(*a):
     print(*a, file=sys.stderr, flush=True)
 
 
-def last(name: str) -> str:
-    return name.strip().split()[-1].lower()
+def matcher(side: dict):
+    """Return a function giving the summed share of every answer matching this side
+    (several Republicans in one ranked-choice race add together)."""
+    inc = [m.lower() for m in side.get("match", [])]
+    exc = [m.lower() for m in side.get("exclude", [])]
+    def f(answers):
+        total, hit = 0.0, False
+        for a in answers or []:
+            c = str(a.get("choice", "")).lower()
+            if any(m in c for m in inc) and not any(x in c for x in exc):
+                try:
+                    total += float(a["pct"]); hit = True
+                except (TypeError, ValueError, KeyError):
+                    pass
+        return total if hit else None
+    return f
 
 
-def pick(answers, key_d, key_r):
-    d = r = None
-    for a in answers or []:
-        c = str(a.get("choice", "")).lower()
-        if d is None and key_d(c):
-            d = float(a["pct"])
-        elif r is None and key_r(c):
-            r = float(a["pct"])
-    return d, r
-
-
-def average(polls, key_d, key_r, today: date, windows=(WINDOW_DAYS, FALLBACK_DAYS), min_polls=MIN_POLLS):
+def average(polls, get_d, get_r, today: date, windows=(WINDOW_DAYS, FALLBACK_DAYS), min_polls=MIN_POLLS):
     rows = []
     for p in polls:
         try:
@@ -58,7 +60,7 @@ def average(polls, key_d, key_r, today: date, windows=(WINDOW_DAYS, FALLBACK_DAY
             continue
         if end > today:
             continue
-        d, r = pick(p.get("answers"), key_d, key_r)
+        d, r = get_d(p.get("answers")), get_r(p.get("answers"))
         if d is None or r is None or d + r <= 0:
             continue
         rows.append({
@@ -93,53 +95,84 @@ def average(polls, key_d, key_r, today: date, windows=(WINDOW_DAYS, FALLBACK_DAY
     return {"avg": round(tm / tw, 2), "n": len(chosen), "window_days": window, "polls": chosen}
 
 
-def fetch(poll_type: str, subject: str, since: date):
+def fetch_type(poll_type: str, since: date):
     r = requests.get(API, params={"poll_type": poll_type, "from_date": since.isoformat()}, headers=H, timeout=120)
     r.raise_for_status()
-    return [p for p in r.json() if p.get("subject") == subject and p.get("poll_type") == poll_type]
+    return [p for p in r.json() if p.get("poll_type") == poll_type]
+
+
+def manual(mp: dict):
+    """Turn hand-entered polls (e.g. ballot measures VoteHub doesn't cover) into VoteHub-shaped records."""
+    return [{**p, "url": p.get("url") or mp.get("source_url"),
+             "answers": [{"choice": "__dem__", "pct": p["dem"]}, {"choice": "__rep__", "pct": p["rep"]}]}
+            for p in mp["polls"]]
 
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--state", default="nc")
+    ap.add_argument("--states", nargs="*", help="state codes (default: all configured)")
     args = ap.parse_args()
-    cfg = json.loads((ROOT / "pipeline" / "states" / f"{args.state}.json").read_text())
+    states_dir = ROOT / "pipeline" / "states"
+    codes = args.states or sorted(p.stem for p in states_dir.glob("*.json"))
     nat = json.loads((ROOT / "pipeline" / "national.json").read_text())
     today = datetime.now(timezone.utc).date()
-    since = date.fromordinal(today.toordinal() - FALLBACK_DAYS - 5)
-    out = {
-        "source": "VoteHub",
-        "source_url": "https://votehub.com/polls/",
-        "license": "CC BY 4.0",
+    since = date.fromordinal(today.toordinal() - 125)
+    meta = {
+        "source": "VoteHub", "source_url": "https://votehub.com/polls/", "license": "CC BY 4.0",
         "method": f"One poll per pollster from the last {WINDOW_DAYS} days ({FALLBACK_DAYS} if fewer than {MIN_POLLS}), "
                   f"likely voters preferred, weighted by recency (half-life {HALF_LIFE} days) and sample size; "
-                  "partisan or internal polls count half. Margins are two-party, D minus R.",
+                  "partisan or internal polls count half. Margins are two-party.",
         "fetched_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-        "generic": None,
-        "races": {},
     }
-    try:
-        g = fetch("generic-ballot", nat["generic_ballot"]["subject"], since)
-        # National polls are sparser in VoteHub, so look back further for at least 5.
-        out["generic"] = average(g, lambda c: c.startswith("dem"), lambda c: c.startswith("rep"), today,
-                                 windows=(30, 45, 60), min_polls=5)
-        log(f"generic ballot: {out['generic']['avg']} from {out['generic']['n']} polls")
-    except Exception as e:
-        log(f"!! generic ballot failed: {e!r}")
-    subject = cfg["polls"]["subject"]
-    for race in cfg.get("races", []):
-        try:
-            ps = fetch(race["poll_type"], subject, since)
-            dl, rl = last(race["dem"]), last(race["rep"])
-            res = average(ps, lambda c: dl in c, lambda c: rl in c, today)
-            out["races"][race["office"]] = res
-            log(f"{race['office']}: {res['avg']} from {res['n']} polls")
-        except Exception as e:
-            log(f"!! {race['office']} polls failed: {e!r}")
-    if OUT.exists() and out["generic"] is None and not out["races"]:
-        log("Nothing fetched; keeping previous polls.json")
-        return
-    OUT.write_text(json.dumps(out, indent=1))
+    cache = {}
+
+    def polls_of(pt):
+        if pt not in cache:
+            try:
+                cache[pt] = fetch_type(pt, since)
+                log(f"fetched {len(cache[pt])} {pt} polls")
+            except Exception as e:
+                log(f"!! fetching {pt} failed: {e!r}")
+                cache[pt] = None
+        return cache[pt]
+
+    # National generic ballot (sparser in VoteHub, so look back further for at least 5 polls).
+    g = polls_of("generic-ballot")
+    nat_out = ROOT / "docs" / "data" / "national.json"
+    if g is not None:
+        subj = nat["generic_ballot"]["subject"]
+        gen = average([p for p in g if p.get("subject") == subj],
+                      matcher({"match": ["dem"]}), matcher({"match": ["rep"]}), today, windows=(30, 45, 60), min_polls=5)
+        nat_out.write_text(json.dumps({**meta, "generic": gen, "prior": nat["prior"]}, indent=1))
+        log(f"generic ballot: {gen['avg']} from {gen['n']} polls")
+
+    for code in codes:
+        cfg = json.loads((states_dir / f"{code}.json").read_text())
+        out_path = ROOT / "docs" / "data" / code / "polls.json"
+        out_path.parent.mkdir(parents=True, exist_ok=True)
+        prev = json.loads(out_path.read_text()) if out_path.exists() else {"races": {}}
+        out = {**meta, "races": {}}
+        for race in cfg["races"]:
+            rid = race["id"]
+            try:
+                if race.get("manual_polls"):
+                    mp = race["manual_polls"]
+                    res = average(manual(mp), matcher({"match": ["__dem__"]}), matcher({"match": ["__rep__"]}), today,
+                                  windows=(30, 60, 120), min_polls=2)
+                    res.update(source=mp["source"], source_url=mp["source_url"], manual=True)
+                else:
+                    ps = polls_of(race["poll_type"])
+                    if ps is None:
+                        out["races"][rid] = prev["races"].get(rid)  # keep the last good result if the API is down
+                        continue
+                    ps = [p for p in ps if p.get("subject") == cfg["polls"]["subject"]]
+                    res = average(ps, matcher(race["dem"]), matcher(race["rep"]), today)
+                out["races"][rid] = res
+                log(f"{code} {rid}: {res['avg']} from {res['n']} polls")
+            except Exception as e:
+                log(f"!! {code} {rid} failed: {e!r}")
+                out["races"][rid] = prev["races"].get(rid)
+        out_path.write_text(json.dumps(out, indent=1))
 
 
 if __name__ == "__main__":

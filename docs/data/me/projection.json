@@ -1,0 +1,109 @@
+{
+ "state": "ME",
+ "code": "me",
+ "name": "Maine",
+ "election_date": "2026-11-03",
+ "has_early_vote": false,
+ "turnout_signal": null,
+ "races": [
+  {
+   "id": "senate",
+   "office": "U.S. Senate",
+   "type": "candidate",
+   "note": "Incumbent Susan Collins (R); ranked-choice general election",
+   "dem": {
+    "name": "Troy Jackson",
+    "short": "Jackson",
+    "party": "D",
+    "match": [
+     "jackson"
+    ]
+   },
+   "rep": {
+    "name": "Susan Collins",
+    "short": "Collins",
+    "party": "R",
+    "match": [
+     "collins"
+    ]
+   },
+   "comparison_result": null,
+   "projection": {
+    "center": 16.9,
+    "lo": 16.9,
+    "hi": 16.9,
+    "rating": "Solid Jackson",
+    "environment": {
+     "label": "2024 president (ME)",
+     "base": 7.09,
+     "national_then": -1.5,
+     "generic": 8.31,
+     "swing_factor": 1.0,
+     "swing": 9.81,
+     "margin": 16.9,
+     "note": null
+    },
+    "polls": null,
+    "poll_weight": 0.0,
+    "start": 16.9,
+    "early_vote": null
+   }
+  },
+  {
+   "id": "governor",
+   "office": "Governor",
+   "type": "candidate",
+   "note": "Open seat (Janet Mills term-limited); independent Rick Bennett also running",
+   "dem": {
+    "name": "Hannah Pingree",
+    "short": "Pingree",
+    "party": "D",
+    "match": [
+     "pingree"
+    ]
+   },
+   "rep": {
+    "name": "Robert Charles",
+    "short": "Charles",
+    "party": "R",
+    "match": [
+     "charles"
+    ]
+   },
+   "comparison_result": null,
+   "projection": {
+    "center": 16.9,
+    "lo": 16.9,
+    "hi": 16.9,
+    "rating": "Solid Pingree",
+    "environment": {
+     "label": "2024 president (ME)",
+     "base": 7.09,
+     "national_then": -1.5,
+     "generic": 8.31,
+     "swing_factor": 1.0,
+     "swing": 9.81,
+     "margin": 16.9,
+     "note": null
+    },
+    "polls": null,
+    "poll_weight": 0.0,
+    "start": 16.9,
+    "early_vote": null
+   }
+  }
+ ],
+ "ev_notes": [],
+ "generated_at": "2026-10-27T23:09:12+00:00",
+ "assumptions": {
+  "dem": 0.92,
+  "rep": 0.92,
+  "una": 0.5,
+  "oth": 0.45
+ },
+ "constants": {
+  "c_weight": 0.25,
+  "c_cap": 2.0,
+  "poll_weight_max": 0.8
+ }
+}

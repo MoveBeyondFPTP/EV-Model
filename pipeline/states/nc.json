@@ -2,78 +2,100 @@
   "state": "NC",
   "name": "North Carolina",
   "current": 2026,
-  "elections": {
-    "2026": "2026-11-03",
-    "2022": "2022-11-08",
-    "2018": "2018-11-06",
-    "2024": "2024-11-05",
-    "2020": "2020-11-03"
+  "election_date": "2026-11-03",
+  "environment": {
+    "label": "2024 president (NC)",
+    "year": 2024,
+    "margin": -3.26,
+    "national_margin": -1.5
   },
-  "baselines": [
-    2022,
-    2018
-  ],
-  "calibration": {
-    "note": "A comparable pair of past cycles, used to test how much of an early-vote shift shows up in the result. Margins are two-party, D minus R, in points.",
-    "from": {
-      "year": 2020,
-      "label": "2020 president",
-      "margin": -1.37,
-      "national_margin": 4.54
-    },
-    "to": {
-      "year": 2024,
-      "label": "2024 president",
-      "margin": -3.26,
-      "national_margin": -1.5
-    }
+  "polls": {
+    "subject": "2026 North Carolina"
   },
   "races": [
     {
+      "id": "senate",
       "office": "U.S. Senate",
+      "type": "candidate",
+      "poll_type": "us-senator",
+      "dem": {
+        "name": "Roy Cooper",
+        "short": "Cooper",
+        "party": "D",
+        "match": [
+          "cooper"
+        ]
+      },
+      "rep": {
+        "name": "Michael Whatley",
+        "short": "Whatley",
+        "party": "R",
+        "match": [
+          "whatley"
+        ]
+      },
       "note": "Open seat (Thom Tillis retiring)",
-      "dem": "Roy Cooper",
-      "rep": "Michael Whatley",
-      "baseline": {
+      "comparison_result": {
         "year": 2022,
         "label": "2022 U.S. Senate",
         "margin": -3.3
-      },
-      "poll_type": "us-senator"
-    }
-  ],
-  "source_url_template": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/{d:%Y_%m_%d}/absentee_{d:%Y%m%d}.zip",
-  "source_page": "https://www.ncsbe.gov/results-data/absentee-data",
-  "registration": {
-    "note": "Statewide voter registration by party, used to separate turnout from registration changes.",
-    "url_template": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/{path}",
-    "snapshots": {
-      "2026": {
-        "path": "2026_03_03/voter_stats_20260303.zip",
-        "label": "March 2026"
-      },
-      "2024": {
-        "path": "2024_11_05/voter_stats_20241105.zip",
-        "label": "November 2024"
-      },
-      "2022": {
-        "path": "2022_11_08/voter_stats_20221108.zip",
-        "label": "November 2022"
-      },
-      "2020": {
-        "path": "2020_11_03/voter_stats_20201103.zip",
-        "label": "November 2020"
       }
     }
-  },
-  "environment": {
-    "note": "Most recent statewide result, shifted by the change in the national environment since then.",
-    "label": "2024 president (NC)",
-    "year": 2024,
-    "margin": -3.26
-  },
-  "polls": {
-    "source": "votehub",
-    "subject": "2026 North Carolina"
+  ],
+  "early_vote": {
+    "elections": {
+      "2026": "2026-11-03",
+      "2022": "2022-11-08",
+      "2018": "2018-11-06",
+      "2024": "2024-11-05",
+      "2020": "2020-11-03"
+    },
+    "baselines": [
+      2022,
+      2018
+    ],
+    "calibration": {
+      "note": "A comparable pair of past cycles, used to test how much of an early-vote shift shows up in the result. Margins are two-party, D minus R, in points.",
+      "from": {
+        "year": 2020,
+        "label": "2020 president",
+        "margin": -1.37,
+        "national_margin": 4.54
+      },
+      "to": {
+        "year": 2024,
+        "label": "2024 president",
+        "margin": -3.26,
+        "national_margin": -1.5
+      }
+    },
+    "registration": {
+      "note": "Statewide voter registration by party, used to separate turnout from registration changes.",
+      "url_template": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/{path}",
+      "snapshots": {
+        "2026": {
+          "path": "2026_03_03/voter_stats_20260303.zip",
+          "label": "March 2026"
+        },
+        "2024": {
+          "path": "2024_11_05/voter_stats_20241105.zip",
+          "label": "November 2024"
+        },
+        "2022": {
+          "path": "2022_11_08/voter_stats_20221108.zip",
+          "label": "November 2022"
+        },
+        "2020": {
+          "path": "2020_11_03/voter_stats_20201103.zip",
+          "label": "November 2020"
+        }
+      }
+    },
+    "source_url_template": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/{d:%Y_%m_%d}/absentee_{d:%Y%m%d}.zip",
+    "source_page": "https://www.ncsbe.gov/results-data/absentee-data",
+    "type": "ncsbe",
+    "notes": [
+      "Rules change. Photo ID applies in 2026 but not in 2018 or 2022, and mail ballots now must arrive by the close of polls instead of within the old three-day grace period. Early voting schedules and sites also vary by cycle."
+    ]
   }
 }

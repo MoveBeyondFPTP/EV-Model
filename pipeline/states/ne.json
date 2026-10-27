@@ -1,0 +1,69 @@
+{
+  "state": "NE",
+  "name": "Nebraska",
+  "current": 2026,
+  "election_date": "2026-11-03",
+  "environment": {
+    "label": "2024 president (NE)",
+    "year": 2024,
+    "margin": -20.84,
+    "national_margin": -1.5
+  },
+  "polls": {
+    "subject": "2026 Nebraska"
+  },
+  "races": [
+    {
+      "id": "senate",
+      "office": "U.S. Senate",
+      "type": "candidate",
+      "poll_type": "us-senator",
+      "dem": {
+        "name": "Dan Osborn",
+        "short": "Osborn",
+        "party": "I",
+        "match": [
+          "osborn"
+        ]
+      },
+      "rep": {
+        "name": "Pete Ricketts",
+        "short": "Ricketts",
+        "party": "R",
+        "match": [
+          "ricketts"
+        ]
+      },
+      "note": "Incumbent Pete Ricketts (R) vs. independent Dan Osborn; no Democrat on the ballot",
+      "environment": {
+        "label": "Osborn\u2019s 2024 Senate race (NE)",
+        "margin": -6.69,
+        "national_margin": -1.5
+      }
+    },
+    {
+      "id": "governor",
+      "office": "Governor",
+      "type": "candidate",
+      "poll_type": "governor",
+      "dem": {
+        "name": "Lynne Walz",
+        "short": "Walz",
+        "party": "D",
+        "match": [
+          "walz"
+        ]
+      },
+      "rep": {
+        "name": "Jim Pillen",
+        "short": "Pillen",
+        "party": "R",
+        "match": [
+          "pillen"
+        ]
+      },
+      "note": "Incumbent Jim Pillen (R)"
+    }
+  ],
+  "early_vote": null
+}

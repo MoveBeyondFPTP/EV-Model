@@ -1,0 +1,149 @@
+{
+ "state": "AK",
+ "code": "ak",
+ "name": "Alaska",
+ "election_date": "2026-11-03",
+ "has_early_vote": false,
+ "turnout_signal": null,
+ "races": [
+  {
+   "id": "senate",
+   "office": "U.S. Senate",
+   "type": "candidate",
+   "note": "Incumbent Dan Sullivan (R); ranked-choice general election",
+   "dem": {
+    "name": "Mary Peltola",
+    "short": "Peltola",
+    "party": "D",
+    "match": [
+     "peltola"
+    ]
+   },
+   "rep": {
+    "name": "Dan Sullivan",
+    "short": "Sullivan",
+    "party": "R",
+    "match": [
+     "sullivan"
+    ],
+    "exclude": [
+     "jr"
+    ]
+   },
+   "comparison_result": null,
+   "projection": {
+    "center": -3.88,
+    "lo": -3.88,
+    "hi": -3.88,
+    "rating": "Lean Sullivan",
+    "environment": {
+     "label": "2024 president (AK)",
+     "base": -13.69,
+     "national_then": -1.5,
+     "generic": 8.31,
+     "swing_factor": 1.0,
+     "swing": 9.81,
+     "margin": -3.88,
+     "note": null
+    },
+    "polls": null,
+    "poll_weight": 0.0,
+    "start": -3.88,
+    "early_vote": null
+   }
+  },
+  {
+   "id": "governor",
+   "office": "Governor",
+   "type": "candidate",
+   "note": "Open seat (Mike Dunleavy term-limited); ranked choice with three Republicans on the ballot. Republican first choices are combined as a rough stand-in for the final round.",
+   "dem": {
+    "name": "Jonathan Kreiss-Tomkins",
+    "short": "Kreiss-Tomkins",
+    "party": "D",
+    "match": [
+     "kreiss"
+    ]
+   },
+   "rep": {
+    "name": "Republicans (Wilson, Bronson, Taylor)",
+    "short": "Republicans",
+    "party": "R",
+    "match": [
+     "wilson",
+     "bronson",
+     "taylor"
+    ]
+   },
+   "comparison_result": null,
+   "projection": {
+    "center": -3.88,
+    "lo": -3.88,
+    "hi": -3.88,
+    "rating": "Lean Republicans",
+    "environment": {
+     "label": "2024 president (AK)",
+     "base": -13.69,
+     "national_then": -1.5,
+     "generic": 8.31,
+     "swing_factor": 1.0,
+     "swing": 9.81,
+     "margin": -3.88,
+     "note": null
+    },
+    "polls": null,
+    "poll_weight": 0.0,
+    "start": -3.88,
+    "early_vote": null
+   }
+  },
+  {
+   "id": "measure2",
+   "office": "Ballot Measure 2",
+   "type": "measure",
+   "note": "Repeals ranked-choice voting and open primaries. Yes = repeal, No = keep the current system.",
+   "dem": {
+    "name": "No (keep RCV)",
+    "short": "No"
+   },
+   "rep": {
+    "name": "Yes (repeal)",
+    "short": "Yes"
+   },
+   "comparison_result": null,
+   "projection": {
+    "center": 5.14,
+    "lo": 5.14,
+    "hi": 5.14,
+    "rating": "Leans No",
+    "environment": {
+     "label": "2024 Ballot Measure 2 (same repeal)",
+     "base": 0.23,
+     "national_then": -1.5,
+     "generic": 8.31,
+     "swing_factor": 0.5,
+     "swing": 4.91,
+     "margin": 5.14,
+     "note": "Repeal is backed mainly by Republicans, but the 2024 vote ran far closer than the presidential race (Trump +13.7, repeal failed by 0.2), so only half of the national swing is applied."
+    },
+    "polls": null,
+    "poll_weight": 0.0,
+    "start": 5.14,
+    "early_vote": null
+   }
+  }
+ ],
+ "ev_notes": [],
+ "generated_at": "2026-10-27T23:09:12+00:00",
+ "assumptions": {
+  "dem": 0.92,
+  "rep": 0.92,
+  "una": 0.5,
+  "oth": 0.45
+ },
+ "constants": {
+  "c_weight": 0.25,
+  "c_cap": 2.0,
+  "poll_weight_max": 0.8
+ }
+}

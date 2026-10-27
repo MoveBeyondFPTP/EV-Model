@@ -1,0 +1,64 @@
+{
+  "state": "TX",
+  "name": "Texas",
+  "current": 2026,
+  "election_date": "2026-11-03",
+  "environment": {
+    "label": "2024 president (TX)",
+    "year": 2024,
+    "margin": -13.88,
+    "national_margin": -1.5
+  },
+  "polls": {
+    "subject": "2026 Texas"
+  },
+  "races": [
+    {
+      "id": "senate",
+      "office": "U.S. Senate",
+      "type": "candidate",
+      "poll_type": "us-senator",
+      "dem": {
+        "name": "James Talarico",
+        "short": "Talarico",
+        "party": "D",
+        "match": [
+          "talarico"
+        ]
+      },
+      "rep": {
+        "name": "Ken Paxton",
+        "short": "Paxton",
+        "party": "R",
+        "match": [
+          "paxton"
+        ]
+      },
+      "note": "Open seat (Paxton defeated Sen. John Cornyn in the primary)"
+    },
+    {
+      "id": "governor",
+      "office": "Governor",
+      "type": "candidate",
+      "poll_type": "governor",
+      "dem": {
+        "name": "Gina Hinojosa",
+        "short": "Hinojosa",
+        "party": "D",
+        "match": [
+          "hinojosa"
+        ]
+      },
+      "rep": {
+        "name": "Greg Abbott",
+        "short": "Abbott",
+        "party": "R",
+        "match": [
+          "abbott"
+        ]
+      },
+      "note": "Incumbent Greg Abbott (R)"
+    }
+  ],
+  "early_vote": null
+}

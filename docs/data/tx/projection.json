@@ -1,0 +1,109 @@
+{
+ "state": "TX",
+ "code": "tx",
+ "name": "Texas",
+ "election_date": "2026-11-03",
+ "has_early_vote": false,
+ "turnout_signal": null,
+ "races": [
+  {
+   "id": "senate",
+   "office": "U.S. Senate",
+   "type": "candidate",
+   "note": "Open seat (Paxton defeated Sen. John Cornyn in the primary)",
+   "dem": {
+    "name": "James Talarico",
+    "short": "Talarico",
+    "party": "D",
+    "match": [
+     "talarico"
+    ]
+   },
+   "rep": {
+    "name": "Ken Paxton",
+    "short": "Paxton",
+    "party": "R",
+    "match": [
+     "paxton"
+    ]
+   },
+   "comparison_result": null,
+   "projection": {
+    "center": -4.07,
+    "lo": -4.07,
+    "hi": -4.07,
+    "rating": "Lean Paxton",
+    "environment": {
+     "label": "2024 president (TX)",
+     "base": -13.88,
+     "national_then": -1.5,
+     "generic": 8.31,
+     "swing_factor": 1.0,
+     "swing": 9.81,
+     "margin": -4.07,
+     "note": null
+    },
+    "polls": null,
+    "poll_weight": 0.0,
+    "start": -4.07,
+    "early_vote": null
+   }
+  },
+  {
+   "id": "governor",
+   "office": "Governor",
+   "type": "candidate",
+   "note": "Incumbent Greg Abbott (R)",
+   "dem": {
+    "name": "Gina Hinojosa",
+    "short": "Hinojosa",
+    "party": "D",
+    "match": [
+     "hinojosa"
+    ]
+   },
+   "rep": {
+    "name": "Greg Abbott",
+    "short": "Abbott",
+    "party": "R",
+    "match": [
+     "abbott"
+    ]
+   },
+   "comparison_result": null,
+   "projection": {
+    "center": -4.07,
+    "lo": -4.07,
+    "hi": -4.07,
+    "rating": "Lean Abbott",
+    "environment": {
+     "label": "2024 president (TX)",
+     "base": -13.88,
+     "national_then": -1.5,
+     "generic": 8.31,
+     "swing_factor": 1.0,
+     "swing": 9.81,
+     "margin": -4.07,
+     "note": null
+    },
+    "polls": null,
+    "poll_weight": 0.0,
+    "start": -4.07,
+    "early_vote": null
+   }
+  }
+ ],
+ "ev_notes": [],
+ "generated_at": "2026-10-27T23:09:12+00:00",
+ "assumptions": {
+  "dem": 0.92,
+  "rep": 0.92,
+  "una": 0.5,
+  "oth": 0.45
+ },
+ "constants": {
+  "c_weight": 0.25,
+  "c_cap": 2.0,
+  "poll_weight_max": 0.8
+ }
+}

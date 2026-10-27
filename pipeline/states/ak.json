@@ -1,0 +1,115 @@
+{
+  "state": "AK",
+  "name": "Alaska",
+  "current": 2026,
+  "election_date": "2026-11-03",
+  "environment": {
+    "label": "2024 president (AK)",
+    "year": 2024,
+    "margin": -13.69,
+    "national_margin": -1.5
+  },
+  "polls": {
+    "subject": "2026 Alaska"
+  },
+  "races": [
+    {
+      "id": "senate",
+      "office": "U.S. Senate",
+      "type": "candidate",
+      "poll_type": "us-senator",
+      "dem": {
+        "name": "Mary Peltola",
+        "short": "Peltola",
+        "party": "D",
+        "match": [
+          "peltola"
+        ]
+      },
+      "rep": {
+        "name": "Dan Sullivan",
+        "short": "Sullivan",
+        "party": "R",
+        "match": [
+          "sullivan"
+        ],
+        "exclude": [
+          "jr"
+        ]
+      },
+      "note": "Incumbent Dan Sullivan (R); ranked-choice general election"
+    },
+    {
+      "id": "governor",
+      "office": "Governor",
+      "type": "candidate",
+      "poll_type": "governor",
+      "dem": {
+        "name": "Jonathan Kreiss-Tomkins",
+        "short": "Kreiss-Tomkins",
+        "party": "D",
+        "match": [
+          "kreiss"
+        ]
+      },
+      "rep": {
+        "name": "Republicans (Wilson, Bronson, Taylor)",
+        "short": "Republicans",
+        "party": "R",
+        "match": [
+          "wilson",
+          "bronson",
+          "taylor"
+        ]
+      },
+      "note": "Open seat (Mike Dunleavy term-limited); ranked choice with three Republicans on the ballot. Republican first choices are combined as a rough stand-in for the final round."
+    },
+    {
+      "id": "measure2",
+      "office": "Ballot Measure 2",
+      "type": "measure",
+      "note": "Repeals ranked-choice voting and open primaries. Yes = repeal, No = keep the current system.",
+      "dem": {
+        "name": "No (keep RCV)",
+        "short": "No"
+      },
+      "rep": {
+        "name": "Yes (repeal)",
+        "short": "Yes"
+      },
+      "environment": {
+        "label": "2024 Ballot Measure 2 (same repeal)",
+        "margin": 0.23,
+        "national_margin": -1.5,
+        "swing_factor": 0.5,
+        "swing_note": "Repeal is backed mainly by Republicans, but the 2024 vote ran far closer than the presidential race (Trump +13.7, repeal failed by 0.2), so only half of the national swing is applied."
+      },
+      "manual_polls": {
+        "source": "Wikipedia, 2026 Alaska Measure 2",
+        "source_url": "https://en.wikipedia.org/wiki/2026_Alaska_Measure_2",
+        "polls": [
+          {
+            "pollster": "Alaska Survey Research",
+            "start_date": "2026-10-01",
+            "end_date": "2026-10-03",
+            "sample_size": 1512,
+            "population": "lv",
+            "dem": 53,
+            "rep": 47
+          },
+          {
+            "pollster": "Fabrizio Ward / Impact Research",
+            "start_date": "2026-09-08",
+            "end_date": "2026-09-11",
+            "sample_size": 800,
+            "population": "lv",
+            "dem": 47,
+            "rep": 44,
+            "partisan": false
+          }
+        ]
+      }
+    }
+  ],
+  "early_vote": null
+}

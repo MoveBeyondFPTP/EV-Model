@@ -1,0 +1,66 @@
+{
+  "state": "MI",
+  "name": "Michigan",
+  "current": 2026,
+  "election_date": "2026-11-03",
+  "environment": {
+    "label": "2024 president (MI)",
+    "year": 2024,
+    "margin": -1.44,
+    "national_margin": -1.5
+  },
+  "polls": {
+    "subject": "2026 Michigan"
+  },
+  "races": [
+    {
+      "id": "senate",
+      "office": "U.S. Senate",
+      "type": "candidate",
+      "poll_type": "us-senator",
+      "dem": {
+        "name": "Abdul El-Sayed",
+        "short": "El-Sayed",
+        "party": "D",
+        "match": [
+          "el-sayed",
+          "el sayed",
+          "elsayed"
+        ]
+      },
+      "rep": {
+        "name": "Mike Rogers",
+        "short": "Rogers",
+        "party": "R",
+        "match": [
+          "rogers"
+        ]
+      },
+      "note": "Open seat (Gary Peters retiring)"
+    },
+    {
+      "id": "governor",
+      "office": "Governor",
+      "type": "candidate",
+      "poll_type": "governor",
+      "dem": {
+        "name": "Jocelyn Benson",
+        "short": "Benson",
+        "party": "D",
+        "match": [
+          "benson"
+        ]
+      },
+      "rep": {
+        "name": "John James",
+        "short": "James",
+        "party": "R",
+        "match": [
+          "james"
+        ]
+      },
+      "note": "Open seat (Gretchen Whitmer term-limited)"
+    }
+  ],
+  "early_vote": null
+}

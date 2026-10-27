@@ -29,7 +29,7 @@ import requests
 
 ROOT = Path(__file__).resolve().parent.parent
 STATES_DIR = ROOT / "pipeline" / "states"
-OUT_DIR = ROOT / "docs" / "data"
+DATA_DIR = ROOT / "docs" / "data"
 CACHE_DIR = ROOT / ".cache"
 
 # Column name -> candidate names in the file (matched case-insensitively).
@@ -58,9 +58,15 @@ def log(*args):
     print(*args, file=sys.stderr, flush=True)
 
 
-def load_state(code: str) -> dict:
-    cfg = json.loads((STATES_DIR / f"{code}.json").read_text())
-    cfg["elections"] = {int(y): date.fromisoformat(d) for y, d in cfg["elections"].items()}
+def load_state(code: str) -> dict | None:
+    """Return the state's early-vote config (with a few top-level fields), or None if it has none."""
+    top = json.loads((STATES_DIR / f"{code}.json").read_text())
+    ev = top.get("early_vote")
+    if not ev:
+        return None
+    cfg = dict(ev)
+    cfg.update(state=top["state"], name=top["name"], current=top["current"], code=code)
+    cfg["elections"] = {int(y): date.fromisoformat(d) for y, d in ev["elections"].items()}
     return cfg
 
 
@@ -266,6 +272,7 @@ def write_json(obj: dict, path: Path):
     log(f"  wrote {path.relative_to(ROOT)} ({path.stat().st_size / 1e3:.0f} KB)")
 
 
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--state", default="nc")
@@ -275,7 +282,11 @@ def main():
     args = ap.parse_args()
 
     cfg = load_state(args.state)
+    if cfg is None:
+        log(f"{args.state}: no early-vote source configured; skipping")
+        return
     current = cfg["current"]
+    OUT_DIR = DATA_DIR / args.state
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     years = args.years or list(cfg["elections"])
     failures = []
@@ -298,9 +309,6 @@ def main():
         "current": current,
         "baselines": [y for y in cfg["baselines"] if have(y)],
         "calibration": cal if cal and have(cal["from"]["year"]) and have(cal["to"]["year"]) else None,
-        "races": cfg.get("races", []),
-        "environment": cfg.get("environment"),
-        "national": json.loads((ROOT / "pipeline" / "national.json").read_text()),
         "source_page": cfg.get("source_page"),
         "updated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
     }

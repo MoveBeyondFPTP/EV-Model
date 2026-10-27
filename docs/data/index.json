@@ -1,0 +1,404 @@
+{
+ "generated_at": "2026-10-27T23:09:12+00:00",
+ "generic": {
+  "avg": 8.31,
+  "n": 6,
+  "window_days": 60,
+  "polls": [
+   {
+    "pollster": "Pew Research Center",
+    "end_date": "2026-10-04",
+    "age": 23,
+    "population": "rv",
+    "sample_size": 3917,
+    "dem": 44.0,
+    "rep": 36.0,
+    "margin": 10.0,
+    "partisan": false,
+    "url": "https://www.pewresearch.org/politics/2026/10/08/with-americans-in-a-sour-mood-democratic-voters-are-more-engaged-in-midterms",
+    "weight": 0.48
+   },
+   {
+    "pollster": "YouGov - CBS News",
+    "end_date": "2026-10-02",
+    "age": 25,
+    "population": "lv",
+    "sample_size": 1572,
+    "dem": 54.0,
+    "rep": 45.0,
+    "margin": 9.09,
+    "partisan": false,
+    "url": "https://assets1.cbsnewsstatic.com/hub/cms/prod_cms_alt/file/2026/10/04/0957ee32-a848-4872-b659-14303d3d3734/cbsnews_20261004_sun.pdf",
+    "weight": 0.435
+   },
+   {
+    "pollster": "HarrisX/Harris",
+    "end_date": "2026-09-28",
+    "age": 29,
+    "population": "lv",
+    "sample_size": null,
+    "dem": 51.0,
+    "rep": 49.0,
+    "margin": 2.0,
+    "partisan": false,
+    "url": "https://harvardharrispoll.com/assets/uploads/2026/09/HHP_Sep2026_KeyResults.pdf",
+    "weight": 0.238
+   },
+   {
+    "pollster": "The Argument/Verasight",
+    "end_date": "2026-09-22",
+    "age": 35,
+    "population": "lv",
+    "sample_size": null,
+    "dem": 55.0,
+    "rep": 45.0,
+    "margin": 10.0,
+    "partisan": false,
+    "url": "https://www.theargumentmag.com/p/the-least-popular-war-since-vietnam",
+    "weight": 0.177
+   },
+   {
+    "pollster": "YouGov",
+    "end_date": "2026-09-08",
+    "age": 49,
+    "population": "lv",
+    "sample_size": 1015,
+    "dem": 49.0,
+    "rep": 38.0,
+    "margin": 12.64,
+    "partisan": false,
+    "url": "https://d3nkl3psvxxpe9.cloudfront.net/documents/econTabReport_SlcWdVd.pdf",
+    "weight": 0.115
+   },
+   {
+    "pollster": "Morning Consult",
+    "end_date": "2026-09-06",
+    "age": 51,
+    "population": "rv",
+    "sample_size": 2203,
+    "dem": 46.0,
+    "rep": 42.0,
+    "margin": 4.55,
+    "partisan": false,
+    "url": "https://drive.google.com/file/d/1tRrQzrZUZ4MZJ953Ir3hf8vSZx0vuHlv/view?usp=sharing",
+    "weight": 0.12
+   }
+  ]
+ },
+ "prior": {
+  "label": "2024 national presidential vote",
+  "margin": -1.5
+ },
+ "states": [
+  {
+   "code": "ak",
+   "name": "Alaska",
+   "has_early_vote": false,
+   "early_vote_as_of": null,
+   "races": [
+    {
+     "id": "senate",
+     "office": "U.S. Senate",
+     "type": "candidate",
+     "dem": "Peltola",
+     "rep": "Sullivan",
+     "dem_party": "D",
+     "rep_party": "R",
+     "center": -3.88,
+     "lo": -3.88,
+     "hi": -3.88,
+     "rating": "Lean Sullivan",
+     "n_polls": 0
+    },
+    {
+     "id": "governor",
+     "office": "Governor",
+     "type": "candidate",
+     "dem": "Kreiss-Tomkins",
+     "rep": "Republicans",
+     "dem_party": "D",
+     "rep_party": "R",
+     "center": -3.88,
+     "lo": -3.88,
+     "hi": -3.88,
+     "rating": "Lean Republicans",
+     "n_polls": 0
+    },
+    {
+     "id": "measure2",
+     "office": "Ballot Measure 2",
+     "type": "measure",
+     "dem": "No",
+     "rep": "Yes",
+     "dem_party": null,
+     "rep_party": null,
+     "center": 5.14,
+     "lo": 5.14,
+     "hi": 5.14,
+     "rating": "Leans No",
+     "n_polls": 0
+    }
+   ]
+  },
+  {
+   "code": "co",
+   "name": "Colorado",
+   "has_early_vote": false,
+   "early_vote_as_of": null,
+   "races": [
+    {
+     "id": "senate",
+     "office": "U.S. Senate",
+     "type": "candidate",
+     "dem": "Hickenlooper",
+     "rep": "Baisley",
+     "dem_party": "D",
+     "rep_party": "R",
+     "center": 21.1,
+     "lo": 21.1,
+     "hi": 21.1,
+     "rating": "Solid Hickenlooper",
+     "n_polls": 0
+    },
+    {
+     "id": "governor",
+     "office": "Governor",
+     "type": "candidate",
+     "dem": "Weiser",
+     "rep": "Marx",
+     "dem_party": "D",
+     "rep_party": "R",
+     "center": 21.1,
+     "lo": 21.1,
+     "hi": 21.1,
+     "rating": "Solid Weiser",
+     "n_polls": 0
+    }
+   ]
+  },
+  {
+   "code": "ga",
+   "name": "Georgia",
+   "has_early_vote": false,
+   "early_vote_as_of": null,
+   "races": [
+    {
+     "id": "senate",
+     "office": "U.S. Senate",
+     "type": "candidate",
+     "dem": "Ossoff",
+     "rep": "Collins",
+     "dem_party": "D",
+     "rep_party": "R",
+     "center": 7.6,
+     "lo": 7.6,
+     "hi": 7.6,
+     "rating": "Likely Ossoff",
+     "n_polls": 0
+    },
+    {
+     "id": "governor",
+     "office": "Governor",
+     "type": "candidate",
+     "dem": "Bottoms",
+     "rep": "Jackson",
+     "dem_party": "D",
+     "rep_party": "R",
+     "center": 7.6,
+     "lo": 7.6,
+     "hi": 7.6,
+     "rating": "Likely Bottoms",
+     "n_polls": 0
+    }
+   ]
+  },
+  {
+   "code": "me",
+   "name": "Maine",
+   "has_early_vote": false,
+   "early_vote_as_of": null,
+   "races": [
+    {
+     "id": "senate",
+     "office": "U.S. Senate",
+     "type": "candidate",
+     "dem": "Jackson",
+     "rep": "Collins",
+     "dem_party": "D",
+     "rep_party": "R",
+     "center": 16.9,
+     "lo": 16.9,
+     "hi": 16.9,
+     "rating": "Solid Jackson",
+     "n_polls": 0
+    },
+    {
+     "id": "governor",
+     "office": "Governor",
+     "type": "candidate",
+     "dem": "Pingree",
+     "rep": "Charles",
+     "dem_party": "D",
+     "rep_party": "R",
+     "center": 16.9,
+     "lo": 16.9,
+     "hi": 16.9,
+     "rating": "Solid Pingree",
+     "n_polls": 0
+    }
+   ]
+  },
+  {
+   "code": "mi",
+   "name": "Michigan",
+   "has_early_vote": false,
+   "early_vote_as_of": null,
+   "races": [
+    {
+     "id": "senate",
+     "office": "U.S. Senate",
+     "type": "candidate",
+     "dem": "El-Sayed",
+     "rep": "Rogers",
+     "dem_party": "D",
+     "rep_party": "R",
+     "center": 8.37,
+     "lo": 8.37,
+     "hi": 8.37,
+     "rating": "Likely El-Sayed",
+     "n_polls": 0
+    },
+    {
+     "id": "governor",
+     "office": "Governor",
+     "type": "candidate",
+     "dem": "Benson",
+     "rep": "James",
+     "dem_party": "D",
+     "rep_party": "R",
+     "center": 8.37,
+     "lo": 8.37,
+     "hi": 8.37,
+     "rating": "Likely Benson",
+     "n_polls": 0
+    }
+   ]
+  },
+  {
+   "code": "nc",
+   "name": "North Carolina",
+   "has_early_vote": true,
+   "early_vote_as_of": "2026-10-26",
+   "races": [
+    {
+     "id": "senate",
+     "office": "U.S. Senate",
+     "type": "candidate",
+     "dem": "Cooper",
+     "rep": "Whatley",
+     "dem_party": "D",
+     "rep_party": "R",
+     "center": 12.57,
+     "lo": 6.55,
+     "hi": 13.58,
+     "rating": "Solid Cooper",
+     "n_polls": 8
+    }
+   ]
+  },
+  {
+   "code": "ne",
+   "name": "Nebraska",
+   "has_early_vote": false,
+   "early_vote_as_of": null,
+   "races": [
+    {
+     "id": "senate",
+     "office": "U.S. Senate",
+     "type": "candidate",
+     "dem": "Osborn",
+     "rep": "Ricketts",
+     "dem_party": "I",
+     "rep_party": "R",
+     "center": 3.12,
+     "lo": 3.12,
+     "hi": 3.12,
+     "rating": "Lean Osborn",
+     "n_polls": 0
+    },
+    {
+     "id": "governor",
+     "office": "Governor",
+     "type": "candidate",
+     "dem": "Walz",
+     "rep": "Pillen",
+     "dem_party": "D",
+     "rep_party": "R",
+     "center": -11.03,
+     "lo": -11.03,
+     "hi": -11.03,
+     "rating": "Likely Pillen",
+     "n_polls": 0
+    }
+   ]
+  },
+  {
+   "code": "tx",
+   "name": "Texas",
+   "has_early_vote": false,
+   "early_vote_as_of": null,
+   "races": [
+    {
+     "id": "senate",
+     "office": "U.S. Senate",
+     "type": "candidate",
+     "dem": "Talarico",
+     "rep": "Paxton",
+     "dem_party": "D",
+     "rep_party": "R",
+     "center": -4.07,
+     "lo": -4.07,
+     "hi": -4.07,
+     "rating": "Lean Paxton",
+     "n_polls": 0
+    },
+    {
+     "id": "governor",
+     "office": "Governor",
+     "type": "candidate",
+     "dem": "Hinojosa",
+     "rep": "Abbott",
+     "dem_party": "D",
+     "rep_party": "R",
+     "center": -4.07,
+     "lo": -4.07,
+     "hi": -4.07,
+     "rating": "Lean Abbott",
+     "n_polls": 0
+    }
+   ]
+  },
+  {
+   "code": "wi",
+   "name": "Wisconsin",
+   "has_early_vote": false,
+   "early_vote_as_of": null,
+   "races": [
+    {
+     "id": "governor",
+     "office": "Governor",
+     "type": "candidate",
+     "dem": "Crowley",
+     "rep": "Tiffany",
+     "dem_party": "D",
+     "rep_party": "R",
+     "center": 8.94,
+     "lo": 8.94,
+     "hi": 8.94,
+     "rating": "Likely Crowley",
+     "n_polls": 0
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,64 @@
+{
+  "state": "CO",
+  "name": "Colorado",
+  "current": 2026,
+  "election_date": "2026-11-03",
+  "environment": {
+    "label": "2024 president (CO)",
+    "year": 2024,
+    "margin": 11.29,
+    "national_margin": -1.5
+  },
+  "polls": {
+    "subject": "2026 Colorado"
+  },
+  "races": [
+    {
+      "id": "senate",
+      "office": "U.S. Senate",
+      "type": "candidate",
+      "poll_type": "us-senator",
+      "dem": {
+        "name": "John Hickenlooper",
+        "short": "Hickenlooper",
+        "party": "D",
+        "match": [
+          "hickenlooper"
+        ]
+      },
+      "rep": {
+        "name": "Mark Baisley",
+        "short": "Baisley",
+        "party": "R",
+        "match": [
+          "baisley"
+        ]
+      },
+      "note": "Incumbent John Hickenlooper (D)"
+    },
+    {
+      "id": "governor",
+      "office": "Governor",
+      "type": "candidate",
+      "poll_type": "governor",
+      "dem": {
+        "name": "Phil Weiser",
+        "short": "Weiser",
+        "party": "D",
+        "match": [
+          "weiser"
+        ]
+      },
+      "rep": {
+        "name": "Victor Marx",
+        "short": "Marx",
+        "party": "R",
+        "match": [
+          "marx"
+        ]
+      },
+      "note": "Open seat (Jared Polis term-limited)"
+    }
+  ],
+  "early_vote": null
+}

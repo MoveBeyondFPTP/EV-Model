@@ -1,0 +1,66 @@
+{
+ "state": "WI",
+ "code": "wi",
+ "name": "Wisconsin",
+ "election_date": "2026-11-03",
+ "has_early_vote": false,
+ "turnout_signal": null,
+ "races": [
+  {
+   "id": "governor",
+   "office": "Governor",
+   "type": "candidate",
+   "note": "Open seat (Tony Evers retiring)",
+   "dem": {
+    "name": "David Crowley",
+    "short": "Crowley",
+    "party": "D",
+    "match": [
+     "crowley"
+    ]
+   },
+   "rep": {
+    "name": "Tom Tiffany",
+    "short": "Tiffany",
+    "party": "R",
+    "match": [
+     "tiffany"
+    ]
+   },
+   "comparison_result": null,
+   "projection": {
+    "center": 8.94,
+    "lo": 8.94,
+    "hi": 8.94,
+    "rating": "Likely Crowley",
+    "environment": {
+     "label": "2024 president (WI)",
+     "base": -0.87,
+     "national_then": -1.5,
+     "generic": 8.31,
+     "swing_factor": 1.0,
+     "swing": 9.81,
+     "margin": 8.94,
+     "note": null
+    },
+    "polls": null,
+    "poll_weight": 0.0,
+    "start": 8.94,
+    "early_vote": null
+   }
+  }
+ ],
+ "ev_notes": [],
+ "generated_at": "2026-10-27T23:09:12+00:00",
+ "assumptions": {
+  "dem": 0.92,
+  "rep": 0.92,
+  "una": 0.5,
+  "oth": 0.45
+ },
+ "constants": {
+  "c_weight": 0.25,
+  "c_cap": 2.0,
+  "poll_weight_max": 0.8
+ }
+}

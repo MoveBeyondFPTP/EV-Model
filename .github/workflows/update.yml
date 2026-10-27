@@ -42,16 +42,23 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - name: Build early vote data
-        run: python pipeline/build.py ${{ inputs.force && '--force' || '' }}
-
-      - name: Registration by party
-        if: always()
-        run: python pipeline/registration.py ${{ inputs.force && '--force' || '' }}
+      - name: Early vote data (each state with a source)
+        run: |
+          status=0
+          for f in pipeline/states/*.json; do
+            code=$(basename "$f" .json)
+            python pipeline/build.py --state "$code" ${{ inputs.force && '--force' || '' }} || status=1
+            python pipeline/registration.py --state "$code" ${{ inputs.force && '--force' || '' }} || status=1
+          done
+          exit $status
 
       - name: Polling averages (VoteHub)
         if: always()
         run: python pipeline/polls.py
+
+      - name: Projections
+        if: always()
+        run: python pipeline/project.py
 
       - name: Commit changes
         if: always()
