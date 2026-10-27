@@ -1,0 +1,12 @@
+{
+  "note": "National reference points. Margins are two-party, D minus R, in points.",
+  "prior": {
+    "label": "2024 national presidential vote",
+    "year": 2024,
+    "margin": -1.5
+  },
+  "generic_ballot": {
+    "source": "votehub",
+    "subject": "2026"
+  }
+}

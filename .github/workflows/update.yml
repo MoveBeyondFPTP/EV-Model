@@ -11,6 +11,8 @@ on:
     paths:
       - "pipeline/**"
       - "requirements.txt"
+      - "pipeline/states/**"
+      - "pipeline/national.json"
       - ".github/workflows/update.yml"
   workflow_dispatch:
     inputs:
@@ -40,8 +42,16 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - name: Build data
+      - name: Build early vote data
         run: python pipeline/build.py ${{ inputs.force && '--force' || '' }}
+
+      - name: Registration by party
+        if: always()
+        run: python pipeline/registration.py ${{ inputs.force && '--force' || '' }}
+
+      - name: Polling averages (VoteHub)
+        if: always()
+        run: python pipeline/polls.py
 
       - name: Commit changes
         if: always()
@@ -53,5 +63,8 @@ jobs:
             echo "No data changes."
           else
             git commit -m "Update early vote data $(date -u +%Y-%m-%d)"
-            git push
+            for i in 1 2 3; do
+              git pull --rebase -q && git push && break
+              sleep 5
+            done
           fi
