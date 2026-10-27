@@ -1,0 +1,294 @@
+"""Build early-vote summary JSON for North Carolina from NCSBE absentee files.
+
+Downloads the statewide absentee/early-vote file published by the NC State
+Board of Elections for each configured election, keeps accepted ballots only
+(one per voter), and writes compact daily aggregates indexed by *days before
+Election Day* so different cycles line up.
+
+Usage:
+    python pipeline/build.py                 # refresh 2026, build baselines if missing
+    python pipeline/build.py --force         # rebuild every year
+    python pipeline/build.py --source-dir X  # read <X>/absentee_YYYYMMDD.zip instead of downloading
+"""
+
+from __future__ import annotations
+
+import argparse
+import csv
+import io
+import json
+import sys
+import zipfile
+from datetime import date, datetime, timezone
+from pathlib import Path
+
+import pandas as pd
+import requests
+
+ROOT = Path(__file__).resolve().parent.parent
+OUT_DIR = ROOT / "docs" / "data"
+CACHE_DIR = ROOT / ".cache"
+
+CURRENT_YEAR = 2026
+ELECTIONS = {
+    2026: date(2026, 11, 3),
+    2022: date(2022, 11, 8),
+    2018: date(2018, 11, 6),
+}
+URL = "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/{d:%Y_%m_%d}/absentee_{d:%Y%m%d}.zip"
+
+# Column name -> candidate names in the NCSBE file (matched case-insensitively).
+COLUMNS = {
+    "county": ["county_desc", "county"],
+    "ncid": ["ncid"],
+    "reg_num": ["voter_reg_num"],
+    "party": ["voter_party_code", "party_code", "voter_party"],
+    "race": ["race", "race_code"],
+    "age": ["age", "voter_age"],
+    "req_type": ["ballot_req_type", "ballot_request_type"],
+    "rtn_dt": ["ballot_rtn_dt", "ballot_return_date"],
+    "status": ["ballot_rtn_status", "ballot_return_status"],
+}
+REQUIRED = ["county", "party", "req_type", "rtn_dt", "status"]
+
+PARTIES = ["DEM", "REP", "UNA", "OTH"]
+METHODS = ["mail", "in_person"]
+AGES = ["18-25", "26-40", "41-65", "66+", "Unknown"]
+RACES = ["White", "Black", "Other/Unknown"]
+
+TIMEOUT = 600
+
+
+def log(*args):
+    print(*args, file=sys.stderr, flush=True)
+
+
+def download(year: int, source_dir: Path | None) -> Path:
+    d = ELECTIONS[year]
+    name = f"absentee_{d:%Y%m%d}.zip"
+    if source_dir:
+        path = source_dir / name
+        if not path.exists():
+            raise FileNotFoundError(path)
+        return path
+    CACHE_DIR.mkdir(exist_ok=True)
+    path = CACHE_DIR / name
+    url = URL.format(d=d)
+    log(f"Downloading {url}")
+    headers = {"User-Agent": "EV-model (github.com/MoveBeyondFPTP/EV-Model)"}
+    with requests.get(url, stream=True, timeout=TIMEOUT, headers=headers) as r:
+        r.raise_for_status()
+        tmp = path.with_suffix(".part")
+        with open(tmp, "wb") as f:
+            for chunk in r.iter_content(1 << 20):
+                f.write(chunk)
+        tmp.replace(path)
+    log(f"  {path.stat().st_size / 1e6:.1f} MB")
+    return path
+
+
+def resolve_columns(header: list[str]) -> dict[str, str]:
+    lower = {h.strip().lower(): h for h in header}
+    found = {}
+    for key, candidates in COLUMNS.items():
+        for c in candidates:
+            if c in lower:
+                found[key] = lower[c]
+                break
+    missing = [k for k in REQUIRED if k not in found]
+    if missing:
+        raise ValueError(f"Missing columns {missing}. Header was: {header}")
+    return found
+
+
+def read_ballots(zip_path: Path) -> pd.DataFrame:
+    with zipfile.ZipFile(zip_path) as zf:
+        members = [m for m in zf.namelist() if not m.endswith("/")]
+        member = max(members, key=lambda m: zf.getinfo(m).file_size)
+        log(f"  reading {member}")
+        with zf.open(member) as raw:
+            first = raw.readline().decode("utf-8-sig", errors="replace")
+        delim = csv.Sniffer().sniff(first, delimiters=",\t|").delimiter
+        header = next(csv.reader([first], delimiter=delim))
+        cols = resolve_columns(header)
+        log(f"  columns: {cols}")
+
+        frames = []
+        with zf.open(member) as raw:
+            text = io.TextIOWrapper(raw, encoding="utf-8-sig", errors="replace", newline="")
+            reader = pd.read_csv(
+                text,
+                sep=delim,
+                usecols=list(cols.values()),
+                dtype=str,
+                chunksize=500_000,
+                keep_default_na=False,
+                quotechar='"',
+                on_bad_lines="warn",
+            )
+            for chunk in reader:
+                chunk = chunk.rename(columns={v: k for k, v in cols.items()})
+                status = chunk["status"].str.strip().str.upper()
+                chunk = chunk[status.str.startswith("ACCEPTED")]
+                frames.append(chunk)
+    df = pd.concat(frames, ignore_index=True) if frames else pd.DataFrame(columns=list(cols))
+    for k in COLUMNS:
+        if k not in df.columns:
+            df[k] = ""
+    return df
+
+
+def bucket_party(s: pd.Series) -> pd.Series:
+    s = s.str.strip().str.upper()
+    return s.where(s.isin(["DEM", "REP", "UNA"]), "OTH")
+
+
+def bucket_method(s: pd.Series) -> pd.Series:
+    s = s.str.strip().str.upper()
+    in_person = s.str.contains("ONE") | s.str.contains("STOP") | s.str.contains("EARLY")
+    return pd.Series(["in_person" if x else "mail" for x in in_person], index=s.index)
+
+
+def bucket_age(s: pd.Series) -> pd.Series:
+    n = pd.to_numeric(s, errors="coerce")
+    out = pd.Series("Unknown", index=s.index)
+    out[(n >= 18) & (n <= 25)] = "18-25"
+    out[(n >= 26) & (n <= 40)] = "26-40"
+    out[(n >= 41) & (n <= 65)] = "41-65"
+    out[n >= 66] = "66+"
+    return out
+
+
+def bucket_race(s: pd.Series) -> pd.Series:
+    s = s.str.strip().str.upper()
+    out = pd.Series("Other/Unknown", index=s.index)
+    out[s.isin(["W", "WHITE"])] = "White"
+    out[s.isin(["B", "BLACK", "BLACK OR AFRICAN AMERICAN"])] = "Black"
+    return out
+
+
+def summarize(df: pd.DataFrame, year: int) -> dict:
+    election = pd.Timestamp(ELECTIONS[year])
+    dt = pd.to_datetime(df["rtn_dt"].str.strip(), format="%m/%d/%Y", errors="coerce")
+    alt = pd.to_datetime(df["rtn_dt"].str.strip(), format="%Y-%m-%d", errors="coerce")
+    df = df.assign(rtn=dt.fillna(alt)).dropna(subset=["rtn"])
+    # Dates in the future are data-entry errors; drop them so they can't move "as of".
+    today = pd.Timestamp(datetime.now(timezone.utc).date())
+    future = df["rtn"] > today
+    if future.any():
+        log(f"  dropping {int(future.sum())} rows with return dates after today")
+        df = df[~future]
+
+    # One ballot per voter: keep the earliest accepted return.
+    key = df["ncid"].str.strip()
+    fallback = df["county"].str.strip() + "|" + df["reg_num"].str.strip()
+    df = df.assign(voter=key.where(key != "", fallback))
+    has_id = df["voter"].str.strip("|") != ""
+    with_id = df[has_id].sort_values("rtn").drop_duplicates("voter", keep="first")
+    df = pd.concat([with_id, df[~has_id]], ignore_index=True)
+
+    late = int((df["rtn"] > election).sum())
+    days_out = (election - df["rtn"]).dt.days.clip(lower=0)
+    df = df.assign(
+        days_out=days_out,
+        party=bucket_party(df["party"]),
+        method=bucket_method(df["req_type"]),
+        age_b=bucket_age(df["age"]),
+        race_b=bucket_race(df["race"]),
+        county=df["county"].str.strip().str.title(),
+    )
+
+    max_days = int(df["days_out"].max()) if len(df) else 0
+    max_days = max(max_days, 60)
+    days = list(range(max_days, -1, -1))  # descending: far out -> Election Day
+
+    def series(group_col: str | None, values: list[str]):
+        if group_col is None:
+            counts = df.groupby("days_out").size()
+            return [int(counts.get(d, 0)) for d in days]
+        counts = df.groupby([group_col, "days_out"]).size()
+        return {v: [int(counts.get((v, d), 0)) for d in days] for v in values}
+
+    counties = {}
+    cc = df.groupby(["county", "party", "days_out"]).size()
+    for county in sorted(df["county"].unique()):
+        if not county:
+            continue
+        counties[county] = {
+            p: [int(cc.get((county, p, d), 0)) for d in days] for p in PARTIES
+        }
+
+    as_of = df["rtn"].max()
+    as_of_clipped = min(as_of, election) if pd.notna(as_of) else None
+    return {
+        "year": year,
+        "election_date": ELECTIONS[year].isoformat(),
+        "as_of": as_of_clipped.date().isoformat() if as_of_clipped is not None else None,
+        "as_of_days_out": int((election - as_of_clipped).days) if as_of_clipped is not None else None,
+        "total": int(len(df)),
+        "returned_after_election_day": late,
+        "source_url": URL.format(d=ELECTIONS[year]),
+        "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "days_out": days,
+        "daily": {
+            "total": series(None, []),
+            "method": series("method", METHODS),
+            "party": series("party", PARTIES),
+            "age": series("age_b", AGES),
+            "race": series("race_b", RACES),
+        },
+        "counties": counties,
+    }
+
+
+def build(year: int, source_dir: Path | None) -> dict:
+    log(f"== {year}")
+    path = download(year, source_dir)
+    df = read_ballots(path)
+    log(f"  accepted rows: {len(df):,}")
+    summary = summarize(df, year)
+    log(f"  unique accepted ballots: {summary['total']:,}; as of {summary['as_of']}")
+    if summary["total"] == 0:
+        raise RuntimeError(f"No accepted ballots found for {year}; refusing to overwrite data")
+    return summary
+
+
+def write_json(obj: dict, path: Path):
+    path.write_text(json.dumps(obj, separators=(",", ":")))
+    log(f"  wrote {path.relative_to(ROOT)} ({path.stat().st_size / 1e3:.0f} KB)")
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--force", action="store_true", help="rebuild baseline years too")
+    ap.add_argument("--years", type=int, nargs="*", help="only these years")
+    ap.add_argument("--source-dir", type=Path, help="read zips from here instead of downloading")
+    args = ap.parse_args()
+
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
+    years = args.years or list(ELECTIONS)
+    failures = []
+    for year in years:
+        out = OUT_DIR / f"{year}.json"
+        if year != CURRENT_YEAR and out.exists() and not args.force:
+            log(f"== {year}: baseline exists, skipping")
+            continue
+        try:
+            write_json(build(year, args.source_dir), out)
+        except Exception as e:  # keep going so one bad file doesn't block the others
+            log(f"!! {year} failed: {e!r}")
+            failures.append(year)
+
+    manifest = {
+        "current": CURRENT_YEAR,
+        "baselines": [y for y in ELECTIONS if y != CURRENT_YEAR and (OUT_DIR / f"{y}.json").exists()],
+        "updated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+    }
+    write_json(manifest, OUT_DIR / "manifest.json")
+    if failures:
+        log(f"Failed years: {failures}")
+        sys.exit(1)
+
+
+if __name__ == "__main__":
+    main()

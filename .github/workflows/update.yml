@@ -1,0 +1,51 @@
+name: Update early vote data
+
+on:
+  schedule:
+    # NCSBE posts the refreshed file each morning Eastern. Run at ~10:17 and
+    # ~16:17 Eastern (14:17 and 20:17 UTC) to catch late postings.
+    - cron: "17 14 * * *"
+    - cron: "17 20 * * *"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Rebuild the 2018 and 2022 baselines too"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-data
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Build data
+        run: python pipeline/build.py ${{ inputs.force && '--force' || '' }}
+
+      - name: Commit changes
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+          git add docs/data
+          if git diff --cached --quiet; then
+            echo "No data changes."
+          else
+            git commit -m "Update early vote data $(date -u +%Y-%m-%d)"
+            git push
+          fi

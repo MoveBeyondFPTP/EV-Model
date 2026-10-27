@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NC Early Vote Tracker</title>
+<meta name="description" content="North Carolina 2026 early and mail vote compared with the 2022 and 2018 midterms, by days before Election Day.">
+<style>
+:root {
+  color-scheme: light;
+  --bg: #f6f5f2;
+  --surface: #fcfcfb;
+  --border: #e3e2dd;
+  --grid: #ebeae6;
+  --text: #0b0b0b;
+  --text-2: #52514e;
+  --text-3: #7a7974;
+  --y2026: #2a78d6;
+  --y2022: #eb6834;
+  --y2018: #1baf7a;
+  --dem: #2a78d6;
+  --rep: #e34948;
+  --pos: #006300;
+  --neg: #b42a2a;
+  --note-bg: #f0efec;
+  --accent: #2a78d6;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #121211;
+    --surface: #1a1a19;
+    --border: #2f2f2d;
+    --grid: #2a2a28;
+    --text: #f0efec;
+    --text-2: #c3c2b7;
+    --text-3: #93928a;
+    --y2026: #3987e5;
+    --y2022: #d95926;
+    --y2018: #199e70;
+    --dem: #3987e5;
+    --rep: #e66767;
+    --pos: #4cc24c;
+    --neg: #f07a7a;
+    --note-bg: #242422;
+    --accent: #3987e5;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #121211; --surface: #1a1a19; --border: #2f2f2d; --grid: #2a2a28;
+  --text: #f0efec; --text-2: #c3c2b7; --text-3: #93928a;
+  --y2026: #3987e5; --y2022: #d95926; --y2018: #199e70;
+  --dem: #3987e5; --rep: #e66767; --pos: #4cc24c; --neg: #f07a7a;
+  --note-bg: #242422; --accent: #3987e5;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  background: var(--bg); color: var(--text);
+  font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+main { max-width: 960px; margin: 0 auto; padding: 24px 16px 64px; }
+header h1 { font-size: 26px; line-height: 1.2; margin: 0 0 6px; letter-spacing: -0.01em; }
+header p { margin: 0; color: var(--text-2); }
+.meta { font-size: 13px; color: var(--text-3); margin-top: 6px; }
+.callout {
+  background: var(--note-bg); border-radius: 10px; padding: 12px 14px; margin: 18px 0 8px;
+  font-size: 14px; color: var(--text-2);
+}
+.callout strong { color: var(--text); }
+section { margin-top: 28px; }
+h2 { font-size: 18px; margin: 0 0 4px; }
+.sub { color: var(--text-2); font-size: 14px; margin: 0 0 12px; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 16px; }
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; margin-top: 18px; }
+.tile .label { font-size: 13px; color: var(--text-2); }
+.tile .value { font-size: 28px; font-weight: 650; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; margin-top: 2px; }
+.tile .detail { font-size: 13px; color: var(--text-3); margin-top: 2px; }
+.chart-box { position: relative; height: 320px; }
+.controls { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+.seg button {
+  font: inherit; font-size: 13px; padding: 5px 12px; border-radius: 999px; cursor: pointer;
+  border: 1px solid var(--border); background: var(--surface); color: var(--text-2);
+}
+.seg button[aria-pressed="true"] { background: var(--text); color: var(--surface); border-color: var(--text); }
+.legend { display: flex; flex-wrap: wrap; gap: 14px; font-size: 13px; color: var(--text-2); margin-bottom: 8px; }
+.legend span::before { content: ""; display: inline-block; width: 14px; height: 3px; border-radius: 2px; background: var(--c); vertical-align: middle; margin-right: 6px; }
+.table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+table { border-collapse: collapse; width: 100%; font-size: 14px; font-variant-numeric: tabular-nums; }
+th, td { padding: 7px 10px; text-align: right; border-bottom: 1px solid var(--grid); white-space: nowrap; }
+th:first-child, td:first-child { text-align: left; }
+th { font-weight: 600; color: var(--text-2); font-size: 13px; }
+th.sortable { cursor: pointer; user-select: none; }
+th.sortable:hover { color: var(--text); }
+tbody tr:last-child td { border-bottom: none; }
+.up { color: var(--pos); }
+.down { color: var(--neg); }
+.muted { color: var(--text-3); }
+details { margin-top: 10px; font-size: 14px; }
+summary { cursor: pointer; color: var(--text-2); }
+input[type="search"] {
+  font: inherit; font-size: 14px; padding: 7px 10px; border-radius: 8px; width: 100%; max-width: 260px;
+  border: 1px solid var(--border); background: var(--surface); color: var(--text); margin-bottom: 10px;
+}
+.sliders { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px 20px; }
+.slider label { display: flex; justify-content: space-between; gap: 10px; font-size: 13px; color: var(--text-2); }
+.slider label b { color: var(--text); font-variant-numeric: tabular-nums; }
+.slider input { width: 100%; accent-color: var(--accent); }
+.result-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; margin-top: 16px; }
+.big { font-size: 24px; font-weight: 650; font-variant-numeric: tabular-nums; }
+.d { color: var(--dem); } .r { color: var(--rep); }
+ul.caveats { padding-left: 18px; margin: 8px 0 0; color: var(--text-2); }
+ul.caveats li { margin-bottom: 6px; }
+footer { margin-top: 36px; font-size: 13px; color: var(--text-3); }
+a { color: var(--accent); }
+#error { display: none; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>North Carolina Early Vote Tracker</h1>
+    <p>2026 general election early and mail ballots, lined up against the 2022 and 2018 midterms by days before Election Day.</p>
+    <div class="meta" id="meta">Loading data…</div>
+  </header>
+
+  <div class="callout">
+    <strong>This shows who has voted, not how they voted.</strong>
+    Party here is voter <em>registration</em>. Unaffiliated voters are close to a third of ballots, and early voting shifts from cycle to cycle. Treat any “lead” on this page as an assumption, not a measurement.
+  </div>
+  <div class="callout" id="error"></div>
+
+  <div class="tiles" id="tiles"></div>
+
+  <section>
+    <h2>Turnout pace</h2>
+    <p class="sub">Accepted ballots so far, cumulative, by days before Election Day. Prior cycles are rebuilt from each ballot’s return date in the final file.</p>
+    <div class="card">
+      <div class="controls seg" id="methodSeg" role="group" aria-label="Ballot type">
+        <button data-m="total" aria-pressed="true">All</button>
+        <button data-m="in_person" aria-pressed="false">In-person early</button>
+        <button data-m="mail" aria-pressed="false">Mail</button>
+      </div>
+      <div class="legend" id="paceLegend"></div>
+      <div class="chart-box"><canvas id="paceChart" aria-label="Cumulative accepted ballots by days before Election Day"></canvas></div>
+      <details><summary>Show as table</summary><div class="table-wrap" id="paceTable"></div></details>
+    </div>
+  </section>
+
+  <section>
+    <h2>Who has voted so far</h2>
+    <p class="sub" id="compSub">Share of accepted ballots on the same day before the election, compared with prior midterms.</p>
+    <div class="card">
+      <div class="controls seg" id="dimSeg" role="group" aria-label="Breakdown">
+        <button data-d="party" aria-pressed="true">Party registration</button>
+        <button data-d="age" aria-pressed="false">Age</button>
+        <button data-d="race" aria-pressed="false">Race</button>
+        <button data-d="method" aria-pressed="false">Ballot type</button>
+      </div>
+      <div class="table-wrap" id="compTable"></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Registered-Democrat minus registered-Republican share</h2>
+    <p class="sub">Above zero means more ballots so far came from registered Democrats than registered Republicans. Compare the 2026 line with the same point in earlier cycles, not with zero.</p>
+    <div class="card">
+      <div class="legend" id="gapLegend"></div>
+      <div class="chart-box"><canvas id="gapChart" aria-label="Democratic minus Republican share of ballots by days before Election Day"></canvas></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Counties</h2>
+    <p class="sub" id="countySub">Pace is 2026 ballots as a share of 2022 ballots at the same day. Tap a column to sort.</p>
+    <div class="card">
+      <input type="search" id="countySearch" placeholder="Find a county" aria-label="Find a county">
+      <div class="table-wrap" id="countyTable"></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>What would a “lead” look like?</h2>
+    <p class="sub">Turning ballots into votes needs assumptions the data can’t supply. Set them here and see how much the answer moves. The same assumptions are run on 2022’s early vote and checked against the actual 2022 U.S. Senate result.</p>
+    <div class="card">
+      <div class="sliders">
+        <div class="slider"><label for="sDem">Registered Democrats voting D <b id="vDem"></b></label><input type="range" id="sDem" min="70" max="100" value="92"></div>
+        <div class="slider"><label for="sRep">Registered Republicans voting R <b id="vRep"></b></label><input type="range" id="sRep" min="70" max="100" value="92"></div>
+        <div class="slider"><label for="sUna">Unaffiliated voting D <b id="vUna"></b></label><input type="range" id="sUna" min="30" max="70" value="50"></div>
+        <div class="slider"><label for="sOth">Third-party registrants voting D <b id="vOth"></b></label><input type="range" id="sOth" min="20" max="80" value="45"></div>
+      </div>
+      <div class="result-row">
+        <div class="tile"><div class="label">2026 ballots so far imply</div><div class="big" id="r2026"></div><div class="detail">two-party margin among early ballots only</div></div>
+        <div class="tile"><div class="label">Same method on 2022, same day</div><div class="big" id="r2022same"></div><div class="detail" id="r2022sameDetail"></div></div>
+        <div class="tile"><div class="label">Same method on all 2022 early ballots</div><div class="big" id="r2022final"></div><div class="detail">Actual 2022 Senate result: <span class="r">R +3.3</span> (all votes)</div></div>
+      </div>
+      <details open><summary>How sensitive is it to the unaffiliated split?</summary>
+        <div class="table-wrap" id="sensTable"></div>
+        <p class="muted" style="margin:8px 0 0;font-size:13px">Each row moves only the unaffiliated assumption. If a few points of that guess flips the sign, the early vote isn’t telling you who’s ahead.</p>
+      </details>
+    </div>
+  </section>
+
+  <section>
+    <h2>Why to be careful</h2>
+    <div class="card">
+      <ul class="caveats">
+        <li><strong>Cannibalization.</strong> Most early voters are reliable voters who would have voted anyway. A party “banking” more early votes may just have moved its Election Day voters earlier.</li>
+        <li><strong>Habits shift.</strong> Republicans leaned toward Election Day voting in 2020 and 2022, then pushed early voting in 2024. A change in the gap versus 2022 can reflect that shift rather than a change in support.</li>
+        <li><strong>Rules change.</strong> Photo ID applies in 2026 but not in 2018 or 2022, and mail ballots now must arrive by the close of polls instead of within the old three-day grace period. Early voting schedules and sites also vary by cycle.</li>
+        <li><strong>Registration isn’t vote choice.</strong> Older registered Democrats in rural counties often vote Republican, and unaffiliated voters split differently every year.</li>
+        <li><strong>Rebuilt baselines.</strong> 2018 and 2022 curves come from the final files’ return dates, which can differ slightly from what was published on each day at the time.</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    Data: <a href="https://www.ncsbe.gov/results-data/absentee-data">NC State Board of Elections absentee and early vote files</a>, refreshed daily by a GitHub Action. Counts are accepted ballots, one per voter.
+    <span id="genAt"></span>
+  </footer>
+</main>
+
+<script src="vendor/chart.umd.js"></script>
+<script>
+(function () {
+  "use strict";
+  const YEARS = [2026, 2022, 2018];
+  const PARTY_LABEL = { DEM: "Democrat", REP: "Republican", UNA: "Unaffiliated", OTH: "Third party" };
+  const DIM_LABEL = { method: { mail: "Mail", in_person: "In-person early" } };
+  const ACTUAL_2022_R_MARGIN = 3.3;  // Budd 1,905,786 vs Beasley 1,784,049, two-party
+  const fmt = n => n == null ? "–" : Math.round(n).toLocaleString("en-US");
+  const pct = (n, d = 1) => n == null || !isFinite(n) ? "–" : n.toFixed(d) + "%";
+  const pts = (n, d = 1) => n == null || !isFinite(n) ? "–" : (n > 0 ? "+" : n < 0 ? "−" : "±") + Math.abs(n).toFixed(d);
+  const css = name => getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+  let D = {}, cur, DAY, charts = {};
+
+  function cumsum(a) { let s = 0; return a.map(v => (s += v)); }
+  // Value of a daily series at a given days-out, cumulative through that day.
+  function cumAt(data, arr, day) {
+    let s = 0;
+    for (let i = 0; i < data.days_out.length; i++) {
+      if (data.days_out[i] < day) break;
+      s += arr[i];
+    }
+    return s;
+  }
+  function seriesFor(data, method) {
+    return method === "total" ? data.daily.total : data.daily.method[method];
+  }
+  function margin(c, a) {
+    const D = c.DEM * a.dem + c.REP * (1 - a.rep) + c.UNA * a.una + c.OTH * a.oth;
+    const R = c.DEM * (1 - a.dem) + c.REP * a.rep + c.UNA * (1 - a.una) + c.OTH * (1 - a.oth);
+    return (D - R) / (D + R) * 100;
+  }
+  function marginText(m) {
+    if (!isFinite(m)) return "–";
+    if (Math.abs(m) < 0.05) return "Even";
+    return (m > 0 ? "D +" : "R +") + Math.abs(m).toFixed(1);
+  }
+  function marginClass(m) { return m > 0 ? "d" : m < 0 ? "r" : ""; }
+  function partyCounts(data, day) {
+    const o = {};
+    for (const p of ["DEM", "REP", "UNA", "OTH"]) o[p] = cumAt(data, data.daily.party[p], day);
+    return o;
+  }
+
+  async function load() {
+    const man = await fetch("data/manifest.json", { cache: "no-cache" }).then(r => r.json());
+    const years = [man.current, ...man.baselines];
+    const res = await Promise.all(years.map(y => fetch(`data/${y}.json`, { cache: "no-cache" }).then(r => r.ok ? r.json() : null)));
+    years.forEach((y, i) => { if (res[i]) D[y] = res[i]; });
+    cur = D[man.current];
+    if (!cur) throw new Error("No 2026 data yet.");
+    DAY = cur.as_of_days_out;
+  }
+
+  function header() {
+    const asOf = new Date(cur.as_of + "T12:00:00");
+    const dayStr = asOf.toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric", year: "numeric" });
+    document.getElementById("meta").textContent =
+      `Ballots returned through ${dayStr} · ${DAY} day${DAY === 1 ? "" : "s"} before Election Day (${new Date(cur.election_date + "T12:00:00").toLocaleDateString("en-US", { month: "short", day: "numeric" })})`;
+    document.getElementById("genAt").textContent = ` Last refreshed ${new Date(cur.generated_at).toLocaleString("en-US", { dateStyle: "medium", timeStyle: "short" })}.`;
+  }
+
+  function tiles() {
+    const now = cumAt(cur, cur.daily.total, DAY);
+    const html = [`<div class="card tile"><div class="label">Accepted ballots so far</div><div class="value">${fmt(now)}</div><div class="detail">${fmt(cumAt(cur, cur.daily.method.in_person, DAY))} in person · ${fmt(cumAt(cur, cur.daily.method.mail, DAY))} mail</div></div>`];
+    const proj = [];
+    for (const y of [2022, 2018]) {
+      const b = D[y]; if (!b) continue;
+      const same = cumAt(b, b.daily.total, DAY);
+      const ratio = now / same;
+      const cls = ratio >= 1 ? "up" : "down";
+      html.push(`<div class="card tile"><div class="label">Pace vs ${y}, same day</div><div class="value ${cls}">${pct(ratio * 100, 0)}</div><div class="detail">${fmt(same)} ballots at this point in ${y}</div></div>`);
+      if (same > 0) proj.push(now * b.total / same);
+    }
+    if (proj.length) {
+      const lo = Math.min(...proj), hi = Math.max(...proj);
+      const big = n => n >= 1e6 ? (n / 1e6).toFixed(2) + "M" : Math.round(n / 1e3) + "k";
+      const txt = proj.length > 1 && big(lo) !== big(hi) ? `${big(lo)}–${big(hi)}` : big(lo);
+      html.push(`<div class="card tile"><div class="label">Final early vote if pace holds</div><div class="value">${txt}</div><div class="detail">Scaled by how the remaining days went in ${Object.keys(D).filter(y => +y !== cur.year).sort().reverse().join(" and ")}</div></div>`);
+    }
+    document.getElementById("tiles").innerHTML = html.join("");
+  }
+
+  function baseOptions(yTick) {
+    const text2 = css("--text-2"), grid = css("--grid");
+    return {
+      responsive: true, maintainAspectRatio: false, animation: false,
+      interaction: { mode: "index", intersect: false },
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          backgroundColor: css("--surface"), titleColor: css("--text"), bodyColor: css("--text-2"),
+          borderColor: css("--border"), borderWidth: 1, padding: 10, boxPadding: 4, usePointStyle: true,
+          callbacks: { title: items => `${items[0].label} days before Election Day` }
+        }
+      },
+      scales: {
+        x: {
+          title: { display: true, text: "Days before Election Day", color: text2 },
+          ticks: { color: text2, maxTicksLimit: 8, maxRotation: 0 },
+          grid: { display: false }, border: { color: grid }
+        },
+        y: { ticks: { color: text2, callback: yTick }, grid: { color: grid }, border: { display: false } }
+      }
+    };
+  }
+
+  function legend(id) {
+    document.getElementById(id).innerHTML = YEARS.filter(y => D[y])
+      .map(y => `<span style="--c:var(--y${y})">${y}${y === cur.year ? " (so far)" : ""}</span>`).join("");
+  }
+
+  function startDay() {
+    // Start the x-axis when ballots begin arriving in meaningful numbers.
+    const max = Math.max(...Object.values(D).map(d => d.days_out[0]));
+    return Math.min(max, 50);
+  }
+
+  function paceChart(method) {
+    const start = startDay();
+    const labels = []; for (let d = start; d >= 0; d--) labels.push(d);
+    const datasets = YEARS.filter(y => D[y]).map(y => {
+      const data = D[y], arr = seriesFor(data, method);
+      const vals = labels.map(d => (y === cur.year && d < DAY) ? null : cumAt(data, arr, d));
+      return {
+        label: String(y), data: vals, borderColor: css(`--y${y}`), backgroundColor: css(`--y${y}`),
+        borderWidth: y === cur.year ? 3 : 2, pointRadius: 0, pointHoverRadius: 5, tension: 0.15, spanGaps: false
+      };
+    });
+    const opts = baseOptions(v => v >= 1e6 ? (v / 1e6).toFixed(1) + "M" : v >= 1e3 ? Math.round(v / 1e3) + "k" : v);
+    opts.plugins.tooltip.callbacks.label = c => ` ${c.dataset.label}: ${fmt(c.raw)}`;
+    if (charts.pace) charts.pace.destroy();
+    charts.pace = new Chart(document.getElementById("paceChart"), { type: "line", data: { labels, datasets }, options: opts });
+
+    // Table view: every 5 days plus today.
+    const rows = labels.filter(d => d % 5 === 0 || d === DAY).filter(d => d >= DAY || true);
+    let t = `<table><thead><tr><th>Days out</th>${datasets.map(s => `<th>${s.label}</th>`).join("")}</tr></thead><tbody>`;
+    for (const d of rows) {
+      const i = labels.indexOf(d);
+      t += `<tr><td>${d}${d === DAY ? " (today)" : ""}</td>${datasets.map(s => `<td>${fmt(s.data[i])}</td>`).join("")}</tr>`;
+    }
+    document.getElementById("paceTable").innerHTML = t + "</tbody></table>";
+  }
+
+  function compTable(dim) {
+    const keys = Object.keys(cur.daily[dim]);
+    const cols = [{ label: "2026", data: cur, day: DAY }];
+    for (const y of [2022, 2018]) if (D[y]) cols.push({ label: `${y} same day`, data: D[y], day: DAY });
+    if (D[2022]) cols.push({ label: "2022 final", data: D[2022], day: 0 });
+    const share = (c, k) => {
+      const tot = cumAt(c.data, c.data.daily.total, c.day);
+      return tot ? cumAt(c.data, c.data.daily[dim][k], c.day) / tot * 100 : null;
+    };
+    const label = k => dim === "party" ? PARTY_LABEL[k] : (DIM_LABEL[dim] && DIM_LABEL[dim][k]) || k;
+    let t = `<table><thead><tr><th>${dim === "party" ? "Registration" : "Group"}</th>${cols.map(c => `<th>${c.label}</th>`).join("")}${D[2022] ? "<th>Change vs 2022 same day</th>" : ""}</tr></thead><tbody>`;
+    for (const k of keys) {
+      const vals = cols.map(c => share(c, k));
+      const diff = D[2022] ? vals[0] - vals[1] : null;
+      t += `<tr><td>${esc(label(k))}</td>${vals.map(v => `<td>${pct(v)}</td>`).join("")}${D[2022] ? `<td>${pts(diff)} pts</td>` : ""}</tr>`;
+    }
+    document.getElementById("compTable").innerHTML = t + "</tbody></table>";
+    document.getElementById("compSub").textContent =
+      `Share of accepted ballots ${DAY} days before Election Day in each cycle, plus 2022’s full early vote for reference.`;
+  }
+
+  function gapChart() {
+    const start = startDay();
+    const labels = []; for (let d = start; d >= 0; d--) labels.push(d);
+    const datasets = YEARS.filter(y => D[y]).map(y => {
+      const data = D[y];
+      const vals = labels.map(d => {
+        if (y === cur.year && d < DAY) return null;
+        const tot = cumAt(data, data.daily.total, d);
+        if (tot < 1000) return null;
+        return (cumAt(data, data.daily.party.DEM, d) - cumAt(data, data.daily.party.REP, d)) / tot * 100;
+      });
+      return {
+        label: String(y), data: vals, borderColor: css(`--y${y}`), backgroundColor: css(`--y${y}`),
+        borderWidth: y === cur.year ? 3 : 2, pointRadius: 0, pointHoverRadius: 5, tension: 0.15
+      };
+    });
+    const opts = baseOptions(v => (v > 0 ? "+" : "") + v + " pts");
+    opts.plugins.tooltip.callbacks.label = c => ` ${c.dataset.label}: D−R ${pts(c.raw)} pts`;
+    opts.scales.y.grid.color = ctx => ctx.tick.value === 0 ? css("--text-3") : css("--grid");
+    if (charts.gap) charts.gap.destroy();
+    charts.gap = new Chart(document.getElementById("gapChart"), { type: "line", data: { labels, datasets }, options: opts });
+  }
+
+  let countySort = { key: "now", dir: -1 }, countyRows = [];
+  function buildCounties() {
+    const base = D[2022];
+    countyRows = Object.entries(cur.counties).map(([name, p]) => {
+      const now = ["DEM", "REP", "UNA", "OTH"].reduce((s, k) => s + cumAt(cur, p[k], DAY), 0);
+      const gap = now ? (cumAt(cur, p.DEM, DAY) - cumAt(cur, p.REP, DAY)) / now * 100 : null;
+      let then = null, gapThen = null;
+      const b = base && base.counties[name];
+      if (b) {
+        then = ["DEM", "REP", "UNA", "OTH"].reduce((s, k) => s + cumAt(base, b[k], DAY), 0);
+        gapThen = then ? (cumAt(base, b.DEM, DAY) - cumAt(base, b.REP, DAY)) / then * 100 : null;
+      }
+      return { name, now, then, pace: then ? now / then * 100 : null, gap, shift: gap != null && gapThen != null ? gap - gapThen : null };
+    });
+    document.getElementById("countySub").textContent =
+      `Pace is 2026 ballots as a share of 2022 ballots ${DAY} days out. Shift is the change in the D−R registration gap versus 2022 at the same point. Tap a column to sort.`;
+  }
+  function renderCounties() {
+    const q = document.getElementById("countySearch").value.trim().toLowerCase();
+    const k = countySort.key, dir = countySort.dir;
+    const rows = countyRows.filter(r => r.name.toLowerCase().includes(q)).sort((a, b) => {
+      if (k === "name") return a.name.localeCompare(b.name) * dir;
+      return ((a[k] ?? -Infinity) - (b[k] ?? -Infinity)) * dir;
+    });
+    const head = [["name", "County"], ["now", "2026 ballots"], ["then", "2022 same day"], ["pace", "Pace"], ["gap", "D−R gap"], ["shift", "Shift vs 2022"]];
+    let t = `<table><thead><tr>${head.map(([key, l]) => `<th class="sortable" data-k="${key}" aria-sort="${key === k ? (dir > 0 ? "ascending" : "descending") : "none"}">${l}${key === k ? (dir > 0 ? " ▲" : " ▼") : ""}</th>`).join("")}</tr></thead><tbody>`;
+    for (const r of rows) {
+      const shiftCls = r.shift > 0 ? "d" : r.shift < 0 ? "r" : "";
+      t += `<tr><td>${esc(r.name)}</td><td>${fmt(r.now)}</td><td>${fmt(r.then)}</td><td>${pct(r.pace, 0)}</td><td>${pts(r.gap)}</td><td class="${shiftCls}">${pts(r.shift)}</td></tr>`;
+    }
+    if (!rows.length) t += `<tr><td colspan="6" class="muted">No matching county</td></tr>`;
+    const el = document.getElementById("countyTable");
+    el.innerHTML = t + "</tbody></table>";
+    el.querySelectorAll("th.sortable").forEach(th => th.addEventListener("click", () => {
+      const key = th.dataset.k;
+      countySort = { key, dir: countySort.key === key ? -countySort.dir : (key === "name" ? 1 : -1) };
+      renderCounties();
+    }));
+  }
+
+  function scenario() {
+    const g = id => +document.getElementById(id).value;
+    const a = { dem: g("sDem") / 100, rep: g("sRep") / 100, una: g("sUna") / 100, oth: g("sOth") / 100 };
+    document.getElementById("vDem").textContent = g("sDem") + "%";
+    document.getElementById("vRep").textContent = g("sRep") + "%";
+    document.getElementById("vUna").textContent = g("sUna") + "%";
+    document.getElementById("vOth").textContent = g("sOth") + "%";
+    const setM = (id, m) => { const el = document.getElementById(id); el.textContent = marginText(m); el.className = "big " + marginClass(m); };
+    const m26 = margin(partyCounts(cur, DAY), a);
+    setM("r2026", m26);
+    if (D[2022]) {
+      const mSame = margin(partyCounts(D[2022], DAY), a);
+      const mFinal = margin(partyCounts(D[2022], 0), a);
+      setM("r2022same", mSame);
+      setM("r2022final", mFinal);
+      const miss = mSame - (-ACTUAL_2022_R_MARGIN);
+      document.getElementById("r2022sameDetail").textContent =
+        `Off from the actual result by ${Math.abs(miss).toFixed(1)} pts, toward ${miss > 0 ? "Democrats" : "Republicans"}`;
+    }
+    // Sensitivity table across unaffiliated splits.
+    const splits = [35, 40, 45, 50, 55, 60, 65];
+    let t = `<table><thead><tr><th>Unaffiliated voting D</th><th>2026 so far</th>${D[2022] ? "<th>2022 same day</th><th>2022 actual</th>" : ""}</tr></thead><tbody>`;
+    for (const u of splits) {
+      const b = { ...a, una: u / 100 };
+      const m = margin(partyCounts(cur, DAY), b);
+      const m22 = D[2022] ? margin(partyCounts(D[2022], DAY), b) : null;
+      t += `<tr><td>${u}%${u === g("sUna") ? " (current)" : ""}</td><td class="${marginClass(m)}">${marginText(m)}</td>${D[2022] ? `<td class="${marginClass(m22)}">${marginText(m22)}</td><td class="r">R +${ACTUAL_2022_R_MARGIN}</td>` : ""}</tr>`;
+    }
+    document.getElementById("sensTable").innerHTML = t + "</tbody></table>";
+  }
+
+  function wireSeg(id, attr, fn) {
+    const seg = document.getElementById(id);
+    seg.addEventListener("click", e => {
+      const b = e.target.closest("button"); if (!b) return;
+      seg.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", String(x === b)));
+      fn(b.dataset[attr]);
+    });
+  }
+
+  let method = "total", dim = "party";
+  function renderAll() {
+    header(); tiles(); legend("paceLegend"); legend("gapLegend");
+    paceChart(method); compTable(dim); gapChart(); buildCounties(); renderCounties(); scenario();
+  }
+
+  load().then(() => {
+    renderAll();
+    wireSeg("methodSeg", "m", m => { method = m; paceChart(m); });
+    wireSeg("dimSeg", "d", d => { dim = d; compTable(d); });
+    document.getElementById("countySearch").addEventListener("input", renderCounties);
+    ["sDem", "sRep", "sUna", "sOth"].forEach(id => document.getElementById(id).addEventListener("input", scenario));
+    window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => { paceChart(method); gapChart(); });
+  }).catch(err => {
+    const el = document.getElementById("error");
+    el.style.display = "block";
+    el.textContent = "Couldn’t load the data: " + err.message + " The daily update may not have run yet.";
+    document.getElementById("meta").textContent = "";
+  });
+})();
+</script>
+</body>
+</html>
