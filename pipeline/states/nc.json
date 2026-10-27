@@ -24,7 +24,23 @@
         "party": "D",
         "match": [
           "cooper"
-        ]
+        ],
+        "track_record": {
+          "label": "2020 Governor",
+          "year": 2020,
+          "dem_votes": 2834790,
+          "rep_votes": 2586604,
+          "expected_from": {
+            "state_president_year": 2020,
+            "state_president_pct": [
+              48.59,
+              49.93
+            ],
+            "national_shift": 0.0
+          },
+          "weight": 1.0,
+          "source": "akashic.app (MIT Election Lab)"
+        }
       },
       "rep": {
         "name": "Michael Whatley",

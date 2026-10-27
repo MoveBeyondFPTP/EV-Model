@@ -32,7 +32,23 @@
         "party": "R",
         "match": [
           "marshall"
-        ]
+        ],
+        "track_record": {
+          "label": "2020 U.S. Senate",
+          "year": 2020,
+          "dem_votes": 571530,
+          "rep_votes": 727962,
+          "expected_from": {
+            "state_president_year": 2020,
+            "state_president_pct": [
+              41.56,
+              56.21
+            ],
+            "national_shift": 0.0
+          },
+          "weight": 1.0,
+          "source": "akashic.app (MIT Election Lab)"
+        }
       },
       "note": "Incumbent Roger Marshall (R)"
     },

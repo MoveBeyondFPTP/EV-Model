@@ -24,7 +24,23 @@
         "party": "D",
         "match": [
           "hickenlooper"
-        ]
+        ],
+        "track_record": {
+          "label": "2020 U.S. Senate",
+          "year": 2020,
+          "dem_votes": 1731114,
+          "rep_votes": 1429492,
+          "expected_from": {
+            "state_president_year": 2020,
+            "state_president_pct": [
+              55.4,
+              41.9
+            ],
+            "national_shift": 0.0
+          },
+          "weight": 1.0,
+          "source": "akashic.app (MIT Election Lab)"
+        }
       },
       "rep": {
         "name": "Mark Baisley",
@@ -47,7 +63,23 @@
         "party": "D",
         "match": [
           "weiser"
-        ]
+        ],
+        "track_record": {
+          "label": "2022 Attorney General",
+          "year": 2022,
+          "dem_votes": 1349133,
+          "rep_votes": 1060866,
+          "expected_from": {
+            "state_president_year": 2020,
+            "state_president_pct": [
+              55.4,
+              41.9
+            ],
+            "national_shift": -7.33
+          },
+          "weight": 0.5,
+          "source": "Wikipedia"
+        }
       },
       "rep": {
         "name": "Victor Marx",

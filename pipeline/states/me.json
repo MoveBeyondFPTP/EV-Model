@@ -32,7 +32,23 @@
         "party": "R",
         "match": [
           "collins"
-        ]
+        ],
+        "track_record": {
+          "label": "2020 U.S. Senate",
+          "year": 2020,
+          "dem_votes": 347223,
+          "rep_votes": 417645,
+          "expected_from": {
+            "state_president_year": 2020,
+            "state_president_pct": [
+              53.09,
+              44.02
+            ],
+            "national_shift": 0.0
+          },
+          "weight": 1.0,
+          "source": "akashic.app (MIT Election Lab)"
+        }
       },
       "note": "Incumbent Susan Collins (R); ranked-choice general election"
     },

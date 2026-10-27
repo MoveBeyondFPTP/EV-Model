@@ -8,5 +8,9 @@
   "generic_ballot": {
     "source": "votehub",
     "subject": "2026"
+  },
+  "candidate_effect": {
+    "carry_forward": 0.4,
+    "note": "Share of a candidate's past over/under-performance carried into the next race. Fit on 21 Senate incumbents who ran in both 2018 and 2024 (correlation 0.70); see pipeline/research/candidate_effect.py. Down-ballot statewide offices (attorney general, secretary of state) count at half weight."
   }
 }

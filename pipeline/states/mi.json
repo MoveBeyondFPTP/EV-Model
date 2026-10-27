@@ -34,7 +34,23 @@
         "party": "R",
         "match": [
           "rogers"
-        ]
+        ],
+        "track_record": {
+          "label": "2024 U.S. Senate",
+          "year": 2024,
+          "dem_votes": 2712686,
+          "rep_votes": 2693680,
+          "expected_from": {
+            "state_president_year": 2024,
+            "state_president_pct": [
+              48.31,
+              49.73
+            ],
+            "national_shift": 0.0
+          },
+          "weight": 1.0,
+          "source": "akashic.app (MIT Election Lab)"
+        }
       },
       "note": "Open seat (Gary Peters retiring)"
     },
@@ -49,7 +65,23 @@
         "party": "D",
         "match": [
           "benson"
-        ]
+        ],
+        "track_record": {
+          "label": "2022 Secretary of State",
+          "year": 2022,
+          "dem_votes": 2467859,
+          "rep_votes": 1852510,
+          "expected_from": {
+            "state_president_year": 2020,
+            "state_president_pct": [
+              50.62,
+              47.84
+            ],
+            "national_shift": -7.33
+          },
+          "weight": 0.5,
+          "source": "Wikipedia"
+        }
       },
       "rep": {
         "name": "John James",
@@ -57,7 +89,23 @@
         "party": "R",
         "match": [
           "james"
-        ]
+        ],
+        "track_record": {
+          "label": "2020 U.S. Senate",
+          "year": 2020,
+          "dem_votes": 2734568,
+          "rep_votes": 2642233,
+          "expected_from": {
+            "state_president_year": 2020,
+            "state_president_pct": [
+              50.62,
+              47.84
+            ],
+            "national_shift": 0.0
+          },
+          "weight": 1.0,
+          "source": "akashic.app (MIT Election Lab)"
+        }
       },
       "note": "Open seat (Gretchen Whitmer term-limited)"
     }

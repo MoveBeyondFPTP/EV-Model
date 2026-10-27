@@ -373,7 +373,16 @@ table.blocks tr.total td { border-top: 2px solid var(--border); border-bottom: n
       const nm = m => esc(nameMargin(m, race));
       const rows = [];
       const A = p.environment;
-      if (A) rows.push(["Environment", `${esc(A.label)} (${nm(A.base)}), shifted toward ${esc(A.swing >= 0 ? race.dem.short : race.rep.short)} by ${Math.abs(A.swing).toFixed(1)} for the national mood${A.swing_factor !== 1 ? ` (${Math.round(A.swing_factor * 100)}% of the national swing)` : ""}`, nm(A.margin)]);
+      if (A) {
+        rows.push(["Environment", `${esc(A.label)} (${nm(A.base)}), shifted toward ${esc(A.swing >= 0 ? race.dem.short : race.rep.short)} by ${Math.abs(A.swing).toFixed(1)} for the national mood${A.swing_factor !== 1 ? ` (${Math.round(A.swing_factor * 100)}% of the national swing)` : ""}`, nm(A.generic_margin != null ? A.generic_margin : A.margin)]);
+        if (A.candidates && A.candidates.length) {
+          const desc = A.candidates.map(c => `${esc(c.name)} ran ${Math.abs(c.over).toFixed(1)} ${c.over >= 0 ? "ahead of" : "behind"} their party in the ${esc(c.label)}${c.weight !== 1 ? " (down-ballot, half weight)" : ""}`).join("; ");
+          const adj = A.candidate_adjustment;
+          rows.push(["Candidate track record", `${desc}. ${Math.round(A.carry_forward * 100)}% carries forward.`, `${Math.abs(adj) < 0.05 ? "±0.0" : `${esc(adj > 0 ? race.dem.short : race.rep.short)} +${Math.abs(adj).toFixed(1)}`}`]);
+        } else if (!isMeasure(race) && !/Osborn/.test(A.label)) {
+          rows.push(["Candidate track record", "Neither candidate has a recent statewide race to measure", "±0.0"]);
+        }
+      }
       if (p.polls) rows.push(["Polling average", `${p.polls.n} poll${p.polls.n === 1 ? "" : "s"}, last ${p.polls.window_days} days`, nm(p.polls.avg)]);
       else rows.push(["Polling average", "No recent head-to-head polls", "–"]);
       if (A && p.polls) rows.push(["Blend", `${Math.round(p.poll_weight * 100)}% polls, ${Math.round((1 - p.poll_weight) * 100)}% environment`, nm(p.start)]);
@@ -412,6 +421,7 @@ table.blocks tr.total td { border-top: 2px solid var(--border); border-bottom: n
     }
     document.getElementById("projMethod").innerHTML = `<ol>
       <li><strong>Environment.</strong> Start from ${esc(PJ.name)}’s 2024 presidential result and shift it by how much the national mood has moved since: the nation voted ${signed(NAT && NAT.prior ? NAT.prior.margin : -1.5)} in 2024, and the generic congressional ballot now averages ${g ? `${signed(g.avg)} (${g.n} polls)` : "–"}. This assumes the state moves with the nation, which isn’t always true.${special.length ? ` Exceptions: ${special.map(r => `${esc(r.office)} starts from ${esc(r.projection.environment.label)}`).join("; ")}.` : ""}</li>
+      <li><strong>Candidate track record.</strong> If a candidate has run statewide before, measure how far they ran ahead of or behind their party: their margin minus the state’s presidential margin that cycle (adjusted for the national mood in midterms). ${Math.round(((races.find(r => r.projection.environment) || {}).projection || {environment: {carry_forward: 0.4}}).environment.carry_forward * 100)}% of that carries into the environment step. That share comes from 21 senators who ran in both 2018 and 2024: about 40% of their earlier over- or under-performance showed up again (correlation 0.70). Attorney general and secretary of state races count at half weight. Polls already reflect candidate strength, so this only changes the environment part.</li>
       <li><strong>Polls.</strong> Blend in each race’s own polling average, which captures the candidates themselves. The more polls, the more weight they get: n ÷ (n + 2), up to ${Math.round(k.poll_weight_max * 100)}%.</li>
       <li><strong>Early-vote turnout.</strong> ${sig ? `Under the same party-loyalty assumptions as the panel below, early voters are ${signed(sig.now)} compared with all registered voters, versus ${signed(sig.then)} at this point in ${sig.year}. That ${signed(sig.value)} difference is a turnout signal that registration changes can’t explain. It counts at ${Math.round(k.c_weight * 100)}%, capped at ±${k.c_cap} points, because polls of likely voters already reflect much of the enthusiasm it measures. It applies to Democrat-vs-Republican races only.` : `No early-vote data is connected for ${esc(PJ.name)} yet, so this step is skipped.`}</li>
     </ol>

@@ -109,15 +109,49 @@ def rating(center, lo, hi, dem_short, rep_short, measure=False):
     return f"{'Tilt' if a < 3 else 'Lean' if a < 7 else 'Likely' if a < 12 else 'Solid'} {leader}"
 
 
+CARRY = json.loads((ROOT / "pipeline" / "national.json").read_text()).get("candidate_effect", {}).get("carry_forward", 0.4)
+
+
+def two_party(d, r):
+    return (d - r) / (d + r) * 100
+
+
+def candidate_adjustment(race):
+    """Carry part of each candidate's past over/under-performance into the environment.
+
+    Over-performance = the candidate's two-party margin in their last statewide race minus what the
+    environment predicted (the state's presidential margin that cycle, plus the national shift for
+    midterms), signed so positive means the candidate ran ahead of their party.
+    Returns (adjustment in D-minus-R points, details per side)."""
+    total, details = 0.0, []
+    for key, sign in (("dem", 1), ("rep", -1)):
+        t = race.get(key, {}).get("track_record")
+        if not t:
+            continue
+        e = t["expected_from"]
+        expected = two_party(*e["state_president_pct"]) + e["national_shift"]
+        actual = two_party(t["dem_votes"], t["rep_votes"])
+        over = sign * (actual - expected)
+        adj = sign * CARRY * t["weight"] * over
+        total += adj
+        details.append({"side": key, "name": race[key]["short"], "label": t["label"], "actual": round(actual, 2),
+                        "expected": round(expected, 2), "over": round(over, 2), "weight": t["weight"],
+                        "adjustment": round(adj, 2), "source": t.get("source")})
+    return total, details
+
+
 def project_race(race, cfg, generic, polls, signal):
     env_cfg = race.get("environment") or cfg["environment"]
     A = None
     if generic is not None:
         factor = env_cfg.get("swing_factor", 1.0)
         swing = (generic - env_cfg["national_margin"]) * factor
+        cand, cand_details = candidate_adjustment(race)
         A = {"label": env_cfg["label"], "base": env_cfg["margin"], "national_then": env_cfg["national_margin"],
              "generic": generic, "swing_factor": factor, "swing": round(swing, 2),
-             "margin": round(env_cfg["margin"] + swing, 2), "note": env_cfg.get("swing_note")}
+             "generic_margin": round(env_cfg["margin"] + swing, 2),
+             "candidate_adjustment": round(cand, 2), "candidates": cand_details, "carry_forward": CARRY,
+             "margin": round(env_cfg["margin"] + swing + cand, 2), "note": env_cfg.get("swing_note")}
     P = polls if polls and polls.get("avg") is not None else None
     if not A and not P:
         return None

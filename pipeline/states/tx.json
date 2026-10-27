@@ -32,7 +32,23 @@
         "party": "R",
         "match": [
           "paxton"
-        ]
+        ],
+        "track_record": {
+          "label": "2022 Attorney General",
+          "year": 2022,
+          "dem_votes": 3497267,
+          "rep_votes": 4278986,
+          "expected_from": {
+            "state_president_year": 2020,
+            "state_president_pct": [
+              46.48,
+              52.06
+            ],
+            "national_shift": -7.33
+          },
+          "weight": 0.5,
+          "source": "Wikipedia"
+        }
       },
       "note": "Open seat (Paxton defeated Sen. John Cornyn in the primary)"
     },
@@ -55,7 +71,23 @@
         "party": "R",
         "match": [
           "abbott"
-        ]
+        ],
+        "track_record": {
+          "label": "2022 Governor",
+          "year": 2022,
+          "dem_votes": 3554772,
+          "rep_votes": 4437097,
+          "expected_from": {
+            "state_president_year": 2020,
+            "state_president_pct": [
+              46.48,
+              52.06
+            ],
+            "national_shift": -7.33
+          },
+          "weight": 1.0,
+          "source": "akashic.app (MIT Election Lab)"
+        }
       },
       "note": "Incumbent Greg Abbott (R)"
     }

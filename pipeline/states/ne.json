@@ -60,7 +60,23 @@
         "party": "R",
         "match": [
           "pillen"
-        ]
+        ],
+        "track_record": {
+          "label": "2022 Governor",
+          "year": 2022,
+          "dem_votes": 242006,
+          "rep_votes": 398334,
+          "expected_from": {
+            "state_president_year": 2020,
+            "state_president_pct": [
+              39.36,
+              58.51
+            ],
+            "national_shift": -7.33
+          },
+          "weight": 1.0,
+          "source": "akashic.app (MIT Election Lab)"
+        }
       },
       "note": "Incumbent Jim Pillen (R)"
     }
