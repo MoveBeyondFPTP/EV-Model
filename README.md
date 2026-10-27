@@ -2,7 +2,7 @@
 
 A free, self-updating dashboard that compares North Carolina's 2026 early and mail vote with the 2018 and 2022 midterms, lined up by days before Election Day.
 
-**Live site:** https://movebeyondfptp.github.io/EV-Model/
+**Live site:** https://evmodel2026.com/
 
 It's built to test a claim, not to make one: early vote data shows *who* has voted (by registration, age, race, county), not *how* they voted. The "What would a lead look like?" panel lets you set vote-choice assumptions and shows how far they move the answer, then runs the same assumptions on 2022's early vote and checks them against the actual 2022 U.S. Senate result.
 
