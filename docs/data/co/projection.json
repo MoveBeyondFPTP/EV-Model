@@ -17,7 +17,23 @@
     "party": "D",
     "match": [
      "hickenlooper"
-    ]
+    ],
+    "track_record": {
+     "label": "2020 U.S. Senate",
+     "year": 2020,
+     "dem_votes": 1731114,
+     "rep_votes": 1429492,
+     "expected_from": {
+      "state_president_year": 2020,
+      "state_president_pct": [
+       55.4,
+       41.9
+      ],
+      "national_shift": 0.0
+     },
+     "weight": 1.0,
+     "source": "akashic.app (MIT Election Lab)"
+    }
    },
    "rep": {
     "name": "Mark Baisley",
@@ -29,9 +45,9 @@
    },
    "comparison_result": null,
    "projection": {
-    "center": 21.1,
-    "lo": 21.1,
-    "hi": 21.1,
+    "center": 19.37,
+    "lo": 19.37,
+    "hi": 19.37,
     "rating": "Solid Hickenlooper",
     "environment": {
      "label": "2024 president (CO)",
@@ -40,12 +56,28 @@
      "generic": 8.31,
      "swing_factor": 1.0,
      "swing": 9.81,
-     "margin": 21.1,
+     "generic_margin": 21.1,
+     "candidate_adjustment": -1.73,
+     "candidates": [
+      {
+       "side": "dem",
+       "name": "Hickenlooper",
+       "label": "2020 U.S. Senate",
+       "actual": 9.54,
+       "expected": 13.87,
+       "over": -4.33,
+       "weight": 1.0,
+       "adjustment": -1.73,
+       "source": "akashic.app (MIT Election Lab)"
+      }
+     ],
+     "carry_forward": 0.4,
+     "margin": 19.37,
      "note": null
     },
     "polls": null,
     "poll_weight": 0.0,
-    "start": 21.1,
+    "start": 19.37,
     "early_vote": null
    }
   },
@@ -60,7 +92,23 @@
     "party": "D",
     "match": [
      "weiser"
-    ]
+    ],
+    "track_record": {
+     "label": "2022 Attorney General",
+     "year": 2022,
+     "dem_votes": 1349133,
+     "rep_votes": 1060866,
+     "expected_from": {
+      "state_president_year": 2020,
+      "state_president_pct": [
+       55.4,
+       41.9
+      ],
+      "national_shift": -7.33
+     },
+     "weight": 0.5,
+     "source": "Wikipedia"
+    }
    },
    "rep": {
     "name": "Victor Marx",
@@ -72,9 +120,9 @@
    },
    "comparison_result": null,
    "projection": {
-    "center": 21.1,
-    "lo": 21.1,
-    "hi": 21.1,
+    "center": 22.18,
+    "lo": 22.18,
+    "hi": 22.18,
     "rating": "Solid Weiser",
     "environment": {
      "label": "2024 president (CO)",
@@ -83,18 +131,34 @@
      "generic": 8.31,
      "swing_factor": 1.0,
      "swing": 9.81,
-     "margin": 21.1,
+     "generic_margin": 21.1,
+     "candidate_adjustment": 1.08,
+     "candidates": [
+      {
+       "side": "dem",
+       "name": "Weiser",
+       "label": "2022 Attorney General",
+       "actual": 11.96,
+       "expected": 6.54,
+       "over": 5.42,
+       "weight": 0.5,
+       "adjustment": 1.08,
+       "source": "Wikipedia"
+      }
+     ],
+     "carry_forward": 0.4,
+     "margin": 22.18,
      "note": null
     },
     "polls": null,
     "poll_weight": 0.0,
-    "start": 21.1,
+    "start": 22.18,
     "early_vote": null
    }
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-10-27T23:20:38+00:00",
+ "generated_at": "2026-10-27T23:29:45+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,

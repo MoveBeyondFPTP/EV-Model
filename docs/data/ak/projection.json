@@ -17,7 +17,23 @@
     "party": "D",
     "match": [
      "peltola"
-    ]
+    ],
+    "track_record": {
+     "label": "2024 U.S. House (statewide), final ranked-choice round",
+     "year": 2024,
+     "dem_votes": 156985,
+     "rep_votes": 164861,
+     "expected_from": {
+      "state_president_year": 2024,
+      "state_president_pct": [
+       41.41,
+       54.54
+      ],
+      "national_shift": 0.0
+     },
+     "weight": 1.0,
+     "source": "Ballotpedia"
+    }
    },
    "rep": {
     "name": "Dan Sullivan",
@@ -28,14 +44,30 @@
     ],
     "exclude": [
      "jr"
-    ]
+    ],
+    "track_record": {
+     "label": "2020 U.S. Senate",
+     "year": 2020,
+     "dem_votes": 146068,
+     "rep_votes": 191112,
+     "expected_from": {
+      "state_president_year": 2020,
+      "state_president_pct": [
+       42.77,
+       52.83
+      ],
+      "national_shift": 0.0
+     },
+     "weight": 1.0,
+     "source": "akashic.app (MIT Election Lab)"
+    }
    },
    "comparison_result": null,
    "projection": {
-    "center": -0.88,
-    "lo": -3.88,
+    "center": 0.46,
+    "lo": -0.52,
     "hi": 1.12,
-    "rating": "Toss-up, slight edge Sullivan",
+    "rating": "Toss-up",
     "environment": {
      "label": "2024 president (AK)",
      "base": -13.69,
@@ -43,7 +75,34 @@
      "generic": 8.31,
      "swing_factor": 1.0,
      "swing": 9.81,
-     "margin": -3.88,
+     "generic_margin": -3.88,
+     "candidate_adjustment": 3.36,
+     "candidates": [
+      {
+       "side": "dem",
+       "name": "Peltola",
+       "label": "2024 U.S. House (statewide), final ranked-choice round",
+       "actual": -2.45,
+       "expected": -13.68,
+       "over": 11.24,
+       "weight": 1.0,
+       "adjustment": 4.49,
+       "source": "Ballotpedia"
+      },
+      {
+       "side": "rep",
+       "name": "Sullivan",
+       "label": "2020 U.S. Senate",
+       "actual": -13.36,
+       "expected": -10.52,
+       "over": 2.84,
+       "weight": 1.0,
+       "adjustment": -1.13,
+       "source": "akashic.app (MIT Election Lab)"
+      }
+     ],
+     "carry_forward": 0.4,
+     "margin": -0.52,
      "note": null
     },
     "polls": {
@@ -52,7 +111,7 @@
      "window_days": 30
     },
     "poll_weight": 0.6,
-    "start": -0.88,
+    "start": 0.46,
     "early_vote": null
    }
   },
@@ -92,6 +151,10 @@
      "generic": 8.31,
      "swing_factor": 1.0,
      "swing": 9.81,
+     "generic_margin": -3.88,
+     "candidate_adjustment": 0.0,
+     "candidates": [],
+     "carry_forward": 0.4,
      "margin": -3.88,
      "note": null
     },
@@ -131,6 +194,10 @@
      "generic": 8.31,
      "swing_factor": 0.5,
      "swing": 4.91,
+     "generic_margin": 5.14,
+     "candidate_adjustment": 0.0,
+     "candidates": [],
+     "carry_forward": 0.4,
      "margin": 5.14,
      "note": "Repeal is backed mainly by Republicans, but the 2024 vote ran far closer than the presidential race (Trump +13.7, repeal failed by 0.2), so only half of the national swing is applied."
     },
@@ -146,7 +213,7 @@
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-10-27T23:20:38+00:00",
+ "generated_at": "2026-10-27T23:29:45+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,

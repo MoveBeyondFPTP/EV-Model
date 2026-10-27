@@ -25,12 +25,28 @@
     "party": "R",
     "match": [
      "marshall"
-    ]
+    ],
+    "track_record": {
+     "label": "2020 U.S. Senate",
+     "year": 2020,
+     "dem_votes": 571530,
+     "rep_votes": 727962,
+     "expected_from": {
+      "state_president_year": 2020,
+      "state_president_pct": [
+       41.56,
+       56.21
+      ],
+      "national_shift": 0.0
+     },
+     "weight": 1.0,
+     "source": "akashic.app (MIT Election Lab)"
+    }
    },
    "comparison_result": null,
    "projection": {
-    "center": -2.69,
-    "lo": -6.6,
+    "center": -2.22,
+    "lo": -5.42,
     "hi": -0.08,
     "rating": "Tilt Marshall",
     "environment": {
@@ -40,7 +56,23 @@
      "generic": 8.31,
      "swing_factor": 1.0,
      "swing": 9.81,
-     "margin": -6.6,
+     "generic_margin": -6.6,
+     "candidate_adjustment": 1.18,
+     "candidates": [
+      {
+       "side": "rep",
+       "name": "Marshall",
+       "label": "2020 U.S. Senate",
+       "actual": -12.04,
+       "expected": -14.98,
+       "over": -2.95,
+       "weight": 1.0,
+       "adjustment": 1.18,
+       "source": "akashic.app (MIT Election Lab)"
+      }
+     ],
+     "carry_forward": 0.4,
+     "margin": -5.42,
      "note": null
     },
     "polls": {
@@ -49,7 +81,7 @@
      "window_days": 60
     },
     "poll_weight": 0.6,
-    "start": -2.69,
+    "start": -2.22,
     "early_vote": null
    }
   },
@@ -87,6 +119,10 @@
      "generic": 8.31,
      "swing_factor": 1.0,
      "swing": 9.81,
+     "generic_margin": -6.6,
+     "candidate_adjustment": 0.0,
+     "candidates": [],
+     "carry_forward": 0.4,
      "margin": -6.6,
      "note": null
     },
@@ -102,7 +138,7 @@
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-10-27T23:20:38+00:00",
+ "generated_at": "2026-10-27T23:29:45+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,

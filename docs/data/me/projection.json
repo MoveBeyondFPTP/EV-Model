@@ -25,13 +25,29 @@
     "party": "R",
     "match": [
      "collins"
-    ]
+    ],
+    "track_record": {
+     "label": "2020 U.S. Senate",
+     "year": 2020,
+     "dem_votes": 347223,
+     "rep_votes": 417645,
+     "expected_from": {
+      "state_president_year": 2020,
+      "state_president_pct": [
+       53.09,
+       44.02
+      ],
+      "national_shift": 0.0
+     },
+     "weight": 1.0,
+     "source": "akashic.app (MIT Election Lab)"
+    }
    },
    "comparison_result": null,
    "projection": {
-    "center": 5.61,
+    "center": 3.96,
     "lo": 2.38,
-    "hi": 16.9,
+    "hi": 9.48,
     "rating": "Lean Jackson",
     "environment": {
      "label": "2024 president (ME)",
@@ -40,7 +56,23 @@
      "generic": 8.31,
      "swing_factor": 1.0,
      "swing": 9.81,
-     "margin": 16.9,
+     "generic_margin": 16.9,
+     "candidate_adjustment": -7.42,
+     "candidates": [
+      {
+       "side": "rep",
+       "name": "Collins",
+       "label": "2020 U.S. Senate",
+       "actual": -9.21,
+       "expected": 9.34,
+       "over": 18.55,
+       "weight": 1.0,
+       "adjustment": -7.42,
+       "source": "akashic.app (MIT Election Lab)"
+      }
+     ],
+     "carry_forward": 0.4,
+     "margin": 9.48,
      "note": null
     },
     "polls": {
@@ -49,7 +81,7 @@
      "window_days": 30
     },
     "poll_weight": 0.778,
-    "start": 5.61,
+    "start": 3.96,
     "early_vote": null
    }
   },
@@ -87,6 +119,10 @@
      "generic": 8.31,
      "swing_factor": 1.0,
      "swing": 9.81,
+     "generic_margin": 16.9,
+     "candidate_adjustment": 0.0,
+     "candidates": [],
+     "carry_forward": 0.4,
      "margin": 16.9,
      "note": null
     },
@@ -102,7 +138,7 @@
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-10-27T23:20:38+00:00",
+ "generated_at": "2026-10-27T23:29:45+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,

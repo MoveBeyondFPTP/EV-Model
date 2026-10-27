@@ -27,13 +27,29 @@
     "party": "R",
     "match": [
      "rogers"
-    ]
+    ],
+    "track_record": {
+     "label": "2024 U.S. Senate",
+     "year": 2024,
+     "dem_votes": 2712686,
+     "rep_votes": 2693680,
+     "expected_from": {
+      "state_president_year": 2024,
+      "state_president_pct": [
+       48.31,
+       49.73
+      ],
+      "national_shift": 0.0
+     },
+     "weight": 1.0,
+     "source": "akashic.app (MIT Election Lab)"
+    }
    },
    "comparison_result": null,
    "projection": {
-    "center": 4.07,
+    "center": 4.22,
     "lo": 3.0,
-    "hi": 8.37,
+    "hi": 9.09,
     "rating": "Lean El-Sayed",
     "environment": {
      "label": "2024 president (MI)",
@@ -42,7 +58,23 @@
      "generic": 8.31,
      "swing_factor": 1.0,
      "swing": 9.81,
-     "margin": 8.37,
+     "generic_margin": 8.37,
+     "candidate_adjustment": 0.72,
+     "candidates": [
+      {
+       "side": "rep",
+       "name": "Rogers",
+       "label": "2024 U.S. Senate",
+       "actual": 0.35,
+       "expected": -1.45,
+       "over": -1.8,
+       "weight": 1.0,
+       "adjustment": 0.72,
+       "source": "akashic.app (MIT Election Lab)"
+      }
+     ],
+     "carry_forward": 0.4,
+     "margin": 9.09,
      "note": null
     },
     "polls": {
@@ -51,7 +83,7 @@
      "window_days": 30
     },
     "poll_weight": 0.8,
-    "start": 4.07,
+    "start": 4.22,
     "early_vote": null
    }
   },
@@ -66,7 +98,23 @@
     "party": "D",
     "match": [
      "benson"
-    ]
+    ],
+    "track_record": {
+     "label": "2022 Secretary of State",
+     "year": 2022,
+     "dem_votes": 2467859,
+     "rep_votes": 1852510,
+     "expected_from": {
+      "state_president_year": 2020,
+      "state_president_pct": [
+       50.62,
+       47.84
+      ],
+      "national_shift": -7.33
+     },
+     "weight": 0.5,
+     "source": "Wikipedia"
+    }
    },
    "rep": {
     "name": "John James",
@@ -74,13 +122,29 @@
     "party": "R",
     "match": [
      "james"
-    ]
+    ],
+    "track_record": {
+     "label": "2020 U.S. Senate",
+     "year": 2020,
+     "dem_votes": 2734568,
+     "rep_votes": 2642233,
+     "expected_from": {
+      "state_president_year": 2020,
+      "state_president_pct": [
+       50.62,
+       47.84
+      ],
+      "national_shift": 0.0
+     },
+     "weight": 1.0,
+     "source": "akashic.app (MIT Election Lab)"
+    }
    },
    "comparison_result": null,
    "projection": {
-    "center": 8.08,
+    "center": 8.91,
     "lo": 7.98,
-    "hi": 8.37,
+    "hi": 11.68,
     "rating": "Likely Benson",
     "environment": {
      "label": "2024 president (MI)",
@@ -89,7 +153,34 @@
      "generic": 8.31,
      "swing_factor": 1.0,
      "swing": 9.81,
-     "margin": 8.37,
+     "generic_margin": 8.37,
+     "candidate_adjustment": 3.31,
+     "candidates": [
+      {
+       "side": "dem",
+       "name": "Benson",
+       "label": "2022 Secretary of State",
+       "actual": 14.24,
+       "expected": -4.51,
+       "over": 18.75,
+       "weight": 0.5,
+       "adjustment": 3.75,
+       "source": "Wikipedia"
+      },
+      {
+       "side": "rep",
+       "name": "James",
+       "label": "2020 U.S. Senate",
+       "actual": 1.72,
+       "expected": 2.82,
+       "over": 1.11,
+       "weight": 1.0,
+       "adjustment": -0.44,
+       "source": "akashic.app (MIT Election Lab)"
+      }
+     ],
+     "carry_forward": 0.4,
+     "margin": 11.68,
      "note": null
     },
     "polls": {
@@ -98,13 +189,13 @@
      "window_days": 30
     },
     "poll_weight": 0.75,
-    "start": 8.08,
+    "start": 8.91,
     "early_vote": null
    }
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-10-27T23:20:38+00:00",
+ "generated_at": "2026-10-27T23:29:45+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,

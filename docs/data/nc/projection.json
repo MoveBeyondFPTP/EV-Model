@@ -35,7 +35,23 @@
     "party": "D",
     "match": [
      "cooper"
-    ]
+    ],
+    "track_record": {
+     "label": "2020 Governor",
+     "year": 2020,
+     "dem_votes": 2834790,
+     "rep_votes": 2586604,
+     "expected_from": {
+      "state_president_year": 2020,
+      "state_president_pct": [
+       48.59,
+       49.93
+      ],
+      "national_shift": 0.0
+     },
+     "weight": 1.0,
+     "source": "akashic.app (MIT Election Lab)"
+    }
    },
    "rep": {
     "name": "Michael Whatley",
@@ -51,8 +67,8 @@
     "margin": -3.3
    },
    "projection": {
-    "center": 12.57,
-    "lo": 6.55,
+    "center": 13.05,
+    "lo": 8.93,
     "hi": 13.58,
     "rating": "Solid Cooper",
     "environment": {
@@ -62,7 +78,23 @@
      "generic": 8.31,
      "swing_factor": 1.0,
      "swing": 9.81,
-     "margin": 6.55,
+     "generic_margin": 6.55,
+     "candidate_adjustment": 2.38,
+     "candidates": [
+      {
+       "side": "dem",
+       "name": "Cooper",
+       "label": "2020 Governor",
+       "actual": 4.58,
+       "expected": -1.36,
+       "over": 5.94,
+       "weight": 1.0,
+       "adjustment": 2.38,
+       "source": "akashic.app (MIT Election Lab)"
+      }
+     ],
+     "carry_forward": 0.4,
+     "margin": 8.93,
      "note": null
     },
     "polls": {
@@ -71,7 +103,7 @@
      "window_days": 30
     },
     "poll_weight": 0.8,
-    "start": 10.57,
+    "start": 11.05,
     "early_vote": {
      "adjustment": 2.0,
      "weight": 0.25,
@@ -83,7 +115,7 @@
  "ev_notes": [
   "Rules change. Photo ID applies in 2026 but not in 2018 or 2022, and mail ballots now must arrive by the close of polls instead of within the old three-day grace period. Early voting schedules and sites also vary by cycle."
  ],
- "generated_at": "2026-10-27T23:20:38+00:00",
+ "generated_at": "2026-10-27T23:29:45+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,

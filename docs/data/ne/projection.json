@@ -40,6 +40,10 @@
      "generic": 8.31,
      "swing_factor": 1.0,
      "swing": 9.81,
+     "generic_margin": 3.12,
+     "candidate_adjustment": 0.0,
+     "candidates": [],
+     "carry_forward": 0.4,
      "margin": 3.12,
      "note": null
     },
@@ -72,12 +76,28 @@
     "party": "R",
     "match": [
      "pillen"
-    ]
+    ],
+    "track_record": {
+     "label": "2022 Governor",
+     "year": 2022,
+     "dem_votes": 242006,
+     "rep_votes": 398334,
+     "expected_from": {
+      "state_president_year": 2020,
+      "state_president_pct": [
+       39.36,
+       58.51
+      ],
+      "national_shift": -7.33
+     },
+     "weight": 1.0,
+     "source": "akashic.app (MIT Election Lab)"
+    }
    },
    "comparison_result": null,
    "projection": {
-    "center": -9.24,
-    "lo": -11.03,
+    "center": -8.74,
+    "lo": -10.04,
     "hi": -7.45,
     "rating": "Likely Pillen",
     "environment": {
@@ -87,7 +107,23 @@
      "generic": 8.31,
      "swing_factor": 1.0,
      "swing": 9.81,
-     "margin": -11.03,
+     "generic_margin": -11.03,
+     "candidate_adjustment": 0.99,
+     "candidates": [
+      {
+       "side": "rep",
+       "name": "Pillen",
+       "label": "2022 Governor",
+       "actual": -24.41,
+       "expected": -26.9,
+       "over": -2.48,
+       "weight": 1.0,
+       "adjustment": 0.99,
+       "source": "akashic.app (MIT Election Lab)"
+      }
+     ],
+     "carry_forward": 0.4,
+     "margin": -10.04,
      "note": null
     },
     "polls": {
@@ -96,13 +132,13 @@
      "window_days": 60
     },
     "poll_weight": 0.5,
-    "start": -9.24,
+    "start": -8.74,
     "early_vote": null
    }
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-10-27T23:20:38+00:00",
+ "generated_at": "2026-10-27T23:29:45+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-27T23:20:38+00:00",
+ "generated_at": "2026-10-27T23:29:45+00:00",
  "generic": {
   "avg": 8.31,
   "n": 6,
@@ -105,10 +105,10 @@
      "rep": "Sullivan",
      "dem_party": "D",
      "rep_party": "R",
-     "center": -0.88,
-     "lo": -3.88,
+     "center": 0.46,
+     "lo": -0.52,
      "hi": 1.12,
-     "rating": "Toss-up, slight edge Sullivan",
+     "rating": "Toss-up",
      "n_polls": 3
     },
     {
@@ -155,9 +155,9 @@
      "rep": "Baisley",
      "dem_party": "D",
      "rep_party": "R",
-     "center": 21.1,
-     "lo": 21.1,
-     "hi": 21.1,
+     "center": 19.37,
+     "lo": 19.37,
+     "hi": 19.37,
      "rating": "Solid Hickenlooper",
      "n_polls": 0
     },
@@ -169,9 +169,9 @@
      "rep": "Marx",
      "dem_party": "D",
      "rep_party": "R",
-     "center": 21.1,
-     "lo": 21.1,
-     "hi": 21.1,
+     "center": 22.18,
+     "lo": 22.18,
+     "hi": 22.18,
      "rating": "Solid Weiser",
      "n_polls": 0
     }
@@ -191,8 +191,8 @@
      "rep": "Collins",
      "dem_party": "D",
      "rep_party": "R",
-     "center": 9.46,
-     "lo": 7.6,
+     "center": 9.57,
+     "lo": 7.99,
      "hi": 10.2,
      "rating": "Likely Ossoff",
      "n_polls": 5
@@ -227,8 +227,8 @@
      "rep": "Marshall",
      "dem_party": "D",
      "rep_party": "R",
-     "center": -2.69,
-     "lo": -6.6,
+     "center": -2.22,
+     "lo": -5.42,
      "hi": -0.08,
      "rating": "Tilt Marshall",
      "n_polls": 3
@@ -263,9 +263,9 @@
      "rep": "Collins",
      "dem_party": "D",
      "rep_party": "R",
-     "center": 5.61,
+     "center": 3.96,
      "lo": 2.38,
-     "hi": 16.9,
+     "hi": 9.48,
      "rating": "Lean Jackson",
      "n_polls": 7
     },
@@ -299,9 +299,9 @@
      "rep": "Rogers",
      "dem_party": "D",
      "rep_party": "R",
-     "center": 4.07,
+     "center": 4.22,
      "lo": 3.0,
-     "hi": 8.37,
+     "hi": 9.09,
      "rating": "Lean El-Sayed",
      "n_polls": 10
     },
@@ -313,9 +313,9 @@
      "rep": "James",
      "dem_party": "D",
      "rep_party": "R",
-     "center": 8.08,
+     "center": 8.91,
      "lo": 7.98,
-     "hi": 8.37,
+     "hi": 11.68,
      "rating": "Likely Benson",
      "n_polls": 6
     }
@@ -335,8 +335,8 @@
      "rep": "Whatley",
      "dem_party": "D",
      "rep_party": "R",
-     "center": 12.57,
-     "lo": 6.55,
+     "center": 13.05,
+     "lo": 8.93,
      "hi": 13.58,
      "rating": "Solid Cooper",
      "n_polls": 8
@@ -371,8 +371,8 @@
      "rep": "Pillen",
      "dem_party": "D",
      "rep_party": "R",
-     "center": -9.24,
-     "lo": -11.03,
+     "center": -8.74,
+     "lo": -10.04,
      "hi": -7.45,
      "rating": "Likely Pillen",
      "n_polls": 2
@@ -393,8 +393,8 @@
      "rep": "Paxton",
      "dem_party": "D",
      "rep_party": "R",
-     "center": 1.16,
-     "lo": -4.07,
+     "center": 1.28,
+     "lo": -3.48,
      "hi": 2.47,
      "rating": "Toss-up, slight edge Talarico",
      "n_polls": 13
@@ -407,8 +407,8 @@
      "rep": "Abbott",
      "dem_party": "D",
      "rep_party": "R",
-     "center": -2.97,
-     "lo": -4.07,
+     "center": -2.82,
+     "lo": -3.29,
      "hi": -2.7,
      "rating": "Tilt Abbott",
      "n_polls": 12
