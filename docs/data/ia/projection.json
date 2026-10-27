@@ -1,0 +1,153 @@
+{
+ "state": "IA",
+ "code": "ia",
+ "name": "Iowa",
+ "election_date": "2026-11-03",
+ "has_early_vote": false,
+ "turnout_signal": null,
+ "races": [
+  {
+   "id": "senate",
+   "office": "U.S. Senate",
+   "type": "candidate",
+   "note": "Open seat (Joni Ernst retiring)",
+   "dem": {
+    "name": "Josh Turek",
+    "short": "Turek",
+    "party": "D",
+    "match": [
+     "turek"
+    ]
+   },
+   "rep": {
+    "name": "Ashley Hinson",
+    "short": "Hinson",
+    "party": "R",
+    "match": [
+     "hinson"
+    ]
+   },
+   "comparison_result": null,
+   "projection": {
+    "center": -0.85,
+    "lo": -3.64,
+    "hi": -0.15,
+    "rating": "Tilt Hinson",
+    "environment": {
+     "label": "2024 president (IA)",
+     "base": -13.45,
+     "national_then": -1.5,
+     "generic": 8.31,
+     "swing_factor": 1.0,
+     "swing": 9.81,
+     "generic_margin": -3.64,
+     "candidate_adjustment": 0.0,
+     "candidates": [],
+     "carry_forward": 0.4,
+     "margin": -3.64,
+     "note": null
+    },
+    "polls": {
+     "avg": -0.15,
+     "n": 10,
+     "window_days": 30
+    },
+    "poll_weight": 0.8,
+    "start": -0.85,
+    "early_vote": null
+   }
+  },
+  {
+   "id": "governor",
+   "office": "Governor",
+   "type": "candidate",
+   "note": "Open seat (Kim Reynolds retiring)",
+   "dem": {
+    "name": "Rob Sand",
+    "short": "Sand",
+    "party": "D",
+    "match": [
+     "sand"
+    ],
+    "track_record": {
+     "label": "2022 State Auditor",
+     "year": 2022,
+     "dem_votes": 600719,
+     "rep_votes": 597826,
+     "expected_from": {
+      "state_president_year": 2020,
+      "state_president_pct": [
+       44.89,
+       53.09
+      ],
+      "national_shift": -7.33
+     },
+     "weight": 0.5,
+     "source": "Wikipedia"
+    }
+   },
+   "rep": {
+    "name": "Zach Lahn",
+    "short": "Lahn",
+    "party": "R",
+    "match": [
+     "lahn"
+    ]
+   },
+   "comparison_result": null,
+   "projection": {
+    "center": 5.5,
+    "lo": -0.45,
+    "hi": 6.99,
+    "rating": "Toss-up, slight edge Sand",
+    "environment": {
+     "label": "2024 president (IA)",
+     "base": -13.45,
+     "national_then": -1.5,
+     "generic": 8.31,
+     "swing_factor": 1.0,
+     "swing": 9.81,
+     "generic_margin": -3.64,
+     "candidate_adjustment": 3.19,
+     "candidates": [
+      {
+       "side": "dem",
+       "name": "Sand",
+       "label": "2022 State Auditor",
+       "actual": 0.24,
+       "expected": -15.7,
+       "over": 15.94,
+       "weight": 0.5,
+       "adjustment": 3.19,
+       "source": "Wikipedia"
+      }
+     ],
+     "carry_forward": 0.4,
+     "margin": -0.45,
+     "note": null
+    },
+    "polls": {
+     "avg": 6.99,
+     "n": 10,
+     "window_days": 30
+    },
+    "poll_weight": 0.8,
+    "start": 5.5,
+    "early_vote": null
+   }
+  }
+ ],
+ "ev_notes": [],
+ "generated_at": "2026-10-27T23:32:52+00:00",
+ "assumptions": {
+  "dem": 0.92,
+  "rep": 0.92,
+  "una": 0.5,
+  "oth": 0.45
+ },
+ "constants": {
+  "c_weight": 0.25,
+  "c_cap": 2.0,
+  "poll_weight_max": 0.8
+ }
+}

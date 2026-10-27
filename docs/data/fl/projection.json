@@ -1,0 +1,153 @@
+{
+ "state": "FL",
+ "code": "fl",
+ "name": "Florida",
+ "election_date": "2026-11-03",
+ "has_early_vote": false,
+ "turnout_signal": null,
+ "races": [
+  {
+   "id": "senate",
+   "office": "U.S. Senate (special)",
+   "type": "candidate",
+   "note": "Special election; appointed incumbent Ashley Moody (R)",
+   "dem": {
+    "name": "Angie Nixon",
+    "short": "Nixon",
+    "party": "D",
+    "match": [
+     "nixon"
+    ]
+   },
+   "rep": {
+    "name": "Ashley Moody",
+    "short": "Moody",
+    "party": "R",
+    "match": [
+     "moody"
+    ],
+    "track_record": {
+     "label": "2022 Attorney General",
+     "year": 2022,
+     "dem_votes": 3025943,
+     "rep_votes": 4651279,
+     "expected_from": {
+      "state_president_year": 2020,
+      "state_president_pct": [
+       47.86,
+       51.22
+      ],
+      "national_shift": -7.33
+     },
+     "weight": 0.5,
+     "source": "Wikipedia"
+    }
+   },
+   "comparison_result": null,
+   "projection": {
+    "center": -5.99,
+    "lo": -6.11,
+    "hi": -5.5,
+    "rating": "Lean Moody",
+    "environment": {
+     "label": "2024 president (FL)",
+     "base": -13.22,
+     "national_then": -1.5,
+     "generic": 8.31,
+     "swing_factor": 1.0,
+     "swing": 9.81,
+     "generic_margin": -3.41,
+     "candidate_adjustment": -2.09,
+     "candidates": [
+      {
+       "side": "rep",
+       "name": "Moody",
+       "label": "2022 Attorney General",
+       "actual": -21.17,
+       "expected": -10.72,
+       "over": 10.45,
+       "weight": 0.5,
+       "adjustment": -2.09,
+       "source": "Wikipedia"
+      }
+     ],
+     "carry_forward": 0.4,
+     "margin": -5.5,
+     "note": null
+    },
+    "polls": {
+     "avg": -6.11,
+     "n": 8,
+     "window_days": 30
+    },
+    "poll_weight": 0.8,
+    "start": -5.99,
+    "early_vote": null
+   }
+  },
+  {
+   "id": "governor",
+   "office": "Governor",
+   "type": "candidate",
+   "note": "Open seat (Ron DeSantis term-limited)",
+   "dem": {
+    "name": "David Jolly",
+    "short": "Jolly",
+    "party": "D",
+    "match": [
+     "jolly"
+    ]
+   },
+   "rep": {
+    "name": "Byron Donalds",
+    "short": "Donalds",
+    "party": "R",
+    "match": [
+     "donalds"
+    ]
+   },
+   "comparison_result": null,
+   "projection": {
+    "center": -4.5,
+    "lo": -4.77,
+    "hi": -3.41,
+    "rating": "Lean Donalds",
+    "environment": {
+     "label": "2024 president (FL)",
+     "base": -13.22,
+     "national_then": -1.5,
+     "generic": 8.31,
+     "swing_factor": 1.0,
+     "swing": 9.81,
+     "generic_margin": -3.41,
+     "candidate_adjustment": 0.0,
+     "candidates": [],
+     "carry_forward": 0.4,
+     "margin": -3.41,
+     "note": null
+    },
+    "polls": {
+     "avg": -4.77,
+     "n": 9,
+     "window_days": 30
+    },
+    "poll_weight": 0.8,
+    "start": -4.5,
+    "early_vote": null
+   }
+  }
+ ],
+ "ev_notes": [],
+ "generated_at": "2026-10-27T23:32:52+00:00",
+ "assumptions": {
+  "dem": 0.92,
+  "rep": 0.92,
+  "una": 0.5,
+  "oth": 0.45
+ },
+ "constants": {
+  "c_weight": 0.25,
+  "c_cap": 2.0,
+  "poll_weight_max": 0.8
+ }
+}

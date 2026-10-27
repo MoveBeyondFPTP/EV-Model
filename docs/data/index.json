@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-27T23:29:45+00:00",
+ "generated_at": "2026-10-27T23:32:52+00:00",
  "generic": {
   "avg": 8.31,
   "n": 6,
@@ -178,6 +178,42 @@
    ]
   },
   {
+   "code": "fl",
+   "name": "Florida",
+   "has_early_vote": false,
+   "early_vote_as_of": null,
+   "races": [
+    {
+     "id": "senate",
+     "office": "U.S. Senate (special)",
+     "type": "candidate",
+     "dem": "Nixon",
+     "rep": "Moody",
+     "dem_party": "D",
+     "rep_party": "R",
+     "center": -5.99,
+     "lo": -6.11,
+     "hi": -5.5,
+     "rating": "Lean Moody",
+     "n_polls": 8
+    },
+    {
+     "id": "governor",
+     "office": "Governor",
+     "type": "candidate",
+     "dem": "Jolly",
+     "rep": "Donalds",
+     "dem_party": "D",
+     "rep_party": "R",
+     "center": -4.5,
+     "lo": -4.77,
+     "hi": -3.41,
+     "rating": "Lean Donalds",
+     "n_polls": 9
+    }
+   ]
+  },
+  {
    "code": "ga",
    "name": "Georgia",
    "has_early_vote": false,
@@ -210,6 +246,42 @@
      "hi": 7.6,
      "rating": "Toss-up, slight edge Bottoms",
      "n_polls": 6
+    }
+   ]
+  },
+  {
+   "code": "ia",
+   "name": "Iowa",
+   "has_early_vote": false,
+   "early_vote_as_of": null,
+   "races": [
+    {
+     "id": "senate",
+     "office": "U.S. Senate",
+     "type": "candidate",
+     "dem": "Turek",
+     "rep": "Hinson",
+     "dem_party": "D",
+     "rep_party": "R",
+     "center": -0.85,
+     "lo": -3.64,
+     "hi": -0.15,
+     "rating": "Tilt Hinson",
+     "n_polls": 10
+    },
+    {
+     "id": "governor",
+     "office": "Governor",
+     "type": "candidate",
+     "dem": "Sand",
+     "rep": "Lahn",
+     "dem_party": "D",
+     "rep_party": "R",
+     "center": 5.5,
+     "lo": -0.45,
+     "hi": 6.99,
+     "rating": "Toss-up, slight edge Sand",
+     "n_polls": 10
     }
    ]
   },
@@ -322,6 +394,42 @@
    ]
   },
   {
+   "code": "mn",
+   "name": "Minnesota",
+   "has_early_vote": false,
+   "early_vote_as_of": null,
+   "races": [
+    {
+     "id": "senate",
+     "office": "U.S. Senate",
+     "type": "candidate",
+     "dem": "Flanagan",
+     "rep": "Tafoya",
+     "dem_party": "D",
+     "rep_party": "R",
+     "center": 8.13,
+     "lo": 4.11,
+     "hi": 14.15,
+     "rating": "Likely Flanagan",
+     "n_polls": 3
+    },
+    {
+     "id": "governor",
+     "office": "Governor",
+     "type": "candidate",
+     "dem": "Klobuchar",
+     "rep": "Demuth",
+     "dem_party": "D",
+     "rep_party": "R",
+     "center": 13.84,
+     "lo": 8.78,
+     "hi": 18.91,
+     "rating": "Solid Klobuchar",
+     "n_polls": 2
+    }
+   ]
+  },
+  {
    "code": "nc",
    "name": "North Carolina",
    "has_early_vote": true,
@@ -376,6 +484,42 @@
      "hi": -7.45,
      "rating": "Likely Pillen",
      "n_polls": 2
+    }
+   ]
+  },
+  {
+   "code": "nh",
+   "name": "New Hampshire",
+   "has_early_vote": false,
+   "early_vote_as_of": null,
+   "races": [
+    {
+     "id": "senate",
+     "office": "U.S. Senate",
+     "type": "candidate",
+     "dem": "Pappas",
+     "rep": "Sununu",
+     "dem_party": "D",
+     "rep_party": "R",
+     "center": 9.31,
+     "lo": 7.65,
+     "hi": 12.63,
+     "rating": "Likely Pappas",
+     "n_polls": 4
+    },
+    {
+     "id": "governor",
+     "office": "Governor",
+     "type": "candidate",
+     "dem": "Warmington",
+     "rep": "Ayotte",
+     "dem_party": "D",
+     "rep_party": "R",
+     "center": -3.82,
+     "lo": -9.57,
+     "hi": 7.68,
+     "rating": "Toss-up, slight edge Ayotte",
+     "n_polls": 4
     }
    ]
   },

@@ -1,0 +1,88 @@
+{
+ "source": "VoteHub",
+ "source_url": "https://votehub.com/polls/",
+ "license": "CC BY 4.0",
+ "method": "One poll per pollster from the last 30 days (60 if fewer than 3), likely voters preferred, weighted by recency (half-life 14 days) and sample size; partisan or internal polls count half. Margins are two-party.",
+ "fetched_at": "2026-10-27T23:32:51+00:00",
+ "races": {
+  "senate": {
+   "avg": 4.11,
+   "n": 3,
+   "window_days": 30,
+   "polls": [
+    {
+     "pollster": "SurveyUSA",
+     "end_date": "2026-10-12",
+     "age": 15,
+     "population": "lv",
+     "sample_size": 718,
+     "dem": 45.0,
+     "rep": 42.0,
+     "margin": 3.45,
+     "partisan": false,
+     "url": "https://kstp.com/kstp-news/top-news/kstp-surveyusa-poll-swing-in-senate-and-ag-races-klobuchar-up-slightly-on-demuth/",
+     "weight": 0.521
+    },
+    {
+     "pollster": "GQR",
+     "end_date": "2026-10-04",
+     "age": 23,
+     "population": "lv",
+     "sample_size": 800,
+     "dem": 50.0,
+     "rep": 42.0,
+     "margin": 8.7,
+     "partisan": true,
+     "url": "https://x.com/DrewSav/status/2108502733045334207",
+     "weight": 0.185
+    },
+    {
+     "pollster": "Big Data Poll",
+     "end_date": "2026-09-30",
+     "age": 27,
+     "population": "lv",
+     "sample_size": 622,
+     "dem": 46.0,
+     "rep": 44.0,
+     "margin": 2.22,
+     "partisan": false,
+     "url": "https://www.bigdatapoll.com/blog/lone-star-state-poll-peggy-flanagan-holds-slight-lead-over-michele-tafoya-for-us-senate-in-minnesota/",
+     "weight": 0.267
+    }
+   ]
+  },
+  "governor": {
+   "avg": 8.78,
+   "n": 2,
+   "window_days": 60,
+   "polls": [
+    {
+     "pollster": "SurveyUSA",
+     "end_date": "2026-10-12",
+     "age": 15,
+     "population": "lv",
+     "sample_size": 718,
+     "dem": 48.0,
+     "rep": 41.0,
+     "margin": 7.87,
+     "partisan": false,
+     "url": "https://kstp.com/kstp-news/top-news/kstp-surveyusa-poll-swing-in-senate-and-ag-races-klobuchar-up-slightly-on-demuth/",
+     "weight": 0.521
+    },
+    {
+     "pollster": "Mason-Dixon",
+     "end_date": "2026-10-07",
+     "age": 20,
+     "population": "lv",
+     "sample_size": 800,
+     "dem": 50.0,
+     "rep": 41.0,
+     "margin": 9.89,
+     "partisan": false,
+     "url": "https://www.startribune.com/minnesota-poll-klobuchar-demuth-governor/601887444",
+     "weight": 0.429
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,153 @@
+{
+ "state": "MN",
+ "code": "mn",
+ "name": "Minnesota",
+ "election_date": "2026-11-03",
+ "has_early_vote": false,
+ "turnout_signal": null,
+ "races": [
+  {
+   "id": "senate",
+   "office": "U.S. Senate",
+   "type": "candidate",
+   "note": "Open seat (Tina Smith retiring)",
+   "dem": {
+    "name": "Peggy Flanagan",
+    "short": "Flanagan",
+    "party": "D",
+    "match": [
+     "flanagan"
+    ]
+   },
+   "rep": {
+    "name": "Michele Tafoya",
+    "short": "Tafoya",
+    "party": "R",
+    "match": [
+     "tafoya"
+    ]
+   },
+   "comparison_result": null,
+   "projection": {
+    "center": 8.13,
+    "lo": 4.11,
+    "hi": 14.15,
+    "rating": "Likely Flanagan",
+    "environment": {
+     "label": "2024 president (MN)",
+     "base": 4.34,
+     "national_then": -1.5,
+     "generic": 8.31,
+     "swing_factor": 1.0,
+     "swing": 9.81,
+     "generic_margin": 14.15,
+     "candidate_adjustment": 0.0,
+     "candidates": [],
+     "carry_forward": 0.4,
+     "margin": 14.15,
+     "note": null
+    },
+    "polls": {
+     "avg": 4.11,
+     "n": 3,
+     "window_days": 30
+    },
+    "poll_weight": 0.6,
+    "start": 8.13,
+    "early_vote": null
+   }
+  },
+  {
+   "id": "governor",
+   "office": "Governor",
+   "type": "candidate",
+   "note": "Open seat (Tim Walz withdrew in January)",
+   "dem": {
+    "name": "Amy Klobuchar",
+    "short": "Klobuchar",
+    "party": "D",
+    "match": [
+     "klobuchar"
+    ],
+    "track_record": {
+     "label": "2024 U.S. Senate",
+     "year": 2024,
+     "dem_votes": 1792441,
+     "rep_votes": 1291712,
+     "expected_from": {
+      "state_president_year": 2024,
+      "state_president_pct": [
+       50.92,
+       46.68
+      ],
+      "national_shift": 0.0
+     },
+     "weight": 1.0,
+     "source": "akashic.app (MIT Election Lab)"
+    }
+   },
+   "rep": {
+    "name": "Lisa Demuth",
+    "short": "Demuth",
+    "party": "R",
+    "match": [
+     "demuth"
+    ]
+   },
+   "comparison_result": null,
+   "projection": {
+    "center": 13.84,
+    "lo": 8.78,
+    "hi": 18.91,
+    "rating": "Solid Klobuchar",
+    "environment": {
+     "label": "2024 president (MN)",
+     "base": 4.34,
+     "national_then": -1.5,
+     "generic": 8.31,
+     "swing_factor": 1.0,
+     "swing": 9.81,
+     "generic_margin": 14.15,
+     "candidate_adjustment": 4.76,
+     "candidates": [
+      {
+       "side": "dem",
+       "name": "Klobuchar",
+       "label": "2024 U.S. Senate",
+       "actual": 16.24,
+       "expected": 4.34,
+       "over": 11.89,
+       "weight": 1.0,
+       "adjustment": 4.76,
+       "source": "akashic.app (MIT Election Lab)"
+      }
+     ],
+     "carry_forward": 0.4,
+     "margin": 18.91,
+     "note": null
+    },
+    "polls": {
+     "avg": 8.78,
+     "n": 2,
+     "window_days": 60
+    },
+    "poll_weight": 0.5,
+    "start": 13.84,
+    "early_vote": null
+   }
+  }
+ ],
+ "ev_notes": [],
+ "generated_at": "2026-10-27T23:32:52+00:00",
+ "assumptions": {
+  "dem": 0.92,
+  "rep": 0.92,
+  "una": 0.5,
+  "oth": 0.45
+ },
+ "constants": {
+  "c_weight": 0.25,
+  "c_cap": 2.0,
+  "poll_weight_max": 0.8
+ }
+}

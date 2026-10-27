@@ -1,0 +1,153 @@
+{
+ "state": "NH",
+ "code": "nh",
+ "name": "New Hampshire",
+ "election_date": "2026-11-03",
+ "has_early_vote": false,
+ "turnout_signal": null,
+ "races": [
+  {
+   "id": "senate",
+   "office": "U.S. Senate",
+   "type": "candidate",
+   "note": "Open seat (Jeanne Shaheen retiring)",
+   "dem": {
+    "name": "Chris Pappas",
+    "short": "Pappas",
+    "party": "D",
+    "match": [
+     "pappas"
+    ]
+   },
+   "rep": {
+    "name": "John E. Sununu",
+    "short": "Sununu",
+    "party": "R",
+    "match": [
+     "sununu"
+    ]
+   },
+   "comparison_result": null,
+   "projection": {
+    "center": 9.31,
+    "lo": 7.65,
+    "hi": 12.63,
+    "rating": "Likely Pappas",
+    "environment": {
+     "label": "2024 president (NH)",
+     "base": 2.82,
+     "national_then": -1.5,
+     "generic": 8.31,
+     "swing_factor": 1.0,
+     "swing": 9.81,
+     "generic_margin": 12.63,
+     "candidate_adjustment": 0.0,
+     "candidates": [],
+     "carry_forward": 0.4,
+     "margin": 12.63,
+     "note": null
+    },
+    "polls": {
+     "avg": 7.65,
+     "n": 4,
+     "window_days": 60
+    },
+    "poll_weight": 0.667,
+    "start": 9.31,
+    "early_vote": null
+   }
+  },
+  {
+   "id": "governor",
+   "office": "Governor",
+   "type": "candidate",
+   "note": "Incumbent Kelly Ayotte (R)",
+   "dem": {
+    "name": "Cinde Warmington",
+    "short": "Warmington",
+    "party": "D",
+    "match": [
+     "warmington"
+    ]
+   },
+   "rep": {
+    "name": "Kelly Ayotte",
+    "short": "Ayotte",
+    "party": "R",
+    "match": [
+     "ayotte"
+    ],
+    "track_record": {
+     "label": "2024 Governor",
+     "year": 2024,
+     "dem_votes": 360149,
+     "rep_votes": 436122,
+     "expected_from": {
+      "state_president_year": 2024,
+      "state_president_pct": [
+       50.65,
+       47.87
+      ],
+      "national_shift": 0.0
+     },
+     "weight": 1.0,
+     "source": "Wikipedia"
+    }
+   },
+   "comparison_result": null,
+   "projection": {
+    "center": -3.82,
+    "lo": -9.57,
+    "hi": 7.68,
+    "rating": "Toss-up, slight edge Ayotte",
+    "environment": {
+     "label": "2024 president (NH)",
+     "base": 2.82,
+     "national_then": -1.5,
+     "generic": 8.31,
+     "swing_factor": 1.0,
+     "swing": 9.81,
+     "generic_margin": 12.63,
+     "candidate_adjustment": -4.95,
+     "candidates": [
+      {
+       "side": "rep",
+       "name": "Ayotte",
+       "label": "2024 Governor",
+       "actual": -9.54,
+       "expected": 2.82,
+       "over": 12.36,
+       "weight": 1.0,
+       "adjustment": -4.95,
+       "source": "Wikipedia"
+      }
+     ],
+     "carry_forward": 0.4,
+     "margin": 7.68,
+     "note": null
+    },
+    "polls": {
+     "avg": -9.57,
+     "n": 4,
+     "window_days": 60
+    },
+    "poll_weight": 0.667,
+    "start": -3.82,
+    "early_vote": null
+   }
+  }
+ ],
+ "ev_notes": [],
+ "generated_at": "2026-10-27T23:32:52+00:00",
+ "assumptions": {
+  "dem": 0.92,
+  "rep": 0.92,
+  "una": 0.5,
+  "oth": 0.45
+ },
+ "constants": {
+  "c_weight": 0.25,
+  "c_cap": 2.0,
+  "poll_weight_max": 0.8
+ }
+}
