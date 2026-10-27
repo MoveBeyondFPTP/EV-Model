@@ -3,7 +3,7 @@
  "code": "me",
  "name": "Maine",
  "election_date": "2026-11-03",
- "has_early_vote": false,
+ "has_early_vote": true,
  "turnout_signal": null,
  "races": [
   {
@@ -43,7 +43,11 @@
      "source": "akashic.app (MIT Election Lab)"
     }
    },
-   "comparison_result": null,
+   "comparison_result": {
+    "label": "2022 governor",
+    "year": 2022,
+    "margin": 13.32
+   },
    "projection": {
     "center": 3.96,
     "lo": 2.38,
@@ -137,8 +141,11 @@
    }
   }
  ],
- "ev_notes": [],
- "generated_at": "2026-10-27T23:45:49+00:00",
+ "ev_notes": [
+  "In Maine all early voting is absentee voting. \u201cIn-person early\u201d here means absentee ballots cast at the town clerk\u2019s office; mail, drop-box and hand-delivered ballots count as mail.",
+  "Maine\u2019s files have no age or race, so those breakdowns aren\u2019t shown."
+ ],
+ "generated_at": "2026-10-27T23:47:33+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,
