@@ -1,0 +1,80 @@
+{
+  "state": "FL",
+  "name": "Florida",
+  "current": 2026,
+  "election_date": "2026-11-03",
+  "environment": {
+    "label": "2024 president (FL)",
+    "year": 2024,
+    "margin": -13.22,
+    "national_margin": -1.5
+  },
+  "polls": {
+    "subject": "2026 Florida"
+  },
+  "races": [
+    {
+      "id": "senate",
+      "office": "U.S. Senate (special)",
+      "type": "candidate",
+      "poll_type": "us-senator",
+      "dem": {
+        "name": "Angie Nixon",
+        "short": "Nixon",
+        "party": "D",
+        "match": [
+          "nixon"
+        ]
+      },
+      "rep": {
+        "name": "Ashley Moody",
+        "short": "Moody",
+        "party": "R",
+        "match": [
+          "moody"
+        ],
+        "track_record": {
+          "label": "2022 Attorney General",
+          "year": 2022,
+          "dem_votes": 3025943,
+          "rep_votes": 4651279,
+          "expected_from": {
+            "state_president_year": 2020,
+            "state_president_pct": [
+              47.86,
+              51.22
+            ],
+            "national_shift": -7.33
+          },
+          "weight": 0.5,
+          "source": "Wikipedia"
+        }
+      },
+      "note": "Special election; appointed incumbent Ashley Moody (R)"
+    },
+    {
+      "id": "governor",
+      "office": "Governor",
+      "type": "candidate",
+      "poll_type": "governor",
+      "dem": {
+        "name": "David Jolly",
+        "short": "Jolly",
+        "party": "D",
+        "match": [
+          "jolly"
+        ]
+      },
+      "rep": {
+        "name": "Byron Donalds",
+        "short": "Donalds",
+        "party": "R",
+        "match": [
+          "donalds"
+        ]
+      },
+      "note": "Open seat (Ron DeSantis term-limited)"
+    }
+  ],
+  "early_vote": null
+}

@@ -1,0 +1,80 @@
+{
+  "state": "IA",
+  "name": "Iowa",
+  "current": 2026,
+  "election_date": "2026-11-03",
+  "environment": {
+    "label": "2024 president (IA)",
+    "year": 2024,
+    "margin": -13.45,
+    "national_margin": -1.5
+  },
+  "polls": {
+    "subject": "2026 Iowa"
+  },
+  "races": [
+    {
+      "id": "senate",
+      "office": "U.S. Senate",
+      "type": "candidate",
+      "poll_type": "us-senator",
+      "dem": {
+        "name": "Josh Turek",
+        "short": "Turek",
+        "party": "D",
+        "match": [
+          "turek"
+        ]
+      },
+      "rep": {
+        "name": "Ashley Hinson",
+        "short": "Hinson",
+        "party": "R",
+        "match": [
+          "hinson"
+        ]
+      },
+      "note": "Open seat (Joni Ernst retiring)"
+    },
+    {
+      "id": "governor",
+      "office": "Governor",
+      "type": "candidate",
+      "poll_type": "governor",
+      "dem": {
+        "name": "Rob Sand",
+        "short": "Sand",
+        "party": "D",
+        "match": [
+          "sand"
+        ],
+        "track_record": {
+          "label": "2022 State Auditor",
+          "year": 2022,
+          "dem_votes": 600719,
+          "rep_votes": 597826,
+          "expected_from": {
+            "state_president_year": 2020,
+            "state_president_pct": [
+              44.89,
+              53.09
+            ],
+            "national_shift": -7.33
+          },
+          "weight": 0.5,
+          "source": "Wikipedia"
+        }
+      },
+      "rep": {
+        "name": "Zach Lahn",
+        "short": "Lahn",
+        "party": "R",
+        "match": [
+          "lahn"
+        ]
+      },
+      "note": "Open seat (Kim Reynolds retiring)"
+    }
+  ],
+  "early_vote": null
+}

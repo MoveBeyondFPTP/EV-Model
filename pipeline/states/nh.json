@@ -1,0 +1,80 @@
+{
+  "state": "NH",
+  "name": "New Hampshire",
+  "current": 2026,
+  "election_date": "2026-11-03",
+  "environment": {
+    "label": "2024 president (NH)",
+    "year": 2024,
+    "margin": 2.82,
+    "national_margin": -1.5
+  },
+  "polls": {
+    "subject": "2026 New Hampshire"
+  },
+  "races": [
+    {
+      "id": "senate",
+      "office": "U.S. Senate",
+      "type": "candidate",
+      "poll_type": "us-senator",
+      "dem": {
+        "name": "Chris Pappas",
+        "short": "Pappas",
+        "party": "D",
+        "match": [
+          "pappas"
+        ]
+      },
+      "rep": {
+        "name": "John E. Sununu",
+        "short": "Sununu",
+        "party": "R",
+        "match": [
+          "sununu"
+        ]
+      },
+      "note": "Open seat (Jeanne Shaheen retiring)"
+    },
+    {
+      "id": "governor",
+      "office": "Governor",
+      "type": "candidate",
+      "poll_type": "governor",
+      "dem": {
+        "name": "Cinde Warmington",
+        "short": "Warmington",
+        "party": "D",
+        "match": [
+          "warmington"
+        ]
+      },
+      "rep": {
+        "name": "Kelly Ayotte",
+        "short": "Ayotte",
+        "party": "R",
+        "match": [
+          "ayotte"
+        ],
+        "track_record": {
+          "label": "2024 Governor",
+          "year": 2024,
+          "dem_votes": 360149,
+          "rep_votes": 436122,
+          "expected_from": {
+            "state_president_year": 2024,
+            "state_president_pct": [
+              50.65,
+              47.87
+            ],
+            "national_shift": 0.0
+          },
+          "weight": 1.0,
+          "source": "Wikipedia"
+        }
+      },
+      "note": "Incumbent Kelly Ayotte (R)"
+    }
+  ],
+  "early_vote": null
+}

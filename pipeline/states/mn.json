@@ -1,0 +1,80 @@
+{
+  "state": "MN",
+  "name": "Minnesota",
+  "current": 2026,
+  "election_date": "2026-11-03",
+  "environment": {
+    "label": "2024 president (MN)",
+    "year": 2024,
+    "margin": 4.34,
+    "national_margin": -1.5
+  },
+  "polls": {
+    "subject": "2026 Minnesota"
+  },
+  "races": [
+    {
+      "id": "senate",
+      "office": "U.S. Senate",
+      "type": "candidate",
+      "poll_type": "us-senator",
+      "dem": {
+        "name": "Peggy Flanagan",
+        "short": "Flanagan",
+        "party": "D",
+        "match": [
+          "flanagan"
+        ]
+      },
+      "rep": {
+        "name": "Michele Tafoya",
+        "short": "Tafoya",
+        "party": "R",
+        "match": [
+          "tafoya"
+        ]
+      },
+      "note": "Open seat (Tina Smith retiring)"
+    },
+    {
+      "id": "governor",
+      "office": "Governor",
+      "type": "candidate",
+      "poll_type": "governor",
+      "dem": {
+        "name": "Amy Klobuchar",
+        "short": "Klobuchar",
+        "party": "D",
+        "match": [
+          "klobuchar"
+        ],
+        "track_record": {
+          "label": "2024 U.S. Senate",
+          "year": 2024,
+          "dem_votes": 1792441,
+          "rep_votes": 1291712,
+          "expected_from": {
+            "state_president_year": 2024,
+            "state_president_pct": [
+              50.92,
+              46.68
+            ],
+            "national_shift": 0.0
+          },
+          "weight": 1.0,
+          "source": "akashic.app (MIT Election Lab)"
+        }
+      },
+      "rep": {
+        "name": "Lisa Demuth",
+        "short": "Demuth",
+        "party": "R",
+        "match": [
+          "demuth"
+        ]
+      },
+      "note": "Open seat (Tim Walz withdrew in January)"
+    }
+  ],
+  "early_vote": null
+}
