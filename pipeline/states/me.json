@@ -50,7 +50,12 @@
           "source": "akashic.app (MIT Election Lab)"
         }
       },
-      "note": "Incumbent Susan Collins (R); ranked-choice general election"
+      "note": "Incumbent Susan Collins (R); ranked-choice general election",
+      "comparison_result": {
+        "label": "2022 governor",
+        "year": 2022,
+        "margin": 13.32
+      }
     },
     {
       "id": "governor",
@@ -76,5 +81,42 @@
       "note": "Open seat (Janet Mills term-limited); independent Rick Bennett also running"
     }
   ],
-  "early_vote": null
+  "early_vote": {
+    "type": "maine",
+    "elections": {
+      "2026": "2026-11-03",
+      "2022": "2022-11-08"
+    },
+    "baselines": [
+      2022
+    ],
+    "calibration": null,
+    "files": {
+      "2026": {
+        "page": "https://www.maine.gov/sos/elections-voting/voter-data",
+        "pattern": "11-3-26.*AB.*Voter.*File.*\\.txt"
+      },
+      "2022": "https://www.maine.gov/sos/sites/maine.gov.sos/files/inline-files/Absentee%20Voter%20File11822_0.txt"
+    },
+    "county_map": "https://www.maine.gov/sos/sites/maine.gov.sos/files/inline-files/E%26R%203.7.26%20ACTIVE%20After%20Inactivation%20Process.xlsx",
+    "registration": {
+      "snapshots": {
+        "2026": {
+          "url": "https://www.maine.gov/sos/sites/maine.gov.sos/files/inline-files/E%26R%203.7.26%20ACTIVE%20After%20Inactivation%20Process.xlsx",
+          "format": "maine",
+          "label": "March 2026 (active voters)"
+        },
+        "2022": {
+          "url": "https://www.maine.gov/sos/sites/maine.gov.sos/files/data-text/r-e-active111822.txt",
+          "format": "maine",
+          "label": "November 2022 (active voters)"
+        }
+      }
+    },
+    "source_page": "https://www.maine.gov/sos/elections-voting/voter-data",
+    "notes": [
+      "In Maine all early voting is absentee voting. \u201cIn-person early\u201d here means absentee ballots cast at the town clerk\u2019s office; mail, drop-box and hand-delivered ballots count as mail.",
+      "Maine\u2019s files have no age or race, so those breakdowns aren\u2019t shown."
+    ]
+  }
 }

@@ -67,12 +67,17 @@ def main():
     for year, snap in reg["snapshots"].items():
         if year in data and not args.force:
             continue
-        url = reg["url_template"].format(path=snap["path"])
+        url = snap.get("url") or reg["url_template"].format(path=snap["path"])
         try:
             log(f"Downloading {url}")
             r = requests.get(url, headers=H, timeout=600)
             r.raise_for_status()
-            counts = tally(r.content)
+            if snap.get("format") == "maine":
+                sys.path.insert(0, str(ROOT / "pipeline"))
+                from sources import maine
+                counts = maine.registration(r.content)
+            else:
+                counts = tally(r.content)
             total = sum(counts.values())
             log(f"  {year}: {counts} total {total:,}")
             if total < 1000:

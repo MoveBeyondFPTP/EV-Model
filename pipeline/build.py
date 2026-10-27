@@ -239,7 +239,7 @@ def summarize(df: pd.DataFrame, cfg: dict, year: int) -> dict:
         "as_of_days_out": int((election - as_of_clipped).days) if as_of_clipped is not None else None,
         "total": int(len(df)),
         "returned_after_election_day": late,
-        "source_url": cfg["source_url_template"].format(d=cfg["elections"][year]),
+        "source_url": None,
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "days_out": days,
         "daily": {
@@ -255,14 +255,22 @@ def summarize(df: pd.DataFrame, cfg: dict, year: int) -> dict:
 
 def build(cfg: dict, year: int, source_dir: Path | None) -> dict:
     log(f"== {cfg['state']} {year}")
-    path = download(cfg, year, source_dir)
-    df = read_ballots(path)
+    if cfg.get("type") == "maine":
+        sys.path.insert(0, str(Path(__file__).resolve().parent))
+        from sources import maine
+        df, url = maine.load(cfg, year)
+        path = None
+    else:
+        path = download(cfg, year, source_dir)
+        df = read_ballots(path)
+        url = cfg["source_url_template"].format(d=cfg["elections"][year])
     log(f"  accepted rows: {len(df):,}")
     summary = summarize(df, cfg, year)
+    summary["source_url"] = url
     log(f"  unique accepted ballots: {summary['total']:,}; as of {summary['as_of']}")
     if summary["total"] == 0:
         raise RuntimeError(f"No accepted ballots found for {year}; refusing to overwrite data")
-    if source_dir is None:
+    if source_dir is None and path is not None:
         path.unlink(missing_ok=True)  # free runner disk before the next year
     return summary
 
