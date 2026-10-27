@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-27T23:10:23+00:00",
+ "generated_at": "2026-10-27T23:20:38+00:00",
  "generic": {
   "avg": 8.31,
   "n": 6,
@@ -210,6 +210,42 @@
      "hi": 7.6,
      "rating": "Toss-up, slight edge Bottoms",
      "n_polls": 6
+    }
+   ]
+  },
+  {
+   "code": "ks",
+   "name": "Kansas",
+   "has_early_vote": false,
+   "early_vote_as_of": null,
+   "races": [
+    {
+     "id": "senate",
+     "office": "U.S. Senate",
+     "type": "candidate",
+     "dem": "Hamilton",
+     "rep": "Marshall",
+     "dem_party": "D",
+     "rep_party": "R",
+     "center": -2.69,
+     "lo": -6.6,
+     "hi": -0.08,
+     "rating": "Tilt Marshall",
+     "n_polls": 3
+    },
+    {
+     "id": "governor",
+     "office": "Governor",
+     "type": "candidate",
+     "dem": "Holscher",
+     "rep": "Masterson",
+     "dem_party": "D",
+     "rep_party": "R",
+     "center": -5.92,
+     "lo": -6.6,
+     "hi": -5.46,
+     "rating": "Lean Masterson",
+     "n_polls": 3
     }
    ]
   },

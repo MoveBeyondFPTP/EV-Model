@@ -1,0 +1,117 @@
+{
+ "state": "KS",
+ "code": "ks",
+ "name": "Kansas",
+ "election_date": "2026-11-03",
+ "has_early_vote": false,
+ "turnout_signal": null,
+ "races": [
+  {
+   "id": "senate",
+   "office": "U.S. Senate",
+   "type": "candidate",
+   "note": "Incumbent Roger Marshall (R)",
+   "dem": {
+    "name": "Adam Hamilton",
+    "short": "Hamilton",
+    "party": "D",
+    "match": [
+     "hamilton"
+    ]
+   },
+   "rep": {
+    "name": "Roger Marshall",
+    "short": "Marshall",
+    "party": "R",
+    "match": [
+     "marshall"
+    ]
+   },
+   "comparison_result": null,
+   "projection": {
+    "center": -2.69,
+    "lo": -6.6,
+    "hi": -0.08,
+    "rating": "Tilt Marshall",
+    "environment": {
+     "label": "2024 president (KS)",
+     "base": -16.41,
+     "national_then": -1.5,
+     "generic": 8.31,
+     "swing_factor": 1.0,
+     "swing": 9.81,
+     "margin": -6.6,
+     "note": null
+    },
+    "polls": {
+     "avg": -0.08,
+     "n": 3,
+     "window_days": 60
+    },
+    "poll_weight": 0.6,
+    "start": -2.69,
+    "early_vote": null
+   }
+  },
+  {
+   "id": "governor",
+   "office": "Governor",
+   "type": "candidate",
+   "note": "Open seat (Laura Kelly term-limited)",
+   "dem": {
+    "name": "Cindy Holscher",
+    "short": "Holscher",
+    "party": "D",
+    "match": [
+     "holscher"
+    ]
+   },
+   "rep": {
+    "name": "Ty Masterson",
+    "short": "Masterson",
+    "party": "R",
+    "match": [
+     "masterson"
+    ]
+   },
+   "comparison_result": null,
+   "projection": {
+    "center": -5.92,
+    "lo": -6.6,
+    "hi": -5.46,
+    "rating": "Lean Masterson",
+    "environment": {
+     "label": "2024 president (KS)",
+     "base": -16.41,
+     "national_then": -1.5,
+     "generic": 8.31,
+     "swing_factor": 1.0,
+     "swing": 9.81,
+     "margin": -6.6,
+     "note": null
+    },
+    "polls": {
+     "avg": -5.46,
+     "n": 3,
+     "window_days": 60
+    },
+    "poll_weight": 0.6,
+    "start": -5.92,
+    "early_vote": null
+   }
+  }
+ ],
+ "ev_notes": [],
+ "generated_at": "2026-10-27T23:20:38+00:00",
+ "assumptions": {
+  "dem": 0.92,
+  "rep": 0.92,
+  "una": 0.5,
+  "oth": 0.45
+ },
+ "constants": {
+  "c_weight": 0.25,
+  "c_cap": 2.0,
+  "poll_weight_max": 0.8
+ }
+}
