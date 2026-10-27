@@ -6,6 +6,12 @@ on:
     # ~16:17 Eastern (14:17 and 20:17 UTC) to catch late postings.
     - cron: "17 14 * * *"
     - cron: "17 20 * * *"
+  push:
+    branches: [main]
+    paths:
+      - "pipeline/**"
+      - "requirements.txt"
+      - ".github/workflows/update.yml"
   workflow_dispatch:
     inputs:
       force:
