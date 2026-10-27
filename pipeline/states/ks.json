@@ -1,0 +1,64 @@
+{
+  "state": "KS",
+  "name": "Kansas",
+  "current": 2026,
+  "election_date": "2026-11-03",
+  "environment": {
+    "label": "2024 president (KS)",
+    "year": 2024,
+    "margin": -16.41,
+    "national_margin": -1.5
+  },
+  "polls": {
+    "subject": "2026 Kansas"
+  },
+  "races": [
+    {
+      "id": "senate",
+      "office": "U.S. Senate",
+      "type": "candidate",
+      "poll_type": "us-senator",
+      "dem": {
+        "name": "Adam Hamilton",
+        "short": "Hamilton",
+        "party": "D",
+        "match": [
+          "hamilton"
+        ]
+      },
+      "rep": {
+        "name": "Roger Marshall",
+        "short": "Marshall",
+        "party": "R",
+        "match": [
+          "marshall"
+        ]
+      },
+      "note": "Incumbent Roger Marshall (R)"
+    },
+    {
+      "id": "governor",
+      "office": "Governor",
+      "type": "candidate",
+      "poll_type": "governor",
+      "dem": {
+        "name": "Cindy Holscher",
+        "short": "Holscher",
+        "party": "D",
+        "match": [
+          "holscher"
+        ]
+      },
+      "rep": {
+        "name": "Ty Masterson",
+        "short": "Masterson",
+        "party": "R",
+        "match": [
+          "masterson"
+        ]
+      },
+      "note": "Open seat (Laura Kelly term-limited)"
+    }
+  ],
+  "early_vote": null
+}
