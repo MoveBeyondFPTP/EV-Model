@@ -1,0 +1,49 @@
+ak: no early-vote source configured; skipping
+No registration config; skipping
+co: no early-vote source configured; skipping
+No registration config; skipping
+fl: no early-vote source configured; skipping
+No registration config; skipping
+ga: no early-vote source configured; skipping
+No registration config; skipping
+ia: no early-vote source configured; skipping
+No registration config; skipping
+ks: no early-vote source configured; skipping
+No registration config; skipping
+== ME 2026
+Downloading https://www.maine.gov/sos/sites/maine.gov.sos/files/inline-files/11-3-26%20AB%20Voter%20File%20as%20of%2010-27-26.txt
+!! 2026 failed: HTTPError('403 Client Error: Forbidden for url: https://www.maine.gov/sos/sites/maine.gov.sos/files/inline-files/E%26R%203.7.26%20ACTIVE%20After%20Inactivation%20Process.xlsx')
+== ME 2022
+Downloading https://www.maine.gov/sos/sites/maine.gov.sos/files/inline-files/Absentee%20Voter%20File11822_0.txt
+!! 2022 failed: HTTPError('403 Client Error: Forbidden for url: https://www.maine.gov/sos/sites/maine.gov.sos/files/inline-files/Absentee%20Voter%20File11822_0.txt')
+  wrote docs/data/me/manifest.json (0 KB)
+Failed years: [2026, 2022]
+Downloading https://www.maine.gov/sos/sites/maine.gov.sos/files/inline-files/E%26R%203.7.26%20ACTIVE%20After%20Inactivation%20Process.xlsx
+!! registration 2026 failed: HTTPError('403 Client Error: Forbidden for url: https://www.maine.gov/sos/sites/maine.gov.sos/files/inline-files/E%26R%203.7.26%20ACTIVE%20After%20Inactivation%20Process.xlsx')
+Downloading https://www.maine.gov/sos/sites/maine.gov.sos/files/data-text/r-e-active111822.txt
+!! registration 2022 failed: HTTPError('403 Client Error: Forbidden for url: https://www.maine.gov/sos/sites/maine.gov.sos/files/data-text/r-e-active111822.txt')
+mi: no early-vote source configured; skipping
+No registration config; skipping
+mn: no early-vote source configured; skipping
+No registration config; skipping
+== NC 2026
+Downloading https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2026_11_03/absentee_20261103.zip
+  77.2 MB
+  reading absentee_20261103.csv (758 MB unzipped)
+  columns: {'county': 'county_desc', 'ncid': 'ncid', 'reg_num': 'voter_reg_num', 'party': 'voter_party_code', 'race': 'race', 'age': 'age', 'req_type': 'ballot_req_type', 'rtn_dt': 'ballot_rtn_dt', 'status': 'ballot_rtn_status'}
+  accepted rows: 1,773,890
+  unique accepted ballots: 1,773,881; as of 2026-10-26
+  wrote docs/data/nc/2026.json (63 KB)
+== 2022: already built, skipping
+== 2018: already built, skipping
+== 2024: already built, skipping
+== 2020: already built, skipping
+  wrote docs/data/nc/manifest.json (1 KB)
+ne: no early-vote source configured; skipping
+No registration config; skipping
+nh: no early-vote source configured; skipping
+No registration config; skipping
+tx: no early-vote source configured; skipping
+No registration config; skipping
+wi: no early-vote source configured; skipping
+No registration config; skipping
