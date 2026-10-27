@@ -116,6 +116,7 @@ ul.caveats li { margin-bottom: 6px; }
 footer { margin-top: 36px; font-size: 13px; color: var(--text-3); }
 a { color: var(--accent); }
 #error { display: none; }
+.linkbtn { font: inherit; font-size: 14px; background: none; border: none; padding: 4px 0; color: var(--accent); cursor: pointer; }
 </style>
 </head>
 <body>
@@ -397,7 +398,7 @@ a { color: var(--accent); }
       const vals = labels.map(d => {
         if (y === cur.year && d < DAY) return null;
         const tot = cumAt(data, data.daily.total, d);
-        if (tot < 1000) return null;
+        if (tot < 100000) return null;  // skip the noisy mail-only weeks
         return (cumAt(data, data.daily.party.DEM, d) - cumAt(data, data.daily.party.REP, d)) / tot * 100;
       });
       return {
@@ -412,6 +413,7 @@ a { color: var(--accent); }
     charts.gap = new Chart(document.getElementById("gapChart"), { type: "line", data: { labels, datasets }, options: opts });
   }
 
+  let showAllCounties = false;
   let countySort = { key: "now", dir: -1 }, countyRows = [];
   function buildCounties() {
     const base = D[2022];
@@ -427,7 +429,7 @@ a { color: var(--accent); }
       return { name, now, then, pace: then ? now / then * 100 : null, gap, shift: gap != null && gapThen != null ? gap - gapThen : null };
     });
     document.getElementById("countySub").textContent =
-      `Pace is 2026 ballots as a share of 2022 ballots ${DAY} days out. Shift is the change in the D−R registration gap versus 2022 at the same point. Tap a column to sort.`;
+      `Pace is 2026 ballots as a share of 2022 ballots ${DAY} days out. Shift is the change in the D−R registration gap versus 2022 at the same point. Tap a column to sort; largest 25 shown.`;
   }
   function renderCounties() {
     const q = document.getElementById("countySearch").value.trim().toLowerCase();
@@ -438,13 +440,17 @@ a { color: var(--accent); }
     });
     const head = [["name", "County"], ["now", "2026 ballots"], ["then", "2022 same day"], ["pace", "Pace"], ["gap", "D−R gap"], ["shift", "Shift vs 2022"]];
     let t = `<table><thead><tr>${head.map(([key, l]) => `<th class="sortable" data-k="${key}" aria-sort="${key === k ? (dir > 0 ? "ascending" : "descending") : "none"}">${l}${key === k ? (dir > 0 ? " ▲" : " ▼") : ""}</th>`).join("")}</tr></thead><tbody>`;
-    for (const r of rows) {
+    const shown = (q || showAllCounties) ? rows : rows.slice(0, 25);
+    for (const r of shown) {
       const shiftCls = r.shift > 0 ? "d" : r.shift < 0 ? "r" : "";
       t += `<tr><td>${esc(r.name)}</td><td>${fmt(r.now)}</td><td>${fmt(r.then)}</td><td>${pct(r.pace, 0)}</td><td>${pts(r.gap)}</td><td class="${shiftCls}">${pts(r.shift)}</td></tr>`;
     }
     if (!rows.length) t += `<tr><td colspan="6" class="muted">No matching county</td></tr>`;
+    if (!q && rows.length > 25) t += `<tr><td colspan="6"><button id="countyMore" class="linkbtn">${showAllCounties ? "Show top 25" : `Show all ${rows.length} counties`}</button></td></tr>`;
     const el = document.getElementById("countyTable");
     el.innerHTML = t + "</tbody></table>";
+    const more = document.getElementById("countyMore");
+    if (more) more.addEventListener("click", () => { showAllCounties = !showAllCounties; renderCounties(); });
     el.querySelectorAll("th.sortable").forEach(th => th.addEventListener("click", () => {
       const key = th.dataset.k;
       countySort = { key, dir: countySort.key === key ? -countySort.dir : (key === "name" ? 1 : -1) };
