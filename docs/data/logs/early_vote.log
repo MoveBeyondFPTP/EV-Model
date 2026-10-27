@@ -12,16 +12,16 @@ ks: no early-vote source configured; skipping
 No registration config; skipping
 == ME 2026
 Downloading https://www.maine.gov/sos/sites/maine.gov.sos/files/inline-files/11-3-26%20AB%20Voter%20File%20as%20of%2010-27-26.txt
-!! 2026 failed: HTTPError('403 Client Error: Forbidden for url: https://www.maine.gov/sos/sites/maine.gov.sos/files/inline-files/E%26R%203.7.26%20ACTIVE%20After%20Inactivation%20Process.xlsx')
+!! 2026 failed: ValueError("Couldn't find a header row with D/R/U columns")
 == ME 2022
 Downloading https://www.maine.gov/sos/sites/maine.gov.sos/files/inline-files/Absentee%20Voter%20File11822_0.txt
-!! 2022 failed: HTTPError('403 Client Error: Forbidden for url: https://www.maine.gov/sos/sites/maine.gov.sos/files/inline-files/Absentee%20Voter%20File11822_0.txt')
+!! 2022 failed: ValueError("Couldn't find a header row with D/R/U columns")
   wrote docs/data/me/manifest.json (0 KB)
 Failed years: [2026, 2022]
 Downloading https://www.maine.gov/sos/sites/maine.gov.sos/files/inline-files/E%26R%203.7.26%20ACTIVE%20After%20Inactivation%20Process.xlsx
-!! registration 2026 failed: HTTPError('403 Client Error: Forbidden for url: https://www.maine.gov/sos/sites/maine.gov.sos/files/inline-files/E%26R%203.7.26%20ACTIVE%20After%20Inactivation%20Process.xlsx')
+!! registration 2026 failed: ValueError("Couldn't find a header row with D/R/U columns")
 Downloading https://www.maine.gov/sos/sites/maine.gov.sos/files/data-text/r-e-active111822.txt
-!! registration 2022 failed: HTTPError('403 Client Error: Forbidden for url: https://www.maine.gov/sos/sites/maine.gov.sos/files/data-text/r-e-active111822.txt')
+  2022: {'DEM': 345422, 'REP': 280150, 'UNA': 265692, 'OTH': 37753} total 929,017
 mi: no early-vote source configured; skipping
 No registration config; skipping
 mn: no early-vote source configured; skipping

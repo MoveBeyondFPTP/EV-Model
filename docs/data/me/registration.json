@@ -1,1 +1,9 @@
-{}
+{
+ "2022": {
+  "DEM": 345422,
+  "REP": 280150,
+  "UNA": 265692,
+  "OTH": 37753,
+  "label": "November 2022 (active voters)"
+ }
+}
