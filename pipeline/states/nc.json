@@ -1,0 +1,29 @@
+{
+  "state": "NC",
+  "name": "North Carolina",
+  "current": 2026,
+  "elections": {
+    "2026": "2026-11-03",
+    "2022": "2022-11-08",
+    "2018": "2018-11-06",
+    "2024": "2024-11-05",
+    "2020": "2020-11-03"
+  },
+  "baselines": [2022, 2018],
+  "calibration": {
+    "note": "A comparable pair of past cycles, used to test how much of an early-vote shift shows up in the result. Margins are two-party, D minus R, in points.",
+    "from": {"year": 2020, "label": "2020 president", "margin": -1.37},
+    "to": {"year": 2024, "label": "2024 president", "margin": -3.26}
+  },
+  "races": [
+    {
+      "office": "U.S. Senate",
+      "note": "Open seat (Thom Tillis retiring)",
+      "dem": "Roy Cooper",
+      "rep": "Michael Whatley",
+      "baseline": {"year": 2022, "label": "2022 U.S. Senate", "margin": -3.30}
+    }
+  ],
+  "source_url_template": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/{d:%Y_%m_%d}/absentee_{d:%Y%m%d}.zip",
+  "source_page": "https://www.ncsbe.gov/results-data/absentee-data"
+}
