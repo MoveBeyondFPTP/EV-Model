@@ -210,9 +210,15 @@ def summarize(df: pd.DataFrame, cfg: dict, year: int) -> dict:
     df = pd.concat([with_id, df[~has_id]], ignore_index=True)
 
     late = int((df["rtn"] > election).sum())
-    df = df.assign(days_out=(election - df["rtn"]).dt.days.clip(lower=0))
+    # Window: 90 days before Election Day. Anything earlier (or a mistyped date years in the past)
+    # is folded into day 90 so one bad record can't blow up the file size.
+    MAX_WINDOW = 90
+    bad = int(((election - df["rtn"]).dt.days > MAX_WINDOW).sum())
+    if bad:
+        log(f"  {bad} ballots dated more than {MAX_WINDOW} days out; counted on day {MAX_WINDOW}")
+    df = df.assign(days_out=(election - df["rtn"]).dt.days.clip(lower=0, upper=MAX_WINDOW))
 
-    max_days = max(int(df["days_out"].max()) if len(df) else 0, 60)
+    max_days = min(max(int(df["days_out"].max()) if len(df) else 0, 60), MAX_WINDOW)
     days = list(range(max_days, -1, -1))  # descending: far out -> Election Day
 
     def series(group_col: str | None, values: list[str]):
@@ -276,7 +282,10 @@ def build(cfg: dict, year: int, source_dir: Path | None) -> dict:
 
 
 def write_json(obj: dict, path: Path):
-    path.write_text(json.dumps(obj, separators=(",", ":")))
+    text = json.dumps(obj, separators=(",", ":"))
+    if len(text) > 5_000_000:  # summaries should be well under 1 MB; refuse to write something that would break the push
+        raise RuntimeError(f"{path.name} would be {len(text) / 1e6:.0f} MB; refusing to write")
+    path.write_text(text)
     log(f"  wrote {path.relative_to(ROOT)} ({path.stat().st_size / 1e3:.0f} KB)")
 
 
