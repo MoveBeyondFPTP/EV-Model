@@ -24,7 +24,14 @@ DATA = ROOT / "docs" / "data"
 STATES = ROOT / "pipeline" / "states"
 
 ASSUME = {"dem": 0.92, "rep": 0.92, "una": 0.50, "oth": 0.45}
-C_WEIGHT, C_WEIGHTS, C_CAP, POLL_W_MAX = 0.25, (0.0, 0.25, 0.5), 2.0, 0.8
+C_WEIGHT, C_WEIGHTS, C_CAP = 0.25, (0.0, 0.25, 0.5), 2.0
+# Poll weight = n / (n + k). k shrinks with the calendar, so the environment fades out by
+# Election Day (as in poll-based forecasts like Nate Silver's): k = 2 thirty days out, 0 on the day.
+K_AT_30_DAYS = 2.0
+
+
+def poll_k(days_left: int) -> float:
+    return K_AT_30_DAYS * max(days_left, 0) / 30
 
 
 def log(*a):
@@ -101,7 +108,7 @@ def turnout_signal(code: str, ev_cfg: dict):
 # ---------- projection ----------
 def rating(center, lo, hi, dem_short, rep_short, measure=False):
     leader = dem_short if center > 0 else rep_short
-    if lo < 0 < hi:
+    if lo < 0 < hi or abs(center) < 1.0:
         return "Toss-up" if abs(center) < 0.5 else f"Toss-up, slight edge {leader}"
     a = abs(center)
     if measure:
@@ -140,7 +147,7 @@ def candidate_adjustment(race):
     return total, details
 
 
-def project_race(race, cfg, generic, polls, signal):
+def project_race(race, cfg, generic, polls, signal, days_left):
     env_cfg = race.get("environment") or cfg["environment"]
     A = None
     if generic is not None:
@@ -155,12 +162,19 @@ def project_race(race, cfg, generic, polls, signal):
     P = polls if polls and polls.get("avg") is not None else None
     if not A and not P:
         return None
-    wp = (min(POLL_W_MAX, P["n"] / (P["n"] + 2)) if A else 1.0) if P else 0.0
+    k = poll_k(days_left)
+    wp = ((P["n"] / (P["n"] + k) if k > 0 else 1.0) if A else 1.0) if P else 0.0
     start = wp * P["avg"] + (1 - wp) * A["margin"] if (P and A) else (P["avg"] if P else A["margin"])
     use_c = signal is not None and race.get("type") == "candidate" and race["dem"].get("party") == "D"
     adj_at = (lambda k: clamp(k * signal["value"], -C_CAP, C_CAP)) if use_c else (lambda k: 0.0)
     adj = adj_at(C_WEIGHT)
-    starts = [start] + ([A["margin"]] if A else []) + ([P["avg"]] if P else [])
+    # Range: vary the environment's share from double its current weight down to zero (polls only),
+    # so the band narrows as Election Day nears and the environment fades out.
+    if P and A:
+        blend = lambda w: w * P["avg"] + (1 - w) * A["margin"]
+        starts = [blend(max(0.0, 2 * wp - 1)), start, blend(1.0)]
+    else:
+        starts = [start]
     allv = [s + adj_at(k) for s in starts for k in (C_WEIGHTS if use_c else (0.0,))]
     center = start + adj
     lo, hi = min(allv), max(allv)
@@ -183,10 +197,12 @@ def main():
         code = path.stem
         cfg = load(path)
         pol = load(DATA / code / "polls.json") or {"races": {}}
+        from datetime import date as _date
+        days_left = (_date.fromisoformat(cfg["election_date"]) - datetime.now(timezone.utc).date()).days
         signal = turnout_signal(code, cfg["early_vote"]) if cfg.get("early_vote") else None
         races = []
         for race in cfg["races"]:
-            p = project_race(race, cfg, generic, pol["races"].get(race["id"]), signal)
+            p = project_race(race, cfg, generic, pol["races"].get(race["id"]), signal, days_left)
             races.append({k: race.get(k) for k in ("id", "office", "type", "note", "dem", "rep", "comparison_result")}
                          | {"projection": p})
             if p:
@@ -196,7 +212,8 @@ def main():
                "turnout_signal": signal, "races": races,
                "ev_notes": (cfg.get("early_vote") or {}).get("notes", []),
                "generated_at": index["generated_at"], "assumptions": ASSUME,
-               "constants": {"c_weight": C_WEIGHT, "c_cap": C_CAP, "poll_weight_max": POLL_W_MAX}}
+               "constants": {"c_weight": C_WEIGHT, "c_cap": C_CAP, "k_at_30_days": K_AT_30_DAYS,
+                             "days_left": days_left, "k_now": round(poll_k(days_left), 3)}}
         (DATA / code).mkdir(parents=True, exist_ok=True)
         (DATA / code / "projection.json").write_text(json.dumps(out, indent=1))
         index["states"].append({
