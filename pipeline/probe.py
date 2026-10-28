@@ -1,55 +1,48 @@
-"""Temporary: which county early-vote sources are reachable from GitHub's servers?"""
-import re, requests, concurrent.futures as cf
+"""Temporary: look inside promising county early-vote pages and files."""
+import re, io, requests, concurrent.futures as cf
 H = {"User-Agent": "Mozilla/5.0 (compatible; EV-Model/1.0; +https://github.com/MoveBeyondFPTP/EV-Model)"}
+def text(html):
+    html = re.sub(r"(?is)<(script|style|nav|footer|header).*?</\1>", " ", html)
+    return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " | ", html))
+def pdftext(content, pages=2):
+    import pdfplumber
+    with pdfplumber.open(io.BytesIO(content)) as pdf:
+        return f"[{len(pdf.pages)} pages] " + "\n".join((p.extract_text() or "") for p in pdf.pages[:pages])
+KEY = re.compile(r"early|turnout|absentee|ballot|advance|roster|statistic|report|daily|count|\.(csv|xlsx?|pdf|json|zip)", re.I)
 URLS = {
- "TX Bexar": "https://earlyvotecountsdual.bexar.org",
- "TX Harris": "https://www.harrisvotes.com/",
- "TX Harris EV": "https://www.harrisvotes.com/Voter/Early-Voting",
- "TX Travis": "https://votetravis.gov/",
- "TX Tarrant": "https://www.tarrantcountytx.gov/en/elections.html",
- "TX Dallas": "https://www.dallascountyvotes.org/",
- "TX Collin": "https://www.collincountytx.gov/Elections",
- "TX ElPaso": "https://epcountyvotes.com/",
- "MN sos.mn.gov": "https://sos.mn.gov/election-administration-campaigns/data-maps/absentee-data",
- "IA file": "https://sos.iowa.gov/sites/default/files/2026-06/ABS%20Congressional%202026.pdf",
- "KS JoCo": "https://www.jocoelection.org/",
- "KS Sedgwick": "https://www.sedgwickcounty.org/elections/",
- "NE Douglas": "https://www.votedouglascounty.com/",
- "NE Lancaster": "https://www.lancaster.ne.gov/434/Election-Commissioner",
- "WI Milwaukee": "https://city.milwaukee.gov/election",
- "WI Madison": "https://www.cityofmadison.com/clerk/elections-voting/data",
- "WI Dane": "https://elections.countyofdane.com/",
- "MI Detroit": "https://detroitmi.gov/government/city-clerk/elections",
- "MI Oakland": "https://www.oakgov.com/government/clerk-register-of-deeds/elections",
- "GA Fulton": "https://www.fultoncountyga.gov/inside-fulton-county/fulton-county-departments/registration-and-elections",
- "GA Cobb": "https://www.cobbcounty.gov/elections",
- "GA Gwinnett": "https://www.gwinnettcounty.com/government/departments/elections",
- "GA DeKalb": "https://www.dekalbcountyga.gov/voter-registration-elections",
- "CO Denver": "https://www.denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Denver-Elections-Division",
- "CO ElPaso": "https://clerkandrecorder.elpasoco.com/elections/",
- "CO Jeffco": "https://www.jeffco.us/elections",
- "CO Arapahoe": "https://www.arapahoevotes.gov/",
- "NH Manchester": "https://www.manchesternh.gov/Departments/City-Clerk/Elections",
+ "Bexar": "https://earlyvotecountsdual.bexar.org/",
+ "Harris reports": "https://www.harrisvotes.com/Election-Results/Election-Reports",
+ "Harris rosters": "https://www.harrisvotes.com/Election-Results/Election-Rosters",
+ "Dallas 2026": "https://www.dallascountyvotes.org/election-results/historical/november-3-2026-general-and-joint-election/",
+ "Dallas 2022": "https://www.dallascountyvotes.org/election-results/historical/november-8-2022-general-and-joint-election/",
+ "Collin stats": "https://www.collincountytx.gov/elections/statistics",
+ "Fulton turnout": "https://www.fultoncountyga.gov/Inside-Fulton-County/Fulton-County-Departments/Registration-and-Elections/Early-Voting-Turnout-Information",
+ "Fulton AV pdf": "https://www.fultoncountyga.gov/-/media/November-3-Election-Reports/AV-Daily-Count/102626-advance-voting-daily-count.pdf",
+ "Douglas NE turnout": "https://www.votedouglascounty-ne.gov/voter_turnout.aspx",
+ "Douglas NE early": "https://www.votedouglascounty-ne.gov/early_voting.aspx",
+ "Sedgwick reports": "https://www.sedgwickcounty.org/elections/reports/",
+ "JoCo advance": "https://www.jocoelection.org/voting-election-info/advance-voting",
+ "Milwaukee EV": "https://city.milwaukee.gov/earlyvoting",
+ "Travis EV": "https://votetravis.gov/current-election-information/early-voting-turnout/",
+ "Tarrant results": "https://www.tarrantcountytx.gov/en/elections/election-results.html",
 }
-pat = re.compile(r'href=["\']([^"\']+)["\']', re.I)
-KEY = re.compile(r"early|turnout|absentee|ballot|return|advance|roster|statistic|report|\.(csv|xlsx?|pdf|json|zip)", re.I)
-def check(item):
+def look(item):
     name, u = item
     try:
-        r = requests.get(u, headers=H, timeout=(15, 45), allow_redirects=True)
+        r = requests.get(u, headers=H, timeout=(15, 60))
         ct = r.headers.get("content-type", "")
-        blocked = any(s in r.text[:3000] for s in ("Just a moment", "Attention Required", "Access Denied", "cf-chl", "Request unsuccessful"))
-        out = [f"\n=== {name} {u} -> {r.status_code} {len(r.content)}B {ct.split(';')[0]} final={r.url}{'  [BLOCKED]' if blocked else ''}"]
-        if "html" in ct and not blocked:
-            t = re.search(r"<title>(.*?)</title>", r.text, re.I | re.S)
-            out.append("  title: " + (t.group(1).strip()[:100] if t else ""))
-            seen = []
-            for l in pat.findall(r.text):
-                if KEY.search(l) and l not in seen and not l.startswith("#"): seen.append(l)
-            out += ["   " + l for l in seen[:35]]
+        out = [f"\n=== {name} {u} -> {r.status_code} {len(r.content)}B {ct.split(';')[0]}"]
+        if "pdf" in ct or u.endswith(".pdf"):
+            out.append(pdftext(r.content)[:2500])
+        else:
+            out.append("TEXT: " + text(r.text)[:1800])
+            links = []
+            for l in re.findall(r'href=["\']([^"\']+)["\']', r.text):
+                if KEY.search(l) and l not in links and not l.startswith(("#", "mailto")) and "facebook" not in l: links.append(l)
+            out += ["   " + l[:220] for l in links[:45]]
         return "\n".join(out)
     except Exception as e:
         return f"\n=== {name} {u} !! {e!r}"
 with cf.ThreadPoolExecutor(8) as ex:
-    for res in ex.map(check, URLS.items()):
+    for res in ex.map(look, URLS.items()):
         print(res, flush=True)
