@@ -140,9 +140,9 @@
    },
    "comparison_result": null,
    "projection": {
-    "center": 2.78,
+    "center": 2.19,
     "lo": -3.88,
-    "hi": 6.11,
+    "hi": 6.24,
     "rating": "Toss-up, slight edge Kreiss-Tomkins",
     "environment": {
      "label": "2024 president (AK)",
@@ -159,12 +159,12 @@
      "note": null
     },
     "polls": {
-     "avg": 6.11,
-     "n": 4,
+     "avg": 6.24,
+     "n": 3,
      "window_days": 30
     },
-    "poll_weight": 0.667,
-    "start": 2.78,
+    "poll_weight": 0.6,
+    "start": 2.19,
     "early_vote": null
    }
   },
@@ -213,7 +213,7 @@
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-10-27T23:50:08+00:00",
+ "generated_at": "2026-10-28T01:18:24+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,

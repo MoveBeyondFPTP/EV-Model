@@ -3,7 +3,7 @@
  "source_url": "https://votehub.com/polls/",
  "license": "CC BY 4.0",
  "method": "One poll per pollster from the last 30 days (60 if fewer than 3), likely voters preferred, weighted by recency (half-life 14 days) and sample size; partisan or internal polls count half. Margins are two-party.",
- "fetched_at": "2026-10-27T23:50:05+00:00",
+ "fetched_at": "2026-10-28T01:18:22+00:00",
  "races": {
   "senate": {
    "avg": -0.15,
@@ -13,7 +13,7 @@
     {
      "pollster": "Echelon Insights",
      "end_date": "2026-10-23",
-     "age": 4,
+     "age": 5,
      "population": "lv",
      "sample_size": 403,
      "dem": 45.0,
@@ -21,12 +21,12 @@
      "margin": 2.27,
      "partisan": false,
      "url": "https://netchoice.org/netchoice-echelon-insights-poll-voters-rank-ai-regulation-far-behind-cost-of-living-want-one-national-ai-standard/",
-     "weight": 0.672
+     "weight": 0.64
     },
     {
      "pollster": "InsiderAdvantage",
      "end_date": "2026-10-22",
-     "age": 5,
+     "age": 6,
      "population": "lv",
      "sample_size": 1200,
      "dem": 45.0,
@@ -34,12 +34,12 @@
      "margin": -2.17,
      "partisan": false,
      "url": "https://insideradvantage.com/insideradvantage-senate-surveys-mi-el-sayed-47-rogers-46-ia-hinson-47-turek-45-oh-brown-47-husted-44/",
-     "weight": 1.104
+     "weight": 1.051
     },
     {
      "pollster": "co/efficient",
      "end_date": "2026-10-19",
-     "age": 8,
+     "age": 9,
      "population": "lv",
      "sample_size": 863,
      "dem": 45.0,
@@ -47,12 +47,12 @@
      "margin": -3.23,
      "partisan": true,
      "url": "https://battlegrounds.coefficient.org/ia/",
-     "weight": 0.404
+     "weight": 0.384
     },
     {
      "pollster": "New River Strategies/GS Strategy Group",
      "end_date": "2026-10-13",
-     "age": 14,
+     "age": 15,
      "population": "lv",
      "sample_size": 602,
      "dem": 46.0,
@@ -60,12 +60,12 @@
      "margin": 2.22,
      "partisan": false,
      "url": "https://www.cookpolitical.com/analysis/survey-research/battleground-district-project/senate-battleground-district-project-october?utm_medium=email_action&utm_source=customer.io",
-     "weight": 0.501
+     "weight": 0.477
     },
     {
      "pollster": "YouGov",
      "end_date": "2026-10-12",
-     "age": 15,
+     "age": 16,
      "population": "lv",
      "sample_size": 2245,
      "dem": 47.0,
@@ -73,12 +73,12 @@
      "margin": 1.08,
      "partisan": false,
      "url": "https://d3nkl3psvxxpe9.cloudfront.net/documents/ttw_ia_20261006_lv.pdf",
-     "weight": 0.714
+     "weight": 0.679
     },
     {
      "pollster": "National Public Affairs",
      "end_date": "2026-10-12",
-     "age": 15,
+     "age": 16,
      "population": "lv",
      "sample_size": 678,
      "dem": 44.0,
@@ -86,12 +86,12 @@
      "margin": -3.3,
      "partisan": false,
      "url": "https://backend.natpublicaffairs.com/media/Iowa_General_Election_Memo_101526.3.pdf",
-     "weight": 0.506
+     "weight": 0.481
     },
     {
      "pollster": "Marist University",
      "end_date": "2026-10-11",
-     "age": 16,
+     "age": 17,
      "population": "lv",
      "sample_size": 1100,
      "dem": 48.0,
@@ -99,12 +99,12 @@
      "margin": 3.23,
      "partisan": false,
      "url": "https://maristpoll.marist.edu/polls/2026-midterm-elections-in-iowa-october-2026/",
-     "weight": 0.613
+     "weight": 0.584
     },
     {
      "pollster": "Emerson College",
      "end_date": "2026-10-06",
-     "age": 21,
+     "age": 22,
      "population": "lv",
      "sample_size": 650,
      "dem": 45.0,
@@ -112,12 +112,12 @@
      "margin": -1.75,
      "partisan": false,
      "url": "https://docs.google.com/spreadsheets/d/1mKToIlrAwY0ehEA60PVFemP5WjwxsTxN/edit?rtpof=true&sd=true",
-     "weight": 0.368
+     "weight": 0.35
     },
     {
      "pollster": "CNN/SSRS",
      "end_date": "2026-10-05",
-     "age": 22,
+     "age": 23,
      "population": "lv",
      "sample_size": 801,
      "dem": 43.0,
@@ -125,12 +125,12 @@
      "margin": -2.27,
      "partisan": false,
      "url": "https://www.cnn.com/2026/10/08/politics/cnn-polls-ohio-iowa-senate-governor-midterms",
-     "weight": 0.389
+     "weight": 0.37
     },
     {
      "pollster": "Beacon Research/Shaw & Co. Research",
      "end_date": "2026-09-28",
-     "age": 29,
+     "age": 30,
      "population": "lv",
      "sample_size": 1008,
      "dem": 49.0,
@@ -138,7 +138,7 @@
      "margin": 2.08,
      "partisan": false,
      "url": "https://www.foxnews.com/politics/fox-news-poll-turek-hinson-close-iowa-senate-race",
-     "weight": 0.308
+     "weight": 0.293
     }
    ]
   },
@@ -150,7 +150,7 @@
     {
      "pollster": "Echelon Insights",
      "end_date": "2026-10-23",
-     "age": 4,
+     "age": 5,
      "population": "lv",
      "sample_size": 403,
      "dem": 50.0,
@@ -158,12 +158,12 @@
      "margin": 4.17,
      "partisan": false,
      "url": "https://netchoice.org/netchoice-echelon-insights-poll-voters-rank-ai-regulation-far-behind-cost-of-living-want-one-national-ai-standard/",
-     "weight": 0.672
+     "weight": 0.64
     },
     {
      "pollster": "co/efficient",
      "end_date": "2026-10-19",
-     "age": 8,
+     "age": 9,
      "population": "lv",
      "sample_size": 863,
      "dem": 49.0,
@@ -171,12 +171,12 @@
      "margin": 4.26,
      "partisan": true,
      "url": "https://battlegrounds.coefficient.org/ia/",
-     "weight": 0.404
+     "weight": 0.384
     },
     {
      "pollster": "New River",
      "end_date": "2026-10-13",
-     "age": 14,
+     "age": 15,
      "population": "lv",
      "sample_size": 602,
      "dem": 54.0,
@@ -184,12 +184,12 @@
      "margin": 11.34,
      "partisan": false,
      "url": "https://www.cookpolitical.com/analysis/survey-research/battleground-district-project/senate-battleground-district-project-october?utm_medium=email_action&utm_source=customer.io",
-     "weight": 0.501
+     "weight": 0.477
     },
     {
      "pollster": "YouGov",
      "end_date": "2026-10-12",
-     "age": 15,
+     "age": 16,
      "population": "lv",
      "sample_size": 2245,
      "dem": 50.0,
@@ -197,12 +197,12 @@
      "margin": 6.38,
      "partisan": false,
      "url": "https://d3nkl3psvxxpe9.cloudfront.net/documents/ttw_ia_20261006_lv.pdf",
-     "weight": 0.714
+     "weight": 0.679
     },
     {
      "pollster": "National Public Affairs",
      "end_date": "2026-10-12",
-     "age": 15,
+     "age": 16,
      "population": "lv",
      "sample_size": 678,
      "dem": 50.0,
@@ -210,12 +210,12 @@
      "margin": 5.26,
      "partisan": false,
      "url": "https://backend.natpublicaffairs.com/media/Iowa_General_Election_Memo_101526.3.pdf",
-     "weight": 0.506
+     "weight": 0.481
     },
     {
      "pollster": "Marist University",
      "end_date": "2026-10-11",
-     "age": 16,
+     "age": 17,
      "population": "lv",
      "sample_size": 1100,
      "dem": 52.0,
@@ -223,12 +223,12 @@
      "margin": 7.22,
      "partisan": false,
      "url": "https://maristpoll.marist.edu/polls/2026-midterm-elections-in-iowa-october-2026/",
-     "weight": 0.613
+     "weight": 0.584
     },
     {
      "pollster": "Emerson College",
      "end_date": "2026-10-06",
-     "age": 21,
+     "age": 22,
      "population": "lv",
      "sample_size": 650,
      "dem": 49.0,
@@ -236,12 +236,12 @@
      "margin": 3.92,
      "partisan": false,
      "url": "https://docs.google.com/spreadsheets/d/1mKToIlrAwY0ehEA60PVFemP5WjwxsTxN/edit?rtpof=true&sd=true",
-     "weight": 0.368
+     "weight": 0.35
     },
     {
      "pollster": "CNN/SSRS",
      "end_date": "2026-10-05",
-     "age": 22,
+     "age": 23,
      "population": "lv",
      "sample_size": 801,
      "dem": 51.0,
@@ -249,12 +249,12 @@
      "margin": 9.68,
      "partisan": false,
      "url": "https://www.cnn.com/2026/10/08/politics/cnn-polls-ohio-iowa-senate-governor-midterms",
-     "weight": 0.389
+     "weight": 0.37
     },
     {
      "pollster": "The New York Times/Siena University",
      "end_date": "2026-10-01",
-     "age": 26,
+     "age": 27,
      "population": "lv",
      "sample_size": 606,
      "dem": 52.0,
@@ -262,12 +262,12 @@
      "margin": 11.83,
      "partisan": false,
      "url": "https://sri.siena.edu/2026/10/04/nytimes-siena-poll-of-likely-voters-gubernatorial-races-2/",
-     "weight": 0.277
+     "weight": 0.264
     },
     {
      "pollster": "Beacon Research/Shaw & Co. Research",
      "end_date": "2026-09-28",
-     "age": 29,
+     "age": 30,
      "population": "lv",
      "sample_size": 1008,
      "dem": 53.0,
@@ -275,7 +275,7 @@
      "margin": 9.28,
      "partisan": false,
      "url": "https://www.foxnews.com/politics/fox-news-poll-turek-hinson-close-iowa-senate-race",
-     "weight": 0.308
+     "weight": 0.293
     }
    ]
   }

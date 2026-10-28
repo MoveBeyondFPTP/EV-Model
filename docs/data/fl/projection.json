@@ -3,7 +3,7 @@
  "code": "fl",
  "name": "Florida",
  "election_date": "2026-11-03",
- "has_early_vote": false,
+ "has_early_vote": true,
  "turnout_signal": null,
  "races": [
   {
@@ -45,8 +45,8 @@
    },
    "comparison_result": null,
    "projection": {
-    "center": -5.99,
-    "lo": -6.11,
+    "center": -6.25,
+    "lo": -6.46,
     "hi": -5.5,
     "rating": "Lean Moody",
     "environment": {
@@ -76,12 +76,12 @@
      "note": null
     },
     "polls": {
-     "avg": -6.11,
-     "n": 8,
+     "avg": -6.46,
+     "n": 7,
      "window_days": 30
     },
-    "poll_weight": 0.8,
-    "start": -5.99,
+    "poll_weight": 0.778,
+    "start": -6.25,
     "early_vote": null
    }
   },
@@ -137,8 +137,10 @@
    }
   }
  ],
- "ev_notes": [],
- "generated_at": "2026-10-27T23:50:08+00:00",
+ "ev_notes": [
+  "Florida publishes running totals rather than ballot-level files, so 2026 is compared with 2022\u2019s final early and mail vote, not with the same day in 2022. The day-by-day chart builds up from the first day this tracker collected data."
+ ],
+ "generated_at": "2026-10-28T01:18:24+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,

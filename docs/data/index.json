@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-27T23:50:08+00:00",
+ "generated_at": "2026-10-28T01:18:24+00:00",
  "generic": {
   "avg": 8.31,
   "n": 6,
@@ -8,7 +8,7 @@
    {
     "pollster": "Pew Research Center",
     "end_date": "2026-10-04",
-    "age": 23,
+    "age": 24,
     "population": "rv",
     "sample_size": 3917,
     "dem": 44.0,
@@ -16,12 +16,12 @@
     "margin": 10.0,
     "partisan": false,
     "url": "https://www.pewresearch.org/politics/2026/10/08/with-americans-in-a-sour-mood-democratic-voters-are-more-engaged-in-midterms",
-    "weight": 0.48
+    "weight": 0.457
    },
    {
     "pollster": "YouGov - CBS News",
     "end_date": "2026-10-02",
-    "age": 25,
+    "age": 26,
     "population": "lv",
     "sample_size": 1572,
     "dem": 54.0,
@@ -29,12 +29,12 @@
     "margin": 9.09,
     "partisan": false,
     "url": "https://assets1.cbsnewsstatic.com/hub/cms/prod_cms_alt/file/2026/10/04/0957ee32-a848-4872-b659-14303d3d3734/cbsnews_20261004_sun.pdf",
-    "weight": 0.435
+    "weight": 0.414
    },
    {
     "pollster": "HarrisX/Harris",
     "end_date": "2026-09-28",
-    "age": 29,
+    "age": 30,
     "population": "lv",
     "sample_size": null,
     "dem": 51.0,
@@ -42,12 +42,12 @@
     "margin": 2.0,
     "partisan": false,
     "url": "https://harvardharrispoll.com/assets/uploads/2026/09/HHP_Sep2026_KeyResults.pdf",
-    "weight": 0.238
+    "weight": 0.226
    },
    {
     "pollster": "The Argument/Verasight",
     "end_date": "2026-09-22",
-    "age": 35,
+    "age": 36,
     "population": "lv",
     "sample_size": null,
     "dem": 55.0,
@@ -55,12 +55,12 @@
     "margin": 10.0,
     "partisan": false,
     "url": "https://www.theargumentmag.com/p/the-least-popular-war-since-vietnam",
-    "weight": 0.177
+    "weight": 0.168
    },
    {
     "pollster": "YouGov",
     "end_date": "2026-09-08",
-    "age": 49,
+    "age": 50,
     "population": "lv",
     "sample_size": 1015,
     "dem": 49.0,
@@ -68,12 +68,12 @@
     "margin": 12.64,
     "partisan": false,
     "url": "https://d3nkl3psvxxpe9.cloudfront.net/documents/econTabReport_SlcWdVd.pdf",
-    "weight": 0.115
+    "weight": 0.109
    },
    {
     "pollster": "Morning Consult",
     "end_date": "2026-09-06",
-    "age": 51,
+    "age": 52,
     "population": "rv",
     "sample_size": 2203,
     "dem": 46.0,
@@ -81,7 +81,7 @@
     "margin": 4.55,
     "partisan": false,
     "url": "https://drive.google.com/file/d/1tRrQzrZUZ4MZJ953Ir3hf8vSZx0vuHlv/view?usp=sharing",
-    "weight": 0.12
+    "weight": 0.114
    }
   ]
  },
@@ -119,11 +119,11 @@
      "rep": "Republicans",
      "dem_party": "D",
      "rep_party": "R",
-     "center": 2.78,
+     "center": 2.19,
      "lo": -3.88,
-     "hi": 6.11,
+     "hi": 6.24,
      "rating": "Toss-up, slight edge Kreiss-Tomkins",
-     "n_polls": 4
+     "n_polls": 3
     },
     {
      "id": "measure2",
@@ -180,7 +180,7 @@
   {
    "code": "fl",
    "name": "Florida",
-   "has_early_vote": false,
+   "has_early_vote": true,
    "early_vote_as_of": null,
    "races": [
     {
@@ -191,11 +191,11 @@
      "rep": "Moody",
      "dem_party": "D",
      "rep_party": "R",
-     "center": -5.99,
-     "lo": -6.11,
+     "center": -6.25,
+     "lo": -6.46,
      "hi": -5.5,
      "rating": "Lean Moody",
-     "n_polls": 8
+     "n_polls": 7
     },
     {
      "id": "governor",
@@ -325,7 +325,7 @@
    "code": "me",
    "name": "Maine",
    "has_early_vote": true,
-   "early_vote_as_of": null,
+   "early_vote_as_of": "2026-10-27",
    "races": [
     {
      "id": "senate",
@@ -335,9 +335,9 @@
      "rep": "Collins",
      "dem_party": "D",
      "rep_party": "R",
-     "center": 3.96,
+     "center": 4.61,
      "lo": 2.38,
-     "hi": 9.48,
+     "hi": 10.79,
      "rating": "Lean Jackson",
      "n_polls": 7
     },
@@ -349,9 +349,9 @@
      "rep": "Charles",
      "dem_party": "D",
      "rep_party": "R",
-     "center": 10.73,
+     "center": 11.38,
      "lo": 8.26,
-     "hi": 16.9,
+     "hi": 18.21,
      "rating": "Likely Pingree",
      "n_polls": 5
     }
@@ -371,11 +371,11 @@
      "rep": "Rogers",
      "dem_party": "D",
      "rep_party": "R",
-     "center": 4.22,
-     "lo": 3.0,
+     "center": 4.11,
+     "lo": 2.86,
      "hi": 9.09,
      "rating": "Lean El-Sayed",
-     "n_polls": 10
+     "n_polls": 9
     },
     {
      "id": "governor",

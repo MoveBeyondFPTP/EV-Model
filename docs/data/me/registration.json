@@ -5,5 +5,12 @@
   "UNA": 265692,
   "OTH": 37753,
   "label": "November 2022 (active voters)"
+ },
+ "2026": {
+  "DEM": 305364,
+  "REP": 273632,
+  "UNA": 282314,
+  "OTH": 36367,
+  "label": "March 2026 (active voters)"
  }
 }
