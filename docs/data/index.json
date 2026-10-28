@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T01:45:38+00:00",
+ "generated_at": "2026-10-28T01:56:30+00:00",
  "generic": {
   "avg": 8.31,
   "n": 6,
@@ -556,6 +556,28 @@
      "hi": -2.7,
      "rating": "Tilt Abbott",
      "n_polls": 12
+    }
+   ]
+  },
+  {
+   "code": "vt",
+   "name": "Vermont",
+   "has_early_vote": false,
+   "early_vote_as_of": null,
+   "races": [
+    {
+     "id": "governor",
+     "office": "Governor",
+     "type": "candidate",
+     "dem": "Janoo",
+     "rep": "Scott",
+     "dem_party": "D",
+     "rep_party": "R",
+     "center": 2.94,
+     "lo": -1.93,
+     "hi": 7.81,
+     "rating": "Toss-up, slight edge Janoo",
+     "n_polls": 2
     }
    ]
   },

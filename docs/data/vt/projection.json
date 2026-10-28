@@ -1,0 +1,102 @@
+{
+ "state": "VT",
+ "code": "vt",
+ "name": "Vermont",
+ "election_date": "2026-11-03",
+ "has_early_vote": false,
+ "turnout_signal": null,
+ "races": [
+  {
+   "id": "governor",
+   "office": "Governor",
+   "type": "candidate",
+   "note": "Incumbent Phil Scott (R) seeking a sixth two-year term; Janoo is the Democratic nominee with Progressive backing",
+   "dem": {
+    "name": "Amanda Janoo",
+    "short": "Janoo",
+    "party": "D",
+    "match": [
+     "janoo"
+    ]
+   },
+   "rep": {
+    "name": "Phil Scott",
+    "short": "Scott",
+    "party": "R",
+    "match": [
+     "scott"
+    ],
+    "track_record": {
+     "label": "2024 Governor",
+     "year": 2024,
+     "dem_votes": 79217,
+     "rep_votes": 266439,
+     "expected_from": {
+      "state_president_year": 2024,
+      "state_president_pct": [
+       63.83,
+       32.32
+      ],
+      "national_shift": 0.0
+     },
+     "weight": 1.0,
+     "source": "Wikipedia"
+    }
+   },
+   "comparison_result": null,
+   "projection": {
+    "center": 2.94,
+    "lo": -1.93,
+    "hi": 7.81,
+    "rating": "Toss-up, slight edge Janoo",
+    "environment": {
+     "label": "2024 president (VT)",
+     "base": 32.77,
+     "national_then": -1.5,
+     "generic": 8.31,
+     "swing_factor": 1.0,
+     "swing": 9.81,
+     "generic_margin": 42.58,
+     "candidate_adjustment": -34.77,
+     "candidates": [
+      {
+       "side": "rep",
+       "name": "Scott",
+       "label": "2024 Governor",
+       "actual": -54.16,
+       "expected": 32.77,
+       "over": 86.94,
+       "weight": 1.0,
+       "adjustment": -34.77,
+       "source": "Wikipedia"
+      }
+     ],
+     "carry_forward": 0.4,
+     "margin": 7.81,
+     "note": null
+    },
+    "polls": {
+     "avg": -1.93,
+     "n": 2,
+     "window_days": 60
+    },
+    "poll_weight": 0.5,
+    "start": 2.94,
+    "early_vote": null
+   }
+  }
+ ],
+ "ev_notes": [],
+ "generated_at": "2026-10-28T01:56:30+00:00",
+ "assumptions": {
+  "dem": 0.92,
+  "rep": 0.92,
+  "una": 0.5,
+  "oth": 0.45
+ },
+ "constants": {
+  "c_weight": 0.25,
+  "c_cap": 2.0,
+  "poll_weight_max": 0.8
+ }
+}
