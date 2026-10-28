@@ -140,7 +140,7 @@
  "ev_notes": [
   "Florida publishes running totals rather than ballot-level files, so 2026 is compared with 2022\u2019s final early and mail vote, not with the same day in 2022. The day-by-day chart builds up from the first day this tracker collected data."
  ],
- "generated_at": "2026-10-28T01:40:09+00:00",
+ "generated_at": "2026-10-28T01:41:05+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,

@@ -1,23 +1,23 @@
-[01:39:39] ak
+[01:40:42] ak
 ak: no early-vote source configured; skipping
 No registration config; skipping
-[01:39:40] co
+[01:40:42] co
 co: no early-vote source configured; skipping
 No registration config; skipping
-[01:39:41] fl
-  Florida snapshot 2026-10-26: mail 1,403,569, early 1,224,187
+[01:40:43] fl
+  Florida snapshot 2026-10-27: mail 1,492,287, early 1,381,545
   wrote docs/data/fl/manifest.json (0 KB)
 No registration config; skipping
-[01:39:42] ga
+[01:40:44] ga
 ga: no early-vote source configured; skipping
 No registration config; skipping
-[01:39:42] ia
+[01:40:44] ia
 ia: no early-vote source configured; skipping
 No registration config; skipping
-[01:39:43] ks
+[01:40:45] ks
 ks: no early-vote source configured; skipping
 No registration config; skipping
-[01:39:43] me
+[01:40:45] me
 == ME 2026
 Downloading https://www.maine.gov/sos/sites/maine.gov.sos/files/inline-files/11-3-26%20AB%20Voter%20File%20as%20of%2010-27-26.txt
   accepted: 221,976; unmapped municipalities: 559
@@ -27,13 +27,13 @@ Downloading https://www.maine.gov/sos/sites/maine.gov.sos/files/inline-files/11-
   wrote docs/data/me/2026.json (18 KB)
 == 2022: already built, skipping
   wrote docs/data/me/manifest.json (0 KB)
-[01:39:46] mi
+[01:40:49] mi
 mi: no early-vote source configured; skipping
 No registration config; skipping
-[01:39:46] mn
+[01:40:50] mn
 mn: no early-vote source configured; skipping
 No registration config; skipping
-[01:39:47] nc
+[01:40:50] nc
 == NC 2026
 Downloading https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2026_11_03/absentee_20261103.zip
   77.2 MB
@@ -47,15 +47,15 @@ Downloading https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2026_11_03/absentee_20261
 == 2024: already built, skipping
 == 2020: already built, skipping
   wrote docs/data/nc/manifest.json (1 KB)
-[01:40:06] ne
+[01:41:02] ne
 ne: no early-vote source configured; skipping
 No registration config; skipping
-[01:40:06] nh
+[01:41:02] nh
 nh: no early-vote source configured; skipping
 No registration config; skipping
-[01:40:07] tx
+[01:41:02] tx
 tx: no early-vote source configured; skipping
 No registration config; skipping
-[01:40:07] wi
+[01:41:03] wi
 wi: no early-vote source configured; skipping
 No registration config; skipping
