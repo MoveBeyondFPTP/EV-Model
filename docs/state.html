@@ -173,6 +173,12 @@ table.blocks tr.total td { border-top: 2px solid var(--border); border-bottom: n
 
   <div class="callout" id="noEv" hidden></div>
 
+  <section id="countySample" hidden>
+    <h2>Large-county early vote sample</h2>
+    <p class="sub">Statewide early-vote data isn’t available for this state, but one or more large counties publish their own. These show turnout pace only (no party), compared with the same point in 2022. They are a sample, not the state, and don’t feed the projection.</p>
+    <div id="countySampleBody"></div>
+  </section>
+
   <div id="evSnap" hidden>
   <div class="callout">
     <strong>The early-vote sections below show who has voted, not how they voted.</strong>
@@ -313,7 +319,7 @@ table.blocks tr.total td { border-top: 2px solid var(--border); border-bottom: n
   const DIM_LABEL = { method: { mail: "Mail", in_person: "In-person early" } };
   const CODE = (new URLSearchParams(location.search).get("s") || "nc").toLowerCase().replace(/[^a-z]/g, "");
   const BASE = `data/${CODE}/`;
-  let PJ = null, NAT = null, CMP = null, SNAP = null, SBASE = null;  // projection, national polls, comparison result for the scenario panel
+  let PJ = null, NAT = null, CMP = null, SNAP = null, SBASE = null, CSAMP = null;  // projection, national polls, comparison result for the scenario panel
   const fmt = n => n == null ? "–" : Math.round(n).toLocaleString("en-US");
   const pct = (n, d = 1) => n == null || !isFinite(n) ? "–" : n.toFixed(d) + "%";
   const pts = (n, d = 1) => n == null || !isFinite(n) ? "–" : (n > 0 ? "+" : n < 0 ? "−" : "±") + Math.abs(n).toFixed(d);
@@ -357,6 +363,7 @@ table.blocks tr.total td { border-top: 2px solid var(--border); border-bottom: n
     [PJ, POLLS, NAT] = await Promise.all([get("projection"), get("polls"),
       fetch("data/national.json", { cache: "no-cache" }).then(r => r.ok ? r.json() : null).catch(() => null)]);
     if (!PJ) throw new Error(`No data for “${CODE.toUpperCase()}”.`);
+    CSAMP = await get("county_ev");
     const withCmp = PJ.races.find(r => r.comparison_result);
     CMP = withCmp ? withCmp.comparison_result : null;
     if (!PJ.has_early_vote) return;
@@ -780,6 +787,39 @@ table.blocks tr.total td { border-top: 2px solid var(--border); border-bottom: n
     }));
   }
 
+  // ---------- Large-county samples (turnout only) ----------
+  function renderCountySample() {
+    if (!CSAMP || !CSAMP.counties || !CSAMP.counties.length) return;
+    document.getElementById("countySample").hidden = false;
+    const body = document.getElementById("countySampleBody");
+    body.innerHTML = CSAMP.counties.map((c, i) => {
+      const nowDays = Object.keys(c.now).map(Number).sort((a, b) => b - a);
+      const latest = Math.min(...nowDays);
+      const now = c.now[String(latest)];
+      // 2022 cumulative at the same days-out (or the closest earlier point)
+      const thenDays = Object.keys(c.then).map(Number).sort((a, b) => b - a);
+      let then = null;
+      for (const d of thenDays) if (d >= latest) then = c.then[String(d)];
+      const thenFinal = c.then[String(Math.min(...thenDays))];
+      const pace = then ? now / then * 100 : null;
+      return `<div class="card" style="margin-bottom:12px">
+        <div class="tiles" style="margin-top:0">
+          <div class="tile"><div class="label">${esc(c.county)}: ${esc(c.kind.toLowerCase())} so far</div><div class="value">${fmt(now)}</div><div class="detail">${latest} days before Election Day</div></div>
+          <div class="tile"><div class="label">Pace vs ${c.then_year}, same day</div><div class="value ${pace >= 100 ? "up" : "down"}">${pct(pace, 0)}</div><div class="detail">${fmt(then)} at this point in ${c.then_year}; ${fmt(thenFinal)} by the end of early voting</div></div>
+        </div>
+        <div class="chart-box" style="height:260px;margin-top:12px"><canvas id="cs${i}" aria-label="${esc(c.county)} cumulative early votes by days before Election Day"></canvas></div>
+        <p class="muted" style="font-size:13px;margin:8px 0 0">Source: <a href="${esc(c.source_page)}">${esc(c.county)} Elections Department</a> daily turnout reports.</p>
+      </div>`;
+    }).join("");
+    CSAMP.counties.forEach((c, i) => {
+      const days = [...new Set([...Object.keys(c.now), ...Object.keys(c.then)].map(Number))].sort((a, b) => b - a);
+      const opts = baseOptions(v => v >= 1e6 ? (v / 1e6).toFixed(1) + "M" : v >= 1e3 ? Math.round(v / 1e3) + "k" : v);
+      opts.plugins.tooltip.callbacks.label = ctx => ` ${ctx.dataset.label}: ${fmt(ctx.raw)}`;
+      const ds = (label, src, color, w) => ({ label, data: days.map(d => src[String(d)] ?? null), borderColor: css(color), backgroundColor: css(color), borderWidth: w, pointRadius: 3, tension: 0.15, spanGaps: true });
+      new Chart(document.getElementById(`cs${i}`), { type: "line", data: { labels: days, datasets: [ds("2026", c.now, "--y2026", 3), ds(String(c.then_year), c.then, "--y2022", 2)] }, options: opts });
+    });
+  }
+
   function renderEv() {
     for (const dimName of ["age", "race"]) {
       const groups = cur.daily[dimName] || {};
@@ -813,7 +853,10 @@ table.blocks tr.total td { border-top: 2px solid var(--border); border-bottom: n
     const noEv = document.getElementById("noEv");
     if (!hasEv) {
       noEv.hidden = false;
-      noEv.innerHTML = `<strong>Early-vote data for ${esc(PJ.name)} isn’t connected yet.</strong> The projection above uses the national environment and polls only.`;
+      noEv.innerHTML = CSAMP
+        ? `<strong>Statewide early-vote data for ${esc(PJ.name)} isn’t available.</strong> The projection above uses the national environment, polls and candidate track records. A large-county turnout sample is shown below for context.`
+        : `<strong>Statewide early-vote data for ${esc(PJ.name)} isn’t available.</strong> The state’s election site blocks automated downloads or doesn’t publish daily figures, so the projection above uses the national environment, polls and candidate track records only.`;
+      renderCountySample();
       return;
     }
     renderEv();

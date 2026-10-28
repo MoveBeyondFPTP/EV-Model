@@ -298,6 +298,11 @@ def main():
     ap.add_argument("--source-dir", type=Path, help="read zips from here instead of downloading")
     args = ap.parse_args()
 
+    top = json.loads((STATES_DIR / f"{args.state}.json").read_text())
+    if top.get("county_samples"):
+        sys.path.insert(0, str(Path(__file__).resolve().parent))
+        from sources import counties
+        counties.build(args.state, top["county_samples"], DATA_DIR / args.state)
     cfg = load_state(args.state)
     if cfg is None:
         log(f"{args.state}: no early-vote source configured; skipping")

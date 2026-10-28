@@ -92,5 +92,12 @@
       "note": "Incumbent Greg Abbott (R)"
     }
   ],
-  "early_vote": null
+  "early_vote": null,
+  "county_samples": [
+    {
+      "source": "dallas",
+      "page_2026": "https://www.dallascountyvotes.org/election-results/historical/november-3-2026-general-and-joint-election/",
+      "file_2022": "https://assets01.aws.connect.clarityelections.com/Assets/Connect/RootPublish/dallas-tx.connect.clarityelections.com/ElectionDocuments/2022/2022%20General%20and%20Joint/Early-Voting-Turnout-By-Date-Location-Report-11.04.22.xlsx"
+    }
+  ]
 }
