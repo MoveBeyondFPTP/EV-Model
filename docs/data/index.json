@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T12:47:16+00:00",
+ "generated_at": "2026-10-28T19:32:35+00:00",
  "generic": {
   "avg": 8.31,
   "n": 6,
@@ -325,7 +325,7 @@
    "code": "me",
    "name": "Maine",
    "has_early_vote": true,
-   "early_vote_as_of": "2026-10-27",
+   "early_vote_as_of": "2026-10-28",
    "races": [
     {
      "id": "senate",
@@ -335,9 +335,9 @@
      "rep": "Collins",
      "dem_party": "D",
      "rep_party": "R",
-     "center": 3.42,
+     "center": 3.37,
      "lo": 2.38,
-     "hi": 4.46,
+     "hi": 4.36,
      "rating": "Lean Jackson",
      "n_polls": 7
     },
@@ -349,9 +349,9 @@
      "rep": "Charles",
      "dem_party": "D",
      "rep_party": "R",
-     "center": 9.55,
+     "center": 9.51,
      "lo": 8.26,
-     "hi": 10.85,
+     "hi": 10.75,
      "rating": "Likely Pingree",
      "n_polls": 5
     }
