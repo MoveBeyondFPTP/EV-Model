@@ -30,9 +30,17 @@ def log(*a):
 
 
 def get(url: str) -> bytes:
-    r = requests.get(url, headers=H, timeout=600)
-    r.raise_for_status()
-    return r.content
+    """GET with a connect/read timeout and two retries, so one slow site can't stall the whole update."""
+    last = None
+    for attempt in range(3):
+        try:
+            r = requests.get(url, headers=H, timeout=(20, 120))
+            r.raise_for_status()
+            return r.content
+        except requests.RequestException as e:
+            last = e
+            log(f"  retry {attempt + 1} for {url}: {e!r}")
+    raise last
 
 
 def resolve_url(spec) -> str:
