@@ -1,0 +1,64 @@
+ M docs/data/ak/polls.json
+ M docs/data/ak/projection.json
+ M docs/data/co/polls.json
+ M docs/data/co/projection.json
+ M docs/data/fl/polls.json
+ M docs/data/fl/projection.json
+ M docs/data/ga/polls.json
+ M docs/data/ga/projection.json
+ M docs/data/ia/polls.json
+ M docs/data/ia/projection.json
+ M docs/data/index.json
+ M docs/data/ks/polls.json
+ M docs/data/ks/projection.json
+ M docs/data/logs/early_vote.log
+ M docs/data/logs/polls.log
+ M docs/data/logs/projections.log
+ M docs/data/me/manifest.json
+ M docs/data/me/polls.json
+ M docs/data/me/projection.json
+ M docs/data/me/registration.json
+ M docs/data/mi/polls.json
+ M docs/data/mi/projection.json
+ M docs/data/mn/polls.json
+ M docs/data/mn/projection.json
+ M docs/data/national.json
+ M docs/data/nc/2026.json
+ M docs/data/nc/manifest.json
+ M docs/data/nc/polls.json
+ M docs/data/nc/projection.json
+ M docs/data/ne/polls.json
+ M docs/data/ne/projection.json
+ M docs/data/nh/polls.json
+ M docs/data/nh/projection.json
+ M docs/data/tx/polls.json
+ M docs/data/tx/projection.json
+ M docs/data/wi/polls.json
+ M docs/data/wi/projection.json
+?? docs/data/fl/baseline_2022_final.json
+?? docs/data/fl/manifest.json
+?? docs/data/fl/snapshots.json
+?? docs/data/me/2022.json
+?? docs/data/me/2026.json
+remote: error: Trace: f0680ac563fb153e9d286fcc8cc0c2bbd8c130a59331dee569e538c9244c99e9        
+remote: error: See https://gh.io/lfs for more information.        
+remote: error: File docs/data/me/2022.json is 104.50 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.        
+To https://github.com/MoveBeyondFPTP/EV-Model
+ ! [remote rejected] HEAD -> main (pre-receive hook declined)
+error: failed to push some refs to 'https://github.com/MoveBeyondFPTP/EV-Model'
+remote: error: Trace: 868341bab82880c21900c3157e96ee7b614f8a20ffee00ed502ecc1517f63a2b        
+remote: error: See https://gh.io/lfs for more information.        
+remote: error: File docs/data/me/2022.json is 104.50 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.        
+To https://github.com/MoveBeyondFPTP/EV-Model
+ ! [remote rejected] HEAD -> main (pre-receive hook declined)
+error: failed to push some refs to 'https://github.com/MoveBeyondFPTP/EV-Model'
+remote: error: Trace: 6f04d8060cf790c221281d4aed710f18849298b4e8057087035bdfca19939df5        
+remote: error: See https://gh.io/lfs for more information.        
+remote: error: File docs/data/me/2022.json is 104.50 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.        
+To https://github.com/MoveBeyondFPTP/EV-Model
+ ! [remote rejected] HEAD -> main (pre-receive hook declined)
+error: failed to push some refs to 'https://github.com/MoveBeyondFPTP/EV-Model'
+PUSH FAILED
