@@ -1,0 +1,35 @@
+{
+ "generated_at": "2026-10-28T01:45:35Z",
+ "counties": [
+  {
+   "county": "Dallas County",
+   "kind": "In-person early votes",
+   "lean_2024": null,
+   "now": {
+    "15": 77855,
+    "14": 142939,
+    "13": 199031,
+    "12": 248500,
+    "11": 302884,
+    "10": 339571,
+    "9": 358754,
+    "8": 402985
+   },
+   "daily": {
+    "2026-10-19": 77855,
+    "2026-10-20": 65084,
+    "2026-10-21": 56092,
+    "2026-10-22": 49469,
+    "2026-10-23": 54384,
+    "2026-10-24": 36687,
+    "2026-10-25": 19183,
+    "2026-10-26": 44231
+   },
+   "then": {},
+   "then_year": 2022,
+   "source_page": "https://www.dallascountyvotes.org/election-results/historical/november-3-2026-general-and-joint-election/",
+   "source_2026": "https://www.dallascountyvotes.org/wp-content/uploads/2026/10/Early-Voting-Turnout-By-Date-Location_10.26.2026.xlsx",
+   "source_2022": "https://assets01.aws.connect.clarityelections.com/Assets/Connect/RootPublish/dallas-tx.connect.clarityelections.com/ElectionDocuments/2022/2022%20General%20and%20Joint/Early-Voting-Turnout-By-Date-Location-Report-11.04.22.xlsx"
+  }
+ ]
+}
