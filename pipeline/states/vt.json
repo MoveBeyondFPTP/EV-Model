@@ -1,0 +1,81 @@
+{
+  "state": "VT",
+  "name": "Vermont",
+  "current": 2026,
+  "election_date": "2026-11-03",
+  "environment": {
+    "label": "2024 president (VT)",
+    "year": 2024,
+    "margin": 32.77,
+    "national_margin": -1.5
+  },
+  "polls": {
+    "subject": "2026 Vermont"
+  },
+  "races": [
+    {
+      "id": "governor",
+      "office": "Governor",
+      "type": "candidate",
+      "poll_type": "governor",
+      "dem": {
+        "name": "Amanda Janoo",
+        "short": "Janoo",
+        "party": "D",
+        "match": [
+          "janoo"
+        ]
+      },
+      "rep": {
+        "name": "Phil Scott",
+        "short": "Scott",
+        "party": "R",
+        "match": [
+          "scott"
+        ],
+        "track_record": {
+          "label": "2024 Governor",
+          "year": 2024,
+          "dem_votes": 79217,
+          "rep_votes": 266439,
+          "expected_from": {
+            "state_president_year": 2024,
+            "state_president_pct": [
+              63.83,
+              32.32
+            ],
+            "national_shift": 0.0
+          },
+          "weight": 1.0,
+          "source": "Wikipedia"
+        }
+      },
+      "note": "Incumbent Phil Scott (R) seeking a sixth two-year term; Janoo is the Democratic nominee with Progressive backing",
+      "fallback_polls": {
+        "source": "Wikipedia, 2026 Vermont gubernatorial election",
+        "source_url": "https://en.wikipedia.org/wiki/2026_Vermont_gubernatorial_election",
+        "polls": [
+          {
+            "pollster": "University of New Hampshire",
+            "start_date": "2026-07-15",
+            "end_date": "2026-07-20",
+            "sample_size": 954,
+            "population": "lv",
+            "dem": 33,
+            "rep": 44
+          },
+          {
+            "pollster": "University of New Hampshire",
+            "start_date": "2026-06-18",
+            "end_date": "2026-06-23",
+            "sample_size": 887,
+            "population": "lv",
+            "dem": 27,
+            "rep": 42
+          }
+        ]
+      }
+    }
+  ],
+  "early_vote": null
+}

@@ -167,6 +167,11 @@ def main():
                         continue
                     ps = [p for p in ps if p.get("subject") == cfg["polls"]["subject"]]
                     res = average(ps, matcher(race["dem"]), matcher(race["rep"]), today)
+                    fb = race.get("fallback_polls")
+                    if res["n"] == 0 and fb:  # nothing recent in VoteHub: use hand-entered polls, looking back up to 120 days
+                        res = average(manual(fb), matcher({"match": ["__dem__"]}), matcher({"match": ["__rep__"]}), today,
+                                      windows=(30, 60, 120), min_polls=1)
+                        res.update(source=fb["source"], source_url=fb["source_url"], manual=True)
                 out["races"][rid] = res
                 log(f"{code} {rid}: {res['avg']} from {res['n']} polls")
             except Exception as e:
