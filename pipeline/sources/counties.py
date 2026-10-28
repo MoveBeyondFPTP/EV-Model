@@ -107,11 +107,16 @@ def dallas(cfg: dict) -> dict:
     url22 = cfg["file_2022"]
     log(f"  Dallas 2026: {url26}")
     d26 = daily_totals(read_sheet(get(url26).content), 2026)
-    d22 = daily_totals(read_sheet(get(url22).content), 2022)
     e26, e22 = date(2026, 11, 3), date(2022, 11, 8)
+    then = {}
+    try:  # the 2022 archive sits behind a bot challenge; use it only if it comes through
+        then = cumulative_by_days_out(daily_totals(read_sheet(get(url22).content), 2022), e22)
+    except Exception as e:
+        log(f"  Dallas 2022 unavailable: {e!r}")
     return {"county": "Dallas County", "kind": "In-person early votes", "lean_2024": cfg.get("lean_2024"),
             "now": cumulative_by_days_out({k: v for k, v in d26.items() if v > 0}, e26),
-            "then": cumulative_by_days_out(d22, e22), "then_year": 2022,
+            "daily": {k: v for k, v in d26.items() if v > 0},
+            "then": then, "then_year": 2022,
             "source_page": cfg["page_2026"], "source_2026": url26, "source_2022": url22}
 
 

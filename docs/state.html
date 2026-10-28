@@ -175,7 +175,7 @@ table.blocks tr.total td { border-top: 2px solid var(--border); border-bottom: n
 
   <section id="countySample" hidden>
     <h2>Large-county early vote sample</h2>
-    <p class="sub">Statewide early-vote data isn’t available for this state, but one or more large counties publish their own. These show turnout pace only (no party), compared with the same point in 2022. They are a sample, not the state, and don’t feed the projection.</p>
+    <p class="sub">Statewide early-vote data isn’t available for this state, but one or more large counties publish their own. These show turnout only (no party), compared with 2022 where that year’s file is available. They are a sample, not the state, and don’t feed the projection.</p>
     <div id="countySampleBody"></div>
   </section>
 
@@ -797,15 +797,18 @@ table.blocks tr.total td { border-top: 2px solid var(--border); border-bottom: n
       const latest = Math.min(...nowDays);
       const now = c.now[String(latest)];
       // 2022 cumulative at the same days-out (or the closest earlier point)
-      const thenDays = Object.keys(c.then).map(Number).sort((a, b) => b - a);
+      const thenDays = Object.keys(c.then || {}).map(Number).sort((a, b) => b - a);
       let then = null;
       for (const d of thenDays) if (d >= latest) then = c.then[String(d)];
-      const thenFinal = c.then[String(Math.min(...thenDays))];
+      const thenFinal = thenDays.length ? c.then[String(Math.min(...thenDays))] : null;
       const pace = then ? now / then * 100 : null;
+      const dailyVals = Object.values(c.daily || {});
+      const lastDay = dailyVals.length ? dailyVals[dailyVals.length - 1] : null;
       return `<div class="card" style="margin-bottom:12px">
         <div class="tiles" style="margin-top:0">
           <div class="tile"><div class="label">${esc(c.county)}: ${esc(c.kind.toLowerCase())} so far</div><div class="value">${fmt(now)}</div><div class="detail">${latest} days before Election Day</div></div>
-          <div class="tile"><div class="label">Pace vs ${c.then_year}, same day</div><div class="value ${pace >= 100 ? "up" : "down"}">${pct(pace, 0)}</div><div class="detail">${fmt(then)} at this point in ${c.then_year}; ${fmt(thenFinal)} by the end of early voting</div></div>
+          ${then ? `<div class="tile"><div class="label">Pace vs ${c.then_year}, same day</div><div class="value ${pace >= 100 ? "up" : "down"}">${pct(pace, 0)}</div><div class="detail">${fmt(then)} at this point in ${c.then_year}; ${fmt(thenFinal)} by the end of early voting</div></div>`
+            : `<div class="tile"><div class="label">Most recent day</div><div class="value">${fmt(lastDay)}</div><div class="detail">${dailyVals.length} days of early voting so far. The county’s 2022 file can’t be downloaded automatically, so there’s no comparison year.</div></div>`}
         </div>
         <div class="chart-box" style="height:260px;margin-top:12px"><canvas id="cs${i}" aria-label="${esc(c.county)} cumulative early votes by days before Election Day"></canvas></div>
         <p class="muted" style="font-size:13px;margin:8px 0 0">Source: <a href="${esc(c.source_page)}">${esc(c.county)} Elections Department</a> daily turnout reports.</p>
@@ -816,7 +819,7 @@ table.blocks tr.total td { border-top: 2px solid var(--border); border-bottom: n
       const opts = baseOptions(v => v >= 1e6 ? (v / 1e6).toFixed(1) + "M" : v >= 1e3 ? Math.round(v / 1e3) + "k" : v);
       opts.plugins.tooltip.callbacks.label = ctx => ` ${ctx.dataset.label}: ${fmt(ctx.raw)}`;
       const ds = (label, src, color, w) => ({ label, data: days.map(d => src[String(d)] ?? null), borderColor: css(color), backgroundColor: css(color), borderWidth: w, pointRadius: 3, tension: 0.15, spanGaps: true });
-      new Chart(document.getElementById(`cs${i}`), { type: "line", data: { labels: days, datasets: [ds("2026", c.now, "--y2026", 3), ds(String(c.then_year), c.then, "--y2022", 2)] }, options: opts });
+      new Chart(document.getElementById(`cs${i}`), { type: "line", data: { labels: days, datasets: [ds("2026", c.now, "--y2026", 3)].concat(Object.keys(c.then || {}).length ? [ds(String(c.then_year), c.then, "--y2022", 2)] : []) }, options: opts });
     });
   }
 
