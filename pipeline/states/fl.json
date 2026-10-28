@@ -76,5 +76,16 @@
       "note": "Open seat (Ron DeSantis term-limited)"
     }
   ],
-  "early_vote": null
+  "early_vote": {
+    "type": "florida",
+    "elections": {
+      "2026": "2026-11-03"
+    },
+    "baselines": [],
+    "baseline_pdf": "https://dos.fl.gov/media/706191/2022-ge-rptstatuscountsarchive-ev-vbm.pdf",
+    "source_page": "https://dos.fl.gov/elections/data-statistics/elections-data/absentee-and-early-voting/",
+    "notes": [
+      "Florida publishes running totals rather than ballot-level files, so 2026 is compared with 2022\u2019s final early and mail vote, not with the same day in 2022. The day-by-day chart builds up from the first day this tracker collected data."
+    ]
+  }
 }

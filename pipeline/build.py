@@ -296,6 +296,16 @@ def main():
     current = cfg["current"]
     OUT_DIR = DATA_DIR / args.state
     OUT_DIR.mkdir(parents=True, exist_ok=True)
+    if cfg.get("type") == "florida":
+        # Running totals only: save today's snapshot and compare with 2022's final totals.
+        sys.path.insert(0, str(Path(__file__).resolve().parent))
+        from sources import florida
+        florida.build(cfg, OUT_DIR, cfg["elections"][current].isoformat())
+        write_json({"state": cfg["state"], "name": cfg["name"], "current": current, "kind": "snapshot",
+                    "baselines": [], "calibration": None, "source_page": cfg.get("source_page"),
+                    "updated_at": datetime.now(timezone.utc).isoformat(timespec="seconds")},
+                   OUT_DIR / "manifest.json")
+        return
     years = args.years or list(cfg["elections"])
     failures = []
     for year in years:

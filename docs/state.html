@@ -173,6 +173,39 @@ table.blocks tr.total td { border-top: 2px solid var(--border); border-bottom: n
 
   <div class="callout" id="noEv" hidden></div>
 
+  <div id="evSnap" hidden>
+  <div class="callout">
+    <strong>The early-vote sections below show who has voted, not how they voted.</strong>
+    Party here is voter <em>registration</em>. <span id="snapNote"></span>
+  </div>
+  <div class="tiles" id="snapTiles"></div>
+  <section>
+    <h2>Who has voted so far</h2>
+    <p class="sub">Share of early and mail ballots by party registration, compared with all of 2022’s early and mail vote.</p>
+    <div class="card">
+      <div class="controls seg" id="snapSeg" role="group" aria-label="Ballot type">
+        <button data-m="total" aria-pressed="true">All</button>
+        <button data-m="in_person" aria-pressed="false">In-person early</button>
+        <button data-m="mail" aria-pressed="false">Mail</button>
+      </div>
+      <div class="table-wrap" id="snapComp"></div>
+    </div>
+  </section>
+  <section>
+    <h2>Day by day</h2>
+    <p class="sub" id="snapChartSub">Cumulative ballots on each day this tracker collected data.</p>
+    <div class="card"><div class="chart-box"><canvas id="snapChart" aria-label="Cumulative ballots by day"></canvas></div></div>
+  </section>
+  <section>
+    <h2>Counties</h2>
+    <p class="sub">2026 ballots so far against each county’s 2022 final early and mail vote. Tap a column to sort; largest 25 shown.</p>
+    <div class="card">
+      <input type="search" id="snapSearch" placeholder="Find a county" aria-label="Find a county">
+      <div class="table-wrap" id="snapCounties"></div>
+    </div>
+  </section>
+  </div>
+
   <div id="ev" hidden>
   <div class="callout">
     <strong>The early-vote sections below show who has voted, not how they voted.</strong>
@@ -280,7 +313,7 @@ table.blocks tr.total td { border-top: 2px solid var(--border); border-bottom: n
   const DIM_LABEL = { method: { mail: "Mail", in_person: "In-person early" } };
   const CODE = (new URLSearchParams(location.search).get("s") || "nc").toLowerCase().replace(/[^a-z]/g, "");
   const BASE = `data/${CODE}/`;
-  let PJ = null, NAT = null, CMP = null;  // projection, national polls, comparison result for the scenario panel
+  let PJ = null, NAT = null, CMP = null, SNAP = null, SBASE = null;  // projection, national polls, comparison result for the scenario panel
   const fmt = n => n == null ? "–" : Math.round(n).toLocaleString("en-US");
   const pct = (n, d = 1) => n == null || !isFinite(n) ? "–" : n.toFixed(d) + "%";
   const pts = (n, d = 1) => n == null || !isFinite(n) ? "–" : (n > 0 ? "+" : n < 0 ? "−" : "±") + Math.abs(n).toFixed(d);
@@ -329,6 +362,10 @@ table.blocks tr.total td { border-top: 2px solid var(--border); border-bottom: n
     if (!PJ.has_early_vote) return;
     const man = MAN = await get("manifest");
     if (!man) return;
+    if (man.kind === "snapshot") {
+      [SNAP, SBASE] = await Promise.all([get("snapshots"), get("baseline_2022_final")]);
+      return;
+    }
     const years = [man.current, ...man.baselines];
     const res = await Promise.all(years.map(y => get(y)));
     years.forEach((y, i) => { if (res[i]) D[y] = res[i]; });
@@ -661,7 +698,94 @@ table.blocks tr.total td { border-top: 2px solid var(--border); border-bottom: n
   }
 
   let method = "total", dim = "party";
+  // ---------- Snapshot-style early vote (running totals only, e.g. Florida) ----------
+  const PARTIES = ["DEM", "REP", "UNA", "OTH"];
+  const SNAP_LABEL = { DEM: "Democrat", REP: "Republican", UNA: "No party / unaffiliated", OTH: "Other parties" };
+  function sumParties(byMethod, method) {
+    const o = { DEM: 0, REP: 0, UNA: 0, OTH: 0 };
+    for (const m of method === "total" ? ["mail", "in_person"] : [method])
+      for (const p of PARTIES) o[p] += ((byMethod || {})[m] || {})[p] || 0;
+    return o;
+  }
+  const total = o => PARTIES.reduce((s, p) => s + o[p], 0);
+  function snapTotals(method) {  // statewide, from county data
+    const now = { DEM: 0, REP: 0, UNA: 0, OTH: 0 }, then = { DEM: 0, REP: 0, UNA: 0, OTH: 0 };
+    for (const c of Object.values(SNAP.latest_counties)) { const x = sumParties(c, method); PARTIES.forEach(p => now[p] += x[p]); }
+    for (const c of Object.values(SBASE.counties)) { const x = sumParties(c, method); PARTIES.forEach(p => then[p] += x[p]); }
+    return { now, then };
+  }
+  function renderSnapshot() {
+    const last = SNAP.snapshots[SNAP.snapshots.length - 1];
+    const asOf = new Date(last.date + "T12:00:00").toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric" });
+    document.getElementById("meta").textContent = `Ballots counted through ${asOf} · ${last.days_out} day${last.days_out === 1 ? "" : "s"} before Election Day · projection updated ${new Date(PJ.generated_at).toLocaleString("en-US", { dateStyle: "medium", timeStyle: "short" })}`;
+    document.getElementById("snapNote").textContent = (PJ.ev_notes || []).join(" ");
+    const { now, then } = snapTotals("total");
+    const tn = total(now), tt = total(then);
+    const mail = total(snapTotals("mail").now), early = total(snapTotals("in_person").now);
+    const gap = o => (o.DEM - o.REP) / total(o) * 100;
+    document.getElementById("snapTiles").innerHTML = `
+      <div class="card tile"><div class="label">Early and mail ballots so far</div><div class="value">${fmt(tn)}</div><div class="detail">${fmt(early)} in person · ${fmt(mail)} mail</div></div>
+      <div class="card tile"><div class="label">Share of 2022’s final early vote</div><div class="value">${pct(tn / tt * 100, 0)}</div><div class="detail">${fmt(tt)} early and mail ballots in all of 2022</div></div>
+      <div class="card tile"><div class="label">Registered D minus R, so far</div><div class="value ${gap(now) >= 0 ? "up" : "down"}">${pts(gap(now))}</div><div class="detail">${pts(gap(then))} in 2022’s final early vote</div></div>`;
+    snapComp("total");
+    snapChart();
+    renderSnapCounties();
+  }
+  function snapComp(method) {
+    const { now, then } = snapTotals(method);
+    const tn = total(now), tt = total(then);
+    let t = `<table><thead><tr><th>Registration</th><th>2026 so far</th><th>2022 final</th><th>Change</th></tr></thead><tbody>`;
+    for (const p of PARTIES) {
+      const a = now[p] / tn * 100, b = then[p] / tt * 100;
+      t += `<tr><td>${SNAP_LABEL[p]}</td><td>${pct(a)}</td><td>${pct(b)}</td><td>${pts(a - b)} pts</td></tr>`;
+    }
+    t += `<tr><td><b>Ballots</b></td><td>${fmt(tn)}</td><td>${fmt(tt)}</td><td></td></tr>`;
+    document.getElementById("snapComp").innerHTML = t + "</tbody></table>";
+  }
+  function snapChart() {
+    const S = SNAP.snapshots;
+    const labels = S.map(x => x.days_out);
+    const tot = x => total(sumParties(x.totals, "total"));
+    const opts = baseOptions(v => v >= 1e6 ? (v / 1e6).toFixed(1) + "M" : v >= 1e3 ? Math.round(v / 1e3) + "k" : v);
+    opts.plugins.tooltip.callbacks.label = c => ` 2026: ${fmt(c.raw)}`;
+    if (charts.snap) charts.snap.destroy();
+    charts.snap = new Chart(document.getElementById("snapChart"), { type: "line", data: { labels, datasets: [{
+      label: "2026", data: S.map(tot), borderColor: css("--y2026"), backgroundColor: css("--y2026"), borderWidth: 3, pointRadius: S.length < 15 ? 4 : 0, tension: 0.15 }] }, options: opts });
+    document.getElementById("snapChartSub").textContent = S.length < 3
+      ? `Only ${S.length} day${S.length === 1 ? "" : "s"} collected so far; this fills in with each daily update.`
+      : "Cumulative ballots on each day this tracker collected data.";
+  }
+  let snapSort = { key: "now", dir: -1 }, showAllSnap = false;
+  function renderSnapCounties() {
+    const q = document.getElementById("snapSearch").value.trim().toLowerCase();
+    const rows = Object.keys(SNAP.latest_counties).map(name => {
+      const n = sumParties(SNAP.latest_counties[name], "total"), b = sumParties((SBASE.counties[name] || {}), "total");
+      const tn = total(n), tb = total(b);
+      const g = tn ? (n.DEM - n.REP) / tn * 100 : null, gb = tb ? (b.DEM - b.REP) / tb * 100 : null;
+      return { name, now: tn, then: tb, share: tb ? tn / tb * 100 : null, gap: g, shift: g != null && gb != null ? g - gb : null };
+    }).filter(r => r.name.toLowerCase().includes(q));
+    const k = snapSort.key, dir = snapSort.dir;
+    rows.sort((a, b) => k === "name" ? a.name.localeCompare(b.name) * dir : ((a[k] ?? -Infinity) - (b[k] ?? -Infinity)) * dir);
+    const head = [["name", "County"], ["now", "2026 so far"], ["then", "2022 final"], ["share", "% of 2022"], ["gap", "D−R gap"], ["shift", "Shift vs 2022"]];
+    const shown = q || showAllSnap ? rows : rows.slice(0, 25);
+    let t = `<table><thead><tr>${head.map(([key, l]) => `<th class="sortable" data-k="${key}">${l}${key === k ? (dir > 0 ? " ▲" : " ▼") : ""}</th>`).join("")}</tr></thead><tbody>`;
+    for (const r of shown) t += `<tr><td>${esc(r.name)}</td><td>${fmt(r.now)}</td><td>${fmt(r.then)}</td><td>${pct(r.share, 0)}</td><td>${pts(r.gap)}</td><td class="${r.shift > 0 ? "d" : r.shift < 0 ? "r" : ""}">${pts(r.shift)}</td></tr>`;
+    if (!q && rows.length > 25) t += `<tr><td colspan="6"><button id="snapMore" class="linkbtn">${showAllSnap ? "Show top 25" : `Show all ${rows.length} counties`}</button></td></tr>`;
+    const el = document.getElementById("snapCounties");
+    el.innerHTML = t + "</tbody></table>";
+    const more = document.getElementById("snapMore");
+    if (more) more.addEventListener("click", () => { showAllSnap = !showAllSnap; renderSnapCounties(); });
+    el.querySelectorAll("th.sortable").forEach(th => th.addEventListener("click", () => {
+      const key = th.dataset.k; snapSort = { key, dir: snapSort.key === key ? -snapSort.dir : (key === "name" ? 1 : -1) }; renderSnapCounties();
+    }));
+  }
+
   function renderEv() {
+    for (const dimName of ["age", "race"]) {
+      const groups = cur.daily[dimName] || {};
+      const known = Object.entries(groups).filter(([k]) => !/Unknown/.test(k)).reduce((s, [, arr]) => s + arr.reduce((a, b) => a + b, 0), 0);
+      if (!known) { const b = document.querySelector(`#dimSeg [data-d="${dimName}"]`); if (b) b.hidden = true; }
+    }
     tiles(); legend("paceLegend"); legend("gapLegend");
     paceChart(method); compTable(dim); gapChart(); buildCounties(); renderCounties(); scenario();
     if (CMP) {
@@ -675,6 +799,15 @@ table.blocks tr.total td { border-top: 2px solid var(--border); border-bottom: n
 
   load().then(() => {
     header(); projection();
+    if (SNAP && SBASE) {
+      document.getElementById("evSnap").hidden = false;
+      document.getElementById("title").textContent = `${PJ.name}: 2026 projection and early vote`;
+      if (MAN && MAN.source_page) document.getElementById("srcLine").innerHTML = `Early-vote data: <a href="${esc(MAN.source_page)}">${esc(PJ.name)} Division of Elections</a>; counts are early and mail ballots cast.`;
+      renderSnapshot();
+      wireSeg("snapSeg", "m", m => snapComp(m));
+      document.getElementById("snapSearch").addEventListener("input", renderSnapCounties);
+      return;
+    }
     const hasEv = !!cur;
     document.getElementById("ev").hidden = !hasEv;
     const noEv = document.getElementById("noEv");
