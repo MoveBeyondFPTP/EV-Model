@@ -49,6 +49,7 @@ jobs:
           status=0
           for f in pipeline/states/*.json; do
             code=$(basename "$f" .json)
+            echo "[$(date -u +%H:%M:%S)] $code" | tee -a docs/data/logs/early_vote.log
             python pipeline/build.py --state "$code" ${{ inputs.force && '--force' || '' }} 2>&1 | tee -a docs/data/logs/early_vote.log; [ "${PIPESTATUS[0]}" = 0 ] || status=1
             python pipeline/registration.py --state "$code" ${{ inputs.force && '--force' || '' }} 2>&1 | tee -a docs/data/logs/early_vote.log; [ "${PIPESTATUS[0]}" = 0 ] || status=1
           done
@@ -67,13 +68,30 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+          exec > >(tee /tmp/commit.log) 2>&1
+          git status --short | head -50
           git add docs/data
           if git diff --cached --quiet; then
             echo "No data changes."
-          else
-            git commit -m "Update early vote data $(date -u +%Y-%m-%d)"
-            for i in 1 2 3; do
-              git pull --rebase -q && git push && break
-              sleep 5
-            done
+            exit 0
           fi
+          git commit -q -m "Update early vote data $(date -u +%Y-%m-%d)"
+          ok=0
+          for i in 1 2 3; do
+            if git pull --rebase --autostash -q origin main && git push origin HEAD:main; then ok=1; break; fi
+            git status --short | head -20
+            sleep 5
+          done
+          if [ "$ok" != 1 ]; then echo "PUSH FAILED"; exit 1; fi
+
+      - name: Save diagnostics (on failure)
+        if: failure()
+        run: |
+          cp docs/data/logs/*.log /tmp/ 2>/dev/null || true
+          git fetch -q origin main
+          git checkout -q --orphan status
+          git rm -rfq . >/dev/null 2>&1 || true
+          cp /tmp/*.log . 2>/dev/null || true
+          git add *.log
+          git commit -qm "diagnostics $(date -u +%FT%TZ)"
+          git push -f origin status
