@@ -5,18 +5,18 @@
  "election_date": "2026-11-03",
  "has_early_vote": true,
  "turnout_signal": {
-  "value": 10.04,
-  "now": 13.22,
-  "then": 3.18,
+  "value": 9.72,
+  "now": 12.37,
+  "then": 2.65,
   "year": 2022,
-  "day": 7,
-  "as_of": "2026-10-27",
+  "day": 5,
+  "as_of": "2026-10-29",
   "backtest": {
    "from": 2020,
    "to": 2024,
    "label": "2024 president",
-   "signal": -4.61,
-   "adjustment": -1.15,
+   "signal": -3.24,
+   "adjustment": -0.81,
    "state_move": -1.89,
    "national_move": -6.04,
    "relative": 4.15,
@@ -67,9 +67,9 @@
     "margin": -3.3
    },
    "projection": {
-    "center": 13.47,
-    "lo": 11.37,
-    "hi": 13.58,
+    "center": 13.98,
+    "lo": 11.86,
+    "hi": 14.09,
     "rating": "Solid Cooper",
     "environment": {
      "label": "2024 president (NC)",
@@ -98,12 +98,12 @@
      "note": null
     },
     "polls": {
-     "avg": 11.58,
-     "n": 8,
+     "avg": 12.09,
+     "n": 9,
      "window_days": 30
     },
-    "poll_weight": 0.96,
-    "start": 11.47,
+    "poll_weight": 0.964,
+    "start": 11.98,
     "early_vote": {
      "adjustment": 2.0,
      "weight": 0.25,
@@ -115,7 +115,7 @@
  "ev_notes": [
   "Rules change. Photo ID applies in 2026 but not in 2018 or 2022, and mail ballots now must arrive by the close of polls instead of within the old three-day grace period. Early voting schedules and sites also vary by cycle."
  ],
- "generated_at": "2026-10-29T00:01:02+00:00",
+ "generated_at": "2026-10-29T19:37:54+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,

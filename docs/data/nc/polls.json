@@ -3,11 +3,11 @@
  "source_url": "https://votehub.com/polls/",
  "license": "CC BY 4.0",
  "method": "One poll per pollster from the last 30 days (60 if fewer than 3), likely voters preferred, weighted by recency (half-life 14 days) and sample size; partisan or internal polls count half. Margins are two-party.",
- "fetched_at": "2026-10-29T00:01:00+00:00",
+ "fetched_at": "2026-10-29T19:37:52+00:00",
  "races": {
   "senate": {
-   "avg": 11.58,
-   "n": 8,
+   "avg": 12.09,
+   "n": 9,
    "window_days": 30,
    "polls": [
     {
@@ -48,6 +48,19 @@
      "partisan": false,
      "url": "https://www.carolinajournal.com/polls/october-2026-coopers-lead-over-whatley-narrows-to-10-points-in-nc-senate-race/",
      "weight": 0.64
+    },
+    {
+     "pollster": "High Point University Survey Research Center",
+     "end_date": "2026-10-20",
+     "age": 9,
+     "population": "lv",
+     "sample_size": 620,
+     "dem": 54.0,
+     "rep": 40.0,
+     "margin": 14.89,
+     "partisan": false,
+     "url": "https://www.highpoint.edu/blog/2026/10/hpu-yougov-poll-north-carolina-likely-voters-weigh-in-on-u-s-senate-race-and-more/",
+     "weight": 0.651
     },
     {
      "pollster": "SurveyUSA",

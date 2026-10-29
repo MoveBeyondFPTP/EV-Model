@@ -29,9 +29,9 @@
    },
    "comparison_result": null,
    "projection": {
-    "center": 4.78,
-    "lo": 4.09,
-    "hi": 5.48,
+    "center": 4.09,
+    "lo": 3.55,
+    "hi": 4.63,
     "rating": "Lean Crowley",
     "environment": {
      "label": "2024 president (WI)",
@@ -48,18 +48,18 @@
      "note": null
     },
     "polls": {
-     "avg": 4.09,
-     "n": 2,
+     "avg": 3.55,
+     "n": 3,
      "window_days": 60
     },
-    "poll_weight": 0.857,
-    "start": 4.78,
+    "poll_weight": 0.9,
+    "start": 4.09,
     "early_vote": null
    }
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-10-29T00:01:02+00:00",
+ "generated_at": "2026-10-29T19:37:54+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,

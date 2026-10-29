@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T00:01:02+00:00",
+ "generated_at": "2026-10-29T19:37:54+00:00",
  "generic": {
   "avg": 8.31,
   "n": 6,
@@ -263,9 +263,9 @@
      "rep": "Hinson",
      "dem_party": "D",
      "rep_party": "R",
-     "center": -0.41,
-     "lo": -0.53,
-     "hi": -0.29,
+     "center": -0.42,
+     "lo": -0.54,
+     "hi": -0.3,
      "rating": "Toss-up",
      "n_polls": 9
     },
@@ -277,9 +277,9 @@
      "rep": "Lahn",
      "dem_party": "D",
      "rep_party": "R",
-     "center": 6.57,
-     "lo": 6.31,
-     "hi": 6.83,
+     "center": 6.56,
+     "lo": 6.3,
+     "hi": 6.82,
      "rating": "Lean Sand",
      "n_polls": 9
     }
@@ -299,11 +299,11 @@
      "rep": "Marshall",
      "dem_party": "D",
      "rep_party": "R",
-     "center": -0.61,
-     "lo": -1.15,
-     "hi": -0.08,
-     "rating": "Toss-up, slight edge Marshall",
-     "n_polls": 3
+     "center": 1.57,
+     "lo": 0.99,
+     "hi": 2.15,
+     "rating": "Tilt Hamilton",
+     "n_polls": 4
     },
     {
      "id": "governor",
@@ -313,11 +313,11 @@
      "rep": "Masterson",
      "dem_party": "D",
      "rep_party": "R",
-     "center": -5.57,
-     "lo": -5.69,
-     "hi": -5.46,
+     "center": -5.43,
+     "lo": -5.53,
+     "hi": -5.33,
      "rating": "Lean Masterson",
-     "n_polls": 3
+     "n_polls": 4
     }
    ]
   },
@@ -325,7 +325,7 @@
    "code": "me",
    "name": "Maine",
    "has_early_vote": true,
-   "early_vote_as_of": "2026-10-28",
+   "early_vote_as_of": "2026-10-29",
    "races": [
     {
      "id": "senate",
@@ -335,11 +335,11 @@
      "rep": "Collins",
      "dem_party": "D",
      "rep_party": "R",
-     "center": 3.31,
-     "lo": 2.38,
-     "hi": 4.24,
+     "center": 3.53,
+     "lo": 2.73,
+     "hi": 4.34,
      "rating": "Lean Jackson",
-     "n_polls": 7
+     "n_polls": 8
     },
     {
      "id": "governor",
@@ -349,11 +349,11 @@
      "rep": "Charles",
      "dem_party": "D",
      "rep_party": "R",
-     "center": 9.4,
-     "lo": 8.26,
-     "hi": 10.55,
+     "center": 10.7,
+     "lo": 9.79,
+     "hi": 11.6,
      "rating": "Likely Pingree",
-     "n_polls": 5
+     "n_polls": 6
     }
    ]
   },
@@ -371,11 +371,11 @@
      "rep": "Rogers",
      "dem_party": "D",
      "rep_party": "R",
-     "center": 3.24,
-     "lo": 3.0,
-     "hi": 3.49,
+     "center": 5.21,
+     "lo": 5.08,
+     "hi": 5.34,
      "rating": "Lean El-Sayed",
-     "n_polls": 8
+     "n_polls": 10
     },
     {
      "id": "governor",
@@ -385,11 +385,11 @@
      "rep": "James",
      "dem_party": "D",
      "rep_party": "R",
-     "center": 8.12,
-     "lo": 7.88,
-     "hi": 8.36,
+     "center": 9.41,
+     "lo": 9.3,
+     "hi": 9.52,
      "rating": "Likely Benson",
-     "n_polls": 5
+     "n_polls": 7
     }
    ]
   },
@@ -421,11 +421,11 @@
      "rep": "Demuth",
      "dem_party": "D",
      "rep_party": "R",
-     "center": 10.23,
-     "lo": 8.78,
-     "hi": 11.67,
+     "center": 10.74,
+     "lo": 9.83,
+     "hi": 11.65,
      "rating": "Likely Klobuchar",
-     "n_polls": 2
+     "n_polls": 3
     }
    ]
   },
@@ -433,7 +433,7 @@
    "code": "nc",
    "name": "North Carolina",
    "has_early_vote": true,
-   "early_vote_as_of": "2026-10-27",
+   "early_vote_as_of": "2026-10-29",
    "races": [
     {
      "id": "senate",
@@ -443,11 +443,11 @@
      "rep": "Whatley",
      "dem_party": "D",
      "rep_party": "R",
-     "center": 13.47,
-     "lo": 11.37,
-     "hi": 13.58,
+     "center": 13.98,
+     "lo": 11.86,
+     "hi": 14.09,
      "rating": "Solid Cooper",
-     "n_polls": 8
+     "n_polls": 9
     }
    ]
   },
@@ -501,11 +501,11 @@
      "rep": "Sununu",
      "dem_party": "D",
      "rep_party": "R",
-     "center": 8.03,
-     "lo": 7.65,
-     "hi": 8.42,
+     "center": 8.02,
+     "lo": 7.71,
+     "hi": 8.32,
      "rating": "Likely Pappas",
-     "n_polls": 4
+     "n_polls": 5
     },
     {
      "id": "governor",
@@ -515,11 +515,11 @@
      "rep": "Ayotte",
      "dem_party": "D",
      "rep_party": "R",
-     "center": -8.24,
-     "lo": -9.57,
-     "hi": -6.92,
+     "center": -7.7,
+     "lo": -8.72,
+     "hi": -6.67,
      "rating": "Likely Ayotte",
-     "n_polls": 4
+     "n_polls": 5
     }
    ]
   },
@@ -537,11 +537,11 @@
      "rep": "Paxton",
      "dem_party": "D",
      "rep_party": "R",
-     "center": 2.37,
-     "lo": 2.2,
-     "hi": 2.55,
+     "center": 2.83,
+     "lo": 2.68,
+     "hi": 2.98,
      "rating": "Tilt Talarico",
-     "n_polls": 11
+     "n_polls": 14
     },
     {
      "id": "governor",
@@ -551,11 +551,11 @@
      "rep": "Abbott",
      "dem_party": "D",
      "rep_party": "R",
-     "center": -2.68,
-     "lo": -2.7,
-     "hi": -2.66,
+     "center": -2.67,
+     "lo": -2.68,
+     "hi": -2.65,
      "rating": "Tilt Abbott",
-     "n_polls": 10
+     "n_polls": 12
     }
    ]
   },
@@ -595,11 +595,11 @@
      "rep": "Tiffany",
      "dem_party": "D",
      "rep_party": "R",
-     "center": 4.78,
-     "lo": 4.09,
-     "hi": 5.48,
+     "center": 4.09,
+     "lo": 3.55,
+     "hi": 4.63,
      "rating": "Lean Crowley",
-     "n_polls": 2
+     "n_polls": 3
     }
    ]
   }

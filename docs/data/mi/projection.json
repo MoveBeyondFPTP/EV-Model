@@ -47,9 +47,9 @@
    },
    "comparison_result": null,
    "projection": {
-    "center": 3.24,
-    "lo": 3.0,
-    "hi": 3.49,
+    "center": 5.21,
+    "lo": 5.08,
+    "hi": 5.34,
     "rating": "Lean El-Sayed",
     "environment": {
      "label": "2024 president (MI)",
@@ -78,12 +78,12 @@
      "note": null
     },
     "polls": {
-     "avg": 3.0,
-     "n": 8,
+     "avg": 5.08,
+     "n": 10,
      "window_days": 30
     },
-    "poll_weight": 0.96,
-    "start": 3.24,
+    "poll_weight": 0.968,
+    "start": 5.21,
     "early_vote": null
    }
   },
@@ -142,9 +142,9 @@
    },
    "comparison_result": null,
    "projection": {
-    "center": 8.12,
-    "lo": 7.88,
-    "hi": 8.36,
+    "center": 9.41,
+    "lo": 9.3,
+    "hi": 9.52,
     "rating": "Likely Benson",
     "environment": {
      "label": "2024 president (MI)",
@@ -184,18 +184,18 @@
      "note": null
     },
     "polls": {
-     "avg": 7.88,
-     "n": 5,
+     "avg": 9.3,
+     "n": 7,
      "window_days": 30
     },
-    "poll_weight": 0.938,
-    "start": 8.12,
+    "poll_weight": 0.955,
+    "start": 9.41,
     "early_vote": null
    }
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-10-29T00:01:02+00:00",
+ "generated_at": "2026-10-29T19:37:54+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,

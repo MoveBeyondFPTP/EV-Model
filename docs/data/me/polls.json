@@ -3,13 +3,26 @@
  "source_url": "https://votehub.com/polls/",
  "license": "CC BY 4.0",
  "method": "One poll per pollster from the last 30 days (60 if fewer than 3), likely voters preferred, weighted by recency (half-life 14 days) and sample size; partisan or internal polls count half. Margins are two-party.",
- "fetched_at": "2026-10-29T00:01:00+00:00",
+ "fetched_at": "2026-10-29T19:37:52+00:00",
  "races": {
   "senate": {
-   "avg": 2.38,
-   "n": 7,
+   "avg": 2.73,
+   "n": 8,
    "window_days": 30,
    "polls": [
+    {
+     "pollster": "CNN/SSRS",
+     "end_date": "2026-10-26",
+     "age": 3,
+     "population": "lv",
+     "sample_size": 783,
+     "dem": 49.0,
+     "rep": 45.0,
+     "margin": 4.26,
+     "partisan": false,
+     "url": "https://www.cnn.com/2026/10/29/politics/cnn-polls-michigan-maine-texas-kansas-senate-races-midterms-vis",
+     "weight": 0.985
+    },
     {
      "pollster": "Marist University",
      "end_date": "2026-10-25",
@@ -104,10 +117,23 @@
    ]
   },
   "governor": {
-   "avg": 8.26,
-   "n": 5,
+   "avg": 9.79,
+   "n": 6,
    "window_days": 30,
    "polls": [
+    {
+     "pollster": "CNN/SSRS",
+     "end_date": "2026-10-26",
+     "age": 3,
+     "population": "lv",
+     "sample_size": 783,
+     "dem": 53.0,
+     "rep": 39.0,
+     "margin": 15.22,
+     "partisan": false,
+     "url": "https://www.cnn.com/2026/10/29/politics/cnn-polls-michigan-maine-texas-kansas-senate-races-midterms-vis",
+     "weight": 0.985
+    },
     {
      "pollster": "Marist University",
      "end_date": "2026-10-25",

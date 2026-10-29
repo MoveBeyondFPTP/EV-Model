@@ -3,13 +3,26 @@
  "source_url": "https://votehub.com/polls/",
  "license": "CC BY 4.0",
  "method": "One poll per pollster from the last 30 days (60 if fewer than 3), likely voters preferred, weighted by recency (half-life 14 days) and sample size; partisan or internal polls count half. Margins are two-party.",
- "fetched_at": "2026-10-29T00:01:00+00:00",
+ "fetched_at": "2026-10-29T19:37:52+00:00",
  "races": {
   "governor": {
-   "avg": 4.09,
-   "n": 2,
+   "avg": 3.55,
+   "n": 3,
    "window_days": 60,
    "polls": [
+    {
+     "pollster": "Wick",
+     "end_date": "2026-10-23",
+     "age": 6,
+     "population": "lv",
+     "sample_size": 1213,
+     "dem": 48.0,
+     "rep": 45.0,
+     "margin": 3.23,
+     "partisan": true,
+     "url": "https://stevecortes.substack.com/p/breaking-news-wisconsin-heads-for",
+     "weight": 0.528
+    },
     {
      "pollster": "Z to A Research",
      "end_date": "2026-10-01",

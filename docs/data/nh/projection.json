@@ -29,9 +29,9 @@
    },
    "comparison_result": null,
    "projection": {
-    "center": 8.03,
-    "lo": 7.65,
-    "hi": 8.42,
+    "center": 8.02,
+    "lo": 7.71,
+    "hi": 8.32,
     "rating": "Likely Pappas",
     "environment": {
      "label": "2024 president (NH)",
@@ -48,12 +48,12 @@
      "note": null
     },
     "polls": {
-     "avg": 7.65,
-     "n": 4,
+     "avg": 7.71,
+     "n": 5,
      "window_days": 60
     },
-    "poll_weight": 0.923,
-    "start": 8.03,
+    "poll_weight": 0.938,
+    "start": 8.02,
     "early_vote": null
    }
   },
@@ -96,9 +96,9 @@
    },
    "comparison_result": null,
    "projection": {
-    "center": -8.24,
-    "lo": -9.57,
-    "hi": -6.92,
+    "center": -7.7,
+    "lo": -8.72,
+    "hi": -6.67,
     "rating": "Likely Ayotte",
     "environment": {
      "label": "2024 president (NH)",
@@ -127,18 +127,18 @@
      "note": null
     },
     "polls": {
-     "avg": -9.57,
-     "n": 4,
+     "avg": -8.72,
+     "n": 5,
      "window_days": 60
     },
-    "poll_weight": 0.923,
-    "start": -8.24,
+    "poll_weight": 0.938,
+    "start": -7.7,
     "early_vote": null
    }
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-10-29T00:01:02+00:00",
+ "generated_at": "2026-10-29T19:37:54+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,

@@ -5,12 +5,12 @@
  "election_date": "2026-11-03",
  "has_early_vote": true,
  "turnout_signal": {
-  "value": 2.42,
-  "now": 19.25,
-  "then": 16.83,
+  "value": 2.13,
+  "now": 18.09,
+  "then": 15.96,
   "year": 2022,
-  "day": 6,
-  "as_of": "2026-10-28"
+  "day": 5,
+  "as_of": "2026-10-29"
  },
  "races": [
   {
@@ -56,9 +56,9 @@
     "margin": 13.32
    },
    "projection": {
-    "center": 3.31,
-    "lo": 2.38,
-    "hi": 4.24,
+    "center": 3.53,
+    "lo": 2.73,
+    "hi": 4.34,
     "rating": "Lean Jackson",
     "environment": {
      "label": "2024 president (ME)",
@@ -87,14 +87,14 @@
      "note": null
     },
     "polls": {
-     "avg": 2.38,
-     "n": 7,
+     "avg": 2.73,
+     "n": 8,
      "window_days": 30
     },
-    "poll_weight": 0.955,
-    "start": 2.7,
+    "poll_weight": 0.96,
+    "start": 3.0,
     "early_vote": {
-     "adjustment": 0.6,
+     "adjustment": 0.53,
      "weight": 0.25,
      "cap": 2.0
     }
@@ -123,9 +123,9 @@
    },
    "comparison_result": null,
    "projection": {
-    "center": 9.4,
-    "lo": 8.26,
-    "hi": 10.55,
+    "center": 10.7,
+    "lo": 9.79,
+    "hi": 11.6,
     "rating": "Likely Pingree",
     "environment": {
      "label": "2024 president (ME)",
@@ -142,14 +142,14 @@
      "note": null
     },
     "polls": {
-     "avg": 8.26,
-     "n": 5,
+     "avg": 9.79,
+     "n": 6,
      "window_days": 30
     },
-    "poll_weight": 0.938,
-    "start": 8.8,
+    "poll_weight": 0.947,
+    "start": 10.16,
     "early_vote": {
-     "adjustment": 0.6,
+     "adjustment": 0.53,
      "weight": 0.25,
      "cap": 2.0
     }
@@ -160,7 +160,7 @@
   "In Maine all early voting is absentee voting. \u201cIn-person early\u201d here means absentee ballots cast at the town clerk\u2019s office; mail, drop-box and hand-delivered ballots count as mail.",
   "Maine\u2019s files have no age or race, so those breakdowns aren\u2019t shown."
  ],
- "generated_at": "2026-10-29T00:01:02+00:00",
+ "generated_at": "2026-10-29T19:37:54+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,

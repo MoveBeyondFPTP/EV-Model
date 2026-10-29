@@ -3,13 +3,26 @@
  "source_url": "https://votehub.com/polls/",
  "license": "CC BY 4.0",
  "method": "One poll per pollster from the last 30 days (60 if fewer than 3), likely voters preferred, weighted by recency (half-life 14 days) and sample size; partisan or internal polls count half. Margins are two-party.",
- "fetched_at": "2026-10-29T00:01:00+00:00",
+ "fetched_at": "2026-10-29T19:37:52+00:00",
  "races": {
   "senate": {
-   "avg": -0.29,
+   "avg": -0.3,
    "n": 9,
    "window_days": 30,
    "polls": [
+    {
+     "pollster": "co/efficient",
+     "end_date": "2026-10-28",
+     "age": 1,
+     "population": "lv",
+     "sample_size": 1020,
+     "dem": 46.0,
+     "rep": 48.0,
+     "margin": -2.13,
+     "partisan": true,
+     "url": "https://battlegrounds.coefficient.org/ia/",
+     "weight": 0.62
+    },
     {
      "pollster": "Echelon Insights",
      "end_date": "2026-10-23",
@@ -35,19 +48,6 @@
      "partisan": false,
      "url": "https://insideradvantage.com/insideradvantage-senate-surveys-mi-el-sayed-47-rogers-46-ia-hinson-47-turek-45-oh-brown-47-husted-44/",
      "weight": 1.0
-    },
-    {
-     "pollster": "co/efficient",
-     "end_date": "2026-10-19",
-     "age": 10,
-     "population": "lv",
-     "sample_size": 863,
-     "dem": 45.0,
-     "rep": 48.0,
-     "margin": -3.23,
-     "partisan": true,
-     "url": "https://battlegrounds.coefficient.org/ia/",
-     "weight": 0.365
     },
     {
      "pollster": "New River Strategies/GS Strategy Group",
@@ -130,10 +130,23 @@
    ]
   },
   "governor": {
-   "avg": 6.83,
+   "avg": 6.82,
    "n": 9,
    "window_days": 30,
    "polls": [
+    {
+     "pollster": "co/efficient",
+     "end_date": "2026-10-28",
+     "age": 1,
+     "population": "lv",
+     "sample_size": 1020,
+     "dem": 50.0,
+     "rep": 45.0,
+     "margin": 5.26,
+     "partisan": true,
+     "url": "https://battlegrounds.coefficient.org/ia/",
+     "weight": 0.62
+    },
     {
      "pollster": "Echelon Insights",
      "end_date": "2026-10-23",
@@ -146,19 +159,6 @@
      "partisan": false,
      "url": "https://netchoice.org/netchoice-echelon-insights-poll-voters-rank-ai-regulation-far-behind-cost-of-living-want-one-national-ai-standard/",
      "weight": 0.609
-    },
-    {
-     "pollster": "co/efficient",
-     "end_date": "2026-10-19",
-     "age": 10,
-     "population": "lv",
-     "sample_size": 863,
-     "dem": 49.0,
-     "rep": 45.0,
-     "margin": 4.26,
-     "partisan": true,
-     "url": "https://battlegrounds.coefficient.org/ia/",
-     "weight": 0.365
     },
     {
      "pollster": "New River",
