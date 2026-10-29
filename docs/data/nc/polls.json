@@ -3,7 +3,7 @@
  "source_url": "https://votehub.com/polls/",
  "license": "CC BY 4.0",
  "method": "One poll per pollster from the last 30 days (60 if fewer than 3), likely voters preferred, weighted by recency (half-life 14 days) and sample size; partisan or internal polls count half. Margins are two-party.",
- "fetched_at": "2026-10-28T19:32:34+00:00",
+ "fetched_at": "2026-10-29T00:01:00+00:00",
  "races": {
   "senate": {
    "avg": 11.58,
@@ -13,7 +13,7 @@
     {
      "pollster": "Quantus Insights",
      "end_date": "2026-10-25",
-     "age": 3,
+     "age": 4,
      "population": "lv",
      "sample_size": 722,
      "dem": 51.4,
@@ -21,12 +21,12 @@
      "margin": 9.13,
      "partisan": false,
      "url": "https://quantusinsights.org/polling/f/north-carolina-senate-cooper-holds-a-9-point-lead-over-whatley",
-     "weight": 0.946
+     "weight": 0.9
     },
     {
      "pollster": "ActiVote",
      "end_date": "2026-10-20",
-     "age": 8,
+     "age": 9,
      "population": "lv",
      "sample_size": 400,
      "dem": 56.9,
@@ -34,12 +34,12 @@
      "margin": 13.8,
      "partisan": false,
      "url": "https://www.activote.net/polls/2026/nc-u-s-senate/",
-     "weight": 0.549
+     "weight": 0.523
     },
     {
      "pollster": "Harper Polling",
      "end_date": "2026-10-20",
-     "age": 8,
+     "age": 9,
      "population": "lv",
      "sample_size": 600,
      "dem": 49.0,
@@ -47,12 +47,12 @@
      "margin": 11.36,
      "partisan": false,
      "url": "https://www.carolinajournal.com/polls/october-2026-coopers-lead-over-whatley-narrows-to-10-points-in-nc-senate-race/",
-     "weight": 0.673
+     "weight": 0.64
     },
     {
      "pollster": "SurveyUSA",
      "end_date": "2026-10-11",
-     "age": 17,
+     "age": 18,
      "population": "lv",
      "sample_size": 643,
      "dem": 54.0,
@@ -60,12 +60,12 @@
      "margin": 14.89,
      "partisan": false,
      "url": "https://results.surveyusa.com/client/PollReport.aspx?g=0a876c84-9a95-4995-9218-82b1015f5d77",
-     "weight": 0.446
+     "weight": 0.425
     },
     {
      "pollster": "Elon University/YouGov",
      "end_date": "2026-10-08",
-     "age": 20,
+     "age": 21,
      "population": "lv",
      "sample_size": 561,
      "dem": 52.0,
@@ -73,12 +73,12 @@
      "margin": 14.29,
      "partisan": false,
      "url": "https://eloncdn.blob.core.windows.net/eu3/sites/819/2026/10/Elon-Poll-news-release-10-20-26.pdf",
-     "weight": 0.359
+     "weight": 0.342
     },
     {
      "pollster": "Change Research",
      "end_date": "2026-10-07",
-     "age": 21,
+     "age": 22,
      "population": "lv",
      "sample_size": 829,
      "dem": 50.0,
@@ -86,12 +86,12 @@
      "margin": 11.11,
      "partisan": true,
      "url": "https://carolinaforward.org/news/the-october-2026-carolina-forward-poll/?emci=e7b29264-2cc4-f111-bf5b-000d3a4fbe83&emdi=beb3dd17-f1c6-f111-bf5b-000d3a4fbe83&ceid=27194997",
-     "weight": 0.208
+     "weight": 0.198
     },
     {
      "pollster": "East Carolina University",
      "end_date": "2026-10-03",
-     "age": 25,
+     "age": 26,
      "population": "lv",
      "sample_size": 810,
      "dem": 53.0,
@@ -99,12 +99,12 @@
      "margin": 7.07,
      "partisan": false,
      "url": "https://surveyresearch-ecu.reportablenews.com/pr/ecu-poll-cooper-s-lead-holds-at-7-points",
-     "weight": 0.337
+     "weight": 0.321
     },
     {
      "pollster": "Big Data Poll",
      "end_date": "2026-09-29",
-     "age": 29,
+     "age": 30,
      "population": "lv",
      "sample_size": 642,
      "dem": 51.0,
@@ -112,7 +112,7 @@
      "margin": 13.33,
      "partisan": false,
      "url": "https://www.bigdatapoll.com/blog/tar-heel-state-poll-roy-cooper-holds-solid-lead-over-michael-whatley-for-us-senate-in-north-carolina/",
-     "weight": 0.246
+     "weight": 0.234
     }
    ]
   }

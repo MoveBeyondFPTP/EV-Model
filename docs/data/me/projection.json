@@ -56,9 +56,9 @@
     "margin": 13.32
    },
    "projection": {
-    "center": 3.37,
+    "center": 3.31,
     "lo": 2.38,
-    "hi": 4.36,
+    "hi": 4.24,
     "rating": "Lean Jackson",
     "environment": {
      "label": "2024 president (ME)",
@@ -91,8 +91,8 @@
      "n": 7,
      "window_days": 30
     },
-    "poll_weight": 0.946,
-    "start": 2.76,
+    "poll_weight": 0.955,
+    "start": 2.7,
     "early_vote": {
      "adjustment": 0.6,
      "weight": 0.25,
@@ -123,9 +123,9 @@
    },
    "comparison_result": null,
    "projection": {
-    "center": 9.51,
+    "center": 9.4,
     "lo": 8.26,
-    "hi": 10.75,
+    "hi": 10.55,
     "rating": "Likely Pingree",
     "environment": {
      "label": "2024 president (ME)",
@@ -146,8 +146,8 @@
      "n": 5,
      "window_days": 30
     },
-    "poll_weight": 0.926,
-    "start": 8.9,
+    "poll_weight": 0.938,
+    "start": 8.8,
     "early_vote": {
      "adjustment": 0.6,
      "weight": 0.25,
@@ -160,7 +160,7 @@
   "In Maine all early voting is absentee voting. \u201cIn-person early\u201d here means absentee ballots cast at the town clerk\u2019s office; mail, drop-box and hand-delivered ballots count as mail.",
   "Maine\u2019s files have no age or race, so those breakdowns aren\u2019t shown."
  ],
- "generated_at": "2026-10-28T19:32:35+00:00",
+ "generated_at": "2026-10-29T00:01:02+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,
@@ -171,7 +171,7 @@
   "c_weight": 0.25,
   "c_cap": 2.0,
   "k_at_30_days": 2.0,
-  "days_left": 6,
-  "k_now": 0.4
+  "days_left": 5,
+  "k_now": 0.333
  }
 }

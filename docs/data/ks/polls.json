@@ -3,7 +3,7 @@
  "source_url": "https://votehub.com/polls/",
  "license": "CC BY 4.0",
  "method": "One poll per pollster from the last 30 days (60 if fewer than 3), likely voters preferred, weighted by recency (half-life 14 days) and sample size; partisan or internal polls count half. Margins are two-party.",
- "fetched_at": "2026-10-28T19:32:34+00:00",
+ "fetched_at": "2026-10-29T00:01:00+00:00",
  "races": {
   "senate": {
    "avg": -0.08,
@@ -13,7 +13,7 @@
     {
      "pollster": "InsiderAdvantage",
      "end_date": "2026-10-14",
-     "age": 14,
+     "age": 15,
      "population": "lv",
      "sample_size": 1200,
      "dem": 47.0,
@@ -21,12 +21,12 @@
      "margin": -1.05,
      "partisan": false,
      "url": "https://insideradvantage.com/insideradvantage-senate-surveys-texas-paxton-49-talarico-48-kansas-marshall-48-hamilton-47-maine-jackson-49-collins-47/",
-     "weight": 0.707
+     "weight": 0.673
     },
     {
      "pollster": "Wedgewood Polls",
      "end_date": "2026-09-24",
-     "age": 34,
+     "age": 35,
      "population": "lv",
      "sample_size": 500,
      "dem": 50.0,
@@ -34,12 +34,12 @@
      "margin": 2.04,
      "partisan": false,
      "url": "https://drive.google.com/drive/u/0/folders/1VKLmawSn60cr7L9HCx9mtZDvATC20N5u",
-     "weight": 0.17
+     "weight": 0.161
     },
     {
      "pollster": "Emerson College",
      "end_date": "2026-09-16",
-     "age": 42,
+     "age": 43,
      "population": "lv",
      "sample_size": 750,
      "dem": 45.0,
@@ -47,7 +47,7 @@
      "margin": 2.27,
      "partisan": false,
      "url": "https://emersoncollegepolling.com/kansas-2026/",
-     "weight": 0.14
+     "weight": 0.133
     }
    ]
   },
@@ -59,7 +59,7 @@
     {
      "pollster": "The New York Times/Siena University",
      "end_date": "2026-09-30",
-     "age": 28,
+     "age": 29,
      "population": "lv",
      "sample_size": 605,
      "dem": 44.0,
@@ -67,12 +67,12 @@
      "margin": -5.38,
      "partisan": false,
      "url": "https://sri.siena.edu/2026/10/04/nytimes-siena-poll-of-likely-voters-gubernatorial-races-2/",
-     "weight": 0.251
+     "weight": 0.239
     },
     {
      "pollster": "Wedgewood Polls",
      "end_date": "2026-09-24",
-     "age": 34,
+     "age": 35,
      "population": "lv",
      "sample_size": 500,
      "dem": 48.0,
@@ -80,12 +80,12 @@
      "margin": -4.0,
      "partisan": false,
      "url": "https://drive.google.com/drive/u/0/folders/1VKLmawSn60cr7L9HCx9mtZDvATC20N5u",
-     "weight": 0.17
+     "weight": 0.161
     },
     {
      "pollster": "Emerson College",
      "end_date": "2026-09-16",
-     "age": 42,
+     "age": 43,
      "population": "lv",
      "sample_size": 750,
      "dem": 44.0,
@@ -93,7 +93,7 @@
      "margin": -7.37,
      "partisan": false,
      "url": "https://emersoncollegepolling.com/kansas-2026/",
-     "weight": 0.14
+     "weight": 0.133
     }
    ]
   }
