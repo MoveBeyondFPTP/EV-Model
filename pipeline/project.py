@@ -187,7 +187,8 @@ def project_race(race, cfg, generic, polls, signal, days_left):
     else:
         starts = [start]
         if P and not A and P.get("polls"):  # polls-only race: show the spread of the polls in the average
-            starts += [x["margin"] for x in P["polls"]]
+            # spread of the nonpartisan polls (sponsored polls still count, at half weight, in the average)
+            starts += [x["margin"] for x in P["polls"] if not x.get("partisan")] or [x["margin"] for x in P["polls"]]
     allv = [s + adj_at(k) for s in starts for k in (C_WEIGHTS if use_c else (0.0,))]
     center = start + adj
     lo, hi = min(allv), max(allv)

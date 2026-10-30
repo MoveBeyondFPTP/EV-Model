@@ -6,8 +6,8 @@
  "fetched_at": "2026-10-30T20:36:00+00:00",
  "races": {
   "senate": {
-   "avg": -21.48,
-   "n": 3,
+   "avg": -16.43,
+   "n": 4,
    "window_days": 30,
    "polls": [
     {
@@ -20,36 +20,52 @@
      "rep": 38.0,
      "margin": 1.3,
      "partisan": true,
-     "url": "https://dfer.org/policy-polling-memos/montana/montana-general-election-poll-findings/",
+     "url": "https://www.pollcheck.co.uk/us-midterms-2026/senate/montana",
      "weight": 0.292
     },
     {
      "pollster": "Montana State University Billings",
      "end_date": "2026-10-21",
      "age": 9,
-     "population": "a",
-     "sample_size": 720,
+     "population": "lv",
+     "sample_size": null,
      "dem": 21.0,
      "rep": 30.0,
      "margin": -17.65,
      "partisan": false,
      "url": "https://www.msubillings.edu/class/nams/polls/2026-mountain-states-poll-report.pdf",
-     "weight": 0.702
+     "weight": 0.64
     },
     {
      "pollster": "Quantus Insights",
      "end_date": "2026-10-18",
      "age": 12,
      "population": "lv",
-     "sample_size": 686,
-     "dem": 21.0,
+     "sample_size": 667,
+     "dem": 29.0,
      "rep": 46.0,
-     "margin": -37.31,
+     "margin": -22.67,
      "partisan": false,
-     "url": "https://quantusinsights.org/polling/f/montana-senate-alme-leads-by-16-as-bodnar-consolidates",
-     "weight": 0.59
+     "url": "https://www.pollcheck.co.uk/us-midterms-2026/senate/montana",
+     "weight": 0.582
+    },
+    {
+     "pollster": "Peak Insights",
+     "end_date": "2026-10-12",
+     "age": 18,
+     "population": "lv",
+     "sample_size": 500,
+     "dem": 29.0,
+     "rep": 44.0,
+     "margin": -20.55,
+     "partisan": true,
+     "url": "https://www.pollcheck.co.uk/us-midterms-2026/senate/montana",
+     "weight": 0.187
     }
-   ]
+   ],
+   "source": "PollCheck (full-field polls; sponsors noted)",
+   "source_url": "https://www.pollcheck.co.uk/us-midterms-2026/senate/montana",
+   "manual": true
   }
  }
 }

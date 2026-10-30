@@ -34,42 +34,87 @@
           "alme"
         ]
       },
-      "note": "Open seat (Daines withdrew). Three-way race: Kurt Alme (R) vs. independent Seth Bodnar, with Democrat Alani Bankhead still on the ballot (about 20% in polls) and Libertarian Kyle Austin. Margin shown is Alme vs. Bodnar, as a share of their two votes.",
+      "note": "Open seat (Daines withdrew). Three-way race: Kurt Alme (R) vs. independent Seth Bodnar, with Democrat Alani Bankhead still on the ballot (about 20% in polls) and Libertarian Kyle Austin. Margin shown is Alme vs. Bodnar, as a share of their two votes. Polls are entered by hand because the automated feed mislabeled some full-field results. Sponsored polls (Concord for a Democratic-aligned group, Peak for Alme, Aspect for a pro-Bodnar PAC) count half.",
       "environment": false,
-      "fallback_polls": {
-        "source": "Political Wire / Wikipedia",
-        "source_url": "https://politicalwire.com/2026/10/20/kurt-alme-leads-three-way-senate-race/",
+      "manual_polls": {
+        "source": "PollCheck (full-field polls; sponsors noted)",
+        "source_url": "https://www.pollcheck.co.uk/us-midterms-2026/senate/montana",
         "polls": [
+          {
+            "pollster": "Concord Public Opinion Partners",
+            "start_date": "2026-10-22",
+            "end_date": "2026-10-23",
+            "sample_size": 410,
+            "population": "lv",
+            "dem": 39,
+            "rep": 38,
+            "partisan": true
+          },
+          {
+            "pollster": "Montana State University Billings",
+            "end_date": "2026-10-21",
+            "sample_size": null,
+            "population": "lv",
+            "dem": 21,
+            "rep": 30,
+            "url": "https://www.msubillings.edu/class/nams/polls/2026-mountain-states-poll-report.pdf"
+          },
           {
             "pollster": "Quantus Insights",
             "start_date": "2026-10-15",
             "end_date": "2026-10-18",
-            "sample_size": null,
+            "sample_size": 667,
             "population": "lv",
-            "dem": 28,
-            "rep": 44,
-            "url": "https://politicalwire.com/2026/10/20/kurt-alme-leads-three-way-senate-race/"
+            "dem": 29,
+            "rep": 46
           },
           {
-            "pollster": "American Pulse (NonStop Local)",
-            "start_date": "2026-09-30",
-            "end_date": "2026-10-03",
-            "sample_size": null,
+            "pollster": "Peak Insights",
+            "start_date": "2026-10-07",
+            "end_date": "2026-10-12",
+            "sample_size": 500,
+            "population": "lv",
+            "dem": 29,
+            "rep": 44,
+            "partisan": true
+          },
+          {
+            "pollster": "Concord Public Opinion Partners",
+            "start_date": "2026-10-06",
+            "end_date": "2026-10-08",
+            "sample_size": 405,
+            "population": "lv",
+            "dem": 37,
+            "rep": 35,
+            "partisan": true
+          },
+          {
+            "pollster": "American Pulse Research",
+            "start_date": "2026-09-19",
+            "end_date": "2026-09-24",
+            "sample_size": 604,
             "population": "lv",
             "dem": 26,
-            "rep": 45,
-            "url": "https://politicalwire.com/2026/10/05/alme-way-ahead-in-three-way-montana-senate-race/"
+            "rep": 45
           },
           {
-            "pollster": "Hart Research",
-            "start_date": "2026-08-01",
-            "end_date": "2026-08-04",
-            "sample_size": 800,
+            "pollster": "Quantus Insights",
+            "start_date": "2026-09-14",
+            "end_date": "2026-09-15",
+            "sample_size": 625,
             "population": "lv",
-            "dem": 30,
-            "rep": 45,
-            "partisan": true,
-            "url": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Montana"
+            "dem": 24,
+            "rep": 44
+          },
+          {
+            "pollster": "Aspect Strategic",
+            "start_date": "2026-09-07",
+            "end_date": "2026-09-15",
+            "sample_size": 715,
+            "population": "lv",
+            "dem": 32,
+            "rep": 44,
+            "partisan": true
           }
         ]
       }
