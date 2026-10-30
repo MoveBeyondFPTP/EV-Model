@@ -158,7 +158,7 @@
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-10-29T23:57:44+00:00",
+ "generated_at": "2026-10-30T19:20:16+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,
@@ -169,7 +169,7 @@
   "c_weight": 0.25,
   "c_cap": 2.0,
   "k_at_30_days": 2.0,
-  "days_left": 5,
-  "k_now": 0.333
+  "days_left": 4,
+  "k_now": 0.267
  }
 }

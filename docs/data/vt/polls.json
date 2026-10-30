@@ -3,7 +3,7 @@
  "source_url": "https://votehub.com/polls/",
  "license": "CC BY 4.0",
  "method": "One poll per pollster from the last 30 days (60 if fewer than 3), likely voters preferred, weighted by recency (half-life 14 days) and sample size; partisan or internal polls count half. Margins are two-party.",
- "fetched_at": "2026-10-29T23:57:43+00:00",
+ "fetched_at": "2026-10-30T19:20:15+00:00",
  "races": {
   "governor": {
    "avg": -1.93,
@@ -13,7 +13,7 @@
     {
      "pollster": "State Navigate",
      "end_date": "2026-10-25",
-     "age": 4,
+     "age": 5,
      "population": "lv",
      "sample_size": 1752,
      "dem": 46.0,
@@ -21,12 +21,12 @@
      "margin": -3.16,
      "partisan": false,
      "url": "https://articles.statenavigate.com/vt/final-vermont-governor-poll-has-phil-scott-holding-a-3-point-lead/",
-     "weight": 1.231
+     "weight": 1.171
     },
     {
      "pollster": "University of New Hampshire",
      "end_date": "2026-09-21",
-     "age": 38,
+     "age": 39,
      "population": "lv",
      "sample_size": 835,
      "dem": 49.0,
@@ -34,7 +34,7 @@
      "margin": 6.52,
      "partisan": false,
      "url": "https://scholars.unh.edu/survey_center_polls/1006/",
-     "weight": 0.18
+     "weight": 0.171
     }
    ]
   }

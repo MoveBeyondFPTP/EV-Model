@@ -3,7 +3,7 @@
  "source_url": "https://votehub.com/polls/",
  "license": "CC BY 4.0",
  "method": "One poll per pollster from the last 30 days (60 if fewer than 3), likely voters preferred, weighted by recency (half-life 14 days) and sample size; partisan or internal polls count half. Margins are two-party.",
- "fetched_at": "2026-10-29T23:57:43+00:00",
+ "fetched_at": "2026-10-30T19:20:15+00:00",
  "races": {
   "senate": {
    "avg": 7.71,
@@ -13,7 +13,7 @@
     {
      "pollster": "Saint Anselm",
      "end_date": "2026-10-20",
-     "age": 9,
+     "age": 10,
      "population": "lv",
      "sample_size": 1672,
      "dem": 50.0,
@@ -21,12 +21,12 @@
      "margin": 7.53,
      "partisan": false,
      "url": "https://www.anselm.edu/about/anselmian-hub/news/new-saint-anselm-college-poll-finds-democrats-leading-congressional-races-affordability-concerns-shape-election-landscape",
-     "weight": 0.961
+     "weight": 0.914
     },
     {
      "pollster": "University of Massachusetts Lowell Center for Public Opinion/YouGov",
      "end_date": "2026-10-19",
-     "age": 10,
+     "age": 11,
      "population": "lv",
      "sample_size": 600,
      "dem": 48.0,
@@ -34,12 +34,12 @@
      "margin": 7.87,
      "partisan": false,
      "url": "https://www.uml.edu/news/press-releases/2026/102826-new-england-polls.aspx",
-     "weight": 0.61
+     "weight": 0.58
     },
     {
      "pollster": "The New York Times/Siena University",
      "end_date": "2026-09-22",
-     "age": 37,
+     "age": 38,
      "population": "lv",
      "sample_size": 613,
      "dem": 50.0,
@@ -47,12 +47,12 @@
      "margin": 5.26,
      "partisan": false,
      "url": "https://www.nytimes.com/2026/09/24/us/politics/democrats-show-strength-in-michigan-senate-race-but-trail-in-maine-polls-find.html",
-     "weight": 0.162
+     "weight": 0.154
     },
     {
      "pollster": "University of New Hampshire",
      "end_date": "2026-09-21",
-     "age": 38,
+     "age": 39,
      "population": "lv",
      "sample_size": 1418,
      "dem": 50.0,
@@ -60,12 +60,12 @@
      "margin": 8.7,
      "partisan": false,
      "url": "https://scholars.unh.edu/survey_center_polls/1005/",
-     "weight": 0.229
+     "weight": 0.218
     },
     {
      "pollster": "InsiderAdvantage",
      "end_date": "2026-09-17",
-     "age": 42,
+     "age": 43,
      "population": "lv",
      "sample_size": 1200,
      "dem": 48.0,
@@ -73,7 +73,7 @@
      "margin": 9.09,
      "partisan": false,
      "url": "https://insideradvantage.com/insideradvantage-national-u-s-senate-surveys-n-c-cooper-48-whatley-43-mi-elsayed-47-rogers-45-nh-pappas-48-sununu-40/",
-     "weight": 0.177
+     "weight": 0.168
     }
    ]
   },
@@ -85,7 +85,7 @@
     {
      "pollster": "Saint Anselm",
      "end_date": "2026-10-20",
-     "age": 9,
+     "age": 10,
      "population": "lv",
      "sample_size": 1672,
      "dem": 42.0,
@@ -93,12 +93,12 @@
      "margin": -8.7,
      "partisan": false,
      "url": "https://www.anselm.edu/about/anselmian-hub/news/new-saint-anselm-college-poll-finds-democrats-leading-congressional-races-affordability-concerns-shape-election-landscape",
-     "weight": 0.961
+     "weight": 0.914
     },
     {
      "pollster": "University of Massachusetts Lowell Center for Public Opinion/YouGov",
      "end_date": "2026-10-19",
-     "age": 10,
+     "age": 11,
      "population": "lv",
      "sample_size": 600,
      "dem": 42.0,
@@ -106,12 +106,12 @@
      "margin": -6.67,
      "partisan": false,
      "url": "https://www.uml.edu/news/press-releases/2026/102826-new-england-polls.aspx",
-     "weight": 0.61
+     "weight": 0.58
     },
     {
      "pollster": "The New York Times/Siena University",
      "end_date": "2026-09-22",
-     "age": 37,
+     "age": 38,
      "population": "lv",
      "sample_size": 613,
      "dem": 41.0,
@@ -119,12 +119,12 @@
      "margin": -11.83,
      "partisan": false,
      "url": "https://www.nytimes.com/interactive/2026/09/25/polls/times-siena-poll-nh-crosstabs.html",
-     "weight": 0.162
+     "weight": 0.154
     },
     {
      "pollster": "University of New Hampshire",
      "end_date": "2026-09-21",
-     "age": 38,
+     "age": 39,
      "population": "lv",
      "sample_size": 1418,
      "dem": 43.0,
@@ -132,12 +132,12 @@
      "margin": -4.44,
      "partisan": false,
      "url": "https://scholars.unh.edu/survey_center_polls/1005/",
-     "weight": 0.229
+     "weight": 0.218
     },
     {
      "pollster": "co/efficient",
      "end_date": "2026-09-11",
-     "age": 48,
+     "age": 49,
      "population": "lv",
      "sample_size": 958,
      "dem": 34.0,
@@ -145,7 +145,7 @@
      "margin": -23.6,
      "partisan": false,
      "url": "https://battlegrounds.coefficient.org/nh/",
-     "weight": 0.117
+     "weight": 0.112
     }
    ]
   }

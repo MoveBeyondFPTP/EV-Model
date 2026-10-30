@@ -5,8 +5,8 @@
  "election_date": "2026-11-03",
  "has_early_vote": true,
  "turnout_signal": {
-  "value": 9.72,
-  "now": 12.37,
+  "value": 8.96,
+  "now": 11.61,
   "then": 2.65,
   "year": 2022,
   "day": 5,
@@ -67,9 +67,9 @@
     "margin": -3.3
    },
    "projection": {
-    "center": 13.98,
-    "lo": 11.86,
-    "hi": 14.09,
+    "center": 13.92,
+    "lo": 11.82,
+    "hi": 14.02,
     "rating": "Solid Cooper",
     "environment": {
      "label": "2024 president (NC)",
@@ -98,12 +98,12 @@
      "note": null
     },
     "polls": {
-     "avg": 12.09,
-     "n": 9,
+     "avg": 12.02,
+     "n": 8,
      "window_days": 30
     },
-    "poll_weight": 0.964,
-    "start": 11.98,
+    "poll_weight": 0.968,
+    "start": 11.92,
     "early_vote": {
      "adjustment": 2.0,
      "weight": 0.25,
@@ -115,7 +115,7 @@
  "ev_notes": [
   "Rules change. Photo ID applies in 2026 but not in 2018 or 2022, and mail ballots now must arrive by the close of polls instead of within the old three-day grace period. Early voting schedules and sites also vary by cycle."
  ],
- "generated_at": "2026-10-29T23:57:44+00:00",
+ "generated_at": "2026-10-30T19:20:16+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,
@@ -126,7 +126,7 @@
   "c_weight": 0.25,
   "c_cap": 2.0,
   "k_at_30_days": 2.0,
-  "days_left": 5,
-  "k_now": 0.333
+  "days_left": 4,
+  "k_now": 0.267
  }
 }

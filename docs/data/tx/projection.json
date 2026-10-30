@@ -45,9 +45,9 @@
    },
    "comparison_result": null,
    "projection": {
-    "center": 2.83,
-    "lo": 2.68,
-    "hi": 2.98,
+    "center": 2.66,
+    "lo": 2.55,
+    "hi": 2.78,
     "rating": "Tilt Talarico",
     "environment": {
      "label": "2024 president (TX)",
@@ -76,12 +76,12 @@
      "note": null
     },
     "polls": {
-     "avg": 2.98,
+     "avg": 2.78,
      "n": 14,
      "window_days": 30
     },
-    "poll_weight": 0.977,
-    "start": 2.83,
+    "poll_weight": 0.981,
+    "start": 2.66,
     "early_vote": null
    }
   },
@@ -124,10 +124,10 @@
    },
    "comparison_result": null,
    "projection": {
-    "center": -2.67,
-    "lo": -2.68,
-    "hi": -2.65,
-    "rating": "Tilt Abbott",
+    "center": -3.03,
+    "lo": -3.03,
+    "hi": -3.02,
+    "rating": "Lean Abbott",
     "environment": {
      "label": "2024 president (TX)",
      "base": -13.88,
@@ -155,18 +155,18 @@
      "note": null
     },
     "polls": {
-     "avg": -2.65,
-     "n": 12,
+     "avg": -3.02,
+     "n": 13,
      "window_days": 30
     },
-    "poll_weight": 0.973,
-    "start": -2.67,
+    "poll_weight": 0.98,
+    "start": -3.03,
     "early_vote": null
    }
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-10-29T23:57:44+00:00",
+ "generated_at": "2026-10-30T19:20:16+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,
@@ -177,7 +177,7 @@
   "c_weight": 0.25,
   "c_cap": 2.0,
   "k_at_30_days": 2.0,
-  "days_left": 5,
-  "k_now": 0.333
+  "days_left": 4,
+  "k_now": 0.267
  }
 }

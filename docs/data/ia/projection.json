@@ -29,8 +29,8 @@
    },
    "comparison_result": null,
    "projection": {
-    "center": -0.42,
-    "lo": -0.54,
+    "center": -0.4,
+    "lo": -0.49,
     "hi": -0.3,
     "rating": "Toss-up",
     "environment": {
@@ -52,8 +52,8 @@
      "n": 9,
      "window_days": 30
     },
-    "poll_weight": 0.964,
-    "start": -0.42,
+    "poll_weight": 0.971,
+    "start": -0.4,
     "early_vote": null
    }
   },
@@ -96,8 +96,8 @@
    },
    "comparison_result": null,
    "projection": {
-    "center": 6.56,
-    "lo": 6.3,
+    "center": 6.61,
+    "lo": 6.4,
     "hi": 6.82,
     "rating": "Lean Sand",
     "environment": {
@@ -131,14 +131,14 @@
      "n": 9,
      "window_days": 30
     },
-    "poll_weight": 0.964,
-    "start": 6.56,
+    "poll_weight": 0.971,
+    "start": 6.61,
     "early_vote": null
    }
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-10-29T23:57:44+00:00",
+ "generated_at": "2026-10-30T19:20:16+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,
@@ -149,7 +149,7 @@
   "c_weight": 0.25,
   "c_cap": 2.0,
   "k_at_30_days": 2.0,
-  "days_left": 5,
-  "k_now": 0.333
+  "days_left": 4,
+  "k_now": 0.267
  }
 }

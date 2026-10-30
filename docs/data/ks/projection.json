@@ -45,10 +45,10 @@
    },
    "comparison_result": null,
    "projection": {
-    "center": 1.57,
-    "lo": 0.99,
-    "hi": 2.15,
-    "rating": "Tilt Hamilton",
+    "center": 3.57,
+    "lo": 2.97,
+    "hi": 4.17,
+    "rating": "Lean Hamilton",
     "environment": {
      "label": "2024 president (KS)",
      "base": -16.41,
@@ -76,12 +76,12 @@
      "note": null
     },
     "polls": {
-     "avg": 2.15,
+     "avg": 4.17,
      "n": 4,
-     "window_days": 60
+     "window_days": 30
     },
-    "poll_weight": 0.923,
-    "start": 1.57,
+    "poll_weight": 0.938,
+    "start": 3.57,
     "early_vote": null
    }
   },
@@ -108,10 +108,10 @@
    },
    "comparison_result": null,
    "projection": {
-    "center": -5.43,
-    "lo": -5.53,
-    "hi": -5.33,
-    "rating": "Lean Masterson",
+    "center": -2.06,
+    "lo": -2.37,
+    "hi": -1.76,
+    "rating": "Tilt Masterson",
     "environment": {
      "label": "2024 president (KS)",
      "base": -16.41,
@@ -127,18 +127,18 @@
      "note": null
     },
     "polls": {
-     "avg": -5.33,
+     "avg": -1.76,
      "n": 4,
-     "window_days": 60
+     "window_days": 30
     },
-    "poll_weight": 0.923,
-    "start": -5.43,
+    "poll_weight": 0.938,
+    "start": -2.06,
     "early_vote": null
    }
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-10-29T23:57:44+00:00",
+ "generated_at": "2026-10-30T19:20:16+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,
@@ -149,7 +149,7 @@
   "c_weight": 0.25,
   "c_cap": 2.0,
   "k_at_30_days": 2.0,
-  "days_left": 5,
-  "k_now": 0.333
+  "days_left": 4,
+  "k_now": 0.267
  }
 }

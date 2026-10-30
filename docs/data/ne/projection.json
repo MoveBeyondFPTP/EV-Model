@@ -29,9 +29,9 @@
    },
    "comparison_result": null,
    "projection": {
-    "center": -1.43,
+    "center": -1.53,
     "lo": -1.94,
-    "hi": -0.93,
+    "hi": -1.11,
     "rating": "Tilt Ricketts",
     "environment": {
      "label": "Osborn\u2019s 2024 Senate race (NE)",
@@ -52,8 +52,8 @@
      "n": 3,
      "window_days": 60
     },
-    "poll_weight": 0.9,
-    "start": -1.43,
+    "poll_weight": 0.918,
+    "start": -1.53,
     "early_vote": null
    }
   },
@@ -96,8 +96,8 @@
    },
    "comparison_result": null,
    "projection": {
-    "center": -7.82,
-    "lo": -8.19,
+    "center": -7.75,
+    "lo": -8.06,
     "hi": -7.45,
     "rating": "Likely Pillen",
     "environment": {
@@ -131,14 +131,14 @@
      "n": 2,
      "window_days": 60
     },
-    "poll_weight": 0.857,
-    "start": -7.82,
+    "poll_weight": 0.882,
+    "start": -7.75,
     "early_vote": null
    }
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-10-29T23:57:44+00:00",
+ "generated_at": "2026-10-30T19:20:16+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,
@@ -149,7 +149,7 @@
   "c_weight": 0.25,
   "c_cap": 2.0,
   "k_at_30_days": 2.0,
-  "days_left": 5,
-  "k_now": 0.333
+  "days_left": 4,
+  "k_now": 0.267
  }
 }

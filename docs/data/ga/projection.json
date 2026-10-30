@@ -45,8 +45,8 @@
    },
    "comparison_result": null,
    "projection": {
-    "center": 10.06,
-    "lo": 9.92,
+    "center": 10.09,
+    "lo": 9.98,
     "hi": 10.2,
     "rating": "Likely Ossoff",
     "environment": {
@@ -80,8 +80,8 @@
      "n": 5,
      "window_days": 30
     },
-    "poll_weight": 0.938,
-    "start": 10.06,
+    "poll_weight": 0.949,
+    "start": 10.09,
     "early_vote": null
    }
   },
@@ -108,9 +108,9 @@
    },
    "comparison_result": null,
    "projection": {
-    "center": -0.83,
+    "center": -0.92,
     "lo": -1.3,
-    "hi": -0.36,
+    "hi": -0.54,
     "rating": "Toss-up, slight edge Jackson",
     "environment": {
      "label": "2024 president (GA)",
@@ -131,14 +131,14 @@
      "n": 6,
      "window_days": 30
     },
-    "poll_weight": 0.947,
-    "start": -0.83,
+    "poll_weight": 0.957,
+    "start": -0.92,
     "early_vote": null
    }
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-10-29T23:57:44+00:00",
+ "generated_at": "2026-10-30T19:20:16+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,
@@ -149,7 +149,7 @@
   "c_weight": 0.25,
   "c_cap": 2.0,
   "k_at_30_days": 2.0,
-  "days_left": 5,
-  "k_now": 0.333
+  "days_left": 4,
+  "k_now": 0.267
  }
 }

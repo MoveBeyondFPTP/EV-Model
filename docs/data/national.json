@@ -3,7 +3,7 @@
  "source_url": "https://votehub.com/polls/",
  "license": "CC BY 4.0",
  "method": "One poll per pollster from the last 30 days (60 if fewer than 3), likely voters preferred, weighted by recency (half-life 14 days) and sample size; partisan or internal polls count half. Margins are two-party.",
- "fetched_at": "2026-10-29T23:57:43+00:00",
+ "fetched_at": "2026-10-30T19:20:15+00:00",
  "generic": {
   "avg": 8.31,
   "n": 6,
@@ -12,7 +12,7 @@
    {
     "pollster": "Pew Research Center",
     "end_date": "2026-10-04",
-    "age": 25,
+    "age": 26,
     "population": "rv",
     "sample_size": 3917,
     "dem": 44.0,
@@ -20,12 +20,12 @@
     "margin": 10.0,
     "partisan": false,
     "url": "https://www.pewresearch.org/politics/2026/10/08/with-americans-in-a-sour-mood-democratic-voters-are-more-engaged-in-midterms",
-    "weight": 0.435
+    "weight": 0.414
    },
    {
     "pollster": "YouGov - CBS News",
     "end_date": "2026-10-02",
-    "age": 27,
+    "age": 28,
     "population": "lv",
     "sample_size": 1572,
     "dem": 54.0,
@@ -33,12 +33,12 @@
     "margin": 9.09,
     "partisan": false,
     "url": "https://assets1.cbsnewsstatic.com/hub/cms/prod_cms_alt/file/2026/10/04/0957ee32-a848-4872-b659-14303d3d3734/cbsnews_20261004_sun.pdf",
-    "weight": 0.394
+    "weight": 0.375
    },
    {
     "pollster": "HarrisX/Harris",
     "end_date": "2026-09-28",
-    "age": 31,
+    "age": 32,
     "population": "lv",
     "sample_size": null,
     "dem": 51.0,
@@ -46,12 +46,12 @@
     "margin": 2.0,
     "partisan": false,
     "url": "https://harvardharrispoll.com/assets/uploads/2026/09/HHP_Sep2026_KeyResults.pdf",
-    "weight": 0.215
+    "weight": 0.205
    },
    {
     "pollster": "The Argument/Verasight",
     "end_date": "2026-09-22",
-    "age": 37,
+    "age": 38,
     "population": "lv",
     "sample_size": null,
     "dem": 55.0,
@@ -59,12 +59,12 @@
     "margin": 10.0,
     "partisan": false,
     "url": "https://www.theargumentmag.com/p/the-least-popular-war-since-vietnam",
-    "weight": 0.16
+    "weight": 0.152
    },
    {
     "pollster": "YouGov",
     "end_date": "2026-09-08",
-    "age": 51,
+    "age": 52,
     "population": "lv",
     "sample_size": 1015,
     "dem": 49.0,
@@ -72,12 +72,12 @@
     "margin": 12.64,
     "partisan": false,
     "url": "https://d3nkl3psvxxpe9.cloudfront.net/documents/econTabReport_SlcWdVd.pdf",
-    "weight": 0.104
+    "weight": 0.099
    },
    {
     "pollster": "Morning Consult",
     "end_date": "2026-09-06",
-    "age": 53,
+    "age": 54,
     "population": "rv",
     "sample_size": 2203,
     "dem": 46.0,
@@ -85,7 +85,7 @@
     "margin": 4.55,
     "partisan": false,
     "url": "https://drive.google.com/file/d/1tRrQzrZUZ4MZJ953Ir3hf8vSZx0vuHlv/view?usp=sharing",
-    "weight": 0.109
+    "weight": 0.104
    }
   ]
  },
