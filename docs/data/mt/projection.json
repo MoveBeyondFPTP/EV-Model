@@ -1,0 +1,63 @@
+{
+ "state": "MT",
+ "code": "mt",
+ "name": "Montana",
+ "election_date": "2026-11-03",
+ "has_early_vote": false,
+ "turnout_signal": null,
+ "races": [
+  {
+   "id": "senate",
+   "office": "U.S. Senate",
+   "type": "candidate",
+   "note": "Open seat (Daines withdrew). Three-way race: Kurt Alme (R) vs. independent Seth Bodnar, with Democrat Alani Bankhead still on the ballot (about 20% in polls) and Libertarian Kyle Austin. Margin shown is Alme vs. Bodnar, as a share of their two votes.",
+   "dem": {
+    "name": "Seth Bodnar",
+    "short": "Bodnar",
+    "party": "I",
+    "match": [
+     "bodnar"
+    ]
+   },
+   "rep": {
+    "name": "Kurt Alme",
+    "short": "Alme",
+    "party": "R",
+    "match": [
+     "alme"
+    ]
+   },
+   "projection": {
+    "center": -23.68,
+    "lo": -26.76,
+    "hi": -22.22,
+    "rating": "Solid Alme",
+    "range_basis": "polls",
+    "environment": null,
+    "polls": {
+     "avg": -23.68,
+     "n": 2,
+     "window_days": 30
+    },
+    "poll_weight": 1.0,
+    "start": -23.68,
+    "early_vote": null
+   }
+  }
+ ],
+ "ev_notes": [],
+ "generated_at": "2026-10-30T20:34:47+00:00",
+ "assumptions": {
+  "dem": 0.92,
+  "rep": 0.92,
+  "una": 0.5,
+  "oth": 0.45
+ },
+ "constants": {
+  "c_weight": 0.25,
+  "c_cap": 2.0,
+  "k_at_30_days": 2.0,
+  "days_left": 4,
+  "k_now": 0.267
+ }
+}

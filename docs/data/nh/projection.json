@@ -27,12 +27,12 @@
      "sununu"
     ]
    },
-   "comparison_result": null,
    "projection": {
     "center": 7.96,
     "lo": 7.71,
     "hi": 8.21,
     "rating": "Likely Pappas",
+    "range_basis": "inputs",
     "environment": {
      "label": "2024 president (NH)",
      "base": 2.82,
@@ -94,12 +94,12 @@
      "source": "Wikipedia"
     }
    },
-   "comparison_result": null,
    "projection": {
     "center": -7.89,
     "lo": -8.72,
     "hi": -7.06,
     "rating": "Likely Ayotte",
+    "range_basis": "inputs",
     "environment": {
      "label": "2024 president (NH)",
      "base": 2.82,
@@ -138,7 +138,7 @@
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-10-30T19:20:16+00:00",
+ "generated_at": "2026-10-30T20:34:47+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,

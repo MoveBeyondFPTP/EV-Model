@@ -62,12 +62,12 @@
      "source": "akashic.app (MIT Election Lab)"
     }
    },
-   "comparison_result": null,
    "projection": {
     "center": 0.99,
     "lo": 0.85,
     "hi": 1.12,
     "rating": "Toss-up, slight edge Peltola",
+    "range_basis": "inputs",
     "environment": {
      "label": "2024 president (AK)",
      "base": -13.69,
@@ -138,12 +138,12 @@
      "taylor"
     ]
    },
-   "comparison_result": null,
    "projection": {
     "center": 5.41,
     "lo": 4.59,
     "hi": 6.24,
     "rating": "Lean Kreiss-Tomkins",
+    "range_basis": "inputs",
     "environment": {
      "label": "2024 president (AK)",
      "base": -13.69,
@@ -181,12 +181,12 @@
     "name": "Yes (repeal)",
     "short": "Yes"
    },
-   "comparison_result": null,
    "projection": {
     "center": 5.4,
     "lo": 5.37,
     "hi": 5.44,
     "rating": "Leans No",
+    "range_basis": "inputs",
     "environment": {
      "label": "2024 Ballot Measure 2 (same repeal)",
      "base": 0.23,
@@ -213,7 +213,7 @@
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-10-30T19:20:16+00:00",
+ "generated_at": "2026-10-30T20:34:47+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,

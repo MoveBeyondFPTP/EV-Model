@@ -90,6 +90,173 @@
         ]
       },
       "note": "Open seat (Jared Polis term-limited)"
+    },
+    {
+      "id": "longmont-3c",
+      "office": "Longmont Question 3C",
+      "type": "local_measure",
+      "place": "City of Longmont (Boulder/Weld counties)",
+      "dem": {
+        "name": "Yes",
+        "short": "Yes"
+      },
+      "rep": {
+        "name": "No",
+        "short": "No"
+      },
+      "note": "Charter amendment: ranked-choice voting for Longmont mayor and city council from November 2029, once the Secretary of State certifies equipment and rules. Yes = adopt RCV.",
+      "assessment": {
+        "yes": 58,
+        "yes_lo": 51,
+        "yes_hi": 65,
+        "rating": "Likely Yes",
+        "as_of": "2026-10-30",
+        "threshold": "Simple majority of votes cast on the question",
+        "summary": "Likely to pass. The council referred it 6-1, the mayor and both local state legislators back it, the cost is small (about $60\u201380K for the first RCV election), and no organized opposition has surfaced. The best comparisons are Front Range cities with similar politics: Fort Collins passed RCV with 58% in 2022 and Broomfield with 52% in 2021, while Boulder\u2019s more liberal electorate gave 78%. The main drag is Colorado\u2019s 2024 Prop 131, which failed statewide at 46.5% after many Democrats opposed it, and lingering fatigue from that campaign.",
+        "for": [
+          "Council referred it 6-1. Mayor Susie Hidalgo-Fahring, Councilmember Alex Kalkhofer, State Sen. Katie Wallace and State Rep. Karen McCormick support it",
+          "League of Women Voters of Boulder County supports RCV, and a \u2018Ranked Choice Voting for Longmont\u2019 campaign is active",
+          "No tax increase, modest stated cost, and delayed to 2029 behind state certification",
+          "Nearby Boulder already uses RCV for mayor, so the system is familiar in the county"
+        ],
+        "against": [
+          "The city\u2019s con summary argues RCV is more complex, can \u2018exhaust\u2019 ballots, and should have come from a citizen petition, not the council",
+          "Colorado voters rejected statewide RCV (Prop 131) in 2024",
+          "Longmont is more politically mixed than Boulder (it extends into Weld County)"
+        ],
+        "finance": "Local news reports no spending by a 3C or 3D committee. Municipal committees file with the Longmont City Clerk (not reviewed here). Campaign activity appears volunteer-driven (rcvforlongmont.org, Rank the Vote Colorado).",
+        "comparables": [
+          {
+            "label": "Boulder, CO 2E (2020, RCV for mayor)",
+            "yes": 78.1
+          },
+          {
+            "label": "Fort Collins, CO 2C (2022)",
+            "yes": 58.0
+          },
+          {
+            "label": "Broomfield, CO 2A (2021)",
+            "yes": 51.9
+          },
+          {
+            "label": "Colorado Prop 131 (2024, statewide top-four + RCV)",
+            "yes": 46.5
+          }
+        ],
+        "sources": [
+          {
+            "title": "City of Longmont: November 3, 2026 ballot information (text, pro/con summaries)",
+            "url": "https://longmontcolorado.gov/information/ballot-information-november-3-2026-election/"
+          },
+          {
+            "title": "Times-Call via Rank the Vote: Longmont voters to decide on RCV (council vote 6-1)",
+            "url": "https://rankthevote.us/longmont-voters-to-decide-on-ranked-choice-voting-this-november/"
+          },
+          {
+            "title": "FairVote: Who supports Longmont Questions 3C and 3D?",
+            "url": "https://fairvote.org/who-supports-longmont-questions-3c-and-3d/"
+          },
+          {
+            "title": "Yellow Scene: Ranked choice voting steals the show at Longmont City Council",
+            "url": "https://yellowscene.com/2026/03/09/ranked-choice-voting-steals-the-show-at-longmont-city-council/"
+          },
+          {
+            "title": "Ballotpedia: Boulder Measure 2E (2020)",
+            "url": "https://ballotpedia.org/Boulder,_Colorado,_Measure_2E,_Ranked-Choice_Voting_for_Mayor_Amendment_(November_2020)"
+          },
+          {
+            "title": "Complete Colorado: Fort Collins passes RCV (2022)",
+            "url": "https://completecolorado.com/2022/11/16/fort-collins-voters-pass-ranked-choice-voting-measure/"
+          },
+          {
+            "title": "Ballotpedia: Broomfield Question 2A (2021)",
+            "url": "https://ballotpedia.org/Broomfield,_Colorado,_Question_2A,_Ranked-Choice_Voting_(November_2021)"
+          },
+          {
+            "title": "Ballotpedia: local RCV measures (57 of 72 adoption measures have passed)",
+            "url": "https://news.ballotpedia.org/2026/09/22/voters-in-three-cities-will-decide-on-ballot-measures-to-implement-ranked-choice-voting-in-local-elections-on-november-3/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "longmont-3d",
+      "office": "Longmont Question 3D",
+      "type": "local_measure",
+      "place": "City of Longmont (Boulder/Weld counties)",
+      "dem": {
+        "name": "Yes",
+        "short": "Yes"
+      },
+      "rep": {
+        "name": "No",
+        "short": "No"
+      },
+      "note": "Charter amendment: realigns council election cycles so all at-large seats are elected together and all ward seats together (two seats get one-time two-year terms). Takes effect only if 3C passes. Yes = realign.",
+      "assessment": {
+        "yes": 54,
+        "yes_lo": 46,
+        "yes_hi": 61,
+        "rating": "Leans Yes",
+        "as_of": "2026-10-30",
+        "threshold": "Simple majority of votes cast on the question; has no effect unless 3C also passes",
+        "summary": "Slightly more likely to pass than fail, and it should run a few points behind 3C. It travels with 3C and has the same backers, and it costs nothing. But it\u2019s a technical change that most voters won\u2019t have heard explained. \u2018Two-year terms\u2019 and \u2018realign\u2019 wording draws No votes from people who default to No on charter changes they don\u2019t understand. Some 3C supporters who don\u2019t follow the multi-winner argument may also skip it or vote No. If 3C fails, the 3D result doesn\u2019t matter.",
+        "for": [
+          "Same endorsers and campaign as 3C, which pitches them as a pair",
+          "No cost and no tax",
+          "Lets the at-large race use a multi-winner ranked method (single transferable vote), which supporters argue gives fairer representation"
+        ],
+        "against": [
+          "The city\u2019s con summary calls it unnecessary and warns of \u2018lame duck\u2019 two-year terms",
+          "Process changes with no clear everyday payoff tend to underperform the headline measure they travel with",
+          "Voters who oppose 3C will almost all vote No here too"
+        ],
+        "finance": "Same as 3C: no separate spending found.",
+        "comparables": [
+          {
+            "label": "Fort Collins, CO 2C (2022)",
+            "yes": 58.0
+          },
+          {
+            "label": "Broomfield, CO 2A (2021)",
+            "yes": 51.9
+          }
+        ],
+        "sources": [
+          {
+            "title": "City of Longmont: November 3, 2026 ballot information (text, pro/con summaries)",
+            "url": "https://longmontcolorado.gov/information/ballot-information-november-3-2026-election/"
+          },
+          {
+            "title": "Times-Call via Rank the Vote: Longmont voters to decide on RCV (council vote 6-1)",
+            "url": "https://rankthevote.us/longmont-voters-to-decide-on-ranked-choice-voting-this-november/"
+          },
+          {
+            "title": "FairVote: Who supports Longmont Questions 3C and 3D?",
+            "url": "https://fairvote.org/who-supports-longmont-questions-3c-and-3d/"
+          },
+          {
+            "title": "Yellow Scene: Ranked choice voting steals the show at Longmont City Council",
+            "url": "https://yellowscene.com/2026/03/09/ranked-choice-voting-steals-the-show-at-longmont-city-council/"
+          },
+          {
+            "title": "Ballotpedia: Boulder Measure 2E (2020)",
+            "url": "https://ballotpedia.org/Boulder,_Colorado,_Measure_2E,_Ranked-Choice_Voting_for_Mayor_Amendment_(November_2020)"
+          },
+          {
+            "title": "Complete Colorado: Fort Collins passes RCV (2022)",
+            "url": "https://completecolorado.com/2022/11/16/fort-collins-voters-pass-ranked-choice-voting-measure/"
+          },
+          {
+            "title": "Ballotpedia: Broomfield Question 2A (2021)",
+            "url": "https://ballotpedia.org/Broomfield,_Colorado,_Question_2A,_Ranked-Choice_Voting_(November_2021)"
+          },
+          {
+            "title": "Ballotpedia: local RCV measures (57 of 72 adoption measures have passed)",
+            "url": "https://news.ballotpedia.org/2026/09/22/voters-in-three-cities-will-decide-on-ballot-measures-to-implement-ranked-choice-voting-in-local-elections-on-november-3/"
+          }
+        ]
+      }
     }
   ],
   "early_vote": null

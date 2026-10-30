@@ -1,0 +1,147 @@
+{
+  "state": "HI",
+  "name": "Hawaii",
+  "current": 2026,
+  "election_date": "2026-11-03",
+  "environment": {
+    "label": "2024 president (HI)",
+    "year": 2024,
+    "margin": 23.57,
+    "national_margin": -1.5
+  },
+  "polls": {
+    "subject": "2026 Hawaii"
+  },
+  "races": [
+    {
+      "id": "governor",
+      "office": "Governor",
+      "type": "candidate",
+      "poll_type": "governor",
+      "dem": {
+        "name": "Josh Green",
+        "short": "Green",
+        "party": "D",
+        "match": [
+          "green"
+        ],
+        "track_record": {
+          "label": "2022 Governor",
+          "year": 2022,
+          "dem_votes": 63.2,
+          "rep_votes": 36.8,
+          "expected_from": {
+            "state_president_year": 2020,
+            "state_president_pct": [
+              63.73,
+              34.27
+            ],
+            "national_shift": -7.33
+          },
+          "weight": 1.0,
+          "source": "Ballotpedia (vote shares)"
+        }
+      },
+      "rep": {
+        "name": "Gary Cordery",
+        "short": "Cordery",
+        "party": "R",
+        "match": [
+          "cordery"
+        ]
+      },
+      "note": "Incumbent Josh Green (D) vs. Gary Cordery (R). No U.S. Senate race in 2026. Rated Solid/Safe D by Cook, Inside Elections and Sabato."
+    },
+    {
+      "id": "honolulu-q5",
+      "office": "Honolulu Charter Question 5",
+      "type": "local_measure",
+      "place": "City and County of Honolulu (O\u02bbahu)",
+      "dem": {
+        "name": "Yes",
+        "short": "Yes"
+      },
+      "rep": {
+        "name": "No",
+        "short": "No"
+      },
+      "note": "Ranked-choice voting for Honolulu mayor, city council and prosecuting attorney in a single November election, from 2032, if the Legislature also approves. Yes = adopt RCV.",
+      "assessment": {
+        "yes": 55,
+        "yes_lo": 47,
+        "yes_hi": 62,
+        "rating": "Leans Yes",
+        "as_of": "2026-10-30",
+        "threshold": "Majority of voters voting on the question. Blank votes don\u2019t count, unlike Hawaii constitutional amendments",
+        "summary": "Slightly more likely to pass than fail. Honolulu voters approve most charter amendments, blank ballots don\u2019t count against it, and the Democratic Party, the League of Women Voters and the Star-Advertiser editorial board all back it in a deeply Democratic electorate. The risk is that the Hawaii GOP is campaigning against it, giving it a partisan edge. RCV has also lost recently in large blue electorates (Oregon 42% in 2024). And this is one of 20 charter questions, where tired voters tend to default to No on anything confusing.",
+        "for": [
+          "Supported by the Democratic Party of Hawai\u02bbi and the League of Women Voters of Hawai\u02bbi",
+          "The Star-Advertiser editorial board recommends Yes",
+          "Blank votes are excluded, so the many voters who skip down-ballot charter questions don\u2019t count as No",
+          "Delayed to 2032 and contingent on the Legislature, which softens the \u2018too fast, too costly\u2019 argument",
+          "Hawaii already uses ranked ballots in some special federal and county elections"
+        ],
+        "against": [
+          "The Hawaii Republican Party (Chair Shirlene Ostrov, Rep. Elijah Pierick) is actively opposing it, and a Star-Advertiser op-ed called RCV something that \u2018ruins elections\u2019",
+          "It eliminates the familiar primary-plus-general format for city offices",
+          "Voters face 20 charter questions, and ballot fatigue pushes undecided voters toward No",
+          "RCV measures in large electorates have underperformed partisanship (Oregon 2024: 42%, Colorado 2024: 46.5%)"
+        ],
+        "finance": "Local reporting shows no ballot-issue committee spending for or against Question 5. Ballot-issue committees file with the Hawaii Campaign Spending Commission. Advocacy appears limited to groups like FairVote, LWV and Rank the Vote on the Yes side and the state GOP on the No side.",
+        "comparables": [
+          {
+            "label": "Richmond, CA Measure L (2024)",
+            "yes": 54.4
+          },
+          {
+            "label": "Washington, DC Initiative 83 (2024)",
+            "yes": 72.9
+          },
+          {
+            "label": "Oregon Measure 117 (2024, statewide)",
+            "yes": 42.3
+          },
+          {
+            "label": "Colorado Prop 131 (2024, statewide top-four + RCV)",
+            "yes": 46.5
+          }
+        ],
+        "sources": [
+          {
+            "title": "Hawai\u02bbi Public Radio: 2026 Honolulu charter amendment explainer",
+            "url": "https://www.hawaiipublicradio.org/local-news/2026-10-15/voting-explainer-2026-honolulu-charter-amendment-ballot-questions"
+          },
+          {
+            "title": "Star-Advertiser: Ranked-choice voting among Honolulu charter amendments",
+            "url": "https://www.staradvertiser.com/2026/10/25/hawaii-news/ranked-choice-voting-among-honolulu-charter-amendments/"
+          },
+          {
+            "title": "Star-Advertiser editorial: recap of our picks",
+            "url": "https://www.staradvertiser.com/2026/10/27/editorial/our-view/editorial-recap-of-our-picks-vote/"
+          },
+          {
+            "title": "Hawaii News Now: RCV proposal draws GOP opposition",
+            "url": "https://www.hawaiinewsnow.com/2026/09/25/ranked-choice-voting-proposal-draws-gop-opposition-ahead-november-vote/"
+          },
+          {
+            "title": "Star-Advertiser column: Ranked choice voting ruins elections",
+            "url": "https://www.staradvertiser.com/2026/10/21/editorial/island-voices/column-ranked-choice-voting-ruins-elections/"
+          },
+          {
+            "title": "Hawaii Free Press: blank vs. \u2018No\u2019 votes on Honolulu charter amendments",
+            "url": "https://www.hawaiifreepress.com/Articles-Main/ID/18555/Honolulu-Charter-Amendments-ndash-Blank-vs-ldquoNordquo-Vote"
+          },
+          {
+            "title": "FairVote: Who supports Honolulu Question 5?",
+            "url": "https://fairvote.org/who-supports-honolulu-question-5/"
+          },
+          {
+            "title": "Ballotpedia: 2024 RCV and electoral-system measure results",
+            "url": "https://ballotpedia.org/Results_for_ranked-choice_voting_(RCV)_and_electoral_system_ballot_measures,_2024"
+          }
+        ]
+      }
+    }
+  ],
+  "early_vote": null
+}

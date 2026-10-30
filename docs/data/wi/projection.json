@@ -27,12 +27,12 @@
      "tiffany"
     ]
    },
-   "comparison_result": null,
    "projection": {
     "center": 3.99,
     "lo": 3.55,
     "hi": 4.43,
     "rating": "Lean Crowley",
+    "range_basis": "inputs",
     "environment": {
      "label": "2024 president (WI)",
      "base": -0.87,
@@ -59,7 +59,7 @@
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-10-30T19:20:16+00:00",
+ "generated_at": "2026-10-30T20:34:47+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,

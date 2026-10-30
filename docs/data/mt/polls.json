@@ -1,0 +1,43 @@
+{
+ "source": "VoteHub",
+ "method": "(local test)",
+ "fetched_at": "2026-10-30T12:00:00+00:00",
+ "races": {
+  "senate": {
+   "avg": -23.68,
+   "n": 2,
+   "window_days": 30,
+   "polls": [
+    {
+     "pollster": "Quantus Insights",
+     "end_date": "2026-10-18",
+     "age": 12,
+     "population": "lv",
+     "sample_size": null,
+     "dem": 28.0,
+     "rep": 44.0,
+     "margin": -22.22,
+     "partisan": false,
+     "url": "https://politicalwire.com/2026/10/20/kurt-alme-leads-three-way-senate-race/",
+     "weight": 0.552
+    },
+    {
+     "pollster": "American Pulse (NonStop Local)",
+     "end_date": "2026-10-03",
+     "age": 27,
+     "population": "lv",
+     "sample_size": null,
+     "dem": 26.0,
+     "rep": 45.0,
+     "margin": -26.76,
+     "partisan": false,
+     "url": "https://politicalwire.com/2026/10/05/alme-way-ahead-in-three-way-montana-senate-race/",
+     "weight": 0.263
+    }
+   ],
+   "source": "Political Wire / Wikipedia",
+   "source_url": "https://politicalwire.com/2026/10/20/kurt-alme-leads-three-way-senate-race/",
+   "manual": true
+  }
+ }
+}

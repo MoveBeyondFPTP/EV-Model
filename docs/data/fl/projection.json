@@ -43,12 +43,12 @@
      "source": "Wikipedia"
     }
    },
-   "comparison_result": null,
    "projection": {
     "center": -6.42,
     "lo": -6.46,
     "hi": -6.39,
     "rating": "Lean Moody",
+    "range_basis": "inputs",
     "environment": {
      "label": "2024 president (FL)",
      "base": -13.22,
@@ -106,12 +106,12 @@
      "donalds"
     ]
    },
-   "comparison_result": null,
    "projection": {
     "center": -4.73,
     "lo": -4.77,
     "hi": -4.69,
     "rating": "Lean Donalds",
+    "range_basis": "inputs",
     "environment": {
      "label": "2024 president (FL)",
      "base": -13.22,
@@ -140,7 +140,7 @@
  "ev_notes": [
   "Florida publishes running totals rather than ballot-level files, so 2026 is compared with 2022\u2019s final early and mail vote, not with the same day in 2022. The day-by-day chart builds up from the first day this tracker collected data."
  ],
- "generated_at": "2026-10-30T19:20:16+00:00",
+ "generated_at": "2026-10-30T20:34:47+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,

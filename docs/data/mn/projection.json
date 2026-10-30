@@ -27,12 +27,12 @@
      "tafoya"
     ]
    },
-   "comparison_result": null,
    "projection": {
     "center": 4.93,
     "lo": 4.11,
     "hi": 5.75,
     "rating": "Lean Flanagan",
+    "range_basis": "inputs",
     "environment": {
      "label": "2024 president (MN)",
      "base": 4.34,
@@ -94,12 +94,12 @@
      "demuth"
     ]
    },
-   "comparison_result": null,
    "projection": {
     "center": 10.57,
     "lo": 9.83,
     "hi": 11.31,
     "rating": "Likely Klobuchar",
+    "range_basis": "inputs",
     "environment": {
      "label": "2024 president (MN)",
      "base": 4.34,
@@ -138,7 +138,7 @@
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-10-30T19:20:16+00:00",
+ "generated_at": "2026-10-30T20:34:47+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,

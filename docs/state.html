@@ -150,6 +150,18 @@ table.blocks tr.total td { border-top: 2px solid var(--border); border-bottom: n
 .proj details.polls table { font-size: 13px; }
 .proj .proj-races { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
 .race .note { font-size: 13px; margin-top: 2px; }
+.assess { margin-top: 14px; border-top: 1px solid var(--border); padding-top: 12px; font-size: 14px; }
+.assess h4 { font-size: 13px; margin: 12px 0 4px; color: var(--text-2); text-transform: uppercase; letter-spacing: .04em; }
+.assess ul { margin: 0; padding-left: 18px; } .assess li { margin: 3px 0; }
+.assess-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+@media (max-width: 640px) { .assess-cols { grid-template-columns: 1fr; } }
+.comps .comp { display: grid; grid-template-columns: minmax(0, 1.4fr) 1fr 48px; gap: 8px; align-items: center; font-size: 13px; margin: 3px 0; }
+.comps .bar { position: relative; height: 8px; background: var(--border); border-radius: 4px; overflow: hidden; }
+.comps .bar span { position: absolute; left: 0; top: 0; bottom: 0; border-radius: 4px; background: var(--text-3); }
+.comps .bar span.n { opacity: .5; }
+.comps .bar i { position: absolute; left: 50%; top: -2px; bottom: -2px; width: 1px; background: var(--text); }
+.comps b { text-align: right; font-variant-numeric: tabular-nums; }
+ul.src { padding-left: 18px; font-size: 13px; }
 .scale.neutral .track { background: var(--border); opacity: 1; }
 .muted.small { font-size: 12.5px; margin: 8px 0 0; }
 .linkbtn { font: inherit; font-size: 14px; background: none; border: none; padding: 4px 0; color: var(--accent); cursor: pointer; }
@@ -385,7 +397,8 @@ table.blocks tr.total td { border-top: 2px solid var(--border); border-bottom: n
   const clamp = (x, lo, hi) => Math.max(lo, Math.min(hi, x));
   const signed = (m, dLabel = "D", rLabel = "R") => m == null || !isFinite(m) ? "–" : Math.abs(m) < 0.05 ? "even" : `${m > 0 ? dLabel : rLabel} +${Math.abs(m).toFixed(1)}`;
   const shortDate = iso => new Date(iso + "T12:00:00").toLocaleDateString("en-US", { month: "short", day: "numeric" });
-  const isMeasure = race => race.type === "measure";
+  const isMeasure = race => race.type === "measure" || race.type === "local_measure";
+  const isLocal = race => race.type === "local_measure";
   function nameMargin(m, race) {
     if (m == null || !isFinite(m)) return "–";
     if (Math.abs(m) < 0.05) return "Even";
@@ -396,6 +409,17 @@ table.blocks tr.total td { border-top: 2px solid var(--border); border-bottom: n
     if (isMeasure(race) || Math.abs(m) < 0.05) return "";
     const party = m > 0 ? race.dem.party : race.rep.party;
     return party === "R" ? "r" : party === "D" || party === "I" ? "d" : "";
+  }
+
+  function assessmentHtml(S) {
+    const li = a => a.map(x => `<li>${esc(x)}</li>`).join("");
+    return `<div class="assess">
+      <p>${esc(S.summary)}</p>
+      <div class="assess-cols"><div><h4>Working for Yes</h4><ul>${li(S.for)}</ul></div><div><h4>Working for No</h4><ul>${li(S.against)}</ul></div></div>
+      ${S.comparables && S.comparables.length ? `<h4>Comparable RCV votes (Yes share)</h4><div class="comps">${S.comparables.map(c => `<div class="comp"><span>${esc(c.label)}</span><span class="bar"><span style="width:${c.yes}%" class="${c.yes >= 50 ? "y" : "n"}"></span><i></i></span><b>${c.yes.toFixed(1)}%</b></div>`).join("")}</div>` : ""}
+      <p class="muted small"><b>Money:</b> ${esc(S.finance)}</p>
+      <details class="polls"><summary>Sources (${S.sources.length})</summary><ul class="src">${S.sources.map(x => `<li><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a></li>`).join("")}</ul></details>
+    </div>`;
   }
 
   function projection() {
@@ -417,6 +441,10 @@ table.blocks tr.total td { border-top: 2px solid var(--border); border-bottom: n
       const nm = m => esc(nameMargin(m, race));
       const rows = [];
       const A = p.environment;
+      const S = race.assessment;
+      if (isLocal(race) && S) {
+        rows.push(["Estimated Yes share", `Judgment estimate as of ${shortDate(S.as_of)}, range ${S.yes_lo}–${S.yes_hi}%. ${esc(S.threshold)}.`, `${S.yes}%`]);
+      }
       if (A) {
         rows.push(["Environment", `${esc(A.label)} (${nm(A.base)}), shifted toward ${esc(A.swing >= 0 ? race.dem.short : race.rep.short)} by ${Math.abs(A.swing).toFixed(1)} for the national mood${A.swing_factor !== 1 ? ` (${Math.round(A.swing_factor * 100)}% of the national swing)` : ""}`, nm(A.generic_margin != null ? A.generic_margin : A.margin)]);
         if (A.candidates && A.candidates.length) {
@@ -427,8 +455,9 @@ table.blocks tr.total td { border-top: 2px solid var(--border); border-bottom: n
           rows.push(["Candidate track record", "Neither candidate has a recent statewide race to measure", "±0.0"]);
         }
       }
-      if (p.polls) rows.push(["Polling average", `${p.polls.n} poll${p.polls.n === 1 ? "" : "s"}, last ${p.polls.window_days} days`, nm(p.polls.avg)]);
+      if (isLocal(race)) {} else if (p.polls) rows.push(["Polling average", `${p.polls.n} poll${p.polls.n === 1 ? "" : "s"}, last ${p.polls.window_days} days`, nm(p.polls.avg)]);
       else rows.push(["Polling average", "No recent head-to-head polls", "–"]);
+      if (!A && p.polls && !isLocal(race)) rows.push(["Environment", "Not used: no past result fits this matchup, so this race rests on polls alone", "–"]);
       if (A && p.polls) rows.push(["Blend", `${Math.round(p.poll_weight * 100)}% polls, ${Math.round((1 - p.poll_weight) * 100)}% environment`, nm(p.start)]);
       if (p.early_vote) rows.push(["Early-vote turnout", `Early voters vs. registered voters, compared with ${PJ.turnout_signal.year}`, `${p.early_vote.adjustment >= 0 ? "+" : "−"}${Math.abs(p.early_vote.adjustment).toFixed(1)} ${p.early_vote.adjustment >= 0 ? "D" : "R"}`]);
       const pr = POLLS && POLLS.races && POLLS.races[race.id];
@@ -447,11 +476,12 @@ table.blocks tr.total td { border-top: 2px solid var(--border); border-bottom: n
           <div class="dot" style="left:${pos(p.center)}%;background:${dotColor}"></div>
         </div>
         <div class="scale-labels"><span>${esc(sideLabel(race.dem))} +${SPAN}</span><span>Even</span><span>${esc(sideLabel(race.rep))} +${SPAN}</span></div>
-        <div class="range">Range across the inputs: ${nm(p.lo)} to ${nm(p.hi)}</div>
+        <div class="range">${isLocal(race) ? "Plausible range" : p.range_basis === "polls" ? "Range across the polls" : "Range across the inputs"}: ${nm(p.lo)} to ${nm(p.hi)}</div>
         <table class="blocks"><tbody>${rows.map(([k, d, v]) => `<tr><td><b>${k}</b><div class="muted">${d}</div></td><td>${v}</td></tr>`).join("")}
           <tr class="total"><td><b>Projection</b></td><td>${nm(p.center)}</td></tr></tbody></table>
         ${A && A.note ? `<p class="muted small">${esc(A.note)}</p>` : ""}
         ${pollList}
+        ${isLocal(race) && S ? assessmentHtml(S) : ""}
       </div>`;
     }).join("");
 
@@ -470,6 +500,8 @@ table.blocks tr.total td { border-top: 2px solid var(--border); border-bottom: n
       <li><strong>Early-vote turnout.</strong> ${sig ? `Under the same party-loyalty assumptions as the panel below, early voters are ${signed(sig.now)} compared with all registered voters, versus ${signed(sig.then)} at this point in ${sig.year}. That ${signed(sig.value)} difference is a turnout signal that registration changes can’t explain. It counts at ${Math.round(k.c_weight * 100)}%, capped at ±${k.c_cap} points, because polls of likely voters already reflect much of the enthusiasm it measures. It applies to Democrat-vs-Republican races only.` : `No early-vote data is connected for ${esc(PJ.name)} yet, so this step is skipped.`}</li>
     </ol>
     ${backtest}
+    ${races.some(isLocal) ? `<p><strong>Local ballot measures</strong> (${races.filter(isLocal).map(r => esc(r.office)).join(", ")}) aren’t modeled. There are no public polls and no prior result to start from, so each shows a judgment estimate of the Yes share. It weighs who referred the measure and by what vote, endorsements, any organized opposition, local reporting, campaign-finance activity, and how similar measures did in comparable places. The margin shown is Yes minus No among votes on the question. Treat these as informed guesses, not projections.</p>` : ""}
+    ${races.some(r => !isLocal(r) && !r.projection.environment && r.projection.polls) ? `<p><strong>Polls-only races</strong> (${races.filter(r => !isLocal(r) && !r.projection.environment && r.projection.polls).map(r => esc(r.office)).join(", ")}) skip the environment and track-record steps, because no past result fits the matchup. The range is the spread of the polls in the average.</p>` : ""}
     <p>The range doubles the environment’s current share at one end and drops it to zero (polls only) at the other${sig ? ", with the early-vote adjustment counted at zero to double" : ""}, so it narrows as Election Day nears. Real polling misses can be larger. The projection leaves out late-deciding voters and the Election Day vote, which hasn’t happened yet.</p>
     <p class="muted">Polls: <a href="https://votehub.com/polls/">VoteHub</a> (CC BY 4.0), averaged here: ${esc((POLLS && POLLS.method) || "")} Polls fetched ${POLLS ? new Date(POLLS.fetched_at).toLocaleString("en-US", { dateStyle: "medium", timeStyle: "short" }) : "–"}.</p>`;
   }

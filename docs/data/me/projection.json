@@ -60,6 +60,7 @@
     "lo": 2.73,
     "hi": 4.12,
     "rating": "Lean Jackson",
+    "range_basis": "inputs",
     "environment": {
      "label": "2024 president (ME)",
      "base": 7.09,
@@ -121,12 +122,12 @@
      "charles"
     ]
    },
-   "comparison_result": null,
    "projection": {
     "center": 10.57,
     "lo": 9.79,
     "hi": 11.35,
     "rating": "Likely Pingree",
+    "range_basis": "inputs",
     "environment": {
      "label": "2024 president (ME)",
      "base": 7.09,
@@ -160,7 +161,7 @@
   "In Maine all early voting is absentee voting. \u201cIn-person early\u201d here means absentee ballots cast at the town clerk\u2019s office; mail, drop-box and hand-delivered ballots count as mail.",
   "Maine\u2019s files have no age or race, so those breakdowns aren\u2019t shown."
  ],
- "generated_at": "2026-10-30T19:20:16+00:00",
+ "generated_at": "2026-10-30T20:34:47+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,

@@ -43,12 +43,12 @@
      "source": "Wikipedia"
     }
    },
-   "comparison_result": null,
    "projection": {
     "center": -0.78,
     "lo": -1.93,
     "hi": 0.36,
     "rating": "Toss-up, slight edge Scott",
+    "range_basis": "inputs",
     "environment": {
      "label": "2024 president (VT)",
      "base": 32.77,
@@ -87,7 +87,7 @@
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-10-30T19:20:16+00:00",
+ "generated_at": "2026-10-30T20:34:47+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,

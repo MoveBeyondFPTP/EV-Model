@@ -27,12 +27,12 @@
      "ricketts"
     ]
    },
-   "comparison_result": null,
    "projection": {
     "center": -1.53,
     "lo": -1.94,
     "hi": -1.11,
     "rating": "Tilt Ricketts",
+    "range_basis": "inputs",
     "environment": {
      "label": "Osborn\u2019s 2024 Senate race (NE)",
      "base": -6.69,
@@ -94,12 +94,12 @@
      "source": "akashic.app (MIT Election Lab)"
     }
    },
-   "comparison_result": null,
    "projection": {
     "center": -7.75,
     "lo": -8.06,
     "hi": -7.45,
     "rating": "Likely Pillen",
+    "range_basis": "inputs",
     "environment": {
      "label": "2024 president (NE)",
      "base": -20.84,
@@ -138,7 +138,7 @@
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-10-30T19:20:16+00:00",
+ "generated_at": "2026-10-30T20:34:47+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,

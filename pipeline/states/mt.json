@@ -1,0 +1,79 @@
+{
+  "state": "MT",
+  "name": "Montana",
+  "current": 2026,
+  "election_date": "2026-11-03",
+  "environment": {
+    "label": "2024 president (MT)",
+    "year": 2024,
+    "margin": -20.58,
+    "national_margin": -1.5
+  },
+  "polls": {
+    "subject": "2026 Montana"
+  },
+  "races": [
+    {
+      "id": "senate",
+      "office": "U.S. Senate",
+      "type": "candidate",
+      "poll_type": "us-senator",
+      "dem": {
+        "name": "Seth Bodnar",
+        "short": "Bodnar",
+        "party": "I",
+        "match": [
+          "bodnar"
+        ]
+      },
+      "rep": {
+        "name": "Kurt Alme",
+        "short": "Alme",
+        "party": "R",
+        "match": [
+          "alme"
+        ]
+      },
+      "note": "Open seat (Daines withdrew). Three-way race: Kurt Alme (R) vs. independent Seth Bodnar, with Democrat Alani Bankhead still on the ballot (about 20% in polls) and Libertarian Kyle Austin. Margin shown is Alme vs. Bodnar, as a share of their two votes.",
+      "environment": false,
+      "fallback_polls": {
+        "source": "Political Wire / Wikipedia",
+        "source_url": "https://politicalwire.com/2026/10/20/kurt-alme-leads-three-way-senate-race/",
+        "polls": [
+          {
+            "pollster": "Quantus Insights",
+            "start_date": "2026-10-15",
+            "end_date": "2026-10-18",
+            "sample_size": null,
+            "population": "lv",
+            "dem": 28,
+            "rep": 44,
+            "url": "https://politicalwire.com/2026/10/20/kurt-alme-leads-three-way-senate-race/"
+          },
+          {
+            "pollster": "American Pulse (NonStop Local)",
+            "start_date": "2026-09-30",
+            "end_date": "2026-10-03",
+            "sample_size": null,
+            "population": "lv",
+            "dem": 26,
+            "rep": 45,
+            "url": "https://politicalwire.com/2026/10/05/alme-way-ahead-in-three-way-montana-senate-race/"
+          },
+          {
+            "pollster": "Hart Research",
+            "start_date": "2026-08-01",
+            "end_date": "2026-08-04",
+            "sample_size": 800,
+            "population": "lv",
+            "dem": 30,
+            "rep": 45,
+            "partisan": true,
+            "url": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Montana"
+          }
+        ]
+      }
+    }
+  ],
+  "early_vote": null
+}

@@ -147,10 +147,21 @@ def candidate_adjustment(race):
     return total, details
 
 
+def local_measure(race):
+    """Local ballot measures have no polls or environment to model; they carry a sourced judgment estimate."""
+    a = race["assessment"]
+    m = lambda yes: round(2 * yes - 100, 2)  # Yes share of votes on the question -> Yes-minus-No margin
+    return {"center": m(a["yes"]), "lo": m(a["yes_lo"]), "hi": m(a["yes_hi"]), "rating": a["rating"],
+            "yes": a["yes"], "yes_lo": a["yes_lo"], "yes_hi": a["yes_hi"], "judgment": True,
+            "environment": None, "polls": None, "poll_weight": 0.0, "start": m(a["yes"]), "early_vote": None}
+
+
 def project_race(race, cfg, generic, polls, signal, days_left):
-    env_cfg = race.get("environment") or cfg["environment"]
+    if race.get("type") == "local_measure":
+        return local_measure(race)
+    env_cfg = cfg["environment"] if race.get("environment") is None else race["environment"]
     A = None
-    if generic is not None:
+    if generic is not None and env_cfg is not False:
         factor = env_cfg.get("swing_factor", 1.0)
         swing = (generic - env_cfg["national_margin"]) * factor
         cand, cand_details = candidate_adjustment(race)
@@ -175,12 +186,15 @@ def project_race(race, cfg, generic, polls, signal, days_left):
         starts = [blend(max(0.0, 2 * wp - 1)), start, blend(1.0)]
     else:
         starts = [start]
+        if P and not A and P.get("polls"):  # polls-only race: show the spread of the polls in the average
+            starts += [x["margin"] for x in P["polls"]]
     allv = [s + adj_at(k) for s in starts for k in (C_WEIGHTS if use_c else (0.0,))]
     center = start + adj
     lo, hi = min(allv), max(allv)
     return {
         "center": round(center, 2), "lo": round(lo, 2), "hi": round(hi, 2),
         "rating": rating(center, lo, hi, race["dem"]["short"], race["rep"]["short"], race.get("type") == "measure"),
+        "range_basis": "polls" if (P and not A) else "inputs",
         "environment": A,
         "polls": {"avg": P["avg"], "n": P["n"], "window_days": P["window_days"]} if P else None,
         "poll_weight": round(wp, 3), "start": round(start, 2),
@@ -203,7 +217,8 @@ def main():
         races = []
         for race in cfg["races"]:
             p = project_race(race, cfg, generic, pol["races"].get(race["id"]), signal, days_left)
-            races.append({k: race.get(k) for k in ("id", "office", "type", "note", "dem", "rep", "comparison_result")}
+            races.append({k: race.get(k) for k in ("id", "office", "type", "note", "dem", "rep", "comparison_result",
+                                                   "place", "assessment") if k in race or k in ("id", "office", "type", "note", "dem", "rep")}
                          | {"projection": p})
             if p:
                 log(f"{code} {race['id']}: {p['center']:+.1f} ({p['rating']})")
@@ -221,7 +236,8 @@ def main():
             "early_vote_as_of": signal["as_of"] if signal else None,
             "races": [{"id": r["id"], "office": r["office"], "type": r["type"],
                        "dem": r["dem"]["short"], "rep": r["rep"]["short"],
-                       "dem_party": r["dem"].get("party"), "rep_party": r["rep"].get("party"),
+                       "dem_party": r["dem"].get("party"), "rep_party": r["rep"].get("party"), "place": r.get("place"),
+                       "yes": (r["projection"] or {}).get("yes"),
                        **({k: r["projection"][k] for k in ("center", "lo", "hi", "rating")} if r["projection"] else {}),
                        "n_polls": (r["projection"]["polls"] or {}).get("n", 0) if r["projection"] else 0}
                       for r in races],

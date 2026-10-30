@@ -45,12 +45,12 @@
      "source": "akashic.app (MIT Election Lab)"
     }
    },
-   "comparison_result": null,
    "projection": {
     "center": 5.19,
     "lo": 5.1,
     "hi": 5.29,
     "rating": "Lean El-Sayed",
+    "range_basis": "inputs",
     "environment": {
      "label": "2024 president (MI)",
      "base": -1.44,
@@ -140,12 +140,12 @@
      "source": "akashic.app (MIT Election Lab)"
     }
    },
-   "comparison_result": null,
    "projection": {
     "center": 8.82,
     "lo": 8.72,
     "hi": 8.91,
     "rating": "Likely Benson",
+    "range_basis": "inputs",
     "environment": {
      "label": "2024 president (MI)",
      "base": -1.44,
@@ -195,7 +195,7 @@
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-10-30T19:20:16+00:00",
+ "generated_at": "2026-10-30T20:34:47+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,

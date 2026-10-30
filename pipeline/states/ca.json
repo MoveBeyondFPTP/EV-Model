@@ -1,0 +1,206 @@
+{
+  "state": "CA",
+  "name": "California",
+  "current": 2026,
+  "election_date": "2026-11-03",
+  "environment": {
+    "label": "2024 president (CA)",
+    "year": 2024,
+    "margin": 20.82,
+    "national_margin": -1.5
+  },
+  "polls": {
+    "subject": "2026 California"
+  },
+  "races": [
+    {
+      "id": "governor",
+      "office": "Governor",
+      "type": "candidate",
+      "poll_type": "governor",
+      "dem": {
+        "name": "Xavier Becerra",
+        "short": "Becerra",
+        "party": "D",
+        "match": [
+          "becerra"
+        ],
+        "track_record": {
+          "label": "2018 Attorney General",
+          "year": 2018,
+          "dem_votes": 7790743,
+          "rep_votes": 4465587,
+          "expected_from": {
+            "state_president_year": 2016,
+            "state_president_pct": [
+              61.73,
+              31.62
+            ],
+            "national_shift": 6.5
+          },
+          "weight": 0.5,
+          "source": "Wikipedia (California SOS)"
+        }
+      },
+      "rep": {
+        "name": "Steve Hilton",
+        "short": "Hilton",
+        "party": "R",
+        "match": [
+          "hilton"
+        ]
+      },
+      "note": "Open seat (Newsom term-limited). Top-two general: Xavier Becerra (D) vs. Steve Hilton (R). No U.S. Senate race in 2026.",
+      "fallback_polls": {
+        "source": "PollCheck",
+        "source_url": "https://www.pollcheck.co.uk/us-midterms-2026/governor/california",
+        "polls": [
+          {
+            "pollster": "SurveyUSA",
+            "end_date": "2026-10-24",
+            "sample_size": 799,
+            "population": "lv",
+            "dem": 54,
+            "rep": 32
+          },
+          {
+            "pollster": "PPIC",
+            "end_date": "2026-10-22",
+            "sample_size": 1086,
+            "population": "lv",
+            "dem": 61,
+            "rep": 37
+          },
+          {
+            "pollster": "M3 Strategies",
+            "end_date": "2026-10-23",
+            "sample_size": 489,
+            "population": "lv",
+            "dem": 59,
+            "rep": 36,
+            "partisan": true
+          },
+          {
+            "pollster": "McLaughlin & Associates",
+            "end_date": "2026-10-20",
+            "sample_size": 800,
+            "population": "lv",
+            "dem": 55,
+            "rep": 39,
+            "partisan": true
+          },
+          {
+            "pollster": "Emerson College",
+            "end_date": "2026-10-19",
+            "sample_size": 1000,
+            "population": "lv",
+            "dem": 60,
+            "rep": 33
+          },
+          {
+            "pollster": "UC Berkeley Citrin Center / Politico",
+            "end_date": "2026-10-14",
+            "sample_size": 909,
+            "population": "lv",
+            "dem": 55,
+            "rep": 35
+          }
+        ]
+      }
+    },
+    {
+      "id": "irvine-d",
+      "office": "Irvine Measure D",
+      "type": "local_measure",
+      "place": "City of Irvine (Orange County)",
+      "dem": {
+        "name": "Yes",
+        "short": "Yes"
+      },
+      "rep": {
+        "name": "No",
+        "short": "No"
+      },
+      "note": "Ranked-choice voting for Irvine mayor and city council from 2028, only if the cost stays under about 0.23% of the general fund (~$710,000). Yes = adopt RCV.",
+      "assessment": {
+        "yes": 55,
+        "yes_lo": 48,
+        "yes_hi": 62,
+        "rating": "Leans Yes",
+        "as_of": "2026-10-30",
+        "threshold": "Simple majority of votes cast on the measure",
+        "summary": "Likely to pass, but by less than the endorsement list suggests. Support is broad and opposition is thin: one council member wrote the ballot argument against it, and no funded No campaign has surfaced. Against that, the council split 4-3 to put it on the ballot, Mayor Agran voted no, and the cost argument lands hard in a city facing a projected $47 million structural deficit. RCV measures also tend to poll better than they vote once people read about cost and complexity. Cities like Irvine have usually passed RCV with 54 to 58%.",
+        "for": [
+          "Endorsed by the Democratic Party of Orange County, Rep. Cottie Petrie-Norris, two council members, UAW Region 6, UNITE HERE Local 11, the League of Women Voters, Working Families Party, OC DSA, and the Libertarian and Green parties",
+          "Irvine\u2019s current mayor won with about 39% of the vote, which gives supporters a concrete story to tell",
+          "No organized, funded No campaign appears in local reporting or on FairVote\u2019s tracker; the only listed opponent is Vice Mayor James Mai",
+          "Irvine leans Democratic, and Democratic voters back local RCV more than Republicans do"
+        ],
+        "against": [
+          "The council split 4-3 to put it on the ballot. Mayor Larry Agran and council members Mike Carroll and James Mai voted no, citing cost and confusion",
+          "A $47M projected structural deficit makes the cost argument (up to ~$710K, possibly more) resonate",
+          "2024 statewide RCV measures failed even in blue states (Oregon 42%), showing how quickly support erodes when voters hear cost and complexity arguments",
+          "Orange County has little experience with RCV (only Huntington Beach, under court order)"
+        ],
+        "finance": "Local news reports no spending by a Measure D committee. Support comes mostly from volunteers (Voter Choice Irvine, OC DSA canvassing, FairVote and the California RCV Coalition), and no opposition committee was found. Form 460 filings sit on the city\u2019s NetFile portal (not reviewed here).",
+        "comparables": [
+          {
+            "label": "Fort Collins, CO 2C (2022)",
+            "yes": 58.0
+          },
+          {
+            "label": "Ojai, CA Measure M (2022)",
+            "yes": 56.0
+          },
+          {
+            "label": "Richmond, CA Measure L (2024)",
+            "yes": 54.4
+          },
+          {
+            "label": "Washington, DC Initiative 83 (2024)",
+            "yes": 72.9
+          },
+          {
+            "label": "Oregon Measure 117 (2024, statewide)",
+            "yes": 42.3
+          }
+        ],
+        "sources": [
+          {
+            "title": "LAist voter guide: Irvine Measure D",
+            "url": "https://laist.com/news/politics/voter-guides/2026-election-california-orange-county-general-irvine-ranked-choice-measure-d"
+          },
+          {
+            "title": "Voice of OC: Irvine asks voters to change election system while budget deficit looms",
+            "url": "https://voiceofoc.org/2026/07/irvine-asks-voters-to-change-election-system-while-budget-deficit-looms/"
+          },
+          {
+            "title": "Wikipedia: 2026 Irvine elections (endorsements)",
+            "url": "https://en.wikipedia.org/wiki/2026_Irvine_elections"
+          },
+          {
+            "title": "FairVote: Who supports Irvine Measure D?",
+            "url": "https://fairvote.org/who-supports-irvine-measure-d/"
+          },
+          {
+            "title": "IVN: Irvine elected its mayor with 39% of the vote",
+            "url": "https://ivn.us/irvine-elected-its-mayor-with-39-of-the-vote-now-voters-can-change-the-rules/"
+          },
+          {
+            "title": "OC DSA: DSA for RCV in Irvine",
+            "url": "https://ocdsa.solidarity.tech/dsa-for-rcv-in-irvine"
+          },
+          {
+            "title": "Ballotpedia: local RCV measures (57 of 72 adoption measures have passed)",
+            "url": "https://news.ballotpedia.org/2026/09/22/voters-in-three-cities-will-decide-on-ballot-measures-to-implement-ranked-choice-voting-in-local-elections-on-november-3/"
+          },
+          {
+            "title": "Ballotpedia: 2024 RCV and electoral-system measure results",
+            "url": "https://ballotpedia.org/Results_for_ranked-choice_voting_(RCV)_and_electoral_system_ballot_measures,_2024"
+          }
+        ]
+      }
+    }
+  ],
+  "early_vote": null
+}

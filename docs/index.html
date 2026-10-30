@@ -131,7 +131,7 @@ a { color: var(--accent); }
     return `${m > 0 ? r.dem : r.rep} +${Math.abs(m).toFixed(1)}`;
   }
   function lead(r, m) {
-    if (r.type === "measure" || m == null || Math.abs(m) < 0.05) return "";
+    if (r.type === "measure" || r.type === "local_measure" || m == null || Math.abs(m) < 0.05) return "";
     const party = m > 0 ? r.dem_party : r.rep_party;
     return party === "R" ? "r" : "d";
   }
@@ -153,8 +153,8 @@ a { color: var(--accent); }
         const left = pos(r.hi), right = pos(r.lo);
         return `<div class="race">
           <div class="race-top"><span class="office">${esc(r.office)}</span><span class="call ${toss ? "" : l}">${esc(nameMargin(r, r.center))}</span></div>
-          <div class="race-top"><span class="rating">${esc(r.rating)}</span><span class="sub">${r.n_polls ? `${r.n_polls} poll${r.n_polls === 1 ? "" : "s"}` : "no recent polls"}</span></div>
-          <div class="scale${r.type === "measure" ? " neutral" : ""}" aria-hidden="true"><div class="track"></div><div class="mid"></div>
+          <div class="race-top"><span class="rating">${esc(r.rating)}</span><span class="sub">${r.type === "local_measure" ? `local · est. ${r.yes}% Yes` : r.n_polls ? `${r.n_polls} poll${r.n_polls === 1 ? "" : "s"}` : "no recent polls"}</span></div>
+          <div class="scale${/measure/.test(r.type) ? " neutral" : ""}" aria-hidden="true"><div class="track"></div><div class="mid"></div>
             <div class="band" style="left:${left}%;width:${Math.max(right - left, 1)}%"></div>
             <div class="dot" style="left:${pos(r.center)}%;background:${l === "d" ? "var(--dem)" : l === "r" ? "var(--rep)" : "var(--text)"}"></div></div>
         </div>`;

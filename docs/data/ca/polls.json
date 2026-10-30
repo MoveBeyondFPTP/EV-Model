@@ -1,0 +1,95 @@
+{
+ "source": "VoteHub",
+ "method": "(local test)",
+ "fetched_at": "2026-10-30T12:00:00+00:00",
+ "races": {
+  "governor": {
+   "avg": 24.58,
+   "n": 6,
+   "window_days": 30,
+   "polls": [
+    {
+     "pollster": "SurveyUSA",
+     "end_date": "2026-10-24",
+     "age": 6,
+     "population": "lv",
+     "sample_size": 799,
+     "dem": 54.0,
+     "rep": 32.0,
+     "margin": 25.58,
+     "partisan": false,
+     "url": "https://www.pollcheck.co.uk/us-midterms-2026/governor/california",
+     "weight": 0.857
+    },
+    {
+     "pollster": "M3 Strategies",
+     "end_date": "2026-10-23",
+     "age": 7,
+     "population": "lv",
+     "sample_size": 489,
+     "dem": 59.0,
+     "rep": 36.0,
+     "margin": 24.21,
+     "partisan": true,
+     "url": "https://www.pollcheck.co.uk/us-midterms-2026/governor/california",
+     "weight": 0.319
+    },
+    {
+     "pollster": "PPIC",
+     "end_date": "2026-10-22",
+     "age": 8,
+     "population": "lv",
+     "sample_size": 1086,
+     "dem": 61.0,
+     "rep": 37.0,
+     "margin": 24.49,
+     "partisan": false,
+     "url": "https://www.pollcheck.co.uk/us-midterms-2026/governor/california",
+     "weight": 0.905
+    },
+    {
+     "pollster": "McLaughlin & Associates",
+     "end_date": "2026-10-20",
+     "age": 10,
+     "population": "lv",
+     "sample_size": 800,
+     "dem": 55.0,
+     "rep": 39.0,
+     "margin": 17.02,
+     "partisan": true,
+     "url": "https://www.pollcheck.co.uk/us-midterms-2026/governor/california",
+     "weight": 0.352
+    },
+    {
+     "pollster": "Emerson College",
+     "end_date": "2026-10-19",
+     "age": 11,
+     "population": "lv",
+     "sample_size": 1000,
+     "dem": 60.0,
+     "rep": 33.0,
+     "margin": 29.03,
+     "partisan": false,
+     "url": "https://www.pollcheck.co.uk/us-midterms-2026/governor/california",
+     "weight": 0.749
+    },
+    {
+     "pollster": "UC Berkeley Citrin Center / Politico",
+     "end_date": "2026-10-14",
+     "age": 16,
+     "population": "lv",
+     "sample_size": 909,
+     "dem": 55.0,
+     "rep": 35.0,
+     "margin": 22.22,
+     "partisan": false,
+     "url": "https://www.pollcheck.co.uk/us-midterms-2026/governor/california",
+     "weight": 0.557
+    }
+   ],
+   "source": "PollCheck",
+   "source_url": "https://www.pollcheck.co.uk/us-midterms-2026/governor/california",
+   "manual": true
+  }
+ }
+}
