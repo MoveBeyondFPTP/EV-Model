@@ -285,7 +285,7 @@
         "rating": "Leans Yes",
         "as_of": "2026-10-30",
         "threshold": "Simple majority of votes cast on the question; has no effect unless 3C also passes",
-        "summary": "This rides on 3C and has no voting history of its own to model. The estimate takes 3C’s number and subtracts 4 points. That drop-off is an assumption: companion process measures usually trail the headline measure, but there’s no good dataset to measure by how much. The range is widened to reflect that. It has no effect unless 3C passes.",
+        "summary": "This rides on 3C and has no voting history of its own to model. The estimate takes 3C’s number and subtracts 4 points. That drop-off is an assumption: companion process measures usually trail the headline measure, but there’s no good dataset to measure by how much. The range is widened to reflect that. It has no effect unless 3C passes. Its 75% chance is the chance of getting a majority. Since it only matters if 3C also passes, and the two votes will move together, the chance it actually takes effect is about 70%.",
         "for": [
           "Same endorsers and campaign as 3C, which pitches them as a pair",
           "No cost and no tax",
