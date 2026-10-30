@@ -123,17 +123,17 @@
       },
       "note": "Ranked-choice voting for Irvine mayor and city council from 2028, only if the cost stays under about 0.23% of the general fund (~$710,000). Yes = adopt RCV.",
       "assessment": {
-        "yes": 55,
-        "yes_lo": 48,
-        "yes_hi": 62,
+        "yes": 56.9,
+        "yes_lo": 45.6,
+        "yes_hi": 68.2,
         "rating": "Leans Yes",
         "as_of": "2026-10-30",
         "threshold": "Simple majority of votes cast on the measure",
-        "summary": "Likely to pass, but by less than the endorsement list suggests. Support is broad and opposition is thin: one council member wrote the ballot argument against it, and no funded No campaign has surfaced. Against that, the council split 4-3 to put it on the ballot, Mayor Agran voted no, and the cost argument lands hard in a city facing a projected $47 million structural deficit. RCV measures also tend to poll better than they vote once people read about cost and complexity. Cities like Irvine have usually passed RCV with 54 to 58%.",
+        "summary": "Two data sources agree it’s more likely to pass than fail. Across 10 local RCV votes, a city as Democratic as Irvine (Harris 61% of the two-party vote) would be expected to give about 54% Yes. Irvine’s own last vote on how its council is elected (2024 Measure D) passed with 59.8%. Averaging the two gives about 57%, with about a 78% chance of passing.",
         "for": [
           "Endorsed by the Democratic Party of Orange County, Rep. Cottie Petrie-Norris, two council members, UAW Region 6, UNITE HERE Local 11, the League of Women Voters, Working Families Party, OC DSA, and the Libertarian and Green parties",
-          "Irvine\u2019s current mayor won with about 39% of the vote, which gives supporters a concrete story to tell",
-          "No organized, funded No campaign appears in local reporting or on FairVote\u2019s tracker; the only listed opponent is Vice Mayor James Mai",
+          "Irvine’s current mayor won with about 39% of the vote, which gives supporters a concrete story to tell",
+          "No organized, funded No campaign appears in local reporting or on FairVote’s tracker; the only listed opponent is Vice Mayor James Mai",
           "Irvine leans Democratic, and Democratic voters back local RCV more than Republicans do"
         ],
         "against": [
@@ -142,30 +142,24 @@
           "2024 statewide RCV measures failed even in blue states (Oregon 42%), showing how quickly support erodes when voters hear cost and complexity arguments",
           "Orange County has little experience with RCV (only Huntington Beach, under court order)"
         ],
-        "finance": "Local news reports no spending by a Measure D committee. Support comes mostly from volunteers (Voter Choice Irvine, OC DSA canvassing, FairVote and the California RCV Coalition), and no opposition committee was found. Form 460 filings sit on the city\u2019s NetFile portal (not reviewed here).",
-        "comparables": [
-          {
-            "label": "Fort Collins, CO 2C (2022)",
-            "yes": 58.0
-          },
-          {
-            "label": "Ojai, CA Measure M (2022)",
-            "yes": 56.0
-          },
-          {
-            "label": "Richmond, CA Measure L (2024)",
-            "yes": 54.4
-          },
-          {
-            "label": "Washington, DC Initiative 83 (2024)",
-            "yes": 72.9
-          },
-          {
-            "label": "Oregon Measure 117 (2024, statewide)",
-            "yes": 42.3
-          }
-        ],
+        "finance": "Irvine’s campaign filings are on NetFile. Its public portal sits behind a bot check, and its open API returned no filings for Irvine, so spending wasn’t checked. Local reporting names no funded committee on either side.",
         "sources": [
+          {
+            "title": "Wikipedia: 2024 Irvine elections (Measure D, March 2024: 59.8% Yes)",
+            "url": "https://en.wikipedia.org/wiki/2024_Irvine_elections"
+          },
+          {
+            "title": "Wikipedia: Irvine, California (presidential results by year)",
+            "url": "https://en.wikipedia.org/wiki/Irvine,_California"
+          },
+          {
+            "title": "Ballotpedia: local RCV measure results (cross-section Yes shares)",
+            "url": "https://ballotpedia.org/Local_electoral_systems_on_the_ballot"
+          },
+          {
+            "title": "Wikipedia: Ranked-choice voting in the United States (local adoption margins)",
+            "url": "https://en.wikipedia.org/wiki/Ranked-choice_voting_in_the_United_States"
+          },
           {
             "title": "LAist voter guide: Irvine Measure D",
             "url": "https://laist.com/news/politics/voter-guides/2026-election-california-orange-county-general-irvine-ranked-choice-measure-d"
@@ -198,7 +192,86 @@
             "title": "Ballotpedia: 2024 RCV and electoral-system measure results",
             "url": "https://ballotpedia.org/Results_for_ranked-choice_voting_(RCV)_and_electoral_system_ballot_measures,_2024"
           }
-        ]
+        ],
+        "p_pass": 0.78,
+        "model": {
+          "harris_2p": 61.3,
+          "cross_pred": 54.0,
+          "anchor": 59.8,
+          "anchor_label": "Irvine’s 2024 Measure D (council size and districts)",
+          "anchor_detail": "Irvine voters approved the last change to how the council is elected (March 2024 Measure D) with 59.8%.",
+          "fit": {
+            "n": 10,
+            "slope": 0.67,
+            "intercept": 12.8,
+            "resid_sd": 11.4,
+            "r": 0.62
+          },
+          "sd": 8.8,
+          "cross": [
+            {
+              "label": "Albany, CA (2020)",
+              "harris": 90.9,
+              "yes": 73.0,
+              "resid": -0.9
+            },
+            {
+              "label": "Broomfield, CO (2021)",
+              "harris": 64.7,
+              "yes": 51.9,
+              "resid": -4.4
+            },
+            {
+              "label": "Redondo Beach, CA (Mar 2023)",
+              "harris": 67.7,
+              "yes": 76.7,
+              "resid": 18.4
+            },
+            {
+              "label": "Boulder, CO (2020)",
+              "harris": 87.7,
+              "yes": 78.1,
+              "resid": 6.3
+            },
+            {
+              "label": "Washington, DC (2024)",
+              "harris": 93.3,
+              "yes": 72.9,
+              "resid": -2.7
+            },
+            {
+              "label": "New York City (2019)",
+              "harris": 69.4,
+              "yes": 73.6,
+              "resid": 14.1
+            },
+            {
+              "label": "Multnomah County, OR (2022)",
+              "harris": 82.2,
+              "yes": 69.1,
+              "resid": 1.0
+            },
+            {
+              "label": "Benton County, OR (2016)",
+              "harris": 70.5,
+              "yes": 54.2,
+              "resid": -6.0
+            },
+            {
+              "label": "Clark County, WA (2022)",
+              "harris": 53.6,
+              "yes": 41.9,
+              "resid": -7.0
+            },
+            {
+              "label": "San Juan County, WA (2022)",
+              "harris": 76.7,
+              "yes": 45.6,
+              "resid": -18.8
+            }
+          ]
+        },
+        "turnout": "Orange County doesn’t publish ballot returns by city in a downloadable form, so no turnout adjustment was made."
       }
     }
   ],

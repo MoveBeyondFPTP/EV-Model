@@ -171,13 +171,13 @@
    },
    "place": "City of Longmont (Boulder/Weld counties)",
    "assessment": {
-    "yes": 58,
-    "yes_lo": 51,
-    "yes_hi": 65,
+    "yes": 60.4,
+    "yes_lo": 49.1,
+    "yes_hi": 71.8,
     "rating": "Likely Yes",
     "as_of": "2026-10-30",
     "threshold": "Simple majority of votes cast on the question",
-    "summary": "Likely to pass. The council referred it 6-1, the mayor and both local state legislators back it, the cost is small (about $60\u201380K for the first RCV election), and no organized opposition has surfaced. The best comparisons are Front Range cities with similar politics: Fort Collins passed RCV with 58% in 2022 and Broomfield with 52% in 2021, while Boulder\u2019s more liberal electorate gave 78%. The main drag is Colorado\u2019s 2024 Prop 131, which failed statewide at 46.5% after many Democrats opposed it, and lingering fatigue from that campaign.",
+    "summary": "Both data sources point to about 60% Yes, roughly an 88% chance of passing. Across 10 local RCV votes, a city as Democratic as Longmont (Harris 70% of the two-party vote in its Boulder County precincts) would be expected to give about 60%. Longmont also voted on statewide RCV in 2024: Prop 131 got 48.8% Yes there, almost exactly what it got in Boulder (48.1%) and Broomfield (48.2%). Those two cities then passed their own RCV measures with 78% and 52%. Adjusted to Longmont\u2019s partisanship, those votes average about 61%.",
     "for": [
      "Council referred it 6-1. Mayor Susie Hidalgo-Fahring, Councilmember Alex Kalkhofer, State Sen. Katie Wallace and State Rep. Karen McCormick support it",
      "League of Women Voters of Boulder County supports RCV, and a \u2018Ranked Choice Voting for Longmont\u2019 campaign is active",
@@ -189,26 +189,32 @@
      "Colorado voters rejected statewide RCV (Prop 131) in 2024",
      "Longmont is more politically mixed than Boulder (it extends into Weld County)"
     ],
-    "finance": "Local news reports no spending by a 3C or 3D committee. Municipal committees file with the Longmont City Clerk (not reviewed here). Campaign activity appears volunteer-driven (rcvforlongmont.org, Rank the Vote Colorado).",
-    "comparables": [
-     {
-      "label": "Boulder, CO 2E (2020, RCV for mayor)",
-      "yes": 78.1
-     },
-     {
-      "label": "Fort Collins, CO 2C (2022)",
-      "yes": 58.0
-     },
-     {
-      "label": "Broomfield, CO 2A (2021)",
-      "yes": 51.9
-     },
-     {
-      "label": "Colorado Prop 131 (2024, statewide top-four + RCV)",
-      "yes": 46.5
-     }
-    ],
+    "finance": "Longmont committees report through a city dashboard that this site can\u2019t read automatically, so spending wasn\u2019t checked. Local reporting names no opposition committee.",
     "sources": [
+     {
+      "title": "Boulder County 2024 General: Official Statement of Votes (precinct results; Prop 131 and president in Longmont and Boulder)",
+      "url": "https://assets.bouldercounty.gov/wp-content/uploads/2024/11/2024G-Boulder-County-Official-Statement-of-Votes.pdf"
+     },
+     {
+      "title": "Boulder County ballot returns, 2026 General",
+      "url": "https://election.boco.solutions/CR_WebReporting/BallotReturns?electionName=2026G"
+     },
+     {
+      "title": "Wikipedia: 2024 Colorado Proposition 131 (results by county)",
+      "url": "https://en.wikipedia.org/wiki/2024_Colorado_Proposition_131"
+     },
+     {
+      "title": "City of Longmont: Fair Campaign Practices (finance dashboard)",
+      "url": "https://longmontcolorado.gov/city-clerk/election-information/fair-campaign-practices-act/"
+     },
+     {
+      "title": "Ballotpedia: local RCV measure results (cross-section Yes shares)",
+      "url": "https://ballotpedia.org/Local_electoral_systems_on_the_ballot"
+     },
+     {
+      "title": "Wikipedia: Ranked-choice voting in the United States (local adoption margins)",
+      "url": "https://en.wikipedia.org/wiki/Ranked-choice_voting_in_the_United_States"
+     },
      {
       "title": "City of Longmont: November 3, 2026 ballot information (text, pro/con summaries)",
       "url": "https://longmontcolorado.gov/information/ballot-information-november-3-2026-election/"
@@ -241,21 +247,100 @@
       "title": "Ballotpedia: local RCV measures (57 of 72 adoption measures have passed)",
       "url": "https://news.ballotpedia.org/2026/09/22/voters-in-three-cities-will-decide-on-ballot-measures-to-implement-ranked-choice-voting-in-local-elections-on-november-3/"
      }
-    ]
+    ],
+    "p_pass": 0.88,
+    "model": {
+     "harris_2p": 70.1,
+     "cross_pred": 60.0,
+     "anchor": 60.9,
+     "anchor_label": "Boulder and Broomfield RCV votes, adjusted to Longmont",
+     "anchor_detail": "On 2024\u2019s statewide Prop 131, Longmont (48.8% Yes), Boulder city (48.1%) and Broomfield (48.2%) voted almost identically. Their own city RCV votes were 78.1% and 51.9%; moved to Longmont\u2019s partisanship that\u2019s 66.3% and 55.5%.",
+     "fit": {
+      "n": 10,
+      "slope": 0.67,
+      "intercept": 12.8,
+      "resid_sd": 11.4,
+      "r": 0.62
+     },
+     "sd": 8.8,
+     "cross": [
+      {
+       "label": "Albany, CA (2020)",
+       "harris": 90.9,
+       "yes": 73.0,
+       "resid": -0.9
+      },
+      {
+       "label": "Broomfield, CO (2021)",
+       "harris": 64.7,
+       "yes": 51.9,
+       "resid": -4.4
+      },
+      {
+       "label": "Redondo Beach, CA (Mar 2023)",
+       "harris": 67.7,
+       "yes": 76.7,
+       "resid": 18.4
+      },
+      {
+       "label": "Boulder, CO (2020)",
+       "harris": 87.7,
+       "yes": 78.1,
+       "resid": 6.3
+      },
+      {
+       "label": "Washington, DC (2024)",
+       "harris": 93.3,
+       "yes": 72.9,
+       "resid": -2.7
+      },
+      {
+       "label": "New York City (2019)",
+       "harris": 69.4,
+       "yes": 73.6,
+       "resid": 14.1
+      },
+      {
+       "label": "Multnomah County, OR (2022)",
+       "harris": 82.2,
+       "yes": 69.1,
+       "resid": 1.0
+      },
+      {
+       "label": "Benton County, OR (2016)",
+       "harris": 70.5,
+       "yes": 54.2,
+       "resid": -6.0
+      },
+      {
+       "label": "Clark County, WA (2022)",
+       "harris": 53.6,
+       "yes": 41.9,
+       "resid": -7.0
+      },
+      {
+       "label": "San Juan County, WA (2022)",
+       "harris": 76.7,
+       "yes": 45.6,
+       "resid": -18.8
+      }
+     ]
+    },
+    "turnout": "Through Oct. 29 (5 days out), Longmont had returned 24,460 ballots, 26% more than at the same point in 2022. Boulder County\u2019s early electorate is D+37.0 by registration, the same as in 2022 (D+36.8), so the turnout mix doesn\u2019t move the estimate."
    },
    "projection": {
-    "center": 16,
-    "lo": 2,
-    "hi": 30,
+    "center": 20.8,
+    "lo": -1.8,
+    "hi": 43.6,
     "rating": "Likely Yes",
-    "yes": 58,
-    "yes_lo": 51,
-    "yes_hi": 65,
-    "judgment": true,
+    "yes": 60.4,
+    "yes_lo": 49.1,
+    "yes_hi": 71.8,
+    "p_pass": 0.88,
     "environment": null,
     "polls": null,
     "poll_weight": 0.0,
-    "start": 16,
+    "start": 20.8,
     "early_vote": null
    }
   },
@@ -274,13 +359,13 @@
    },
    "place": "City of Longmont (Boulder/Weld counties)",
    "assessment": {
-    "yes": 54,
-    "yes_lo": 46,
-    "yes_hi": 61,
+    "yes": 56.4,
+    "yes_lo": 44.0,
+    "yes_hi": 68.8,
     "rating": "Leans Yes",
     "as_of": "2026-10-30",
     "threshold": "Simple majority of votes cast on the question; has no effect unless 3C also passes",
-    "summary": "Slightly more likely to pass than fail, and it should run a few points behind 3C. It travels with 3C and has the same backers, and it costs nothing. But it\u2019s a technical change that most voters won\u2019t have heard explained. \u2018Two-year terms\u2019 and \u2018realign\u2019 wording draws No votes from people who default to No on charter changes they don\u2019t understand. Some 3C supporters who don\u2019t follow the multi-winner argument may also skip it or vote No. If 3C fails, the 3D result doesn\u2019t matter.",
+    "summary": "This rides on 3C and has no voting history of its own to model. The estimate takes 3C\u2019s number and subtracts 4 points. That drop-off is an assumption: companion process measures usually trail the headline measure, but there\u2019s no good dataset to measure by how much. The range is widened to reflect that. It has no effect unless 3C passes.",
     "for": [
      "Same endorsers and campaign as 3C, which pitches them as a pair",
      "No cost and no tax",
@@ -291,18 +376,32 @@
      "Process changes with no clear everyday payoff tend to underperform the headline measure they travel with",
      "Voters who oppose 3C will almost all vote No here too"
     ],
-    "finance": "Same as 3C: no separate spending found.",
-    "comparables": [
+    "finance": "Same as 3C: not checked; no opposition committee reported.",
+    "sources": [
      {
-      "label": "Fort Collins, CO 2C (2022)",
-      "yes": 58.0
+      "title": "Boulder County 2024 General: Official Statement of Votes (precinct results; Prop 131 and president in Longmont and Boulder)",
+      "url": "https://assets.bouldercounty.gov/wp-content/uploads/2024/11/2024G-Boulder-County-Official-Statement-of-Votes.pdf"
      },
      {
-      "label": "Broomfield, CO 2A (2021)",
-      "yes": 51.9
-     }
-    ],
-    "sources": [
+      "title": "Boulder County ballot returns, 2026 General",
+      "url": "https://election.boco.solutions/CR_WebReporting/BallotReturns?electionName=2026G"
+     },
+     {
+      "title": "Wikipedia: 2024 Colorado Proposition 131 (results by county)",
+      "url": "https://en.wikipedia.org/wiki/2024_Colorado_Proposition_131"
+     },
+     {
+      "title": "City of Longmont: Fair Campaign Practices (finance dashboard)",
+      "url": "https://longmontcolorado.gov/city-clerk/election-information/fair-campaign-practices-act/"
+     },
+     {
+      "title": "Ballotpedia: local RCV measure results (cross-section Yes shares)",
+      "url": "https://ballotpedia.org/Local_electoral_systems_on_the_ballot"
+     },
+     {
+      "title": "Wikipedia: Ranked-choice voting in the United States (local adoption margins)",
+      "url": "https://en.wikipedia.org/wiki/Ranked-choice_voting_in_the_United_States"
+     },
      {
       "title": "City of Longmont: November 3, 2026 ballot information (text, pro/con summaries)",
       "url": "https://longmontcolorado.gov/information/ballot-information-november-3-2026-election/"
@@ -335,27 +434,108 @@
       "title": "Ballotpedia: local RCV measures (57 of 72 adoption measures have passed)",
       "url": "https://news.ballotpedia.org/2026/09/22/voters-in-three-cities-will-decide-on-ballot-measures-to-implement-ranked-choice-voting-in-local-elections-on-november-3/"
      }
-    ]
+    ],
+    "p_pass": 0.75,
+    "model": {
+     "harris_2p": 70.1,
+     "cross_pred": 60.0,
+     "anchor": 60.9,
+     "anchor_label": "Boulder and Broomfield RCV votes, adjusted to Longmont",
+     "anchor_detail": "On 2024\u2019s statewide Prop 131, Longmont (48.8% Yes), Boulder city (48.1%) and Broomfield (48.2%) voted almost identically. Their own city RCV votes were 78.1% and 51.9%; moved to Longmont\u2019s partisanship that\u2019s 66.3% and 55.5%.",
+     "fit": {
+      "n": 10,
+      "slope": 0.67,
+      "intercept": 12.8,
+      "resid_sd": 11.4,
+      "r": 0.62
+     },
+     "sd": 9.7,
+     "cross": [
+      {
+       "label": "Albany, CA (2020)",
+       "harris": 90.9,
+       "yes": 73.0,
+       "resid": -0.9
+      },
+      {
+       "label": "Broomfield, CO (2021)",
+       "harris": 64.7,
+       "yes": 51.9,
+       "resid": -4.4
+      },
+      {
+       "label": "Redondo Beach, CA (Mar 2023)",
+       "harris": 67.7,
+       "yes": 76.7,
+       "resid": 18.4
+      },
+      {
+       "label": "Boulder, CO (2020)",
+       "harris": 87.7,
+       "yes": 78.1,
+       "resid": 6.3
+      },
+      {
+       "label": "Washington, DC (2024)",
+       "harris": 93.3,
+       "yes": 72.9,
+       "resid": -2.7
+      },
+      {
+       "label": "New York City (2019)",
+       "harris": 69.4,
+       "yes": 73.6,
+       "resid": 14.1
+      },
+      {
+       "label": "Multnomah County, OR (2022)",
+       "harris": 82.2,
+       "yes": 69.1,
+       "resid": 1.0
+      },
+      {
+       "label": "Benton County, OR (2016)",
+       "harris": 70.5,
+       "yes": 54.2,
+       "resid": -6.0
+      },
+      {
+       "label": "Clark County, WA (2022)",
+       "harris": 53.6,
+       "yes": 41.9,
+       "resid": -7.0
+      },
+      {
+       "label": "San Juan County, WA (2022)",
+       "harris": 76.7,
+       "yes": 45.6,
+       "resid": -18.8
+      }
+     ],
+     "companion_of": "Longmont Question 3C",
+     "dropoff": 4
+    },
+    "turnout": "Same as 3C."
    },
    "projection": {
-    "center": 8,
-    "lo": -8,
-    "hi": 22,
+    "center": 12.8,
+    "lo": -12.0,
+    "hi": 37.6,
     "rating": "Leans Yes",
-    "yes": 54,
-    "yes_lo": 46,
-    "yes_hi": 61,
-    "judgment": true,
+    "yes": 56.4,
+    "yes_lo": 44.0,
+    "yes_hi": 68.8,
+    "p_pass": 0.75,
     "environment": null,
     "polls": null,
     "poll_weight": 0.0,
-    "start": 8,
+    "start": 12.8,
     "early_vote": null
    }
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-10-30T21:06:58+00:00",
+ "generated_at": "2026-10-30T21:11:30+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,

@@ -56,7 +56,7 @@
       "id": "honolulu-q5",
       "office": "Honolulu Charter Question 5",
       "type": "local_measure",
-      "place": "City and County of Honolulu (O\u02bbahu)",
+      "place": "City and County of Honolulu (Oʻahu)",
       "dem": {
         "name": "Yes",
         "short": "Yes"
@@ -67,48 +67,50 @@
       },
       "note": "Ranked-choice voting for Honolulu mayor, city council and prosecuting attorney in a single November election, from 2032, if the Legislature also approves. Yes = adopt RCV.",
       "assessment": {
-        "yes": 55,
-        "yes_lo": 47,
-        "yes_hi": 62,
-        "rating": "Leans Yes",
+        "yes": 53.3,
+        "yes_lo": 41.9,
+        "yes_hi": 64.6,
+        "rating": "Toss-up, slight edge Yes",
         "as_of": "2026-10-30",
-        "threshold": "Majority of voters voting on the question. Blank votes don\u2019t count, unlike Hawaii constitutional amendments",
-        "summary": "Slightly more likely to pass than fail. Honolulu voters approve most charter amendments, blank ballots don\u2019t count against it, and the Democratic Party, the League of Women Voters and the Star-Advertiser editorial board all back it in a deeply Democratic electorate. The risk is that the Hawaii GOP is campaigning against it, giving it a partisan edge. RCV has also lost recently in large blue electorates (Oregon 42% in 2024). And this is one of 20 charter questions, where tired voters tend to default to No on anything confusing.",
+        "threshold": "Majority of voters voting on the question. Blank votes don’t count, unlike Hawaii constitutional amendments",
+        "summary": "The data puts this close to a coin flip, leaning Yes. Across 10 local RCV votes, an electorate as Democratic as Oʻahu’s (Harris 61%) would be expected to give about 54% Yes. Honolulu’s four past charter amendments on how officials are elected averaged 52.7%, though they ranged from 35% to 83%. Averaging the two gives about 53%, roughly a 64% chance of passing. The local track record is the thinnest of the three cities’, so treat this one with the most caution.",
         "for": [
-          "Supported by the Democratic Party of Hawai\u02bbi and the League of Women Voters of Hawai\u02bbi",
+          "Supported by the Democratic Party of Hawaiʻi and the League of Women Voters of Hawaiʻi",
           "The Star-Advertiser editorial board recommends Yes",
-          "Blank votes are excluded, so the many voters who skip down-ballot charter questions don\u2019t count as No",
-          "Delayed to 2032 and contingent on the Legislature, which softens the \u2018too fast, too costly\u2019 argument",
+          "Blank votes are excluded, so the many voters who skip down-ballot charter questions don’t count as No",
+          "Delayed to 2032 and contingent on the Legislature, which softens the ‘too fast, too costly’ argument",
           "Hawaii already uses ranked ballots in some special federal and county elections"
         ],
         "against": [
-          "The Hawaii Republican Party (Chair Shirlene Ostrov, Rep. Elijah Pierick) is actively opposing it, and a Star-Advertiser op-ed called RCV something that \u2018ruins elections\u2019",
+          "The Hawaii Republican Party (Chair Shirlene Ostrov, Rep. Elijah Pierick) is actively opposing it, and a Star-Advertiser op-ed called RCV something that ‘ruins elections’",
           "It eliminates the familiar primary-plus-general format for city offices",
           "Voters face 20 charter questions, and ballot fatigue pushes undecided voters toward No",
           "RCV measures in large electorates have underperformed partisanship (Oregon 2024: 42%, Colorado 2024: 46.5%)"
         ],
-        "finance": "Local reporting shows no ballot-issue committee spending for or against Question 5. Ballot-issue committees file with the Hawaii Campaign Spending Commission. Advocacy appears limited to groups like FairVote, LWV and Rank the Vote on the Yes side and the state GOP on the No side.",
-        "comparables": [
-          {
-            "label": "Richmond, CA Measure L (2024)",
-            "yes": 54.4
-          },
-          {
-            "label": "Washington, DC Initiative 83 (2024)",
-            "yes": 72.9
-          },
-          {
-            "label": "Oregon Measure 117 (2024, statewide)",
-            "yes": 42.3
-          },
-          {
-            "label": "Colorado Prop 131 (2024, statewide top-four + RCV)",
-            "yes": 46.5
-          }
-        ],
+        "finance": "Hawaii Campaign Spending Commission data through Sept. 30 shows no ballot-issue committee for or against Question 5. FairVote Action, the national pro-RCV group, reported $34,650 in Hawaii in September: $31,750 to the pollster FM3 for a poll and $2,900 for the Democratic Party’s voter file. That suggests a targeted Yes effort, but the poll results haven’t been released. The Hawaii GOP’s reported spending (mostly digital ads and email) isn’t itemized by issue.",
         "sources": [
           {
-            "title": "Hawai\u02bbi Public Radio: 2026 Honolulu charter amendment explainer",
+            "title": "Hawaii Office of Elections: results files 2010–2024 (Honolulu charter amendments)",
+            "url": "https://elections.hawaii.gov/election-results/"
+          },
+          {
+            "title": "Hawaii Campaign Spending Commission: noncandidate committee expenditures",
+            "url": "https://hicscdata.hawaii.gov/d/riiu-7d4b"
+          },
+          {
+            "title": "Hawaii Campaign Spending Commission: noncandidate committee contributions",
+            "url": "https://hicscdata.hawaii.gov/d/rajm-32md"
+          },
+          {
+            "title": "Ballotpedia: local RCV measure results (cross-section Yes shares)",
+            "url": "https://ballotpedia.org/Local_electoral_systems_on_the_ballot"
+          },
+          {
+            "title": "Wikipedia: Ranked-choice voting in the United States (local adoption margins)",
+            "url": "https://en.wikipedia.org/wiki/Ranked-choice_voting_in_the_United_States"
+          },
+          {
+            "title": "Hawaiʻi Public Radio: 2026 Honolulu charter amendment explainer",
             "url": "https://www.hawaiipublicradio.org/local-news/2026-10-15/voting-explainer-2026-honolulu-charter-amendment-ballot-questions"
           },
           {
@@ -128,7 +130,7 @@
             "url": "https://www.staradvertiser.com/2026/10/21/editorial/island-voices/column-ranked-choice-voting-ruins-elections/"
           },
           {
-            "title": "Hawaii Free Press: blank vs. \u2018No\u2019 votes on Honolulu charter amendments",
+            "title": "Hawaii Free Press: blank vs. ‘No’ votes on Honolulu charter amendments",
             "url": "https://www.hawaiifreepress.com/Articles-Main/ID/18555/Honolulu-Charter-Amendments-ndash-Blank-vs-ldquoNordquo-Vote"
           },
           {
@@ -139,7 +141,86 @@
             "title": "Ballotpedia: 2024 RCV and electoral-system measure results",
             "url": "https://ballotpedia.org/Results_for_ranked-choice_voting_(RCV)_and_electoral_system_ballot_measures,_2024"
           }
-        ]
+        ],
+        "p_pass": 0.64,
+        "model": {
+          "harris_2p": 61.0,
+          "cross_pred": 53.8,
+          "anchor": 52.7,
+          "anchor_label": "Honolulu’s past charter amendments on electing officials",
+          "anchor_detail": "Four Honolulu charter amendments since 2010 changed how city officials are elected: term limits for city offices (36.7%), nonpartisan reapportionment commission (35.4%), special election time extension (55.5%), term limits for prosecuting attorney (83.2%), averaging 52.7%. All 42 Honolulu charter amendments since 2010 averaged 64.0% and 83% passed.",
+          "fit": {
+            "n": 10,
+            "slope": 0.67,
+            "intercept": 12.8,
+            "resid_sd": 11.4,
+            "r": 0.62
+          },
+          "sd": 8.8,
+          "cross": [
+            {
+              "label": "Albany, CA (2020)",
+              "harris": 90.9,
+              "yes": 73.0,
+              "resid": -0.9
+            },
+            {
+              "label": "Broomfield, CO (2021)",
+              "harris": 64.7,
+              "yes": 51.9,
+              "resid": -4.4
+            },
+            {
+              "label": "Redondo Beach, CA (Mar 2023)",
+              "harris": 67.7,
+              "yes": 76.7,
+              "resid": 18.4
+            },
+            {
+              "label": "Boulder, CO (2020)",
+              "harris": 87.7,
+              "yes": 78.1,
+              "resid": 6.3
+            },
+            {
+              "label": "Washington, DC (2024)",
+              "harris": 93.3,
+              "yes": 72.9,
+              "resid": -2.7
+            },
+            {
+              "label": "New York City (2019)",
+              "harris": 69.4,
+              "yes": 73.6,
+              "resid": 14.1
+            },
+            {
+              "label": "Multnomah County, OR (2022)",
+              "harris": 82.2,
+              "yes": 69.1,
+              "resid": 1.0
+            },
+            {
+              "label": "Benton County, OR (2016)",
+              "harris": 70.5,
+              "yes": 54.2,
+              "resid": -6.0
+            },
+            {
+              "label": "Clark County, WA (2022)",
+              "harris": 53.6,
+              "yes": 41.9,
+              "resid": -7.0
+            },
+            {
+              "label": "San Juan County, WA (2022)",
+              "harris": 76.7,
+              "yes": 45.6,
+              "resid": -18.8
+            }
+          ]
+        },
+        "turnout": "Hawaii doesn’t publish daily returns in a form this site can read for Oʻahu alone, so no turnout adjustment was made."
       }
     }
   ],

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-30T21:06:58+00:00",
+ "generated_at": "2026-10-30T21:11:30+00:00",
  "generic": {
   "avg": 8.31,
   "n": 6,
@@ -178,10 +178,10 @@
      "dem_party": null,
      "rep_party": null,
      "place": "City of Irvine (Orange County)",
-     "yes": 55,
-     "center": 10,
-     "lo": -4,
-     "hi": 24,
+     "yes": 56.9,
+     "center": 13.8,
+     "lo": -8.8,
+     "hi": 36.4,
      "rating": "Leans Yes",
      "n_polls": 0
     }
@@ -234,10 +234,10 @@
      "dem_party": null,
      "rep_party": null,
      "place": "City of Longmont (Boulder/Weld counties)",
-     "yes": 58,
-     "center": 16,
-     "lo": 2,
-     "hi": 30,
+     "yes": 60.4,
+     "center": 20.8,
+     "lo": -1.8,
+     "hi": 43.6,
      "rating": "Likely Yes",
      "n_polls": 0
     },
@@ -250,10 +250,10 @@
      "dem_party": null,
      "rep_party": null,
      "place": "City of Longmont (Boulder/Weld counties)",
-     "yes": 54,
-     "center": 8,
-     "lo": -8,
-     "hi": 22,
+     "yes": 56.4,
+     "center": 12.8,
+     "lo": -12.0,
+     "hi": 37.6,
      "rating": "Leans Yes",
      "n_polls": 0
     }
@@ -370,11 +370,11 @@
      "dem_party": null,
      "rep_party": null,
      "place": "City and County of Honolulu (O\u02bbahu)",
-     "yes": 55,
-     "center": 10,
-     "lo": -6,
-     "hi": 24,
-     "rating": "Leans Yes",
+     "yes": 53.3,
+     "center": 6.6,
+     "lo": -16.2,
+     "hi": 29.2,
+     "rating": "Toss-up, slight edge Yes",
      "n_polls": 0
     }
    ]

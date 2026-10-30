@@ -148,11 +148,11 @@ def candidate_adjustment(race):
 
 
 def local_measure(race):
-    """Local ballot measures have no polls or environment to model; they carry a sourced judgment estimate."""
+    """Local ballot measures have no polls; their estimate comes from pipeline/research/local_measures.py."""
     a = race["assessment"]
     m = lambda yes: round(2 * yes - 100, 2)  # Yes share of votes on the question -> Yes-minus-No margin
     return {"center": m(a["yes"]), "lo": m(a["yes_lo"]), "hi": m(a["yes_hi"]), "rating": a["rating"],
-            "yes": a["yes"], "yes_lo": a["yes_lo"], "yes_hi": a["yes_hi"], "judgment": True,
+            "yes": a["yes"], "yes_lo": a["yes_lo"], "yes_hi": a["yes_hi"], "p_pass": a.get("p_pass"),
             "environment": None, "polls": None, "poll_weight": 0.0, "start": m(a["yes"]), "early_vote": None}
 
 
