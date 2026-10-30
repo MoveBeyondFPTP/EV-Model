@@ -44,9 +44,9 @@
     ]
    },
    "projection": {
-    "center": 24.74,
-    "lo": 24.58,
-    "hi": 24.9,
+    "center": 26.67,
+    "lo": 26.56,
+    "hi": 26.78,
     "rating": "Solid Becerra",
     "range_basis": "inputs",
     "environment": {
@@ -76,12 +76,12 @@
      "note": null
     },
     "polls": {
-     "avg": 24.58,
-     "n": 6,
+     "avg": 26.56,
+     "n": 4,
      "window_days": 30
     },
-    "poll_weight": 0.957,
-    "start": 24.74,
+    "poll_weight": 0.938,
+    "start": 26.67,
     "early_vote": null
    }
   },
@@ -195,7 +195,7 @@
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-10-30T20:34:47+00:00",
+ "generated_at": "2026-10-30T20:36:01+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,

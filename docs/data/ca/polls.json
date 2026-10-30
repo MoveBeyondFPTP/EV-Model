@@ -1,13 +1,28 @@
 {
  "source": "VoteHub",
- "method": "(local test)",
- "fetched_at": "2026-10-30T12:00:00+00:00",
+ "source_url": "https://votehub.com/polls/",
+ "license": "CC BY 4.0",
+ "method": "One poll per pollster from the last 30 days (60 if fewer than 3), likely voters preferred, weighted by recency (half-life 14 days) and sample size; partisan or internal polls count half. Margins are two-party.",
+ "fetched_at": "2026-10-30T20:36:00+00:00",
  "races": {
   "governor": {
-   "avg": 24.58,
-   "n": 6,
+   "avg": 26.56,
+   "n": 4,
    "window_days": 30,
    "polls": [
+    {
+     "pollster": "UC Berkeley Institute of Governmental Studies",
+     "end_date": "2026-10-25",
+     "age": 5,
+     "population": "lv",
+     "sample_size": 1477,
+     "dem": 61.0,
+     "rep": 34.0,
+     "margin": 28.42,
+     "partisan": false,
+     "url": "https://www.latimes.com/california/story/2026-10-30/becerra-widens-lead-in-governors-race-as-voter-focus-shifts-to-trump-new-poll-shows",
+     "weight": 1.171
+    },
     {
      "pollster": "SurveyUSA",
      "end_date": "2026-10-24",
@@ -18,47 +33,8 @@
      "rep": 32.0,
      "margin": 25.58,
      "partisan": false,
-     "url": "https://www.pollcheck.co.uk/us-midterms-2026/governor/california",
+     "url": "https://results.surveyusa.com/client/PollReport.aspx?g=b118a915-559d-4669-b870-8a3eae933903",
      "weight": 0.857
-    },
-    {
-     "pollster": "M3 Strategies",
-     "end_date": "2026-10-23",
-     "age": 7,
-     "population": "lv",
-     "sample_size": 489,
-     "dem": 59.0,
-     "rep": 36.0,
-     "margin": 24.21,
-     "partisan": true,
-     "url": "https://www.pollcheck.co.uk/us-midterms-2026/governor/california",
-     "weight": 0.319
-    },
-    {
-     "pollster": "PPIC",
-     "end_date": "2026-10-22",
-     "age": 8,
-     "population": "lv",
-     "sample_size": 1086,
-     "dem": 61.0,
-     "rep": 37.0,
-     "margin": 24.49,
-     "partisan": false,
-     "url": "https://www.pollcheck.co.uk/us-midterms-2026/governor/california",
-     "weight": 0.905
-    },
-    {
-     "pollster": "McLaughlin & Associates",
-     "end_date": "2026-10-20",
-     "age": 10,
-     "population": "lv",
-     "sample_size": 800,
-     "dem": 55.0,
-     "rep": 39.0,
-     "margin": 17.02,
-     "partisan": true,
-     "url": "https://www.pollcheck.co.uk/us-midterms-2026/governor/california",
-     "weight": 0.352
     },
     {
      "pollster": "Emerson College",
@@ -66,15 +42,15 @@
      "age": 11,
      "population": "lv",
      "sample_size": 1000,
-     "dem": 60.0,
-     "rep": 33.0,
-     "margin": 29.03,
+     "dem": 64.0,
+     "rep": 36.0,
+     "margin": 28.0,
      "partisan": false,
-     "url": "https://www.pollcheck.co.uk/us-midterms-2026/governor/california",
+     "url": "https://emersoncollegepolling.com/california-2026-poll-xavier-becerra-holds-27-point-lead-over-steve-hilton/",
      "weight": 0.749
     },
     {
-     "pollster": "UC Berkeley Citrin Center / Politico",
+     "pollster": "University of California Berkeley Jack Citrin Center for Public Opinion Research/Verasight/TrueDot",
      "end_date": "2026-10-14",
      "age": 16,
      "population": "lv",
@@ -83,13 +59,11 @@
      "rep": 35.0,
      "margin": 22.22,
      "partisan": false,
-     "url": "https://www.pollcheck.co.uk/us-midterms-2026/governor/california",
+     "url": "https://www.politico.com/newsletters/california-playbook/2026/10/21/ramans-apology-and-polling-on-newsom-01128744",
      "weight": 0.557
     }
-   ],
-   "source": "PollCheck",
-   "source_url": "https://www.pollcheck.co.uk/us-midterms-2026/governor/california",
-   "manual": true
-  }
+   ]
+  },
+  "irvine-d": null
  }
 }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-30T20:34:47+00:00",
+ "generated_at": "2026-10-30T20:36:01+00:00",
  "generic": {
   "avg": 8.31,
   "n": 6,
@@ -163,11 +163,11 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": 24.74,
-     "lo": 24.58,
-     "hi": 24.9,
+     "center": 26.67,
+     "lo": 26.56,
+     "hi": 26.78,
      "rating": "Solid Becerra",
-     "n_polls": 6
+     "n_polls": 4
     },
     {
      "id": "irvine-d",
@@ -595,11 +595,11 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": -23.68,
-     "lo": -26.76,
-     "hi": -22.22,
-     "rating": "Solid Alme",
-     "n_polls": 2
+     "center": -21.48,
+     "lo": -37.31,
+     "hi": 1.3,
+     "rating": "Toss-up, slight edge Alme",
+     "n_polls": 3
     }
    ]
   },

@@ -28,25 +28,25 @@
     ]
    },
    "projection": {
-    "center": -23.68,
-    "lo": -26.76,
-    "hi": -22.22,
-    "rating": "Solid Alme",
+    "center": -21.48,
+    "lo": -37.31,
+    "hi": 1.3,
+    "rating": "Toss-up, slight edge Alme",
     "range_basis": "polls",
     "environment": null,
     "polls": {
-     "avg": -23.68,
-     "n": 2,
+     "avg": -21.48,
+     "n": 3,
      "window_days": 30
     },
     "poll_weight": 1.0,
-    "start": -23.68,
+    "start": -21.48,
     "early_vote": null
    }
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-10-30T20:34:47+00:00",
+ "generated_at": "2026-10-30T20:36:01+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,
