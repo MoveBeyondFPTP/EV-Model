@@ -4,7 +4,7 @@ fetched 270 us-senator polls
 ak senate: 1.05 from 5 polls
 fetched 265 governor polls
 ak governor: 6.24 from 3 polls
-ak measure2: 5.44 from 2 polls
+ak measure2: 5.21 from 2 polls
 ca governor: 26.56 from 4 polls
 !! ca irvine-d failed: KeyError('poll_type')
 co senate: None from 0 polls
