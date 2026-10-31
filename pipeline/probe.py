@@ -1,11 +1,12 @@
-"""Temporary: Statewide Database precinct files for Orange County (c059), 2024 general and primary."""
+"""Temporary (v2): Statewide Database precinct files for Orange County (c059), 2024 general and primary."""
 import pathlib, requests, re
 OUT = pathlib.Path("probe_out"); OUT.mkdir(exist_ok=True)
 H = {"User-Agent": "Mozilla/5.0 (compatible; EV-Model/1.0; +https://github.com/MoveBeyondFPTP/EV-Model)"}
 log = []
 def get(name, url):
     try:
-        r = requests.get(url, headers=H, timeout=(20, 300)); (OUT / name).write_bytes(r.content)
+        r = requests.get(url, headers=H, timeout=(20, 300))
+        if len(r.content) < 40_000_000: (OUT / name).write_bytes(r.content)
         log.append(f"{r.status_code} {len(r.content):>9} {name} {url}"); return r
     except Exception as e:
         log.append(f"ERR {name} {url} {e!r}")
