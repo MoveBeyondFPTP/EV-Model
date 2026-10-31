@@ -1,0 +1,5 @@
+200   2848921 nc_2022.zip https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2022_11_08/results_pct_20221108.zip
+200   3741131 nc_2024.zip https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2024_11_05/results_pct_20241105.zip
+202         0 ga_clarity_115465_ver.txt https://results.enr.clarityelections.com/GA/115465/current_ver.txt
+200  33718327 ga_ev_2024.json https://results.sos.ga.gov/cdn/results/Georgia/export-2024NovGen.json
+200     10798 ga_ev_index.html https://results.sos.ga.gov/results/public/Georgia
