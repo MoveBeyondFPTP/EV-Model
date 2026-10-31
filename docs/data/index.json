@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-31T01:40:54+00:00",
+ "generated_at": "2026-10-31T18:31:30+00:00",
  "generic": {
   "avg": 8.31,
   "n": 6,
@@ -607,7 +607,7 @@
    "code": "nc",
    "name": "North Carolina",
    "has_early_vote": true,
-   "early_vote_as_of": "2026-10-29",
+   "early_vote_as_of": "2026-10-31",
    "races": [
     {
      "id": "senate",

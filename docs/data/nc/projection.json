@@ -5,18 +5,18 @@
  "election_date": "2026-11-03",
  "has_early_vote": true,
  "turnout_signal": {
-  "value": 8.96,
-  "now": 11.61,
-  "then": 2.65,
+  "value": 8.12,
+  "now": 10.76,
+  "then": 2.64,
   "year": 2022,
-  "day": 5,
-  "as_of": "2026-10-29",
+  "day": 3,
+  "as_of": "2026-10-31",
   "backtest": {
    "from": 2020,
    "to": 2024,
    "label": "2024 president",
-   "signal": -3.24,
-   "adjustment": -0.81,
+   "signal": -2.13,
+   "adjustment": -0.53,
    "state_move": -1.89,
    "national_move": -6.04,
    "relative": 4.15,
@@ -116,7 +116,7 @@
  "ev_notes": [
   "Rules change. Photo ID applies in 2026 but not in 2018 or 2022, and mail ballots now must arrive by the close of polls instead of within the old three-day grace period. Early voting schedules and sites also vary by cycle."
  ],
- "generated_at": "2026-10-31T01:40:54+00:00",
+ "generated_at": "2026-10-31T18:31:30+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,
