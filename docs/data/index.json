@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-31T01:14:28+00:00",
+ "generated_at": "2026-10-31T01:39:59+00:00",
  "generic": {
   "avg": 8.31,
   "n": 6,
@@ -139,9 +139,9 @@
      "rep_party": null,
      "place": null,
      "yes": null,
-     "center": 5.41,
-     "lo": 5.39,
-     "hi": 5.44,
+     "center": 5.2,
+     "lo": 5.2,
+     "hi": 5.21,
      "rating": "Leans No",
      "n_polls": 2
     }

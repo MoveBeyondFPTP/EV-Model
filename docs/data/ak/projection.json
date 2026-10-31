@@ -182,9 +182,9 @@
     "short": "Yes"
    },
    "projection": {
-    "center": 5.41,
-    "lo": 5.39,
-    "hi": 5.44,
+    "center": 5.2,
+    "lo": 5.2,
+    "hi": 5.21,
     "rating": "Leans No",
     "range_basis": "inputs",
     "environment": {
@@ -202,18 +202,18 @@
      "note": "Repeal is backed mainly by Republicans, but the 2024 vote ran far closer than the presidential race (Trump +13.7, repeal failed by 0.2), so only half of the national swing is applied."
     },
     "polls": {
-     "avg": 5.44,
+     "avg": 5.21,
      "n": 2,
      "window_days": 60
     },
     "poll_weight": 0.909,
-    "start": 5.41,
+    "start": 5.2,
     "early_vote": null
    }
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-10-31T01:14:28+00:00",
+ "generated_at": "2026-10-31T01:39:59+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,

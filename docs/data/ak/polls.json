@@ -124,22 +124,22 @@
    ]
   },
   "measure2": {
-   "avg": 5.44,
+   "avg": 5.21,
    "n": 2,
    "window_days": 60,
    "polls": [
     {
      "pollster": "Alaska Survey Research",
-     "end_date": "2026-10-03",
-     "age": 28,
+     "end_date": "2026-10-25",
+     "age": 6,
      "population": "lv",
-     "sample_size": 1512,
-     "dem": 53.0,
-     "rep": 47.0,
-     "margin": 6.0,
+     "sample_size": 1068,
+     "dem": 52.7,
+     "rep": 47.3,
+     "margin": 5.4,
      "partisan": false,
-     "url": "https://en.wikipedia.org/wiki/2026_Alaska_Measure_2",
-     "weight": 0.375
+     "url": "https://x.com/The_Real_ASR/status/2115125751553106385",
+     "weight": 0.991
     },
     {
      "pollster": "Fabrizio Ward / Impact Research",
@@ -155,7 +155,7 @@
      "weight": 0.097
     }
    ],
-   "source": "Wikipedia, 2026 Alaska Measure 2",
+   "source": "Alaska Survey Research (X) and Wikipedia, 2026 Alaska Measure 2",
    "source_url": "https://en.wikipedia.org/wiki/2026_Alaska_Measure_2",
    "manual": true
   }
