@@ -6,7 +6,7 @@
  "fetched_at": "2026-10-31T18:31:28+00:00",
  "races": {
   "senate": {
-   "avg": -16.43,
+   "avg": -12.29,
    "n": 4,
    "window_days": 30,
    "polls": [
@@ -27,14 +27,14 @@
      "pollster": "Montana State University Billings",
      "end_date": "2026-10-21",
      "age": 10,
-     "population": "lv",
-     "sample_size": null,
-     "dem": 21.0,
+     "population": "a",
+     "sample_size": 720,
+     "dem": 26.0,
      "rep": 30.0,
-     "margin": -17.65,
+     "margin": -7.14,
      "partisan": false,
-     "url": "https://www.msubillings.edu/class/nams/polls/2026-mountain-states-poll-report.pdf",
-     "weight": 0.61
+     "url": "https://dailymontanan.com/2026/10/29/mountain-state-poll-shows-close-races-for-federal-offices/",
+     "weight": 0.668
     },
     {
      "pollster": "Quantus Insights",

@@ -53,11 +53,12 @@
           {
             "pollster": "Montana State University Billings",
             "end_date": "2026-10-21",
-            "sample_size": null,
-            "population": "lv",
-            "dem": 21,
+            "sample_size": 720,
+            "population": "a",
+            "dem": 26,
             "rep": 30,
-            "url": "https://www.msubillings.edu/class/nams/polls/2026-mountain-states-poll-report.pdf"
+            "url": "https://dailymontanan.com/2026/10/29/mountain-state-poll-shows-close-races-for-federal-offices/",
+            "start_date": "2026-10-05"
           },
           {
             "pollster": "Quantus Insights",

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-31T18:31:30+00:00",
+ "generated_at": "2026-10-31T21:15:10+00:00",
  "generic": {
   "avg": 8.31,
   "n": 6,
@@ -595,9 +595,9 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": -16.43,
+     "center": -12.29,
      "lo": -22.67,
-     "hi": -16.43,
+     "hi": -7.14,
      "rating": "Solid Alme",
      "n_polls": 4
     }
