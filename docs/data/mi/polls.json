@@ -3,17 +3,17 @@
  "source_url": "https://votehub.com/polls/",
  "license": "CC BY 4.0",
  "method": "One poll per pollster from the last 30 days (60 if fewer than 3), likely voters preferred, weighted by recency (half-life 14 days) and sample size; partisan or internal polls count half. Margins are two-party.",
- "fetched_at": "2026-10-30T23:48:30+00:00",
+ "fetched_at": "2026-10-31T00:43:23+00:00",
  "races": {
   "senate": {
-   "avg": 5.1,
-   "n": 11,
+   "avg": 5.16,
+   "n": 10,
    "window_days": 30,
    "polls": [
     {
      "pollster": "Upswing Research",
      "end_date": "2026-10-28",
-     "age": 2,
+     "age": 3,
      "population": "lv",
      "sample_size": 505,
      "dem": 50.0,
@@ -21,12 +21,12 @@
      "margin": 5.26,
      "partisan": true,
      "url": "https://x.com/joshorton/status/2115883461076545615?a=RFp0CZRkuV44JoFJOZQ&s=20",
-     "weight": 0.415
+     "weight": 0.395
     },
     {
      "pollster": "Mitchell Research & Communications",
      "end_date": "2026-10-27",
-     "age": 3,
+     "age": 4,
      "population": "lv",
      "sample_size": 636,
      "dem": 51.0,
@@ -34,12 +34,12 @@
      "margin": 7.37,
      "partisan": false,
      "url": "https://www.cbsnews.com/detroit/news/el-sayed-widens-lead-rogers-michigan-senate-poll/",
-     "weight": 0.887
+     "weight": 0.845
     },
     {
      "pollster": "CNN/SSRS",
      "end_date": "2026-10-27",
-     "age": 3,
+     "age": 4,
      "population": "lv",
      "sample_size": 768,
      "dem": 49.0,
@@ -47,12 +47,12 @@
      "margin": 7.69,
      "partisan": false,
      "url": "https://www.cnn.com/2026/10/29/politics/cnn-polls-michigan-maine-texas-kansas-senate-races-midterms-vis",
-     "weight": 0.975
+     "weight": 0.928
     },
     {
      "pollster": "Michigan State University Department of Political Science/Verasight",
      "end_date": "2026-10-23",
-     "age": 7,
+     "age": 8,
      "population": "lv",
      "sample_size": 1383,
      "dem": 50.5,
@@ -60,12 +60,12 @@
      "margin": 7.91,
      "partisan": false,
      "url": "https://polisci.msu.edu/news-events/news/smidt-poll102926.html",
-     "weight": 1.061
+     "weight": 1.009
     },
     {
      "pollster": "InsiderAdvantage",
      "end_date": "2026-10-22",
-     "age": 8,
+     "age": 9,
      "population": "lv",
      "sample_size": 1200,
      "dem": 47.0,
@@ -73,12 +73,12 @@
      "margin": 1.08,
      "partisan": false,
      "url": "https://insideradvantage.com/insideradvantage-senate-surveys-mi-el-sayed-47-rogers-46-ia-hinson-47-turek-45-oh-brown-47-husted-44/",
-     "weight": 0.952
+     "weight": 0.906
     },
     {
      "pollster": "Glengariff Group, Inc.",
      "end_date": "2026-10-22",
-     "age": 8,
+     "age": 9,
      "population": "lv",
      "sample_size": 600,
      "dem": 51.4,
@@ -86,12 +86,12 @@
      "margin": 6.53,
      "partisan": false,
      "url": "https://www.detroitnews.com/story/news/politics/2026/10/27/jocelyn-bensons-lead-over-john-james-grows-in-michigan-governor-race/92441176007/",
-     "weight": 0.673
+     "weight": 0.64
     },
     {
      "pollster": "Michigan State University Institute for Public Policy and Social Research/YouGov",
      "end_date": "2026-10-19",
-     "age": 11,
+     "age": 12,
      "population": "lv",
      "sample_size": 836,
      "dem": 48.0,
@@ -99,12 +99,12 @@
      "margin": 2.67,
      "partisan": false,
      "url": "https://ippsr.msu.edu/news/msu-poll-shows-benson-large-lead-while-el-sayed-roger-race-tight",
-     "weight": 0.685
+     "weight": 0.652
     },
     {
      "pollster": "Marist University",
      "end_date": "2026-10-18",
-     "age": 12,
+     "age": 13,
      "population": "lv",
      "sample_size": null,
      "dem": 50.0,
@@ -112,12 +112,12 @@
      "margin": 2.04,
      "partisan": false,
      "url": "https://maristpoll.marist.edu/polls/midterm-elections-in-michigan-october-2026/",
-     "weight": 0.552
+     "weight": 0.525
     },
     {
      "pollster": "The Tyson Group",
      "end_date": "2026-10-08",
-     "age": 22,
+     "age": 23,
      "population": "lv",
      "sample_size": 600,
      "dem": 44.0,
@@ -125,12 +125,12 @@
      "margin": -2.22,
      "partisan": true,
      "url": "https://www.breitbart.com/politics/2026/10/15/exclusive-poll-shows-mike-rogers-edging-out-abdul-el-sayed-in-michigan-senate-race/",
-     "weight": 0.168
+     "weight": 0.16
     },
     {
      "pollster": "Z to A Research",
      "end_date": "2026-10-01",
-     "age": 29,
+     "age": 30,
      "population": "lv",
      "sample_size": 483,
      "dem": 49.0,
@@ -138,20 +138,7 @@
      "margin": 7.69,
      "partisan": true,
      "url": "https://x.com/rbrtraining/status/2108302504446337272",
-     "weight": 0.107
-    },
-    {
-     "pollster": "Trafalgar Group",
-     "end_date": "2026-09-30",
-     "age": 30,
-     "population": "lv",
-     "sample_size": 1085,
-     "dem": 47.0,
-     "rep": 45.0,
-     "margin": 2.17,
-     "partisan": true,
-     "url": "https://www.thetrafalgargroup.org/news/mi-senate-general-1001/",
-     "weight": 0.152
+     "weight": 0.102
     }
    ]
   },
@@ -163,7 +150,7 @@
     {
      "pollster": "Guidant Polling and Strategy",
      "end_date": "2026-10-27",
-     "age": 3,
+     "age": 4,
      "population": "lv",
      "sample_size": 800,
      "dem": 50.0,
@@ -171,12 +158,12 @@
      "margin": 5.26,
      "partisan": false,
      "url": "https://x.com/burgessev/status/2107923538392776875?s=20",
-     "weight": 0.995
+     "weight": 0.947
     },
     {
      "pollster": "CNN/SSRS",
      "end_date": "2026-10-27",
-     "age": 3,
+     "age": 4,
      "population": "lv",
      "sample_size": 768,
      "dem": 53.0,
@@ -184,12 +171,12 @@
      "margin": 12.77,
      "partisan": false,
      "url": "https://www.cnn.com/2026/10/29/politics/cnn-polls-michigan-maine-texas-kansas-senate-races-midterms-vis",
-     "weight": 0.975
+     "weight": 0.928
     },
     {
      "pollster": "Mitchell Research & Communications",
      "end_date": "2026-10-27",
-     "age": 3,
+     "age": 4,
      "population": "lv",
      "sample_size": 636,
      "dem": 49.0,
@@ -197,12 +184,12 @@
      "margin": 5.38,
      "partisan": false,
      "url": "https://www.cbsnews.com/detroit/news/jocelyn-benson-john-james-october-michigan-gubernatorial-poll/",
-     "weight": 0.887
+     "weight": 0.845
     },
     {
      "pollster": "Michigan State University Department of Political Science/Verasight",
      "end_date": "2026-10-23",
-     "age": 7,
+     "age": 8,
      "population": "lv",
      "sample_size": 1383,
      "dem": 50.9,
@@ -210,12 +197,12 @@
      "margin": 10.17,
      "partisan": false,
      "url": "https://polisci.msu.edu/news-events/news/smidt-poll102926.html",
-     "weight": 1.061
+     "weight": 1.009
     },
     {
      "pollster": "Glengariff Group, Inc.",
      "end_date": "2026-10-22",
-     "age": 8,
+     "age": 9,
      "population": "lv",
      "sample_size": 600,
      "dem": 51.4,
@@ -223,12 +210,12 @@
      "margin": 7.19,
      "partisan": false,
      "url": "https://www.detroitnews.com/story/news/politics/2026/10/27/jocelyn-bensons-lead-over-john-james-grows-in-michigan-governor-race/92441176007/",
-     "weight": 0.673
+     "weight": 0.64
     },
     {
      "pollster": "Michigan State University Institute for Public Policy and Social Research/YouGov",
      "end_date": "2026-10-19",
-     "age": 11,
+     "age": 12,
      "population": "lv",
      "sample_size": 836,
      "dem": 53.3,
@@ -236,12 +223,12 @@
      "margin": 13.16,
      "partisan": false,
      "url": "https://ippsr.msu.edu/news/msu-poll-shows-benson-large-lead-while-el-sayed-roger-race-tight",
-     "weight": 0.685
+     "weight": 0.652
     },
     {
      "pollster": "Marist University",
      "end_date": "2026-10-18",
-     "age": 12,
+     "age": 13,
      "population": "lv",
      "sample_size": null,
      "dem": 51.0,
@@ -249,12 +236,12 @@
      "margin": 6.25,
      "partisan": false,
      "url": "https://maristpoll.marist.edu/polls/midterm-elections-in-michigan-october-2026/",
-     "weight": 0.552
+     "weight": 0.525
     },
     {
      "pollster": "Z to A Research",
      "end_date": "2026-10-01",
-     "age": 29,
+     "age": 30,
      "population": "lv",
      "sample_size": 483,
      "dem": 50.0,
@@ -262,7 +249,7 @@
      "margin": 11.11,
      "partisan": true,
      "url": "https://x.com/rbrtraining/status/2108302504446337272",
-     "weight": 0.107
+     "weight": 0.102
     }
    ]
   }

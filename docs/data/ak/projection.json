@@ -64,8 +64,8 @@
    },
    "projection": {
     "center": 0.99,
-    "lo": 0.85,
-    "hi": 1.12,
+    "lo": 0.93,
+    "hi": 1.05,
     "rating": "Toss-up, slight edge Peltola",
     "range_basis": "inputs",
     "environment": {
@@ -106,11 +106,11 @@
      "note": null
     },
     "polls": {
-     "avg": 1.12,
-     "n": 3,
-     "window_days": 30
+     "avg": 1.05,
+     "n": 5,
+     "window_days": 60
     },
-    "poll_weight": 0.918,
+    "poll_weight": 0.962,
     "start": 0.99,
     "early_vote": null
    }
@@ -139,8 +139,8 @@
     ]
    },
    "projection": {
-    "center": 5.41,
-    "lo": 4.59,
+    "center": 5.61,
+    "lo": 4.97,
     "hi": 6.24,
     "rating": "Lean Kreiss-Tomkins",
     "range_basis": "inputs",
@@ -163,8 +163,8 @@
      "n": 3,
      "window_days": 30
     },
-    "poll_weight": 0.918,
-    "start": 5.41,
+    "poll_weight": 0.938,
+    "start": 5.61,
     "early_vote": null
    }
   },
@@ -182,8 +182,8 @@
     "short": "Yes"
    },
    "projection": {
-    "center": 5.4,
-    "lo": 5.37,
+    "center": 5.41,
+    "lo": 5.39,
     "hi": 5.44,
     "rating": "Leans No",
     "range_basis": "inputs",
@@ -206,14 +206,14 @@
      "n": 2,
      "window_days": 60
     },
-    "poll_weight": 0.882,
-    "start": 5.4,
+    "poll_weight": 0.909,
+    "start": 5.41,
     "early_vote": null
    }
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-10-30T23:48:31+00:00",
+ "generated_at": "2026-10-31T00:43:25+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,
@@ -224,7 +224,7 @@
   "c_weight": 0.25,
   "c_cap": 2.0,
   "k_at_30_days": 2.0,
-  "days_left": 4,
-  "k_now": 0.267
+  "days_left": 3,
+  "k_now": 0.2
  }
 }

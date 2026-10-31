@@ -28,8 +28,8 @@
     ]
    },
    "projection": {
-    "center": -0.4,
-    "lo": -0.49,
+    "center": -0.37,
+    "lo": -0.45,
     "hi": -0.3,
     "rating": "Toss-up",
     "range_basis": "inputs",
@@ -52,8 +52,8 @@
      "n": 9,
      "window_days": 30
     },
-    "poll_weight": 0.971,
-    "start": -0.4,
+    "poll_weight": 0.978,
+    "start": -0.37,
     "early_vote": null
    }
   },
@@ -95,8 +95,8 @@
     ]
    },
    "projection": {
-    "center": 6.61,
-    "lo": 6.4,
+    "center": 6.66,
+    "lo": 6.5,
     "hi": 6.82,
     "rating": "Lean Sand",
     "range_basis": "inputs",
@@ -131,14 +131,14 @@
      "n": 9,
      "window_days": 30
     },
-    "poll_weight": 0.971,
-    "start": 6.61,
+    "poll_weight": 0.978,
+    "start": 6.66,
     "early_vote": null
    }
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-10-30T23:48:31+00:00",
+ "generated_at": "2026-10-31T00:43:25+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,
@@ -149,7 +149,7 @@
   "c_weight": 0.25,
   "c_cap": 2.0,
   "k_at_30_days": 2.0,
-  "days_left": 4,
-  "k_now": 0.267
+  "days_left": 3,
+  "k_now": 0.2
  }
 }

@@ -3,7 +3,7 @@
  "source_url": "https://votehub.com/polls/",
  "license": "CC BY 4.0",
  "method": "One poll per pollster from the last 30 days (60 if fewer than 3), likely voters preferred, weighted by recency (half-life 14 days) and sample size; partisan or internal polls count half. Margins are two-party.",
- "fetched_at": "2026-10-30T23:48:30+00:00",
+ "fetched_at": "2026-10-31T00:43:23+00:00",
  "races": {
   "senate": {
    "avg": 10.2,
@@ -13,7 +13,7 @@
     {
      "pollster": "Echelon Insights",
      "end_date": "2026-10-23",
-     "age": 7,
+     "age": 8,
      "population": "lv",
      "sample_size": 508,
      "dem": 55.0,
@@ -21,12 +21,12 @@
      "margin": 15.79,
      "partisan": false,
      "url": "https://netchoice.org/netchoice-echelon-insights-poll-voters-rank-ai-regulation-far-behind-cost-of-living-want-one-national-ai-standard/",
-     "weight": 0.651
+     "weight": 0.619
     },
     {
      "pollster": "ActiVote",
      "end_date": "2026-10-20",
-     "age": 10,
+     "age": 11,
      "population": "lv",
      "sample_size": 400,
      "dem": 54.0,
@@ -34,12 +34,12 @@
      "margin": 8.0,
      "partisan": false,
      "url": "https://www.activote.net/polls/2026/ga-u-s-senate/",
-     "weight": 0.498
+     "weight": 0.474
     },
     {
      "pollster": "Quantus Insights",
      "end_date": "2026-10-17",
-     "age": 13,
+     "age": 14,
      "population": "lv",
      "sample_size": 755,
      "dem": 51.8,
@@ -47,12 +47,12 @@
      "margin": 7.14,
      "partisan": false,
      "url": "https://quantusinsights.org/polling/f/georgia-two-weeks-out-ossoff-ahead-down-ballot-near-even",
-     "weight": 0.589
+     "weight": 0.561
     },
     {
      "pollster": "University of Georgia School of Public and International Affairs",
      "end_date": "2026-10-15",
-     "age": 15,
+     "age": 16,
      "population": "lv",
      "sample_size": 1000,
      "dem": 48.0,
@@ -60,12 +60,12 @@
      "margin": 9.09,
      "partisan": false,
      "url": "https://www.ajc.com/politics/2026/10/ajc-poll-ossoff-leads-collins-in-georgias-us-senate-race/",
-     "weight": 0.614
+     "weight": 0.585
     },
     {
      "pollster": "Wedgewood Polls",
      "end_date": "2026-10-03",
-     "age": 27,
+     "age": 28,
      "population": "lv",
      "sample_size": 600,
      "dem": 55.0,
@@ -73,7 +73,7 @@
      "margin": 10.0,
      "partisan": false,
      "url": "https://drive.google.com/file/d/1ztqd_FYClBh1OknXwKOqi6zJXxECcqDK/view?usp=sharing",
-     "weight": 0.263
+     "weight": 0.25
     }
    ]
   },
@@ -85,7 +85,7 @@
     {
      "pollster": "Echelon Insights",
      "end_date": "2026-10-23",
-     "age": 7,
+     "age": 8,
      "population": "lv",
      "sample_size": 508,
      "dem": 49.0,
@@ -93,12 +93,12 @@
      "margin": 1.03,
      "partisan": false,
      "url": "https://netchoice.org/netchoice-echelon-insights-poll-voters-rank-ai-regulation-far-behind-cost-of-living-want-one-national-ai-standard/",
-     "weight": 0.651
+     "weight": 0.619
     },
     {
      "pollster": "ActiVote",
      "end_date": "2026-10-20",
-     "age": 10,
+     "age": 11,
      "population": "lv",
      "sample_size": 400,
      "dem": 48.5,
@@ -106,12 +106,12 @@
      "margin": -3.0,
      "partisan": false,
      "url": "https://www.activote.net/polls/2026/ga-governor/",
-     "weight": 0.498
+     "weight": 0.474
     },
     {
      "pollster": "Quantus Insights",
      "end_date": "2026-10-17",
-     "age": 13,
+     "age": 14,
      "population": "lv",
      "sample_size": 755,
      "dem": 46.6,
@@ -119,12 +119,12 @@
      "margin": -1.69,
      "partisan": false,
      "url": "https://quantusinsights.org/polling/f/georgia-two-weeks-out-ossoff-ahead-down-ballot-near-even",
-     "weight": 0.589
+     "weight": 0.561
     },
     {
      "pollster": "GBAO Strategies",
      "end_date": "2026-10-15",
-     "age": 15,
+     "age": 16,
      "population": "rv",
      "sample_size": 2000,
      "dem": 45.0,
@@ -132,12 +132,12 @@
      "margin": -1.1,
      "partisan": false,
      "url": "https://www.ajc.com/politics/2026/10/rick-jackson-has-outspent-keisha-lance-bottoms-but-democratic-enthusiasm-has-the-race-knotted/",
-     "weight": 0.714
+     "weight": 0.679
     },
     {
      "pollster": "InsiderAdvantage",
      "end_date": "2026-10-13",
-     "age": 17,
+     "age": 18,
      "population": "lv",
      "sample_size": 800,
      "dem": 47.0,
@@ -145,12 +145,12 @@
      "margin": -2.08,
      "partisan": false,
      "url": "https://jamesmagazinega.com/2026/10/14/georgia-governors-poll-from-insideradvantage-jackson-maintains-slight-edge/",
-     "weight": 0.498
+     "weight": 0.474
     },
     {
      "pollster": "Wedgewood Polls",
      "end_date": "2026-10-03",
-     "age": 27,
+     "age": 28,
      "population": "lv",
      "sample_size": 600,
      "dem": 49.0,
@@ -158,7 +158,7 @@
      "margin": -2.0,
      "partisan": false,
      "url": "https://drive.google.com/file/d/1ztqd_FYClBh1OknXwKOqi6zJXxECcqDK/view?usp=sharing",
-     "weight": 0.263
+     "weight": 0.25
     }
    ]
   }

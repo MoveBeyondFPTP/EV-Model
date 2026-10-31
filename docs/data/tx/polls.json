@@ -3,7 +3,7 @@
  "source_url": "https://votehub.com/polls/",
  "license": "CC BY 4.0",
  "method": "One poll per pollster from the last 30 days (60 if fewer than 3), likely voters preferred, weighted by recency (half-life 14 days) and sample size; partisan or internal polls count half. Margins are two-party.",
- "fetched_at": "2026-10-30T23:48:30+00:00",
+ "fetched_at": "2026-10-31T00:43:23+00:00",
  "races": {
   "senate": {
    "avg": 2.78,
@@ -13,7 +13,7 @@
     {
      "pollster": "ActiVote",
      "end_date": "2026-10-28",
-     "age": 2,
+     "age": 3,
      "population": "lv",
      "sample_size": 400,
      "dem": 52.1,
@@ -21,12 +21,12 @@
      "margin": 4.2,
      "partisan": false,
      "url": "https://www.activote.net/polls/2026/tx-u-s-senate/",
-     "weight": 0.74
+     "weight": 0.704
     },
     {
      "pollster": "Quantus Insights",
      "end_date": "2026-10-28",
-     "age": 2,
+     "age": 3,
      "population": "lv",
      "sample_size": 1221,
      "dem": 48.4,
@@ -34,12 +34,12 @@
      "margin": -1.02,
      "partisan": false,
      "url": "https://quantusinsights.org/polling/f/texas-survey-paxton-up-one-abbott-ahead-by-five",
-     "weight": 1.292
+     "weight": 1.23
     },
     {
      "pollster": "CNN/SSRS",
      "end_date": "2026-10-27",
-     "age": 3,
+     "age": 4,
      "population": "lv",
      "sample_size": 923,
      "dem": 49.0,
@@ -47,12 +47,12 @@
      "margin": 6.52,
      "partisan": false,
      "url": "https://www.cnn.com/2026/10/29/politics/cnn-polls-michigan-maine-texas-kansas-senate-races-midterms-vis",
-     "weight": 1.069
+     "weight": 1.017
     },
     {
      "pollster": "A2 Insights",
      "end_date": "2026-10-27",
-     "age": 3,
+     "age": 4,
      "population": "lv",
      "sample_size": 631,
      "dem": 50.2,
@@ -60,12 +60,12 @@
      "margin": 3.08,
      "partisan": false,
      "url": "https://drive.google.com/file/d/1UACnmnM84Dd1hU0l6iqHNgXkyh5oCelO/view",
-     "weight": 0.884
+     "weight": 0.841
     },
     {
      "pollster": "Texas Southern University Barbara Jordan Public Policy Research and Survey Center",
      "end_date": "2026-10-25",
-     "age": 5,
+     "age": 6,
      "population": "lv",
      "sample_size": 2000,
      "dem": 49.0,
@@ -73,12 +73,12 @@
      "margin": 2.08,
      "partisan": false,
      "url": "https://www.jordanresearchcenter.org/publications/tsuoct2026-txelections-statewide2026",
-     "weight": 1.171
+     "weight": 1.114
     },
     {
      "pollster": "YouGov",
      "end_date": "2026-10-21",
-     "age": 9,
+     "age": 10,
      "population": "rv",
      "sample_size": 1000,
      "dem": 50.0,
@@ -86,12 +86,12 @@
      "margin": 5.26,
      "partisan": false,
      "url": "https://www.univision.com/noticias/politica/poll-univision-texas-latinos",
-     "weight": 0.827
+     "weight": 0.787
     },
     {
      "pollster": "VoteHub/Verasight",
      "end_date": "2026-10-20",
-     "age": 10,
+     "age": 11,
      "population": "lv",
      "sample_size": 601,
      "dem": 47.6,
@@ -99,12 +99,12 @@
      "margin": 2.59,
      "partisan": false,
      "url": "https://votehub.com/2026/10/23/votehub-verasight-poll-surveys-texass-u-s-senate-and-gubernatorial-races/",
-     "weight": 0.61
+     "weight": 0.581
     },
     {
      "pollster": "Beacon Research/Shaw & Co. Research",
      "end_date": "2026-10-19",
-     "age": 11,
+     "age": 12,
      "population": "lv",
      "sample_size": 1398,
      "dem": 49.0,
@@ -112,12 +112,12 @@
      "margin": 0.0,
      "partisan": false,
      "url": "https://www.foxnews.com/politics/fox-news-poll-texas-senate-race-galloping-toward-photo-finish",
-     "weight": 0.87
+     "weight": 0.828
     },
     {
      "pollster": "Emerson College",
      "end_date": "2026-10-19",
-     "age": 11,
+     "age": 12,
      "population": "lv",
      "sample_size": 1000,
      "dem": 48.0,
@@ -125,12 +125,12 @@
      "margin": 2.13,
      "partisan": false,
      "url": "https://emersoncollegepolling.com/texas-2026-poll-toss-up/",
-     "weight": 0.749
+     "weight": 0.713
     },
     {
      "pollster": "Pollfinity",
      "end_date": "2026-10-18",
-     "age": 12,
+     "age": 13,
      "population": "lv",
      "sample_size": 278,
      "dem": 48.0,
@@ -138,12 +138,12 @@
      "margin": 5.49,
      "partisan": false,
      "url": "https://www.pollfinity.com/polls/tx-governor-senate-2026-oct",
-     "weight": 0.376
+     "weight": 0.358
     },
     {
      "pollster": "Slingshot Strategies",
      "end_date": "2026-10-18",
-     "age": 12,
+     "age": 13,
      "population": "lv",
      "sample_size": 969,
      "dem": 51.0,
@@ -151,12 +151,12 @@
      "margin": 4.08,
      "partisan": false,
      "url": "https://texaspublicopinionresearch.substack.com/p/october-poll-in-texas-general-election",
-     "weight": 0.702
+     "weight": 0.668
     },
     {
      "pollster": "InsiderAdvantage",
      "end_date": "2026-10-14",
-     "age": 16,
+     "age": 17,
      "population": "lv",
      "sample_size": 1200,
      "dem": 48.0,
@@ -164,12 +164,12 @@
      "margin": -1.03,
      "partisan": false,
      "url": "https://insideradvantage.com/insideradvantage-senate-surveys-texas-paxton-49-talarico-48-kansas-marshall-48-hamilton-47-maine-jackson-49-collins-47/",
-     "weight": 0.64
+     "weight": 0.61
     },
     {
      "pollster": "New River Strategies/GS Strategy Group",
      "end_date": "2026-10-13",
-     "age": 17,
+     "age": 18,
      "population": "lv",
      "sample_size": 934,
      "dem": 49.0,
@@ -177,12 +177,12 @@
      "margin": 5.38,
      "partisan": false,
      "url": "https://www.cookpolitical.com/analysis/survey-research/battleground-district-project/senate-battleground-district-project-october?utm_medium=email_action&utm_source=customer.io",
-     "weight": 0.538
+     "weight": 0.512
     },
     {
      "pollster": "ReconMR/Siena University",
      "end_date": "2026-10-08",
-     "age": 22,
+     "age": 23,
      "population": "lv",
      "sample_size": 617,
      "dem": 48.0,
@@ -190,19 +190,19 @@
      "margin": 4.35,
      "partisan": false,
      "url": "https://reconmr.com/wp-content/uploads/2026/10/TXP004-October-Press-Release.pdf",
-     "weight": 0.341
+     "weight": 0.325
     }
    ]
   },
   "governor": {
-   "avg": -3.02,
-   "n": 13,
+   "avg": -3.17,
+   "n": 12,
    "window_days": 30,
    "polls": [
     {
      "pollster": "ActiVote",
      "end_date": "2026-10-29",
-     "age": 1,
+     "age": 2,
      "population": "lv",
      "sample_size": 400,
      "dem": 47.9,
@@ -210,12 +210,12 @@
      "margin": -4.2,
      "partisan": false,
      "url": "https://www.activote.net/polls/2026/tx-governor/",
-     "weight": 0.777
+     "weight": 0.74
     },
     {
      "pollster": "Quantus Insights",
      "end_date": "2026-10-28",
-     "age": 2,
+     "age": 3,
      "population": "lv",
      "sample_size": 1221,
      "dem": 46.3,
@@ -223,12 +223,12 @@
      "margin": -5.41,
      "partisan": false,
      "url": "https://quantusinsights.org/polling/f/texas-survey-paxton-up-one-abbott-ahead-by-five",
-     "weight": 1.292
+     "weight": 1.23
     },
     {
      "pollster": "CNN/SSRS",
      "end_date": "2026-10-27",
-     "age": 3,
+     "age": 4,
      "population": "lv",
      "sample_size": 923,
      "dem": 46.0,
@@ -236,12 +236,12 @@
      "margin": -2.13,
      "partisan": false,
      "url": "https://www.cnn.com/2026/10/29/politics/cnn-polls-michigan-maine-texas-kansas-senate-races-midterms-vis",
-     "weight": 1.069
+     "weight": 1.017
     },
     {
      "pollster": "Texas Southern University Barbara Jordan Public Policy Research and Survey Center",
      "end_date": "2026-10-25",
-     "age": 5,
+     "age": 6,
      "population": "lv",
      "sample_size": 2000,
      "dem": 47.0,
@@ -249,12 +249,12 @@
      "margin": -3.09,
      "partisan": false,
      "url": "https://www.jordanresearchcenter.org/publications/tsuoct2026-txelections-statewide2026",
-     "weight": 1.171
+     "weight": 1.114
     },
     {
      "pollster": "YouGov",
      "end_date": "2026-10-21",
-     "age": 9,
+     "age": 10,
      "population": "rv",
      "sample_size": 1000,
      "dem": 46.0,
@@ -262,12 +262,12 @@
      "margin": -2.13,
      "partisan": false,
      "url": "https://www.univision.com/noticias/politica/poll-univision-texas-latinos",
-     "weight": 0.827
+     "weight": 0.787
     },
     {
      "pollster": "VoteHub/Verasight",
      "end_date": "2026-10-20",
-     "age": 10,
+     "age": 11,
      "population": "lv",
      "sample_size": 601,
      "dem": 46.4,
@@ -275,12 +275,12 @@
      "margin": -1.38,
      "partisan": false,
      "url": "https://votehub.com/2026/10/23/votehub-verasight-poll-surveys-texass-u-s-senate-and-gubernatorial-races/",
-     "weight": 0.61
+     "weight": 0.581
     },
     {
      "pollster": "Beacon Research/Shaw & Co. Research",
      "end_date": "2026-10-19",
-     "age": 11,
+     "age": 12,
      "population": "lv",
      "sample_size": 1398,
      "dem": 47.0,
@@ -288,12 +288,12 @@
      "margin": -5.05,
      "partisan": false,
      "url": "https://www.foxnews.com/politics/fox-news-poll-texas-senate-race-galloping-toward-photo-finish",
-     "weight": 0.87
+     "weight": 0.828
     },
     {
      "pollster": "Emerson College",
      "end_date": "2026-10-19",
-     "age": 11,
+     "age": 12,
      "population": "lv",
      "sample_size": 1000,
      "dem": 45.0,
@@ -301,12 +301,12 @@
      "margin": -4.26,
      "partisan": false,
      "url": "https://emersoncollegepolling.com/texas-2026-poll-toss-up/",
-     "weight": 0.749
+     "weight": 0.713
     },
     {
      "pollster": "Pollfinity",
      "end_date": "2026-10-18",
-     "age": 12,
+     "age": 13,
      "population": "lv",
      "sample_size": 278,
      "dem": 46.0,
@@ -314,12 +314,12 @@
      "margin": 1.1,
      "partisan": false,
      "url": "https://www.pollfinity.com/polls/tx-governor-senate-2026-oct",
-     "weight": 0.376
+     "weight": 0.358
     },
     {
      "pollster": "Slingshot Strategies",
      "end_date": "2026-10-18",
-     "age": 12,
+     "age": 13,
      "population": "lv",
      "sample_size": 969,
      "dem": 48.0,
@@ -327,12 +327,12 @@
      "margin": -3.03,
      "partisan": false,
      "url": "https://texaspublicopinionresearch.substack.com/p/october-poll-in-texas-general-election",
-     "weight": 0.702
+     "weight": 0.668
     },
     {
      "pollster": "New River Strategies/GS Strategy Group",
      "end_date": "2026-10-13",
-     "age": 17,
+     "age": 18,
      "population": "lv",
      "sample_size": 934,
      "dem": 46.0,
@@ -340,12 +340,12 @@
      "margin": -2.13,
      "partisan": false,
      "url": "https://www.cookpolitical.com/analysis/survey-research/battleground-district-project/senate-battleground-district-project-october?utm_medium=email_action&utm_source=customer.io",
-     "weight": 0.538
+     "weight": 0.512
     },
     {
      "pollster": "ReconMR/Siena University",
      "end_date": "2026-10-08",
-     "age": 22,
+     "age": 23,
      "population": "lv",
      "sample_size": 617,
      "dem": 47.0,
@@ -353,20 +353,7 @@
      "margin": -1.05,
      "partisan": false,
      "url": "https://reconmr.com/wp-content/uploads/2026/10/TXP004-October-Press-Release.pdf",
-     "weight": 0.341
-    },
-    {
-     "pollster": "The New York Times/Siena University",
-     "end_date": "2026-09-30",
-     "age": 30,
-     "population": "lv",
-     "sample_size": 605,
-     "dem": 49.0,
-     "rep": 46.0,
-     "margin": 3.16,
-     "partisan": false,
-     "url": "https://sri.siena.edu/2026/10/04/nytimes-siena-poll-of-likely-voters-gubernatorial-races-2/",
-     "weight": 0.227
+     "weight": 0.325
     }
    ]
   }

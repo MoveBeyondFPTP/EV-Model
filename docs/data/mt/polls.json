@@ -3,7 +3,7 @@
  "source_url": "https://votehub.com/polls/",
  "license": "CC BY 4.0",
  "method": "One poll per pollster from the last 30 days (60 if fewer than 3), likely voters preferred, weighted by recency (half-life 14 days) and sample size; partisan or internal polls count half. Margins are two-party.",
- "fetched_at": "2026-10-30T23:48:30+00:00",
+ "fetched_at": "2026-10-31T00:43:23+00:00",
  "races": {
   "senate": {
    "avg": -16.43,
@@ -13,7 +13,7 @@
     {
      "pollster": "Concord Public Opinion Partners",
      "end_date": "2026-10-23",
-     "age": 7,
+     "age": 8,
      "population": "lv",
      "sample_size": 410,
      "dem": 39.0,
@@ -21,12 +21,12 @@
      "margin": 1.3,
      "partisan": true,
      "url": "https://www.pollcheck.co.uk/us-midterms-2026/senate/montana",
-     "weight": 0.292
+     "weight": 0.278
     },
     {
      "pollster": "Montana State University Billings",
      "end_date": "2026-10-21",
-     "age": 9,
+     "age": 10,
      "population": "lv",
      "sample_size": null,
      "dem": 21.0,
@@ -34,12 +34,12 @@
      "margin": -17.65,
      "partisan": false,
      "url": "https://www.msubillings.edu/class/nams/polls/2026-mountain-states-poll-report.pdf",
-     "weight": 0.64
+     "weight": 0.61
     },
     {
      "pollster": "Quantus Insights",
      "end_date": "2026-10-18",
-     "age": 12,
+     "age": 13,
      "population": "lv",
      "sample_size": 667,
      "dem": 29.0,
@@ -47,12 +47,12 @@
      "margin": -22.67,
      "partisan": false,
      "url": "https://www.pollcheck.co.uk/us-midterms-2026/senate/montana",
-     "weight": 0.582
+     "weight": 0.554
     },
     {
      "pollster": "Peak Insights",
      "end_date": "2026-10-12",
-     "age": 18,
+     "age": 19,
      "population": "lv",
      "sample_size": 500,
      "dem": 29.0,
@@ -60,7 +60,7 @@
      "margin": -20.55,
      "partisan": true,
      "url": "https://www.pollcheck.co.uk/us-midterms-2026/senate/montana",
-     "weight": 0.187
+     "weight": 0.178
     }
    ],
    "source": "PollCheck (full-field polls; sponsors noted)",

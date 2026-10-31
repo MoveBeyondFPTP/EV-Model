@@ -3,17 +3,17 @@
  "source_url": "https://votehub.com/polls/",
  "license": "CC BY 4.0",
  "method": "One poll per pollster from the last 30 days (60 if fewer than 3), likely voters preferred, weighted by recency (half-life 14 days) and sample size; partisan or internal polls count half. Margins are two-party.",
- "fetched_at": "2026-10-30T23:48:30+00:00",
+ "fetched_at": "2026-10-31T00:43:23+00:00",
  "races": {
   "senate": {
    "avg": 4.11,
-   "n": 3,
-   "window_days": 30,
+   "n": 4,
+   "window_days": 60,
    "polls": [
     {
      "pollster": "SurveyUSA",
      "end_date": "2026-10-12",
-     "age": 18,
+     "age": 19,
      "population": "lv",
      "sample_size": 718,
      "dem": 45.0,
@@ -21,12 +21,12 @@
      "margin": 3.45,
      "partisan": false,
      "url": "https://kstp.com/kstp-news/top-news/kstp-surveyusa-poll-swing-in-senate-and-ag-races-klobuchar-up-slightly-on-demuth/",
-     "weight": 0.449
+     "weight": 0.427
     },
     {
      "pollster": "GQR",
      "end_date": "2026-10-04",
-     "age": 26,
+     "age": 27,
      "population": "lv",
      "sample_size": 800,
      "dem": 50.0,
@@ -34,12 +34,12 @@
      "margin": 8.7,
      "partisan": true,
      "url": "https://x.com/DrewSav/status/2108502733045334207",
-     "weight": 0.159
+     "weight": 0.152
     },
     {
      "pollster": "Big Data Poll",
      "end_date": "2026-09-30",
-     "age": 30,
+     "age": 31,
      "population": "lv",
      "sample_size": 622,
      "dem": 46.0,
@@ -47,7 +47,20 @@
      "margin": 2.22,
      "partisan": false,
      "url": "https://www.bigdatapoll.com/blog/lone-star-state-poll-peggy-flanagan-holds-slight-lead-over-michele-tafoya-for-us-senate-in-minnesota/",
-     "weight": 0.231
+     "weight": 0.219
+    },
+    {
+     "pollster": "Quantus Insights",
+     "end_date": "2026-09-10",
+     "age": 51,
+     "population": "lv",
+     "sample_size": 720,
+     "dem": 48.2,
+     "rep": 44.4,
+     "margin": 4.1,
+     "partisan": false,
+     "url": "https://quantusinsights.org/f/new-quantus-polls-moody-leads-in-florida-flanagan-in-minnesota",
+     "weight": 0.088
     }
    ]
   },
@@ -59,7 +72,7 @@
     {
      "pollster": "State Navigate",
      "end_date": "2026-10-28",
-     "age": 2,
+     "age": 3,
      "population": "lv",
      "sample_size": 806,
      "dem": 52.0,
@@ -67,12 +80,12 @@
      "margin": 10.64,
      "partisan": false,
      "url": "https://articles.statenavigate.com/mn/new-minnesota-governor-poll-shows-amy-klobuchars-crossover-appeal-fading/",
-     "weight": 1.05
+     "weight": 0.999
     },
     {
      "pollster": "SurveyUSA",
      "end_date": "2026-10-12",
-     "age": 18,
+     "age": 19,
      "population": "lv",
      "sample_size": 718,
      "dem": 48.0,
@@ -80,12 +93,12 @@
      "margin": 7.87,
      "partisan": false,
      "url": "https://kstp.com/kstp-news/top-news/kstp-surveyusa-poll-swing-in-senate-and-ag-races-klobuchar-up-slightly-on-demuth/",
-     "weight": 0.449
+     "weight": 0.427
     },
     {
      "pollster": "Mason-Dixon",
      "end_date": "2026-10-07",
-     "age": 23,
+     "age": 24,
      "population": "lv",
      "sample_size": 800,
      "dem": 50.0,
@@ -93,7 +106,7 @@
      "margin": 9.89,
      "partisan": false,
      "url": "https://www.startribune.com/minnesota-poll-klobuchar-demuth-governor/601887444",
-     "weight": 0.37
+     "weight": 0.352
     }
    ]
   }
