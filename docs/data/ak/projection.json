@@ -63,10 +63,10 @@
     }
    },
    "projection": {
-    "center": 0.99,
-    "lo": 0.93,
+    "center": 1.01,
+    "lo": 0.97,
     "hi": 1.05,
-    "rating": "Toss-up, slight edge Peltola",
+    "rating": "Tilt Peltola",
     "range_basis": "inputs",
     "environment": {
      "label": "2024 president (AK)",
@@ -110,8 +110,8 @@
      "n": 5,
      "window_days": 60
     },
-    "poll_weight": 0.962,
-    "start": 0.99,
+    "poll_weight": 0.974,
+    "start": 1.01,
     "early_vote": null
    }
   },
@@ -139,9 +139,9 @@
     ]
    },
    "projection": {
-    "center": 5.61,
-    "lo": 4.97,
-    "hi": 6.24,
+    "center": 6.06,
+    "lo": 5.79,
+    "hi": 6.32,
     "rating": "Lean Kreiss-Tomkins",
     "range_basis": "inputs",
     "environment": {
@@ -159,12 +159,12 @@
      "note": null
     },
     "polls": {
-     "avg": 6.24,
-     "n": 3,
-     "window_days": 30
+     "avg": 6.32,
+     "n": 5,
+     "window_days": 60
     },
-    "poll_weight": 0.938,
-    "start": 5.61,
+    "poll_weight": 0.974,
+    "start": 6.06,
     "early_vote": null
    }
   },
@@ -182,7 +182,7 @@
     "short": "Yes"
    },
    "projection": {
-    "center": 5.2,
+    "center": 5.21,
     "lo": 5.2,
     "hi": 5.21,
     "rating": "Leans No",
@@ -206,14 +206,14 @@
      "n": 2,
      "window_days": 60
     },
-    "poll_weight": 0.909,
-    "start": 5.2,
+    "poll_weight": 0.938,
+    "start": 5.21,
     "early_vote": null
    }
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-10-31T23:25:00+00:00",
+ "generated_at": "2026-11-01T18:55:04+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,
@@ -224,7 +224,7 @@
   "c_weight": 0.25,
   "c_cap": 2.0,
   "k_at_30_days": 2.0,
-  "days_left": 3,
-  "k_now": 0.2
+  "days_left": 2,
+  "k_now": 0.133
  }
 }

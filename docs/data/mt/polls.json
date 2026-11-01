@@ -3,7 +3,7 @@
  "source_url": "https://votehub.com/polls/",
  "license": "CC BY 4.0",
  "method": "One poll per pollster from the last 30 days (60 if fewer than 3), likely voters preferred, weighted by recency (half-life 14 days) and sample size; partisan or internal polls count half. Margins are two-party.",
- "fetched_at": "2026-10-31T23:24:58+00:00",
+ "fetched_at": "2026-11-01T18:55:03+00:00",
  "races": {
   "senate": {
    "avg": -12.29,
@@ -13,7 +13,7 @@
     {
      "pollster": "Concord Public Opinion Partners",
      "end_date": "2026-10-23",
-     "age": 8,
+     "age": 9,
      "population": "lv",
      "sample_size": 410,
      "dem": 39.0,
@@ -21,12 +21,12 @@
      "margin": 1.3,
      "partisan": true,
      "url": "https://www.pollcheck.co.uk/us-midterms-2026/senate/montana",
-     "weight": 0.278
+     "weight": 0.265
     },
     {
      "pollster": "Montana State University Billings",
      "end_date": "2026-10-21",
-     "age": 10,
+     "age": 11,
      "population": "a",
      "sample_size": 720,
      "dem": 26.0,
@@ -34,12 +34,12 @@
      "margin": -7.14,
      "partisan": false,
      "url": "https://dailymontanan.com/2026/10/29/mountain-state-poll-shows-close-races-for-federal-offices/",
-     "weight": 0.668
+     "weight": 0.635
     },
     {
      "pollster": "Quantus Insights",
      "end_date": "2026-10-18",
-     "age": 13,
+     "age": 14,
      "population": "lv",
      "sample_size": 667,
      "dem": 29.0,
@@ -47,12 +47,12 @@
      "margin": -22.67,
      "partisan": false,
      "url": "https://www.pollcheck.co.uk/us-midterms-2026/senate/montana",
-     "weight": 0.554
+     "weight": 0.527
     },
     {
      "pollster": "Peak Insights",
      "end_date": "2026-10-12",
-     "age": 19,
+     "age": 20,
      "population": "lv",
      "sample_size": 500,
      "dem": 29.0,
@@ -60,7 +60,7 @@
      "margin": -20.55,
      "partisan": true,
      "url": "https://www.pollcheck.co.uk/us-midterms-2026/senate/montana",
-     "weight": 0.178
+     "weight": 0.17
     }
    ],
    "source": "PollCheck (full-field polls; sponsors noted)",

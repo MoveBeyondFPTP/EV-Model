@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-31T23:25:00+00:00",
+ "generated_at": "2026-11-01T18:55:04+00:00",
  "generic": {
   "avg": 8.31,
   "n": 6,
@@ -8,7 +8,7 @@
    {
     "pollster": "Pew Research Center",
     "end_date": "2026-10-04",
-    "age": 27,
+    "age": 28,
     "population": "rv",
     "sample_size": 3917,
     "dem": 44.0,
@@ -16,12 +16,12 @@
     "margin": 10.0,
     "partisan": false,
     "url": "https://www.pewresearch.org/politics/2026/10/08/with-americans-in-a-sour-mood-democratic-voters-are-more-engaged-in-midterms",
-    "weight": 0.394
+    "weight": 0.375
    },
    {
     "pollster": "YouGov - CBS News",
     "end_date": "2026-10-02",
-    "age": 29,
+    "age": 30,
     "population": "lv",
     "sample_size": 1572,
     "dem": 54.0,
@@ -29,12 +29,12 @@
     "margin": 9.09,
     "partisan": false,
     "url": "https://assets1.cbsnewsstatic.com/hub/cms/prod_cms_alt/file/2026/10/04/0957ee32-a848-4872-b659-14303d3d3734/cbsnews_20261004_sun.pdf",
-    "weight": 0.357
+    "weight": 0.34
    },
    {
     "pollster": "HarrisX/Harris",
     "end_date": "2026-09-28",
-    "age": 33,
+    "age": 34,
     "population": "lv",
     "sample_size": null,
     "dem": 51.0,
@@ -42,12 +42,12 @@
     "margin": 2.0,
     "partisan": false,
     "url": "https://harvardharrispoll.com/assets/uploads/2026/09/HHP_Sep2026_KeyResults.pdf",
-    "weight": 0.195
+    "weight": 0.186
    },
    {
     "pollster": "The Argument/Verasight",
     "end_date": "2026-09-22",
-    "age": 39,
+    "age": 40,
     "population": "lv",
     "sample_size": null,
     "dem": 55.0,
@@ -55,12 +55,12 @@
     "margin": 10.0,
     "partisan": false,
     "url": "https://www.theargumentmag.com/p/the-least-popular-war-since-vietnam",
-    "weight": 0.145
+    "weight": 0.138
    },
    {
     "pollster": "YouGov",
     "end_date": "2026-09-08",
-    "age": 53,
+    "age": 54,
     "population": "lv",
     "sample_size": 1015,
     "dem": 49.0,
@@ -68,12 +68,12 @@
     "margin": 12.64,
     "partisan": false,
     "url": "https://d3nkl3psvxxpe9.cloudfront.net/documents/econTabReport_SlcWdVd.pdf",
-    "weight": 0.094
+    "weight": 0.09
    },
    {
     "pollster": "Morning Consult",
     "end_date": "2026-09-06",
-    "age": 55,
+    "age": 56,
     "population": "rv",
     "sample_size": 2203,
     "dem": 46.0,
@@ -81,7 +81,7 @@
     "margin": 4.55,
     "partisan": false,
     "url": "https://drive.google.com/file/d/1tRrQzrZUZ4MZJ953Ir3hf8vSZx0vuHlv/view?usp=sharing",
-    "weight": 0.099
+    "weight": 0.094
    }
   ]
  },
@@ -107,10 +107,10 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": 0.99,
-     "lo": 0.93,
+     "center": 1.01,
+     "lo": 0.97,
      "hi": 1.05,
-     "rating": "Toss-up, slight edge Peltola",
+     "rating": "Tilt Peltola",
      "n_polls": 5
     },
     {
@@ -123,11 +123,11 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": 5.61,
-     "lo": 4.97,
-     "hi": 6.24,
+     "center": 6.06,
+     "lo": 5.79,
+     "hi": 6.32,
      "rating": "Lean Kreiss-Tomkins",
-     "n_polls": 3
+     "n_polls": 5
     },
     {
      "id": "measure2",
@@ -139,7 +139,7 @@
      "rep_party": null,
      "place": null,
      "yes": null,
-     "center": 5.2,
+     "center": 5.21,
      "lo": 5.2,
      "hi": 5.21,
      "rating": "Leans No",
@@ -163,9 +163,9 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": 26.64,
+     "center": 26.62,
      "lo": 26.56,
-     "hi": 26.73,
+     "hi": 26.67,
      "rating": "Solid Becerra",
      "n_polls": 4
     },
@@ -275,9 +275,9 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": -6.43,
+     "center": -6.44,
      "lo": -6.46,
-     "hi": -6.41,
+     "hi": -6.42,
      "rating": "Lean Moody",
      "n_polls": 7
     },
@@ -291,9 +291,9 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": -4.74,
+     "center": -4.75,
      "lo": -4.77,
-     "hi": -4.71,
+     "hi": -4.73,
      "rating": "Lean Donalds",
      "n_polls": 9
     }
@@ -315,8 +315,8 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": 10.12,
-     "lo": 10.03,
+     "center": 10.14,
+     "lo": 10.09,
      "hi": 10.2,
      "rating": "Likely Ossoff",
      "n_polls": 5
@@ -331,9 +331,9 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": -1.01,
+     "center": -1.11,
      "lo": -1.3,
-     "hi": -0.73,
+     "hi": -0.91,
      "rating": "Tilt Jackson",
      "n_polls": 6
     }
@@ -395,8 +395,8 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": -0.37,
-     "lo": -0.45,
+     "center": -0.35,
+     "lo": -0.4,
      "hi": -0.3,
      "rating": "Toss-up",
      "n_polls": 9
@@ -411,11 +411,11 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": 6.66,
-     "lo": 6.5,
-     "hi": 6.82,
+     "center": 6.4,
+     "lo": 6.28,
+     "hi": 6.51,
      "rating": "Lean Sand",
-     "n_polls": 9
+     "n_polls": 8
     }
    ]
   },
@@ -435,8 +435,8 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": 3.71,
-     "lo": 3.26,
+     "center": 3.86,
+     "lo": 3.55,
      "hi": 4.17,
      "rating": "Lean Hamilton",
      "n_polls": 4
@@ -451,8 +451,8 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": -1.81,
-     "lo": -2.13,
+     "center": -1.71,
+     "lo": -1.92,
      "hi": -1.49,
      "rating": "Tilt Masterson",
      "n_polls": 3
@@ -475,11 +475,11 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": 3.71,
-     "lo": 3.06,
-     "hi": 4.37,
+     "center": 3.64,
+     "lo": 3.02,
+     "hi": 4.25,
      "rating": "Lean Jackson",
-     "n_polls": 7
+     "n_polls": 6
     },
     {
      "id": "governor",
@@ -491,9 +491,9 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": 10.47,
+     "center": 10.38,
      "lo": 9.72,
-     "hi": 11.22,
+     "hi": 11.04,
      "rating": "Likely Pingree",
      "n_polls": 5
     }
@@ -515,11 +515,11 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": 5.24,
-     "lo": 5.16,
-     "hi": 5.31,
+     "center": 5.18,
+     "lo": 5.12,
+     "hi": 5.24,
      "rating": "Lean El-Sayed",
-     "n_polls": 10
+     "n_polls": 9
     },
     {
      "id": "governor",
@@ -531,11 +531,11 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": 8.79,
-     "lo": 8.72,
-     "hi": 8.86,
+     "center": 8.73,
+     "lo": 8.67,
+     "hi": 8.78,
      "rating": "Likely Benson",
-     "n_polls": 8
+     "n_polls": 7
     }
    ]
   },
@@ -555,9 +555,9 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": 4.59,
+     "center": 4.43,
      "lo": 4.11,
-     "hi": 5.07,
+     "hi": 4.76,
      "rating": "Lean Flanagan",
      "n_polls": 4
     },
@@ -571,9 +571,9 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": 10.4,
+     "center": 10.22,
      "lo": 9.83,
-     "hi": 10.96,
+     "hi": 10.6,
      "rating": "Likely Klobuchar",
      "n_polls": 3
     }
@@ -619,8 +619,8 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": 13.94,
-     "lo": 11.87,
+     "center": 13.9,
+     "lo": 11.92,
      "hi": 14.02,
      "rating": "Solid Cooper",
      "n_polls": 8
@@ -643,9 +643,9 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": -1.62,
+     "center": -1.72,
      "lo": -1.94,
-     "hi": -1.31,
+     "hi": -1.51,
      "rating": "Tilt Ricketts",
      "n_polls": 3
     },
@@ -659,8 +659,8 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": -7.69,
-     "lo": -7.92,
+     "center": -7.61,
+     "lo": -7.77,
      "hi": -7.45,
      "rating": "Likely Pillen",
      "n_polls": 2
@@ -683,9 +683,9 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": 7.9,
+     "center": 7.84,
      "lo": 7.71,
-     "hi": 8.09,
+     "hi": 7.97,
      "rating": "Likely Pappas",
      "n_polls": 5
     },
@@ -699,9 +699,9 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": -8.09,
+     "center": -8.29,
      "lo": -8.72,
-     "hi": -7.46,
+     "hi": -7.87,
      "rating": "Likely Ayotte",
      "n_polls": 5
     }
@@ -723,8 +723,8 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": 2.69,
-     "lo": 2.6,
+     "center": 2.72,
+     "lo": 2.66,
      "hi": 2.78,
      "rating": "Tilt Talarico",
      "n_polls": 14
@@ -763,9 +763,9 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": -1.04,
+     "center": -1.32,
      "lo": -1.93,
-     "hi": -0.16,
+     "hi": -0.71,
      "rating": "Tilt Scott",
      "n_polls": 2
     }
@@ -787,9 +787,9 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": 3.89,
+     "center": 3.78,
      "lo": 3.55,
-     "hi": 4.22,
+     "hi": 4.01,
      "rating": "Lean Crowley",
      "n_polls": 3
     }

@@ -44,9 +44,9 @@
     }
    },
    "projection": {
-    "center": -1.04,
+    "center": -1.32,
     "lo": -1.93,
-    "hi": -0.16,
+    "hi": -0.71,
     "rating": "Tilt Scott",
     "range_basis": "inputs",
     "environment": {
@@ -80,14 +80,14 @@
      "n": 2,
      "window_days": 60
     },
-    "poll_weight": 0.909,
-    "start": -1.04,
+    "poll_weight": 0.938,
+    "start": -1.32,
     "early_vote": null
    }
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-10-31T23:25:00+00:00",
+ "generated_at": "2026-11-01T18:55:04+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,
@@ -98,7 +98,7 @@
   "c_weight": 0.25,
   "c_cap": 2.0,
   "k_at_30_days": 2.0,
-  "days_left": 3,
-  "k_now": 0.2
+  "days_left": 2,
+  "k_now": 0.133
  }
 }

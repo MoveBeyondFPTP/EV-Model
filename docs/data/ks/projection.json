@@ -44,8 +44,8 @@
     }
    },
    "projection": {
-    "center": 3.71,
-    "lo": 3.26,
+    "center": 3.86,
+    "lo": 3.55,
     "hi": 4.17,
     "rating": "Lean Hamilton",
     "range_basis": "inputs",
@@ -80,8 +80,8 @@
      "n": 4,
      "window_days": 30
     },
-    "poll_weight": 0.952,
-    "start": 3.71,
+    "poll_weight": 0.968,
+    "start": 3.86,
     "early_vote": null
    }
   },
@@ -107,8 +107,8 @@
     ]
    },
    "projection": {
-    "center": -1.81,
-    "lo": -2.13,
+    "center": -1.71,
+    "lo": -1.92,
     "hi": -1.49,
     "rating": "Tilt Masterson",
     "range_basis": "inputs",
@@ -131,14 +131,14 @@
      "n": 3,
      "window_days": 30
     },
-    "poll_weight": 0.938,
-    "start": -1.81,
+    "poll_weight": 0.957,
+    "start": -1.71,
     "early_vote": null
    }
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-10-31T23:25:00+00:00",
+ "generated_at": "2026-11-01T18:55:04+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,
@@ -149,7 +149,7 @@
   "c_weight": 0.25,
   "c_cap": 2.0,
   "k_at_30_days": 2.0,
-  "days_left": 3,
-  "k_now": 0.2
+  "days_left": 2,
+  "k_now": 0.133
  }
 }
