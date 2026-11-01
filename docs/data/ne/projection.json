@@ -95,10 +95,10 @@
     }
    },
    "projection": {
-    "center": -7.61,
-    "lo": -7.77,
-    "hi": -7.45,
-    "rating": "Likely Pillen",
+    "center": -5.23,
+    "lo": -5.45,
+    "hi": -5.02,
+    "rating": "Lean Pillen",
     "range_basis": "inputs",
     "environment": {
      "label": "2024 president (NE)",
@@ -127,18 +127,18 @@
      "note": null
     },
     "polls": {
-     "avg": -7.45,
-     "n": 2,
-     "window_days": 60
+     "avg": -5.02,
+     "n": 3,
+     "window_days": 30
     },
-    "poll_weight": 0.938,
-    "start": -7.61,
+    "poll_weight": 0.957,
+    "start": -5.23,
     "early_vote": null
    }
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-11-01T18:55:04+00:00",
+ "generated_at": "2026-11-01T23:37:00+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,

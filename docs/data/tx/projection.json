@@ -123,10 +123,10 @@
     }
    },
    "projection": {
-    "center": -3.17,
-    "lo": -3.17,
-    "hi": -3.17,
-    "rating": "Lean Abbott",
+    "center": -2.95,
+    "lo": -2.96,
+    "hi": -2.95,
+    "rating": "Tilt Abbott",
     "range_basis": "inputs",
     "environment": {
      "label": "2024 president (TX)",
@@ -155,18 +155,18 @@
      "note": null
     },
     "polls": {
-     "avg": -3.17,
+     "avg": -2.95,
      "n": 12,
      "window_days": 30
     },
     "poll_weight": 0.989,
-    "start": -3.17,
+    "start": -2.95,
     "early_vote": null
    }
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-11-01T18:55:04+00:00",
+ "generated_at": "2026-11-01T23:37:00+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,

@@ -46,9 +46,9 @@
     }
    },
    "projection": {
-    "center": 5.18,
-    "lo": 5.12,
-    "hi": 5.24,
+    "center": 4.98,
+    "lo": 4.93,
+    "hi": 5.04,
     "rating": "Lean El-Sayed",
     "range_basis": "inputs",
     "environment": {
@@ -78,12 +78,12 @@
      "note": null
     },
     "polls": {
-     "avg": 5.12,
-     "n": 9,
+     "avg": 4.93,
+     "n": 10,
      "window_days": 30
     },
-    "poll_weight": 0.985,
-    "start": 5.18,
+    "poll_weight": 0.987,
+    "start": 4.98,
     "early_vote": null
    }
   },
@@ -141,9 +141,9 @@
     }
    },
    "projection": {
-    "center": 8.73,
-    "lo": 8.67,
-    "hi": 8.78,
+    "center": 8.23,
+    "lo": 8.17,
+    "hi": 8.29,
     "rating": "Likely Benson",
     "range_basis": "inputs",
     "environment": {
@@ -184,18 +184,18 @@
      "note": null
     },
     "polls": {
-     "avg": 8.67,
-     "n": 7,
+     "avg": 8.17,
+     "n": 8,
      "window_days": 30
     },
-    "poll_weight": 0.981,
-    "start": 8.73,
+    "poll_weight": 0.984,
+    "start": 8.23,
     "early_vote": null
    }
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-11-01T18:55:04+00:00",
+ "generated_at": "2026-11-01T23:37:00+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,

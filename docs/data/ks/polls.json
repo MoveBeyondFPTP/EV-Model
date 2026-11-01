@@ -3,7 +3,7 @@
  "source_url": "https://votehub.com/polls/",
  "license": "CC BY 4.0",
  "method": "One poll per pollster from the last 30 days (60 if fewer than 3), likely voters preferred, weighted by recency (half-life 14 days) and sample size; partisan or internal polls count half. Margins are two-party.",
- "fetched_at": "2026-11-01T18:55:03+00:00",
+ "fetched_at": "2026-11-01T23:36:59+00:00",
  "races": {
   "senate": {
    "avg": 4.17,
@@ -65,10 +65,23 @@
    ]
   },
   "governor": {
-   "avg": -1.49,
-   "n": 3,
+   "avg": -1.33,
+   "n": 4,
    "window_days": 30,
    "polls": [
+    {
+     "pollster": "YouGov",
+     "end_date": "2026-10-29",
+     "age": 3,
+     "population": "lv",
+     "sample_size": 2092,
+     "dem": 49.0,
+     "rep": 50.0,
+     "margin": -1.01,
+     "partisan": false,
+     "url": "https://d3nkl3psvxxpe9.cloudfront.net/documents/ttw_ks_20261026_lv.pdf",
+     "weight": 1.293
+    },
     {
      "pollster": "Emerson College",
      "end_date": "2026-10-28",

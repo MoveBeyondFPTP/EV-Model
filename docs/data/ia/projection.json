@@ -95,9 +95,9 @@
     ]
    },
    "projection": {
-    "center": 6.4,
-    "lo": 6.28,
-    "hi": 6.51,
+    "center": 6.58,
+    "lo": 6.47,
+    "hi": 6.7,
     "rating": "Lean Sand",
     "range_basis": "inputs",
     "environment": {
@@ -127,18 +127,18 @@
      "note": null
     },
     "polls": {
-     "avg": 6.51,
+     "avg": 6.7,
      "n": 8,
      "window_days": 30
     },
     "poll_weight": 0.984,
-    "start": 6.4,
+    "start": 6.58,
     "early_vote": null
    }
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-11-01T18:55:04+00:00",
+ "generated_at": "2026-11-01T23:37:00+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,

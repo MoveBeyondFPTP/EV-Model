@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-01T18:55:04+00:00",
+ "generated_at": "2026-11-01T23:37:00+00:00",
  "generic": {
   "avg": 8.31,
   "n": 6,
@@ -411,9 +411,9 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": 6.4,
-     "lo": 6.28,
-     "hi": 6.51,
+     "center": 6.58,
+     "lo": 6.47,
+     "hi": 6.7,
      "rating": "Lean Sand",
      "n_polls": 8
     }
@@ -451,11 +451,11 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": -1.71,
-     "lo": -1.92,
-     "hi": -1.49,
+     "center": -1.5,
+     "lo": -1.67,
+     "hi": -1.33,
      "rating": "Tilt Masterson",
-     "n_polls": 3
+     "n_polls": 4
     }
    ]
   },
@@ -491,11 +491,11 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": 10.38,
-     "lo": 9.72,
-     "hi": 11.04,
+     "center": 9.95,
+     "lo": 9.31,
+     "hi": 10.59,
      "rating": "Likely Pingree",
-     "n_polls": 5
+     "n_polls": 6
     }
    ]
   },
@@ -515,11 +515,11 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": 5.18,
-     "lo": 5.12,
-     "hi": 5.24,
+     "center": 4.98,
+     "lo": 4.93,
+     "hi": 5.04,
      "rating": "Lean El-Sayed",
-     "n_polls": 9
+     "n_polls": 10
     },
     {
      "id": "governor",
@@ -531,11 +531,11 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": 8.73,
-     "lo": 8.67,
-     "hi": 8.78,
+     "center": 8.23,
+     "lo": 8.17,
+     "hi": 8.29,
      "rating": "Likely Benson",
-     "n_polls": 7
+     "n_polls": 8
     }
    ]
   },
@@ -659,11 +659,11 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": -7.61,
-     "lo": -7.77,
-     "hi": -7.45,
-     "rating": "Likely Pillen",
-     "n_polls": 2
+     "center": -5.23,
+     "lo": -5.45,
+     "hi": -5.02,
+     "rating": "Lean Pillen",
+     "n_polls": 3
     }
    ]
   },
@@ -739,10 +739,10 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": -3.17,
-     "lo": -3.17,
-     "hi": -3.17,
-     "rating": "Lean Abbott",
+     "center": -2.95,
+     "lo": -2.96,
+     "hi": -2.95,
+     "rating": "Tilt Abbott",
      "n_polls": 12
     }
    ]

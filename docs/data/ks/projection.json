@@ -107,9 +107,9 @@
     ]
    },
    "projection": {
-    "center": -1.71,
-    "lo": -1.92,
-    "hi": -1.49,
+    "center": -1.5,
+    "lo": -1.67,
+    "hi": -1.33,
     "rating": "Tilt Masterson",
     "range_basis": "inputs",
     "environment": {
@@ -127,18 +127,18 @@
      "note": null
     },
     "polls": {
-     "avg": -1.49,
-     "n": 3,
+     "avg": -1.33,
+     "n": 4,
      "window_days": 30
     },
-    "poll_weight": 0.957,
-    "start": -1.71,
+    "poll_weight": 0.968,
+    "start": -1.5,
     "early_vote": null
    }
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-11-01T18:55:04+00:00",
+ "generated_at": "2026-11-01T23:37:00+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,

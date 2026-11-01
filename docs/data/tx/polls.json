@@ -3,7 +3,7 @@
  "source_url": "https://votehub.com/polls/",
  "license": "CC BY 4.0",
  "method": "One poll per pollster from the last 30 days (60 if fewer than 3), likely voters preferred, weighted by recency (half-life 14 days) and sample size; partisan or internal polls count half. Margins are two-party.",
- "fetched_at": "2026-11-01T18:55:03+00:00",
+ "fetched_at": "2026-11-01T23:36:59+00:00",
  "races": {
   "senate": {
    "avg": 2.78,
@@ -195,7 +195,7 @@
    ]
   },
   "governor": {
-   "avg": -3.17,
+   "avg": -2.95,
    "n": 12,
    "window_days": 30,
    "polls": [
@@ -211,6 +211,19 @@
      "partisan": false,
      "url": "https://www.activote.net/polls/2026/tx-governor/",
      "weight": 0.704
+    },
+    {
+     "pollster": "YouGov",
+     "end_date": "2026-10-29",
+     "age": 3,
+     "population": "lv",
+     "sample_size": 2141,
+     "dem": 49.0,
+     "rep": 50.0,
+     "margin": -1.01,
+     "partisan": false,
+     "url": "https://d3nkl3psvxxpe9.cloudfront.net/documents/ttw_tx_20261026_lv.pdf",
+     "weight": 1.293
     },
     {
      "pollster": "Quantus Insights",
@@ -250,19 +263,6 @@
      "partisan": false,
      "url": "https://www.jordanresearchcenter.org/publications/tsuoct2026-txelections-statewide2026",
      "weight": 1.061
-    },
-    {
-     "pollster": "YouGov",
-     "end_date": "2026-10-21",
-     "age": 11,
-     "population": "rv",
-     "sample_size": 1000,
-     "dem": 46.0,
-     "rep": 48.0,
-     "margin": -2.13,
-     "partisan": false,
-     "url": "https://www.univision.com/noticias/politica/poll-univision-texas-latinos",
-     "weight": 0.749
     },
     {
      "pollster": "VoteHub/Verasight",
