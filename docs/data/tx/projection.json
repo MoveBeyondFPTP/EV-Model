@@ -44,8 +44,8 @@
     }
    },
    "projection": {
-    "center": 2.72,
-    "lo": 2.66,
+    "center": 2.75,
+    "lo": 2.72,
     "hi": 2.78,
     "rating": "Tilt Talarico",
     "range_basis": "inputs",
@@ -80,8 +80,8 @@
      "n": 14,
      "window_days": 30
     },
-    "poll_weight": 0.991,
-    "start": 2.72,
+    "poll_weight": 0.995,
+    "start": 2.75,
     "early_vote": null
    }
   },
@@ -124,7 +124,7 @@
    },
    "projection": {
     "center": -2.95,
-    "lo": -2.96,
+    "lo": -2.95,
     "hi": -2.95,
     "rating": "Tilt Abbott",
     "range_basis": "inputs",
@@ -159,14 +159,14 @@
      "n": 12,
      "window_days": 30
     },
-    "poll_weight": 0.989,
+    "poll_weight": 0.994,
     "start": -2.95,
     "early_vote": null
    }
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-11-01T23:37:00+00:00",
+ "generated_at": "2026-11-02T02:46:39+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,
@@ -177,7 +177,7 @@
   "c_weight": 0.25,
   "c_cap": 2.0,
   "k_at_30_days": 2.0,
-  "days_left": 2,
-  "k_now": 0.133
+  "days_left": 1,
+  "k_now": 0.067
  }
 }

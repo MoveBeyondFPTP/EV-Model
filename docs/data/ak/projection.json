@@ -63,8 +63,8 @@
     }
    },
    "projection": {
-    "center": 1.01,
-    "lo": 0.97,
+    "center": 1.03,
+    "lo": 1.01,
     "hi": 1.05,
     "rating": "Tilt Peltola",
     "range_basis": "inputs",
@@ -110,8 +110,8 @@
      "n": 5,
      "window_days": 60
     },
-    "poll_weight": 0.974,
-    "start": 1.01,
+    "poll_weight": 0.987,
+    "start": 1.03,
     "early_vote": null
    }
   },
@@ -139,8 +139,8 @@
     ]
    },
    "projection": {
-    "center": 6.06,
-    "lo": 5.79,
+    "center": 6.19,
+    "lo": 6.05,
     "hi": 6.32,
     "rating": "Lean Kreiss-Tomkins",
     "range_basis": "inputs",
@@ -163,8 +163,8 @@
      "n": 5,
      "window_days": 60
     },
-    "poll_weight": 0.974,
-    "start": 6.06,
+    "poll_weight": 0.987,
+    "start": 6.19,
     "early_vote": null
    }
   },
@@ -183,7 +183,7 @@
    },
    "projection": {
     "center": 5.21,
-    "lo": 5.2,
+    "lo": 5.21,
     "hi": 5.21,
     "rating": "Leans No",
     "range_basis": "inputs",
@@ -206,14 +206,14 @@
      "n": 2,
      "window_days": 60
     },
-    "poll_weight": 0.938,
+    "poll_weight": 0.968,
     "start": 5.21,
     "early_vote": null
    }
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-11-01T23:37:00+00:00",
+ "generated_at": "2026-11-02T02:46:39+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,
@@ -224,7 +224,7 @@
   "c_weight": 0.25,
   "c_cap": 2.0,
   "k_at_30_days": 2.0,
-  "days_left": 2,
-  "k_now": 0.133
+  "days_left": 1,
+  "k_now": 0.067
  }
 }
