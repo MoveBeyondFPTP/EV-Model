@@ -63,9 +63,9 @@
     }
    },
    "projection": {
-    "center": 1.03,
-    "lo": 1.01,
-    "hi": 1.05,
+    "center": 1.9,
+    "lo": 1.84,
+    "hi": 1.95,
     "rating": "Tilt Peltola",
     "range_basis": "inputs",
     "environment": {
@@ -106,12 +106,12 @@
      "note": null
     },
     "polls": {
-     "avg": 1.05,
-     "n": 5,
-     "window_days": 60
+     "avg": 1.95,
+     "n": 3,
+     "window_days": 30
     },
-    "poll_weight": 0.987,
-    "start": 1.03,
+    "poll_weight": 0.978,
+    "start": 1.9,
     "early_vote": null
    }
   },
@@ -139,9 +139,9 @@
     ]
    },
    "projection": {
-    "center": 6.19,
-    "lo": 6.05,
-    "hi": 6.32,
+    "center": 6.87,
+    "lo": 6.63,
+    "hi": 7.11,
     "rating": "Lean Kreiss-Tomkins",
     "range_basis": "inputs",
     "environment": {
@@ -159,12 +159,12 @@
      "note": null
     },
     "polls": {
-     "avg": 6.32,
-     "n": 5,
-     "window_days": 60
+     "avg": 7.11,
+     "n": 3,
+     "window_days": 30
     },
-    "poll_weight": 0.987,
-    "start": 6.19,
+    "poll_weight": 0.978,
+    "start": 6.87,
     "early_vote": null
    }
   },
@@ -213,7 +213,7 @@
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-11-02T02:46:39+00:00",
+ "generated_at": "2026-11-02T22:47:00+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,

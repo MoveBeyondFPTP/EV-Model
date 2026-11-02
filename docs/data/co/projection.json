@@ -44,9 +44,9 @@
     ]
    },
    "projection": {
-    "center": 19.37,
-    "lo": 19.37,
-    "hi": 19.37,
+    "center": 15.8,
+    "lo": 15.56,
+    "hi": 16.04,
     "rating": "Solid Hickenlooper",
     "range_basis": "inputs",
     "environment": {
@@ -75,9 +75,13 @@
      "margin": 19.37,
      "note": null
     },
-    "polls": null,
-    "poll_weight": 0.0,
-    "start": 19.37,
+    "polls": {
+     "avg": 15.56,
+     "n": 1,
+     "window_days": 60
+    },
+    "poll_weight": 0.938,
+    "start": 15.8,
     "early_vote": null
    }
   },
@@ -119,9 +123,9 @@
     ]
    },
    "projection": {
-    "center": 22.18,
-    "lo": 22.18,
-    "hi": 22.18,
+    "center": 17.55,
+    "lo": 17.24,
+    "hi": 17.86,
     "rating": "Solid Weiser",
     "range_basis": "inputs",
     "environment": {
@@ -150,9 +154,13 @@
      "margin": 22.18,
      "note": null
     },
-    "polls": null,
-    "poll_weight": 0.0,
-    "start": 22.18,
+    "polls": {
+     "avg": 17.24,
+     "n": 1,
+     "window_days": 60
+    },
+    "poll_weight": 0.938,
+    "start": 17.55,
     "early_vote": null
    }
   },
@@ -535,7 +543,7 @@
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-11-02T02:46:39+00:00",
+ "generated_at": "2026-11-02T22:47:00+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,

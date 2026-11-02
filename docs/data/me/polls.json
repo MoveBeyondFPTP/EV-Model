@@ -3,13 +3,39 @@
  "source_url": "https://votehub.com/polls/",
  "license": "CC BY 4.0",
  "method": "One poll per pollster from the last 30 days (60 if fewer than 3), likely voters preferred, weighted by recency (half-life 14 days) and sample size; partisan or internal polls count half. Margins are two-party.",
- "fetched_at": "2026-11-02T02:46:39+00:00",
+ "fetched_at": "2026-11-02T22:46:58+00:00",
  "races": {
   "senate": {
-   "avg": 3.02,
-   "n": 6,
+   "avg": 4.85,
+   "n": 8,
    "window_days": 30,
    "polls": [
+    {
+     "pollster": "The New York Times/Siena University",
+     "end_date": "2026-11-01",
+     "age": 1,
+     "population": "lv",
+     "sample_size": 714,
+     "dem": 51.0,
+     "rep": 45.0,
+     "margin": 6.25,
+     "partisan": false,
+     "url": "https://www.nytimes.com/interactive/2026/11/01/polls/times-siena-me-poll-toplines.html",
+     "weight": 1.038
+    },
+    {
+     "pollster": "University of New Hampshire",
+     "end_date": "2026-10-31",
+     "age": 2,
+     "population": "lv",
+     "sample_size": 1654,
+     "dem": 54.0,
+     "rep": 45.0,
+     "margin": 9.09,
+     "partisan": false,
+     "url": "https://scholars.unh.edu/survey_center_polls/1013/",
+     "weight": 1.359
+    },
     {
      "pollster": "CNN/SSRS",
      "end_date": "2026-10-26",
@@ -91,10 +117,36 @@
    ]
   },
   "governor": {
-   "avg": 9.31,
-   "n": 6,
+   "avg": 10.53,
+   "n": 8,
    "window_days": 30,
    "polls": [
+    {
+     "pollster": "The New York Times/Siena University",
+     "end_date": "2026-11-01",
+     "age": 1,
+     "population": "lv",
+     "sample_size": 714,
+     "dem": 49.0,
+     "rep": 37.0,
+     "margin": 13.95,
+     "partisan": false,
+     "url": "https://www.nytimes.com/interactive/2026/11/01/polls/times-siena-me-poll-toplines.html",
+     "weight": 1.038
+    },
+    {
+     "pollster": "University of New Hampshire",
+     "end_date": "2026-10-31",
+     "age": 2,
+     "population": "lv",
+     "sample_size": 1654,
+     "dem": 51.0,
+     "rep": 40.0,
+     "margin": 12.09,
+     "partisan": false,
+     "url": "https://scholars.unh.edu/survey_center_polls/1013/",
+     "weight": 1.359
+    },
     {
      "pollster": "YouGov",
      "end_date": "2026-10-29",

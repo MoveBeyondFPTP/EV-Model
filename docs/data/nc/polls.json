@@ -3,13 +3,26 @@
  "source_url": "https://votehub.com/polls/",
  "license": "CC BY 4.0",
  "method": "One poll per pollster from the last 30 days (60 if fewer than 3), likely voters preferred, weighted by recency (half-life 14 days) and sample size; partisan or internal polls count half. Margins are two-party.",
- "fetched_at": "2026-11-02T02:46:39+00:00",
+ "fetched_at": "2026-11-02T22:46:58+00:00",
  "races": {
   "senate": {
-   "avg": 12.02,
+   "avg": 11.57,
    "n": 8,
    "window_days": 30,
    "polls": [
+    {
+     "pollster": "East Carolina University",
+     "end_date": "2026-10-29",
+     "age": 4,
+     "population": "lv",
+     "sample_size": 1041,
+     "dem": 54.0,
+     "rep": 45.0,
+     "margin": 9.09,
+     "partisan": false,
+     "url": "https://surveyresearch-ecu.reportablenews.com/pr/ecu-poll-cooper-leads-whatley-by-9-points-as-election-day-nears",
+     "weight": 1.081
+    },
     {
      "pollster": "Quantus Insights",
      "end_date": "2026-10-25",
@@ -100,19 +113,6 @@
      "partisan": true,
      "url": "https://carolinaforward.org/news/the-october-2026-carolina-forward-poll/?emci=e7b29264-2cc4-f111-bf5b-000d3a4fbe83&emdi=beb3dd17-f1c6-f111-bf5b-000d3a4fbe83&ceid=27194997",
      "weight": 0.162
-    },
-    {
-     "pollster": "East Carolina University",
-     "end_date": "2026-10-03",
-     "age": 30,
-     "population": "lv",
-     "sample_size": 810,
-     "dem": 53.0,
-     "rep": 46.0,
-     "margin": 7.07,
-     "partisan": false,
-     "url": "https://surveyresearch-ecu.reportablenews.com/pr/ecu-poll-cooper-s-lead-holds-at-7-points",
-     "weight": 0.263
     }
    ]
   }

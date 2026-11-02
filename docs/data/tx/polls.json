@@ -3,13 +3,26 @@
  "source_url": "https://votehub.com/polls/",
  "license": "CC BY 4.0",
  "method": "One poll per pollster from the last 30 days (60 if fewer than 3), likely voters preferred, weighted by recency (half-life 14 days) and sample size; partisan or internal polls count half. Margins are two-party.",
- "fetched_at": "2026-11-02T02:46:39+00:00",
+ "fetched_at": "2026-11-02T22:46:58+00:00",
  "races": {
   "senate": {
-   "avg": 2.78,
-   "n": 14,
+   "avg": 3.39,
+   "n": 15,
    "window_days": 30,
    "polls": [
+    {
+     "pollster": "The New York Times/Siena University",
+     "end_date": "2026-11-01",
+     "age": 1,
+     "population": "lv",
+     "sample_size": 1215,
+     "dem": 50.0,
+     "rep": 43.0,
+     "margin": 7.53,
+     "partisan": false,
+     "url": "https://www.nytimes.com/interactive/2026/11/01/polls/times-siena-tx-poll-toplines.html",
+     "weight": 1.354
+    },
     {
      "pollster": "ActiVote",
      "end_date": "2026-10-28",
@@ -195,10 +208,23 @@
    ]
   },
   "governor": {
-   "avg": -2.95,
-   "n": 12,
+   "avg": -2.4,
+   "n": 13,
    "window_days": 30,
    "polls": [
+    {
+     "pollster": "The New York Times/Siena University",
+     "end_date": "2026-11-01",
+     "age": 1,
+     "population": "lv",
+     "sample_size": 1215,
+     "dem": 48.0,
+     "rep": 47.0,
+     "margin": 1.05,
+     "partisan": false,
+     "url": "https://www.nytimes.com/interactive/2026/11/01/polls/times-siena-tx-poll-toplines.html",
+     "weight": 1.354
+    },
     {
      "pollster": "ActiVote",
      "end_date": "2026-10-29",

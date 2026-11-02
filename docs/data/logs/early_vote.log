@@ -1,75 +1,76 @@
-[02:46:07] ak
+[22:46:21] ak
 ak: no early-vote source configured; skipping
 No registration config; skipping
-[02:46:08] ca
+[22:46:21] ca
 ca: no early-vote source configured; skipping
 No registration config; skipping
-[02:46:09] co
+[22:46:22] co
 co: no early-vote source configured; skipping
 No registration config; skipping
-[02:46:09] fl
-  Florida snapshot 2026-10-31: mail 1,769,250, early 2,880,909
+[22:46:22] fl
+  Florida snapshot 2026-10-31: mail 1,845,584, early 2,880,909
   wrote docs/data/fl/manifest.json (0 KB)
 No registration config; skipping
-[02:46:10] ga
+[22:46:23] ga
 ga: no early-vote source configured; skipping
 No registration config; skipping
-[02:46:10] hi
+[22:46:24] hi
 hi: no early-vote source configured; skipping
 No registration config; skipping
-[02:46:11] ia
+[22:46:24] ia
 ia: no early-vote source configured; skipping
 No registration config; skipping
-[02:46:11] ks
+[22:46:25] ks
 ks: no early-vote source configured; skipping
 No registration config; skipping
-[02:46:12] me
+[22:46:25] me
 == ME 2026
-Downloading https://www.maine.gov/sos/sites/maine.gov.sos/files/inline-files/11-3-26%20AB%20Voter%20File%20as%20of%2010-30-26.txt
-  accepted: 290,382; unmapped municipalities: 766
-  accepted rows: 290,382
-  dropping 33 rows with return dates after today
-  unique accepted ballots: 290,348; as of 2026-10-30
+Downloading https://www.maine.gov/sos/sites/maine.gov.sos/files/inline-files/11-3-26%20AB%20Voter%20File%20as%20of%2011-2-26.txt
+  accepted: 302,353; unmapped municipalities: 806
+  accepted rows: 302,353
+  dropping 17 rows with return dates after today
+  unique accepted ballots: 302,336; as of 2026-11-02
   wrote docs/data/me/2026.json (19 KB)
 == 2022: already built, skipping
   wrote docs/data/me/manifest.json (0 KB)
-[02:46:15] mi
+[22:46:27] mi
 mi: no early-vote source configured; skipping
 No registration config; skipping
-[02:46:15] mn
+[22:46:28] mn
 mn: no early-vote source configured; skipping
 No registration config; skipping
-[02:46:16] mt
+[22:46:28] mt
 mt: no early-vote source configured; skipping
 No registration config; skipping
-[02:46:16] nc
+[22:46:29] nc
 == NC 2026
 Downloading https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2026_11_03/absentee_20261103.zip
-  122.5 MB
-  reading absentee_20261103.csv (1204 MB unzipped)
+  122.6 MB
+  reading absentee_20261103.csv (1205 MB unzipped)
   columns: {'county': 'county_desc', 'ncid': 'ncid', 'reg_num': 'voter_reg_num', 'party': 'voter_party_code', 'race': 'race', 'age': 'age', 'req_type': 'ballot_req_type', 'rtn_dt': 'ballot_rtn_dt', 'status': 'ballot_rtn_status'}
-  accepted rows: 2,816,821
-  unique accepted ballots: 2,816,812; as of 2026-10-31
+  accepted rows: 2,819,922
+  unique accepted ballots: 2,819,912; as of 2026-11-01
   wrote docs/data/nc/2026.json (67 KB)
 == 2022: already built, skipping
 == 2018: already built, skipping
 == 2024: already built, skipping
 == 2020: already built, skipping
   wrote docs/data/nc/manifest.json (1 KB)
-[02:46:36] ne
+[22:46:54] ne
 ne: no early-vote source configured; skipping
 No registration config; skipping
-[02:46:37] nh
+[22:46:54] nh
 nh: no early-vote source configured; skipping
 No registration config; skipping
-[02:46:37] tx
+[22:46:55] tx
   Dallas 2026: https://www.dallascountyvotes.org/wp-content/uploads/2026/10/Early-Voting-Turnout-By-Date-Location-Report_10.30.26.xlsx
+  Dallas 2022 unavailable: XMLSyntaxError('no text parsed from document')
   tx dallas: ok
 tx: no early-vote source configured; skipping
 No registration config; skipping
-[02:46:38] vt
+[22:46:57] vt
 vt: no early-vote source configured; skipping
 No registration config; skipping
-[02:46:38] wi
+[22:46:57] wi
 wi: no early-vote source configured; skipping
 No registration config; skipping

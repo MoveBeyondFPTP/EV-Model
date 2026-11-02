@@ -3,19 +3,47 @@
  "source_url": "https://votehub.com/polls/",
  "license": "CC BY 4.0",
  "method": "One poll per pollster from the last 30 days (60 if fewer than 3), likely voters preferred, weighted by recency (half-life 14 days) and sample size; partisan or internal polls count half. Margins are two-party.",
- "fetched_at": "2026-11-02T02:46:39+00:00",
+ "fetched_at": "2026-11-02T22:46:58+00:00",
  "races": {
   "senate": {
-   "avg": null,
-   "n": 0,
-   "window_days": null,
-   "polls": []
+   "avg": 15.56,
+   "n": 1,
+   "window_days": 60,
+   "polls": [
+    {
+     "pollster": "Lake Research Partners",
+     "end_date": "2026-09-30",
+     "age": 33,
+     "population": "rv",
+     "sample_size": 600,
+     "dem": 52.0,
+     "rep": 38.0,
+     "margin": 15.56,
+     "partisan": false,
+     "url": "https://ballot.org/wp-content/uploads/2026/10/LRP-Topline-CO-BISC-State-Partners-10.8.26.pdf",
+     "weight": 0.195
+    }
+   ]
   },
   "governor": {
-   "avg": null,
-   "n": 0,
-   "window_days": null,
-   "polls": []
+   "avg": 17.24,
+   "n": 1,
+   "window_days": 60,
+   "polls": [
+    {
+     "pollster": "Lake Research Partners",
+     "end_date": "2026-10-30",
+     "age": 3,
+     "population": "rv",
+     "sample_size": 600,
+     "dem": 51.0,
+     "rep": 36.0,
+     "margin": 17.24,
+     "partisan": false,
+     "url": "https://ballot.org/wp-content/uploads/2026/10/LRP-Topline-CO-BISC-State-Partners-10.8.26.pdf",
+     "weight": 0.862
+    }
+   ]
   },
   "longmont-3c": null,
   "longmont-3d": null

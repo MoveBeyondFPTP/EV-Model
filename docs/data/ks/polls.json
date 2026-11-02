@@ -3,13 +3,26 @@
  "source_url": "https://votehub.com/polls/",
  "license": "CC BY 4.0",
  "method": "One poll per pollster from the last 30 days (60 if fewer than 3), likely voters preferred, weighted by recency (half-life 14 days) and sample size; partisan or internal polls count half. Margins are two-party.",
- "fetched_at": "2026-11-02T02:46:39+00:00",
+ "fetched_at": "2026-11-02T22:46:58+00:00",
  "races": {
   "senate": {
-   "avg": 4.17,
-   "n": 4,
+   "avg": 4.48,
+   "n": 5,
    "window_days": 30,
    "polls": [
+    {
+     "pollster": "The New York Times/Siena University",
+     "end_date": "2026-11-01",
+     "age": 1,
+     "population": "lv",
+     "sample_size": 736,
+     "dem": 49.0,
+     "rep": 44.0,
+     "margin": 5.38,
+     "partisan": false,
+     "url": "https://www.nytimes.com/interactive/2026/11/01/polls/times-siena-ks-poll-toplines.html",
+     "weight": 1.054
+    },
     {
      "pollster": "Emerson College",
      "end_date": "2026-10-28",
@@ -65,10 +78,23 @@
    ]
   },
   "governor": {
-   "avg": -1.33,
-   "n": 4,
+   "avg": -0.81,
+   "n": 5,
    "window_days": 30,
    "polls": [
+    {
+     "pollster": "The New York Times/Siena University",
+     "end_date": "2026-11-01",
+     "age": 1,
+     "population": "lv",
+     "sample_size": 736,
+     "dem": 48.0,
+     "rep": 47.0,
+     "margin": 1.05,
+     "partisan": false,
+     "url": "https://www.nytimes.com/interactive/2026/11/01/polls/times-siena-ks-poll-toplines.html",
+     "weight": 1.054
+    },
     {
      "pollster": "YouGov",
      "end_date": "2026-10-29",

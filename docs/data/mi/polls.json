@@ -3,13 +3,26 @@
  "source_url": "https://votehub.com/polls/",
  "license": "CC BY 4.0",
  "method": "One poll per pollster from the last 30 days (60 if fewer than 3), likely voters preferred, weighted by recency (half-life 14 days) and sample size; partisan or internal polls count half. Margins are two-party.",
- "fetched_at": "2026-11-02T02:46:39+00:00",
+ "fetched_at": "2026-11-02T22:46:58+00:00",
  "races": {
   "senate": {
-   "avg": 4.93,
-   "n": 10,
+   "avg": 5.96,
+   "n": 11,
    "window_days": 30,
    "polls": [
+    {
+     "pollster": "The New York Times/Siena University",
+     "end_date": "2026-11-01",
+     "age": 1,
+     "population": "lv",
+     "sample_size": 1011,
+     "dem": 53.0,
+     "rep": 42.0,
+     "margin": 11.58,
+     "partisan": false,
+     "url": "https://www.nytimes.com/interactive/2026/11/01/polls/times-siena-mi-poll-toplines.html",
+     "weight": 1.235
+    },
     {
      "pollster": "YouGov",
      "end_date": "2026-10-29",
@@ -143,10 +156,23 @@
    ]
   },
   "governor": {
-   "avg": 8.17,
-   "n": 8,
+   "avg": 9.18,
+   "n": 9,
    "window_days": 30,
    "polls": [
+    {
+     "pollster": "The New York Times/Siena University",
+     "end_date": "2026-11-01",
+     "age": 1,
+     "population": "lv",
+     "sample_size": 1011,
+     "dem": 52.0,
+     "rep": 39.0,
+     "margin": 14.29,
+     "partisan": false,
+     "url": "https://www.nytimes.com/interactive/2026/11/01/polls/times-siena-mi-poll-toplines.html",
+     "weight": 1.235
+    },
     {
      "pollster": "YouGov",
      "end_date": "2026-10-29",

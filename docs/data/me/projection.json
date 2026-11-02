@@ -5,12 +5,12 @@
  "election_date": "2026-11-03",
  "has_early_vote": true,
  "turnout_signal": {
-  "value": 1.9,
-  "now": 17.51,
-  "then": 15.61,
+  "value": 1.84,
+  "now": 17.18,
+  "then": 15.34,
   "year": 2022,
-  "day": 4,
-  "as_of": "2026-10-30"
+  "day": 1,
+  "as_of": "2026-11-02"
  },
  "races": [
   {
@@ -56,9 +56,9 @@
     "margin": 13.32
    },
    "projection": {
-    "center": 3.57,
-    "lo": 3.02,
-    "hi": 4.11,
+    "center": 5.35,
+    "lo": 4.85,
+    "hi": 5.85,
     "rating": "Lean Jackson",
     "range_basis": "inputs",
     "environment": {
@@ -88,14 +88,14 @@
      "note": null
     },
     "polls": {
-     "avg": 3.02,
-     "n": 6,
+     "avg": 4.85,
+     "n": 8,
      "window_days": 30
     },
-    "poll_weight": 0.989,
-    "start": 3.09,
+    "poll_weight": 0.992,
+    "start": 4.89,
     "early_vote": {
-     "adjustment": 0.47,
+     "adjustment": 0.46,
      "weight": 0.25,
      "cap": 2.0
     }
@@ -123,9 +123,9 @@
     ]
    },
    "projection": {
-    "center": 9.87,
-    "lo": 9.31,
-    "hi": 10.43,
+    "center": 11.04,
+    "lo": 10.53,
+    "hi": 11.56,
     "rating": "Likely Pingree",
     "range_basis": "inputs",
     "environment": {
@@ -143,14 +143,14 @@
      "note": null
     },
     "polls": {
-     "avg": 9.31,
-     "n": 6,
+     "avg": 10.53,
+     "n": 8,
      "window_days": 30
     },
-    "poll_weight": 0.989,
-    "start": 9.39,
+    "poll_weight": 0.992,
+    "start": 10.58,
     "early_vote": {
-     "adjustment": 0.47,
+     "adjustment": 0.46,
      "weight": 0.25,
      "cap": 2.0
     }
@@ -161,7 +161,7 @@
   "In Maine all early voting is absentee voting. \u201cIn-person early\u201d here means absentee ballots cast at the town clerk\u2019s office; mail, drop-box and hand-delivered ballots count as mail.",
   "Maine\u2019s files have no age or race, so those breakdowns aren\u2019t shown."
  ],
- "generated_at": "2026-11-02T02:46:39+00:00",
+ "generated_at": "2026-11-02T22:47:00+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,
