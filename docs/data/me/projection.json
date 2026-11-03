@@ -5,12 +5,12 @@
  "election_date": "2026-11-03",
  "has_early_vote": true,
  "turnout_signal": {
-  "value": 1.84,
-  "now": 17.18,
-  "then": 15.34,
+  "value": 1.58,
+  "now": 17.07,
+  "then": 15.48,
   "year": 2022,
-  "day": 1,
-  "as_of": "2026-11-02"
+  "day": 0,
+  "as_of": "2026-11-03"
  },
  "races": [
   {
@@ -56,9 +56,9 @@
     "margin": 13.32
    },
    "projection": {
-    "center": 5.18,
+    "center": 5.12,
     "lo": 4.72,
-    "hi": 5.64,
+    "hi": 5.51,
     "rating": "Lean Jackson",
     "range_basis": "inputs",
     "environment": {
@@ -95,7 +95,7 @@
     "poll_weight": 1.0,
     "start": 4.72,
     "early_vote": {
-     "adjustment": 0.46,
+     "adjustment": 0.4,
      "weight": 0.25,
      "cap": 2.0
     }
@@ -123,9 +123,9 @@
     ]
    },
    "projection": {
-    "center": 11.37,
+    "center": 11.3,
     "lo": 10.91,
-    "hi": 11.83,
+    "hi": 11.7,
     "rating": "Likely Pingree",
     "range_basis": "inputs",
     "environment": {
@@ -150,7 +150,7 @@
     "poll_weight": 1.0,
     "start": 10.91,
     "early_vote": {
-     "adjustment": 0.46,
+     "adjustment": 0.4,
      "weight": 0.25,
      "cap": 2.0
     }
@@ -161,7 +161,7 @@
   "In Maine all early voting is absentee voting. \u201cIn-person early\u201d here means absentee ballots cast at the town clerk\u2019s office; mail, drop-box and hand-delivered ballots count as mail.",
   "Maine\u2019s files have no age or race, so those breakdowns aren\u2019t shown."
  ],
- "generated_at": "2026-11-03T02:19:17+00:00",
+ "generated_at": "2026-11-03T20:30:35+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,
