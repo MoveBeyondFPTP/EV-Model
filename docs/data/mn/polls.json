@@ -3,17 +3,30 @@
  "source_url": "https://votehub.com/polls/",
  "license": "CC BY 4.0",
  "method": "One poll per pollster from the last 30 days (60 if fewer than 3), likely voters preferred, weighted by recency (half-life 14 days) and sample size; partisan or internal polls count half. Margins are two-party.",
- "fetched_at": "2026-11-02T22:46:58+00:00",
+ "fetched_at": "2026-11-03T02:19:16+00:00",
  "races": {
   "senate": {
-   "avg": 3.66,
-   "n": 3,
+   "avg": 2.97,
+   "n": 4,
    "window_days": 30,
    "polls": [
     {
+     "pollster": "AtlasIntel",
+     "end_date": "2026-11-01",
+     "age": 2,
+     "population": "lv",
+     "sample_size": 2133,
+     "dem": 48.0,
+     "rep": 46.0,
+     "margin": 2.13,
+     "partisan": false,
+     "url": "https://pollstergraph.com/poll/exclusive-atlas-us-mn-20261101-senate",
+     "weight": 1.359
+    },
+    {
      "pollster": "InsiderAdvantage",
      "end_date": "2026-10-30",
-     "age": 3,
+     "age": 4,
      "population": "lv",
      "sample_size": 1200,
      "dem": 49.0,
@@ -21,12 +34,12 @@
      "margin": 3.16,
      "partisan": false,
      "url": "https://insideradvantage.com/insideradvantage-final-minnesota-senate-survey-flanagan-49-tafoya-46/",
-     "weight": 1.219
+     "weight": 1.16
     },
     {
      "pollster": "SurveyUSA",
      "end_date": "2026-10-12",
-     "age": 21,
+     "age": 22,
      "population": "lv",
      "sample_size": 718,
      "dem": 45.0,
@@ -34,12 +47,12 @@
      "margin": 3.45,
      "partisan": false,
      "url": "https://kstp.com/kstp-news/top-news/kstp-surveyusa-poll-swing-in-senate-and-ag-races-klobuchar-up-slightly-on-demuth/",
-     "weight": 0.387
+     "weight": 0.368
     },
     {
      "pollster": "GQR",
      "end_date": "2026-10-04",
-     "age": 29,
+     "age": 30,
      "population": "lv",
      "sample_size": 800,
      "dem": 50.0,
@@ -47,19 +60,32 @@
      "margin": 8.7,
      "partisan": true,
      "url": "https://x.com/DrewSav/status/2108502733045334207",
-     "weight": 0.137
+     "weight": 0.131
     }
    ]
   },
   "governor": {
-   "avg": 9.83,
-   "n": 3,
+   "avg": 10.65,
+   "n": 4,
    "window_days": 30,
    "polls": [
     {
+     "pollster": "Survey 160",
+     "end_date": "2026-11-01",
+     "age": 2,
+     "population": "lv",
+     "sample_size": 1365,
+     "dem": 53.0,
+     "rep": 42.0,
+     "margin": 11.58,
+     "partisan": false,
+     "url": "https://www.survey160.com/methodological-research-blog/survey-160-pre-election-surveys-in-four-states",
+     "weight": 1.359
+    },
+    {
      "pollster": "State Navigate",
      "end_date": "2026-10-28",
-     "age": 5,
+     "age": 6,
      "population": "lv",
      "sample_size": 806,
      "dem": 52.0,
@@ -67,12 +93,12 @@
      "margin": 10.64,
      "partisan": false,
      "url": "https://articles.statenavigate.com/mn/new-minnesota-governor-poll-shows-amy-klobuchars-crossover-appeal-fading/",
-     "weight": 0.905
+     "weight": 0.861
     },
     {
      "pollster": "SurveyUSA",
      "end_date": "2026-10-12",
-     "age": 21,
+     "age": 22,
      "population": "lv",
      "sample_size": 718,
      "dem": 48.0,
@@ -80,12 +106,12 @@
      "margin": 7.87,
      "partisan": false,
      "url": "https://kstp.com/kstp-news/top-news/kstp-surveyusa-poll-swing-in-senate-and-ag-races-klobuchar-up-slightly-on-demuth/",
-     "weight": 0.387
+     "weight": 0.368
     },
     {
      "pollster": "Mason-Dixon",
      "end_date": "2026-10-07",
-     "age": 26,
+     "age": 27,
      "population": "lv",
      "sample_size": 800,
      "dem": 50.0,
@@ -93,7 +119,7 @@
      "margin": 9.89,
      "partisan": false,
      "url": "https://www.startribune.com/minnesota-poll-klobuchar-demuth-governor/601887444",
-     "weight": 0.319
+     "weight": 0.303
     }
    ]
   }

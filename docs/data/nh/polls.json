@@ -3,7 +3,7 @@
  "source_url": "https://votehub.com/polls/",
  "license": "CC BY 4.0",
  "method": "One poll per pollster from the last 30 days (60 if fewer than 3), likely voters preferred, weighted by recency (half-life 14 days) and sample size; partisan or internal polls count half. Margins are two-party.",
- "fetched_at": "2026-11-02T22:46:58+00:00",
+ "fetched_at": "2026-11-03T02:19:16+00:00",
  "races": {
   "senate": {
    "avg": 9.55,
@@ -13,7 +13,7 @@
     {
      "pollster": "University of New Hampshire",
      "end_date": "2026-10-31",
-     "age": 2,
+     "age": 3,
      "population": "lv",
      "sample_size": 2040,
      "dem": 54.0,
@@ -21,12 +21,12 @@
      "margin": 12.5,
      "partisan": false,
      "url": "https://scholars.unh.edu/survey_center_polls/1011/",
-     "weight": 1.359
+     "weight": 1.293
     },
     {
      "pollster": "National Public Affairs",
      "end_date": "2026-10-29",
-     "age": 4,
+     "age": 5,
      "population": "lv",
      "sample_size": 800,
      "dem": 51.0,
@@ -34,12 +34,12 @@
      "margin": 6.25,
      "partisan": true,
      "url": "https://backend.natpublicaffairs.com/media/NH_General_Election_Memo_103126.2.pdf",
-     "weight": 0.474
+     "weight": 0.451
     },
     {
      "pollster": "Saint Anselm",
      "end_date": "2026-10-20",
-     "age": 13,
+     "age": 14,
      "population": "lv",
      "sample_size": 1672,
      "dem": 50.0,
@@ -47,12 +47,12 @@
      "margin": 7.53,
      "partisan": false,
      "url": "https://www.anselm.edu/about/anselmian-hub/news/new-saint-anselm-college-poll-finds-democrats-leading-congressional-races-affordability-concerns-shape-election-landscape",
-     "weight": 0.788
+     "weight": 0.75
     },
     {
      "pollster": "University of Massachusetts Lowell Center for Public Opinion/YouGov",
      "end_date": "2026-10-19",
-     "age": 14,
+     "age": 15,
      "population": "lv",
      "sample_size": 600,
      "dem": 48.0,
@@ -60,7 +60,7 @@
      "margin": 7.87,
      "partisan": false,
      "url": "https://www.uml.edu/news/press-releases/2026/102826-new-england-polls.aspx",
-     "weight": 0.5
+     "weight": 0.476
     }
    ]
   },
@@ -72,7 +72,7 @@
     {
      "pollster": "University of New Hampshire",
      "end_date": "2026-10-31",
-     "age": 2,
+     "age": 3,
      "population": "lv",
      "sample_size": 2040,
      "dem": 48.0,
@@ -80,12 +80,12 @@
      "margin": 0.0,
      "partisan": false,
      "url": "https://scholars.unh.edu/survey_center_polls/1011/",
-     "weight": 1.359
+     "weight": 1.293
     },
     {
      "pollster": "National Public Affairs",
      "end_date": "2026-10-29",
-     "age": 4,
+     "age": 5,
      "population": "lv",
      "sample_size": 800,
      "dem": 43.0,
@@ -93,12 +93,12 @@
      "margin": -9.47,
      "partisan": true,
      "url": "https://backend.natpublicaffairs.com/media/NH_General_Election_Memo_103126.2.pdf",
-     "weight": 0.474
+     "weight": 0.451
     },
     {
      "pollster": "Saint Anselm",
      "end_date": "2026-10-20",
-     "age": 13,
+     "age": 14,
      "population": "lv",
      "sample_size": 1672,
      "dem": 42.0,
@@ -106,12 +106,12 @@
      "margin": -8.7,
      "partisan": false,
      "url": "https://www.anselm.edu/about/anselmian-hub/news/new-saint-anselm-college-poll-finds-democrats-leading-congressional-races-affordability-concerns-shape-election-landscape",
-     "weight": 0.788
+     "weight": 0.75
     },
     {
      "pollster": "University of Massachusetts Lowell Center for Public Opinion/YouGov",
      "end_date": "2026-10-19",
-     "age": 14,
+     "age": 15,
      "population": "lv",
      "sample_size": 600,
      "dem": 42.0,
@@ -119,7 +119,7 @@
      "margin": -6.67,
      "partisan": false,
      "url": "https://www.uml.edu/news/press-releases/2026/102826-new-england-polls.aspx",
-     "weight": 0.5
+     "weight": 0.476
     }
    ]
   }

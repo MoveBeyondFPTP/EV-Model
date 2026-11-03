@@ -28,9 +28,9 @@
     ]
    },
    "projection": {
-    "center": 3.67,
+    "center": 3.55,
     "lo": 3.55,
-    "hi": 3.78,
+    "hi": 3.55,
     "rating": "Lean Crowley",
     "range_basis": "inputs",
     "environment": {
@@ -52,14 +52,14 @@
      "n": 3,
      "window_days": 60
     },
-    "poll_weight": 0.978,
-    "start": 3.67,
+    "poll_weight": 1.0,
+    "start": 3.55,
     "early_vote": null
    }
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-11-02T22:47:00+00:00",
+ "generated_at": "2026-11-03T02:19:17+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,
@@ -70,7 +70,7 @@
   "c_weight": 0.25,
   "c_cap": 2.0,
   "k_at_30_days": 2.0,
-  "days_left": 1,
-  "k_now": 0.067
+  "days_left": 0,
+  "k_now": 0.0
  }
 }

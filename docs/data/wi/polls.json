@@ -3,7 +3,7 @@
  "source_url": "https://votehub.com/polls/",
  "license": "CC BY 4.0",
  "method": "One poll per pollster from the last 30 days (60 if fewer than 3), likely voters preferred, weighted by recency (half-life 14 days) and sample size; partisan or internal polls count half. Margins are two-party.",
- "fetched_at": "2026-11-02T22:46:58+00:00",
+ "fetched_at": "2026-11-03T02:19:16+00:00",
  "races": {
   "governor": {
    "avg": 3.55,
@@ -13,7 +13,7 @@
     {
      "pollster": "Wick",
      "end_date": "2026-10-23",
-     "age": 10,
+     "age": 11,
      "population": "lv",
      "sample_size": 1213,
      "dem": 48.0,
@@ -21,12 +21,12 @@
      "margin": 3.23,
      "partisan": true,
      "url": "https://stevecortes.substack.com/p/breaking-news-wisconsin-heads-for",
-     "weight": 0.433
+     "weight": 0.412
     },
     {
      "pollster": "Z to A Research",
      "end_date": "2026-10-01",
-     "age": 32,
+     "age": 33,
      "population": "lv",
      "sample_size": 662,
      "dem": 49.0,
@@ -34,12 +34,12 @@
      "margin": 5.38,
      "partisan": true,
      "url": "https://x.com/rbrtraining/status/2108302504446337272",
-     "weight": 0.108
+     "weight": 0.103
     },
     {
      "pollster": "Marquette University Law School",
      "end_date": "2026-09-23",
-     "age": 40,
+     "age": 41,
      "population": "lv",
      "sample_size": 692,
      "dem": 49.0,
@@ -47,7 +47,7 @@
      "margin": 3.16,
      "partisan": false,
      "url": "https://law.marquette.edu/poll/2026/09/30/detailed-results-of-the-marquette-law-school-wisconsin-poll-september-16-23-2026/",
-     "weight": 0.148
+     "weight": 0.141
     }
    ]
   }

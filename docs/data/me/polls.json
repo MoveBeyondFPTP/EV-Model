@@ -3,17 +3,17 @@
  "source_url": "https://votehub.com/polls/",
  "license": "CC BY 4.0",
  "method": "One poll per pollster from the last 30 days (60 if fewer than 3), likely voters preferred, weighted by recency (half-life 14 days) and sample size; partisan or internal polls count half. Margins are two-party.",
- "fetched_at": "2026-11-02T22:46:58+00:00",
+ "fetched_at": "2026-11-03T02:19:16+00:00",
  "races": {
   "senate": {
-   "avg": 4.85,
-   "n": 8,
+   "avg": 4.72,
+   "n": 9,
    "window_days": 30,
    "polls": [
     {
      "pollster": "The New York Times/Siena University",
      "end_date": "2026-11-01",
-     "age": 1,
+     "age": 2,
      "population": "lv",
      "sample_size": 714,
      "dem": 51.0,
@@ -21,12 +21,25 @@
      "margin": 6.25,
      "partisan": false,
      "url": "https://www.nytimes.com/interactive/2026/11/01/polls/times-siena-me-poll-toplines.html",
-     "weight": 1.038
+     "weight": 0.988
+    },
+    {
+     "pollster": "Survey 160",
+     "end_date": "2026-11-01",
+     "age": 2,
+     "population": "lv",
+     "sample_size": 1322,
+     "dem": 50.0,
+     "rep": 46.0,
+     "margin": 4.17,
+     "partisan": false,
+     "url": "https://www.survey160.com/methodological-research-blog/survey-160-pre-election-surveys-in-four-states",
+     "weight": 1.344
     },
     {
      "pollster": "University of New Hampshire",
      "end_date": "2026-10-31",
-     "age": 2,
+     "age": 3,
      "population": "lv",
      "sample_size": 1654,
      "dem": 54.0,
@@ -34,12 +47,12 @@
      "margin": 9.09,
      "partisan": false,
      "url": "https://scholars.unh.edu/survey_center_polls/1013/",
-     "weight": 1.359
+     "weight": 1.293
     },
     {
      "pollster": "CNN/SSRS",
      "end_date": "2026-10-26",
-     "age": 7,
+     "age": 8,
      "population": "lv",
      "sample_size": 783,
      "dem": 49.0,
@@ -47,12 +60,12 @@
      "margin": 4.26,
      "partisan": false,
      "url": "https://www.cnn.com/2026/10/29/politics/cnn-polls-michigan-maine-texas-kansas-senate-races-midterms-vis",
-     "weight": 0.808
+     "weight": 0.769
     },
     {
      "pollster": "Marist University",
      "end_date": "2026-10-25",
-     "age": 8,
+     "age": 9,
      "population": "lv",
      "sample_size": 1449,
      "dem": 49.0,
@@ -60,12 +73,12 @@
      "margin": 2.08,
      "partisan": false,
      "url": "https://maristpoll.marist.edu/polls/the-midterm-elections-in-maine-october-2026/",
-     "weight": 1.009
+     "weight": 0.961
     },
     {
      "pollster": "Echelon Insights",
      "end_date": "2026-10-23",
-     "age": 10,
+     "age": 11,
      "population": "lv",
      "sample_size": 413,
      "dem": 51.0,
@@ -73,12 +86,12 @@
      "margin": 7.37,
      "partisan": false,
      "url": "https://netchoice.org/netchoice-echelon-insights-poll-voters-rank-ai-regulation-far-behind-cost-of-living-want-one-national-ai-standard/",
-     "weight": 0.506
+     "weight": 0.481
     },
     {
      "pollster": "Beacon Research/Shaw & Co. Research",
      "end_date": "2026-10-20",
-     "age": 13,
+     "age": 14,
      "population": "lv",
      "sample_size": 1514,
      "dem": 49.0,
@@ -86,12 +99,12 @@
      "margin": 0.0,
      "partisan": false,
      "url": "https://www.foxnews.com/politics/fox-news-poll-nail-biter-maine-senate-race",
-     "weight": 0.788
+     "weight": 0.75
     },
     {
      "pollster": "InsiderAdvantage",
      "end_date": "2026-10-14",
-     "age": 19,
+     "age": 20,
      "population": "lv",
      "sample_size": 1200,
      "dem": 49.0,
@@ -99,12 +112,12 @@
      "margin": 2.08,
      "partisan": false,
      "url": "https://insideradvantage.com/insideradvantage-senate-surveys-texas-paxton-49-talarico-48-kansas-marshall-48-hamilton-47-maine-jackson-49-collins-47/",
-     "weight": 0.552
+     "weight": 0.525
     },
     {
      "pollster": "The Washington Post/George Mason University School of Policy and Government",
      "end_date": "2026-10-05",
-     "age": 28,
+     "age": 29,
      "population": "lv",
      "sample_size": 800,
      "dem": 50.0,
@@ -112,19 +125,19 @@
      "margin": 5.26,
      "partisan": false,
      "url": "https://www.washingtonpost.com/tablet/2026/10/09/sept-30-oct-5-2026-washington-post-schar-school-poll-maine-voters",
-     "weight": 0.289
+     "weight": 0.275
     }
    ]
   },
   "governor": {
-   "avg": 10.53,
-   "n": 8,
+   "avg": 10.91,
+   "n": 9,
    "window_days": 30,
    "polls": [
     {
      "pollster": "The New York Times/Siena University",
      "end_date": "2026-11-01",
-     "age": 1,
+     "age": 2,
      "population": "lv",
      "sample_size": 714,
      "dem": 49.0,
@@ -132,12 +145,25 @@
      "margin": 13.95,
      "partisan": false,
      "url": "https://www.nytimes.com/interactive/2026/11/01/polls/times-siena-me-poll-toplines.html",
-     "weight": 1.038
+     "weight": 0.988
+    },
+    {
+     "pollster": "Survey 160",
+     "end_date": "2026-11-01",
+     "age": 2,
+     "population": "lv",
+     "sample_size": 1322,
+     "dem": 53.0,
+     "rep": 41.0,
+     "margin": 12.77,
+     "partisan": false,
+     "url": "https://www.survey160.com/methodological-research-blog/survey-160-pre-election-surveys-in-four-states",
+     "weight": 1.344
     },
     {
      "pollster": "University of New Hampshire",
      "end_date": "2026-10-31",
-     "age": 2,
+     "age": 3,
      "population": "lv",
      "sample_size": 1654,
      "dem": 51.0,
@@ -145,12 +171,12 @@
      "margin": 12.09,
      "partisan": false,
      "url": "https://scholars.unh.edu/survey_center_polls/1013/",
-     "weight": 1.359
+     "weight": 1.293
     },
     {
      "pollster": "YouGov",
      "end_date": "2026-10-29",
-     "age": 4,
+     "age": 5,
      "population": "lv",
      "sample_size": 1503,
      "dem": 53.0,
@@ -158,12 +184,12 @@
      "margin": 8.16,
      "partisan": false,
      "url": "https://d3nkl3psvxxpe9.cloudfront.net/documents/ttw_me_20261026_lv.pdf",
-     "weight": 1.231
+     "weight": 1.171
     },
     {
      "pollster": "CNN/SSRS",
      "end_date": "2026-10-26",
-     "age": 7,
+     "age": 8,
      "population": "lv",
      "sample_size": 783,
      "dem": 53.0,
@@ -171,12 +197,12 @@
      "margin": 15.22,
      "partisan": false,
      "url": "https://www.cnn.com/2026/10/29/politics/cnn-polls-michigan-maine-texas-kansas-senate-races-midterms-vis",
-     "weight": 0.808
+     "weight": 0.769
     },
     {
      "pollster": "Marist University",
      "end_date": "2026-10-25",
-     "age": 8,
+     "age": 9,
      "population": "lv",
      "sample_size": 1449,
      "dem": 44.0,
@@ -184,12 +210,12 @@
      "margin": 0.0,
      "partisan": false,
      "url": "https://maristpoll.marist.edu/polls/the-midterm-elections-in-maine-october-2026/",
-     "weight": 1.009
+     "weight": 0.961
     },
     {
      "pollster": "Echelon Insights",
      "end_date": "2026-10-23",
-     "age": 10,
+     "age": 11,
      "population": "lv",
      "sample_size": 413,
      "dem": 51.0,
@@ -197,12 +223,12 @@
      "margin": 14.61,
      "partisan": false,
      "url": "https://netchoice.org/netchoice-echelon-insights-poll-voters-rank-ai-regulation-far-behind-cost-of-living-want-one-national-ai-standard/",
-     "weight": 0.506
+     "weight": 0.481
     },
     {
      "pollster": "Beacon Research/Shaw & Co. Research",
      "end_date": "2026-10-20",
-     "age": 13,
+     "age": 14,
      "population": "lv",
      "sample_size": 1514,
      "dem": 49.0,
@@ -210,12 +236,12 @@
      "margin": 11.36,
      "partisan": false,
      "url": "https://www.foxnews.com/politics/fox-news-poll-nail-biter-maine-senate-race",
-     "weight": 0.788
+     "weight": 0.75
     },
     {
      "pollster": "The Washington Post/George Mason University School of Policy and Government",
      "end_date": "2026-10-05",
-     "age": 28,
+     "age": 29,
      "population": "lv",
      "sample_size": 800,
      "dem": 49.0,
@@ -223,7 +249,7 @@
      "margin": 15.29,
      "partisan": false,
      "url": "https://www.washingtonpost.com/tablet/2026/10/09/sept-30-oct-5-2026-washington-post-schar-school-poll-maine-voters",
-     "weight": 0.289
+     "weight": 0.275
     }
    ]
   }

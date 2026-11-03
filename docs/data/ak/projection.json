@@ -63,8 +63,8 @@
     }
    },
    "projection": {
-    "center": 1.9,
-    "lo": 1.84,
+    "center": 1.95,
+    "lo": 1.95,
     "hi": 1.95,
     "rating": "Tilt Peltola",
     "range_basis": "inputs",
@@ -110,8 +110,8 @@
      "n": 3,
      "window_days": 30
     },
-    "poll_weight": 0.978,
-    "start": 1.9,
+    "poll_weight": 1.0,
+    "start": 1.95,
     "early_vote": null
    }
   },
@@ -139,10 +139,10 @@
     ]
    },
    "projection": {
-    "center": 6.87,
-    "lo": 6.63,
+    "center": 7.11,
+    "lo": 7.11,
     "hi": 7.11,
-    "rating": "Lean Kreiss-Tomkins",
+    "rating": "Likely Kreiss-Tomkins",
     "range_basis": "inputs",
     "environment": {
      "label": "2024 president (AK)",
@@ -163,8 +163,8 @@
      "n": 3,
      "window_days": 30
     },
-    "poll_weight": 0.978,
-    "start": 6.87,
+    "poll_weight": 1.0,
+    "start": 7.11,
     "early_vote": null
    }
   },
@@ -206,14 +206,14 @@
      "n": 2,
      "window_days": 60
     },
-    "poll_weight": 0.968,
+    "poll_weight": 1.0,
     "start": 5.21,
     "early_vote": null
    }
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-11-02T22:47:00+00:00",
+ "generated_at": "2026-11-03T02:19:17+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,
@@ -224,7 +224,7 @@
   "c_weight": 0.25,
   "c_cap": 2.0,
   "k_at_30_days": 2.0,
-  "days_left": 1,
-  "k_now": 0.067
+  "days_left": 0,
+  "k_now": 0.0
  }
 }
