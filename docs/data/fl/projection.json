@@ -44,9 +44,9 @@
     }
    },
    "projection": {
-    "center": -5.72,
-    "lo": -5.72,
-    "hi": -5.72,
+    "center": -5.33,
+    "lo": -5.33,
+    "hi": -5.33,
     "rating": "Lean Moody",
     "range_basis": "inputs",
     "environment": {
@@ -76,12 +76,12 @@
      "note": null
     },
     "polls": {
-     "avg": -5.72,
-     "n": 8,
+     "avg": -5.33,
+     "n": 7,
      "window_days": 30
     },
     "poll_weight": 1.0,
-    "start": -5.72,
+    "start": -5.33,
     "early_vote": null
    }
   },
@@ -107,9 +107,9 @@
     ]
    },
    "projection": {
-    "center": -3.8,
-    "lo": -3.8,
-    "hi": -3.8,
+    "center": -3.41,
+    "lo": -3.41,
+    "hi": -3.41,
     "rating": "Lean Donalds",
     "range_basis": "inputs",
     "environment": {
@@ -127,12 +127,12 @@
      "note": null
     },
     "polls": {
-     "avg": -3.8,
-     "n": 10,
+     "avg": -3.41,
+     "n": 9,
      "window_days": 30
     },
     "poll_weight": 1.0,
-    "start": -3.8,
+    "start": -3.41,
     "early_vote": null
    }
   }
@@ -140,7 +140,7 @@
  "ev_notes": [
   "Florida publishes running totals rather than ballot-level files, so 2026 is compared with 2022\u2019s final early and mail vote, not with the same day in 2022. The day-by-day chart builds up from the first day this tracker collected data."
  ],
- "generated_at": "2026-11-03T20:30:35+00:00",
+ "generated_at": "2026-11-04T00:38:02+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,
@@ -151,7 +151,7 @@
   "c_weight": 0.25,
   "c_cap": 2.0,
   "k_at_30_days": 2.0,
-  "days_left": 0,
+  "days_left": -1,
   "k_now": 0.0
  }
 }

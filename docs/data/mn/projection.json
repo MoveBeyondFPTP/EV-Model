@@ -28,9 +28,9 @@
     ]
    },
    "projection": {
-    "center": 2.97,
-    "lo": 2.97,
-    "hi": 2.97,
+    "center": 2.71,
+    "lo": 2.71,
+    "hi": 2.71,
     "rating": "Tilt Flanagan",
     "range_basis": "inputs",
     "environment": {
@@ -48,12 +48,12 @@
      "note": null
     },
     "polls": {
-     "avg": 2.97,
-     "n": 4,
+     "avg": 2.71,
+     "n": 3,
      "window_days": 30
     },
     "poll_weight": 1.0,
-    "start": 2.97,
+    "start": 2.71,
     "early_vote": null
    }
   },
@@ -138,7 +138,7 @@
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-11-03T20:30:35+00:00",
+ "generated_at": "2026-11-04T00:38:02+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,
@@ -149,7 +149,7 @@
   "c_weight": 0.25,
   "c_cap": 2.0,
   "k_at_30_days": 2.0,
-  "days_left": 0,
+  "days_left": -1,
   "k_now": 0.0
  }
 }
