@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-04T00:37:59Z",
+ "generated_at": "2026-11-04T20:49:21Z",
  "counties": [
   {
    "county": "Dallas County",
@@ -33,7 +33,20 @@
     "2026-10-29": 46425,
     "2026-10-30": 73430
    },
-   "then": {},
+   "then": {
+    "15": 32596,
+    "14": 69841,
+    "13": 104255,
+    "12": 136771,
+    "11": 162579,
+    "10": 186856,
+    "9": 198341,
+    "8": 229341,
+    "7": 260058,
+    "6": 293302,
+    "5": 336270,
+    "4": 391328
+   },
    "then_year": 2022,
    "source_page": "https://www.dallascountyvotes.org/election-results/historical/november-3-2026-general-and-joint-election/",
    "source_2026": "https://www.dallascountyvotes.org/wp-content/uploads/2026/10/Early-Voting-Turnout-By-Date-Location-Report_10.30.26.xlsx",

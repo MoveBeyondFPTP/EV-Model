@@ -5,8 +5,8 @@
  "election_date": "2026-11-03",
  "has_early_vote": true,
  "turnout_signal": {
-  "value": 7.5,
-  "now": 10.42,
+  "value": 7.52,
+  "now": 10.45,
   "then": 2.93,
   "year": 2022,
   "day": 0,
@@ -67,7 +67,7 @@
     "margin": -3.3
    },
    "projection": {
-    "center": 14.38,
+    "center": 14.39,
     "lo": 12.51,
     "hi": 14.51,
     "rating": "Solid Cooper",
@@ -116,7 +116,7 @@
  "ev_notes": [
   "Rules change. Photo ID applies in 2026 but not in 2018 or 2022, and mail ballots now must arrive by the close of polls instead of within the old three-day grace period. Early voting schedules and sites also vary by cycle."
  ],
- "generated_at": "2026-11-04T00:38:02+00:00",
+ "generated_at": "2026-11-04T20:49:22+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,
