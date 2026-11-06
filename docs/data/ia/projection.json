@@ -28,9 +28,9 @@
     ]
    },
    "projection": {
-    "center": -0.25,
-    "lo": -0.25,
-    "hi": -0.25,
+    "center": -0.17,
+    "lo": -0.17,
+    "hi": -0.17,
     "rating": "Toss-up",
     "range_basis": "inputs",
     "environment": {
@@ -48,12 +48,12 @@
      "note": null
     },
     "polls": {
-     "avg": -0.25,
-     "n": 10,
+     "avg": -0.17,
+     "n": 9,
      "window_days": 30
     },
     "poll_weight": 1.0,
-    "start": -0.25,
+    "start": -0.17,
     "early_vote": null
    }
   },
@@ -95,10 +95,10 @@
     ]
    },
    "projection": {
-    "center": 6.91,
-    "lo": 6.91,
-    "hi": 6.91,
-    "rating": "Lean Sand",
+    "center": 7.09,
+    "lo": 7.09,
+    "hi": 7.09,
+    "rating": "Likely Sand",
     "range_basis": "inputs",
     "environment": {
      "label": "2024 president (IA)",
@@ -127,18 +127,18 @@
      "note": null
     },
     "polls": {
-     "avg": 6.91,
-     "n": 8,
+     "avg": 7.09,
+     "n": 7,
      "window_days": 30
     },
     "poll_weight": 1.0,
-    "start": 6.91,
+    "start": 7.09,
     "early_vote": null
    }
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-11-05T21:05:32+00:00",
+ "generated_at": "2026-11-06T00:58:45+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,
@@ -149,7 +149,7 @@
   "c_weight": 0.25,
   "c_cap": 2.0,
   "k_at_30_days": 2.0,
-  "days_left": -2,
+  "days_left": -3,
   "k_now": 0.0
  }
 }

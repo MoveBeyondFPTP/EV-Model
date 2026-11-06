@@ -3,7 +3,7 @@
  "source_url": "https://votehub.com/polls/",
  "license": "CC BY 4.0",
  "method": "One poll per pollster from the last 30 days (60 if fewer than 3), likely voters preferred, weighted by recency (half-life 14 days) and sample size; partisan or internal polls count half. Margins are two-party.",
- "fetched_at": "2026-11-05T21:05:30+00:00",
+ "fetched_at": "2026-11-06T00:58:43+00:00",
  "races": {
   "senate": {
    "avg": 15.56,
@@ -13,7 +13,7 @@
     {
      "pollster": "Lake Research Partners",
      "end_date": "2026-09-30",
-     "age": 36,
+     "age": 37,
      "population": "rv",
      "sample_size": 600,
      "dem": 52.0,
@@ -21,7 +21,7 @@
      "margin": 15.56,
      "partisan": false,
      "url": "https://ballot.org/wp-content/uploads/2026/10/LRP-Topline-CO-BISC-State-Partners-10.8.26.pdf",
-     "weight": 0.168
+     "weight": 0.16
     }
    ]
   },
@@ -33,7 +33,7 @@
     {
      "pollster": "Lake Research Partners",
      "end_date": "2026-10-30",
-     "age": 6,
+     "age": 7,
      "population": "rv",
      "sample_size": 600,
      "dem": 51.0,
@@ -41,7 +41,7 @@
      "margin": 17.24,
      "partisan": false,
      "url": "https://ballot.org/wp-content/uploads/2026/10/LRP-Topline-CO-BISC-State-Partners-10.8.26.pdf",
-     "weight": 0.743
+     "weight": 0.707
     }
    ]
   },

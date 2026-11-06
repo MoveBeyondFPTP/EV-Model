@@ -17,8 +17,8 @@ ga senate: 8.88 from 5 polls
 ga governor: -0.61 from 5 polls
 hi governor: None from 0 polls
 !! hi honolulu-q5 failed: KeyError('poll_type')
-ia senate: -0.25 from 10 polls
-ia governor: 6.91 from 8 polls
+ia senate: -0.17 from 9 polls
+ia governor: 7.09 from 7 polls
 ks senate: 5.26 from 6 polls
 ks governor: -0.17 from 6 polls
 me senate: 4.7 from 8 polls
