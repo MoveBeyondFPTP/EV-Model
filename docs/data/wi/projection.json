@@ -37,14 +37,14 @@
      "label": "2024 president (WI)",
      "base": -0.87,
      "national_then": -1.5,
-     "generic": 8.31,
+     "generic": 8.45,
      "swing_factor": 1.0,
-     "swing": 9.81,
-     "generic_margin": 8.94,
+     "swing": 9.95,
+     "generic_margin": 9.08,
      "candidate_adjustment": 0.0,
      "candidates": [],
      "carry_forward": 0.4,
-     "margin": 8.94,
+     "margin": 9.08,
      "note": null
     },
     "polls": {
@@ -59,7 +59,7 @@
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-11-06T20:27:14+00:00",
+ "generated_at": "2026-11-07T00:07:46+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,
@@ -70,7 +70,7 @@
   "c_weight": 0.25,
   "c_cap": 2.0,
   "k_at_30_days": 2.0,
-  "days_left": -3,
+  "days_left": -4,
   "k_now": 0.0
  }
 }

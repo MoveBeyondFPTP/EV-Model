@@ -3,17 +3,17 @@
  "source_url": "https://votehub.com/polls/",
  "license": "CC BY 4.0",
  "method": "One poll per pollster from the last 30 days (60 if fewer than 3), likely voters preferred, weighted by recency (half-life 14 days) and sample size; partisan or internal polls count half. Margins are two-party.",
- "fetched_at": "2026-11-06T20:27:12+00:00",
+ "fetched_at": "2026-11-07T00:07:45+00:00",
  "races": {
   "senate": {
-   "avg": 12.51,
-   "n": 9,
+   "avg": 12.55,
+   "n": 8,
    "window_days": 30,
    "polls": [
     {
      "pollster": "AtlasIntel",
      "end_date": "2026-11-01",
-     "age": 5,
+     "age": 6,
      "population": "lv",
      "sample_size": 1459,
      "dem": 56.4,
@@ -21,12 +21,12 @@
      "margin": 15.22,
      "partisan": false,
      "url": "https://pollstergraph.com/poll/exclusive-atlas-us-nc-20261101-senate",
-     "weight": 1.171
+     "weight": 1.114
     },
     {
      "pollster": "East Carolina University",
      "end_date": "2026-10-29",
-     "age": 8,
+     "age": 9,
      "population": "lv",
      "sample_size": 1041,
      "dem": 54.0,
@@ -34,12 +34,12 @@
      "margin": 9.09,
      "partisan": false,
      "url": "https://surveyresearch-ecu.reportablenews.com/pr/ecu-poll-cooper-leads-whatley-by-9-points-as-election-day-nears",
-     "weight": 0.886
+     "weight": 0.844
     },
     {
      "pollster": "Quantus Insights",
      "end_date": "2026-10-25",
-     "age": 12,
+     "age": 13,
      "population": "lv",
      "sample_size": 722,
      "dem": 51.4,
@@ -47,12 +47,12 @@
      "margin": 9.13,
      "partisan": false,
      "url": "https://quantusinsights.org/polling/f/north-carolina-senate-cooper-holds-a-9-point-lead-over-whatley",
-     "weight": 0.606
+     "weight": 0.576
     },
     {
      "pollster": "ActiVote",
      "end_date": "2026-10-20",
-     "age": 17,
+     "age": 18,
      "population": "lv",
      "sample_size": 400,
      "dem": 56.9,
@@ -60,12 +60,12 @@
      "margin": 13.8,
      "partisan": false,
      "url": "https://www.activote.net/polls/2026/nc-u-s-senate/",
-     "weight": 0.352
+     "weight": 0.335
     },
     {
      "pollster": "Harper Polling",
      "end_date": "2026-10-20",
-     "age": 17,
+     "age": 18,
      "population": "lv",
      "sample_size": 600,
      "dem": 49.0,
@@ -73,12 +73,12 @@
      "margin": 11.36,
      "partisan": false,
      "url": "https://www.carolinajournal.com/polls/october-2026-coopers-lead-over-whatley-narrows-to-10-points-in-nc-senate-race/",
-     "weight": 0.431
+     "weight": 0.41
     },
     {
      "pollster": "High Point University Survey Research Center",
      "end_date": "2026-10-20",
-     "age": 17,
+     "age": 18,
      "population": "lv",
      "sample_size": 620,
      "dem": 54.0,
@@ -86,12 +86,12 @@
      "margin": 14.89,
      "partisan": false,
      "url": "https://www.highpoint.edu/blog/2026/10/hpu-yougov-poll-north-carolina-likely-voters-weigh-in-on-u-s-senate-race-and-more/",
-     "weight": 0.438
+     "weight": 0.417
     },
     {
      "pollster": "SurveyUSA",
      "end_date": "2026-10-11",
-     "age": 26,
+     "age": 27,
      "population": "lv",
      "sample_size": 643,
      "dem": 54.0,
@@ -99,12 +99,12 @@
      "margin": 14.89,
      "partisan": false,
      "url": "https://results.surveyusa.com/client/PollReport.aspx?g=0a876c84-9a95-4995-9218-82b1015f5d77",
-     "weight": 0.286
+     "weight": 0.272
     },
     {
      "pollster": "Elon University/YouGov",
      "end_date": "2026-10-08",
-     "age": 29,
+     "age": 30,
      "population": "lv",
      "sample_size": 561,
      "dem": 52.0,
@@ -112,20 +112,7 @@
      "margin": 14.29,
      "partisan": false,
      "url": "https://eloncdn.blob.core.windows.net/eu3/sites/819/2026/10/Elon-Poll-news-release-10-20-26.pdf",
-     "weight": 0.23
-    },
-    {
-     "pollster": "Change Research",
-     "end_date": "2026-10-07",
-     "age": 30,
-     "population": "lv",
-     "sample_size": 829,
-     "dem": 50.0,
-     "rep": 40.0,
-     "margin": 11.11,
-     "partisan": true,
-     "url": "https://carolinaforward.org/news/the-october-2026-carolina-forward-poll/?emci=e7b29264-2cc4-f111-bf5b-000d3a4fbe83&emdi=beb3dd17-f1c6-f111-bf5b-000d3a4fbe83&ceid=27194997",
-     "weight": 0.133
+     "weight": 0.219
     }
    ]
   }

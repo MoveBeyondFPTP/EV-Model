@@ -3,7 +3,7 @@
  "source_url": "https://votehub.com/polls/",
  "license": "CC BY 4.0",
  "method": "One poll per pollster from the last 30 days (60 if fewer than 3), likely voters preferred, weighted by recency (half-life 14 days) and sample size; partisan or internal polls count half. Margins are two-party.",
- "fetched_at": "2026-11-06T20:27:12+00:00",
+ "fetched_at": "2026-11-07T00:07:45+00:00",
  "races": {
   "senate": {
    "avg": 5.26,
@@ -13,7 +13,7 @@
     {
      "pollster": "The New York Times/Siena University",
      "end_date": "2026-11-01",
-     "age": 5,
+     "age": 6,
      "population": "lv",
      "sample_size": 736,
      "dem": 49.0,
@@ -21,12 +21,12 @@
      "margin": 5.38,
      "partisan": false,
      "url": "https://www.nytimes.com/interactive/2026/11/01/polls/times-siena-ks-poll-toplines.html",
-     "weight": 0.865
+     "weight": 0.823
     },
     {
      "pollster": "Survey 160",
      "end_date": "2026-11-01",
-     "age": 5,
+     "age": 6,
      "population": "lv",
      "sample_size": 1365,
      "dem": 50.0,
@@ -34,12 +34,12 @@
      "margin": 7.53,
      "partisan": false,
      "url": "https://www.survey160.com/methodological-research-blog/survey-160-pre-election-surveys-in-four-states",
-     "weight": 1.171
+     "weight": 1.114
     },
     {
      "pollster": "Emerson College",
      "end_date": "2026-10-28",
-     "age": 9,
+     "age": 10,
      "population": "lv",
      "sample_size": 800,
      "dem": 49.5,
@@ -47,12 +47,12 @@
      "margin": 2.48,
      "partisan": false,
      "url": "https://emersoncollegepolling.com/october-2026-kansas-poll-hamilton-maintains-edge-over-marshall/",
-     "weight": 0.74
+     "weight": 0.704
     },
     {
      "pollster": "CNN/SSRS",
      "end_date": "2026-10-26",
-     "age": 11,
+     "age": 12,
      "population": "lv",
      "sample_size": 838,
      "dem": 49.0,
@@ -60,12 +60,12 @@
      "margin": 4.26,
      "partisan": false,
      "url": "https://www.cnn.com/2026/10/29/politics/cnn-polls-michigan-maine-texas-kansas-senate-races-midterms-vis",
-     "weight": 0.686
+     "weight": 0.652
     },
     {
      "pollster": "The Washington Post/George Mason University Schar School of Policy and Government",
      "end_date": "2026-10-26",
-     "age": 11,
+     "age": 12,
      "population": "lv",
      "sample_size": 801,
      "dem": 52.0,
@@ -73,12 +73,12 @@
      "margin": 9.47,
      "partisan": false,
      "url": "https://www.washingtonpost.com/politics/2026/10/30/we-polled-kansas-democrats-wanted-talk-republicans-not-so-much/",
-     "weight": 0.67
+     "weight": 0.638
     },
     {
      "pollster": "InsiderAdvantage",
      "end_date": "2026-10-14",
-     "age": 23,
+     "age": 24,
      "population": "lv",
      "sample_size": 1200,
      "dem": 47.0,
@@ -86,7 +86,7 @@
      "margin": -1.05,
      "partisan": false,
      "url": "https://insideradvantage.com/insideradvantage-senate-surveys-texas-paxton-49-talarico-48-kansas-marshall-48-hamilton-47-maine-jackson-49-collins-47/",
-     "weight": 0.453
+     "weight": 0.431
     }
    ]
   },
@@ -98,7 +98,7 @@
     {
      "pollster": "The New York Times/Siena University",
      "end_date": "2026-11-01",
-     "age": 5,
+     "age": 6,
      "population": "lv",
      "sample_size": 736,
      "dem": 48.0,
@@ -106,12 +106,12 @@
      "margin": 1.05,
      "partisan": false,
      "url": "https://www.nytimes.com/interactive/2026/11/01/polls/times-siena-ks-poll-toplines.html",
-     "weight": 0.865
+     "weight": 0.823
     },
     {
      "pollster": "Survey 160",
      "end_date": "2026-11-01",
-     "age": 5,
+     "age": 6,
      "population": "lv",
      "sample_size": 1267,
      "dem": 49.0,
@@ -119,12 +119,12 @@
      "margin": 2.08,
      "partisan": false,
      "url": "https://www.survey160.com/methodological-research-blog/survey-160-pre-election-surveys-in-four-states",
-     "weight": 1.134
+     "weight": 1.08
     },
     {
      "pollster": "YouGov",
      "end_date": "2026-10-29",
-     "age": 8,
+     "age": 9,
      "population": "lv",
      "sample_size": 2092,
      "dem": 49.0,
@@ -132,12 +132,12 @@
      "margin": -1.01,
      "partisan": false,
      "url": "https://d3nkl3psvxxpe9.cloudfront.net/documents/ttw_ks_20261026_lv.pdf",
-     "weight": 1.009
+     "weight": 0.961
     },
     {
      "pollster": "Emerson College",
      "end_date": "2026-10-28",
-     "age": 9,
+     "age": 10,
      "population": "lv",
      "sample_size": 800,
      "dem": 47.5,
@@ -145,12 +145,12 @@
      "margin": -5.0,
      "partisan": false,
      "url": "https://emersoncollegepolling.com/october-2026-kansas-poll-hamilton-maintains-edge-over-marshall/",
-     "weight": 0.74
+     "weight": 0.704
     },
     {
      "pollster": "CNN/SSRS",
      "end_date": "2026-10-26",
-     "age": 11,
+     "age": 12,
      "population": "lv",
      "sample_size": 838,
      "dem": 45.0,
@@ -158,12 +158,12 @@
      "margin": -5.26,
      "partisan": false,
      "url": "https://www.cnn.com/2026/10/29/politics/cnn-polls-michigan-maine-texas-kansas-senate-races-midterms-vis",
-     "weight": 0.686
+     "weight": 0.652
     },
     {
      "pollster": "The Washington Post/George Mason University School of Policy and Government",
      "end_date": "2026-10-26",
-     "age": 11,
+     "age": 12,
      "population": "lv",
      "sample_size": 801,
      "dem": 51.0,
@@ -171,7 +171,7 @@
      "margin": 6.25,
      "partisan": false,
      "url": "https://www.washingtonpost.com/politics/2026/10/30/we-polled-kansas-democrats-wanted-talk-republicans-not-so-much/",
-     "weight": 0.67
+     "weight": 0.638
     }
    ]
   }

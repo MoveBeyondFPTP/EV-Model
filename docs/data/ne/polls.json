@@ -3,7 +3,7 @@
  "source_url": "https://votehub.com/polls/",
  "license": "CC BY 4.0",
  "method": "One poll per pollster from the last 30 days (60 if fewer than 3), likely voters preferred, weighted by recency (half-life 14 days) and sample size; partisan or internal polls count half. Margins are two-party.",
- "fetched_at": "2026-11-06T20:27:12+00:00",
+ "fetched_at": "2026-11-07T00:07:45+00:00",
  "races": {
   "senate": {
    "avg": -1.94,
@@ -13,7 +13,7 @@
     {
      "pollster": "Echelon Insights",
      "end_date": "2026-10-23",
-     "age": 14,
+     "age": 15,
      "population": "lv",
      "sample_size": 407,
      "dem": 46.0,
@@ -21,12 +21,12 @@
      "margin": -1.08,
      "partisan": false,
      "url": "https://netchoice.org/netchoice-echelon-insights-poll-voters-rank-ai-regulation-far-behind-cost-of-living-want-one-national-ai-standard/",
-     "weight": 0.412
+     "weight": 0.392
     },
     {
      "pollster": "National Public Affairs",
      "end_date": "2026-10-18",
-     "age": 19,
+     "age": 20,
      "population": "lv",
      "sample_size": 598,
      "dem": 47.0,
@@ -34,12 +34,12 @@
      "margin": -3.09,
      "partisan": false,
      "url": "https://backend.natpublicaffairs.com/media/NE_Tracker_R2_Trend_Memo_102226.7.pdf",
-     "weight": 0.39
+     "weight": 0.371
     },
     {
      "pollster": "GBAO Strategies",
      "end_date": "2026-09-08",
-     "age": 59,
+     "age": 60,
      "population": "lv",
      "sample_size": 800,
      "dem": 47.0,
@@ -47,7 +47,7 @@
      "margin": 1.08,
      "partisan": true,
      "url": "https://www.washingtonsun.com/newsletters/panic-week",
-     "weight": 0.031
+     "weight": 0.03
     }
    ]
   },
@@ -59,7 +59,7 @@
     {
      "pollster": "YouGov",
      "end_date": "2026-10-29",
-     "age": 8,
+     "age": 9,
      "population": "lv",
      "sample_size": 1979,
      "dem": 47.0,
@@ -67,12 +67,12 @@
      "margin": -3.09,
      "partisan": false,
      "url": "https://d3nkl3psvxxpe9.cloudfront.net/documents/ttw_ne_20261026_lv.pdf",
-     "weight": 1.009
+     "weight": 0.961
     },
     {
      "pollster": "Echelon Insights",
      "end_date": "2026-10-23",
-     "age": 14,
+     "age": 15,
      "population": "lv",
      "sample_size": 407,
      "dem": 40.0,
@@ -80,12 +80,12 @@
      "margin": -8.05,
      "partisan": false,
      "url": "https://netchoice.org/netchoice-echelon-insights-poll-voters-rank-ai-regulation-far-behind-cost-of-living-want-one-national-ai-standard/",
-     "weight": 0.412
+     "weight": 0.392
     },
     {
      "pollster": "National Public Affairs",
      "end_date": "2026-10-18",
-     "age": 19,
+     "age": 20,
      "population": "lv",
      "sample_size": 598,
      "dem": 41.0,
@@ -93,7 +93,7 @@
      "margin": -6.82,
      "partisan": false,
      "url": "https://backend.natpublicaffairs.com/media/NE_Tracker_R2_Trend_Memo_102226.7.pdf",
-     "weight": 0.39
+     "weight": 0.371
     }
    ]
   }
