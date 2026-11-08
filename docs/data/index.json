@@ -1,14 +1,14 @@
 {
- "generated_at": "2026-11-07T23:39:03+00:00",
+ "generated_at": "2026-11-08T18:50:21+00:00",
  "generic": {
-  "avg": 8.45,
-  "n": 6,
+  "avg": 8.31,
+  "n": 5,
   "window_days": 60,
   "polls": [
    {
     "pollster": "Ipsos",
     "end_date": "2026-11-02",
-    "age": 5,
+    "age": 6,
     "population": "lv",
     "sample_size": 1212,
     "dem": 52.0,
@@ -16,12 +16,12 @@
     "margin": 8.33,
     "partisan": false,
     "url": "https://www.ipsos.com/en-us/reutersipsos-early-november-survey",
-    "weight": 1.11
+    "weight": 1.056
    },
    {
     "pollster": "Pew Research Center",
     "end_date": "2026-10-04",
-    "age": 34,
+    "age": 35,
     "population": "rv",
     "sample_size": 3917,
     "dem": 44.0,
@@ -29,12 +29,12 @@
     "margin": 10.0,
     "partisan": false,
     "url": "https://www.pewresearch.org/politics/2026/10/08/with-americans-in-a-sour-mood-democratic-voters-are-more-engaged-in-midterms",
-    "weight": 0.279
+    "weight": 0.265
    },
    {
     "pollster": "YouGov - CBS News",
     "end_date": "2026-10-02",
-    "age": 36,
+    "age": 37,
     "population": "lv",
     "sample_size": 1572,
     "dem": 54.0,
@@ -42,12 +42,12 @@
     "margin": 9.09,
     "partisan": false,
     "url": "https://assets1.cbsnewsstatic.com/hub/cms/prod_cms_alt/file/2026/10/04/0957ee32-a848-4872-b659-14303d3d3734/cbsnews_20261004_sun.pdf",
-    "weight": 0.252
+    "weight": 0.24
    },
    {
     "pollster": "HarrisX/Harris",
     "end_date": "2026-09-28",
-    "age": 40,
+    "age": 41,
     "population": "lv",
     "sample_size": null,
     "dem": 51.0,
@@ -55,12 +55,12 @@
     "margin": 2.0,
     "partisan": false,
     "url": "https://harvardharrispoll.com/assets/uploads/2026/09/HHP_Sep2026_KeyResults.pdf",
-    "weight": 0.138
+    "weight": 0.131
    },
    {
     "pollster": "The Argument/Verasight",
     "end_date": "2026-09-22",
-    "age": 46,
+    "age": 47,
     "population": "lv",
     "sample_size": null,
     "dem": 55.0,
@@ -68,20 +68,7 @@
     "margin": 10.0,
     "partisan": false,
     "url": "https://www.theargumentmag.com/p/the-least-popular-war-since-vietnam",
-    "weight": 0.103
-   },
-   {
-    "pollster": "YouGov",
-    "end_date": "2026-09-08",
-    "age": 60,
-    "population": "lv",
-    "sample_size": 1015,
-    "dem": 49.0,
-    "rep": 38.0,
-    "margin": 12.64,
-    "partisan": false,
-    "url": "https://d3nkl3psvxxpe9.cloudfront.net/documents/econTabReport_SlcWdVd.pdf",
-    "weight": 0.067
+    "weight": 0.098
    }
   ]
  },
@@ -355,9 +342,9 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": 34.99,
-     "lo": 34.99,
-     "hi": 34.99,
+     "center": 34.85,
+     "lo": 34.85,
+     "hi": 34.85,
      "rating": "Solid Green",
      "n_polls": 0
     },
@@ -515,11 +502,11 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": 5.96,
-     "lo": 5.96,
-     "hi": 5.96,
+     "center": 6.12,
+     "lo": 6.12,
+     "hi": 6.12,
      "rating": "Lean El-Sayed",
-     "n_polls": 11
+     "n_polls": 10
     },
     {
      "id": "governor",
@@ -619,11 +606,11 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": 14.43,
-     "lo": 12.55,
-     "hi": 14.55,
+     "center": 14.34,
+     "lo": 12.46,
+     "hi": 14.46,
      "rating": "Solid Cooper",
-     "n_polls": 8
+     "n_polls": 7
     }
    ]
   },
@@ -643,11 +630,11 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": -1.94,
-     "lo": -1.94,
-     "hi": -1.94,
+     "center": -2.06,
+     "lo": -2.06,
+     "hi": -2.06,
      "rating": "Tilt Ricketts",
-     "n_polls": 3
+     "n_polls": 2
     },
     {
      "id": "governor",
@@ -723,11 +710,11 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": 3.39,
-     "lo": 3.39,
-     "hi": 3.39,
+     "center": 3.36,
+     "lo": 3.36,
+     "hi": 3.36,
      "rating": "Lean Talarico",
-     "n_polls": 15
+     "n_polls": 14
     },
     {
      "id": "governor",
@@ -739,11 +726,11 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": -2.4,
-     "lo": -2.4,
-     "hi": -2.4,
+     "center": -2.44,
+     "lo": -2.44,
+     "hi": -2.44,
      "rating": "Tilt Abbott",
-     "n_polls": 13
+     "n_polls": 12
     }
    ]
   },

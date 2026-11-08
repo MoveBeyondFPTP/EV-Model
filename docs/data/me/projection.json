@@ -65,10 +65,10 @@
      "label": "2024 president (ME)",
      "base": 7.09,
      "national_then": -1.5,
-     "generic": 8.45,
+     "generic": 8.31,
      "swing_factor": 1.0,
-     "swing": 9.95,
-     "generic_margin": 17.04,
+     "swing": 9.81,
+     "generic_margin": 16.9,
      "candidate_adjustment": -7.42,
      "candidates": [
       {
@@ -84,7 +84,7 @@
       }
      ],
      "carry_forward": 0.4,
-     "margin": 9.62,
+     "margin": 9.48,
      "note": null
     },
     "polls": {
@@ -132,14 +132,14 @@
      "label": "2024 president (ME)",
      "base": 7.09,
      "national_then": -1.5,
-     "generic": 8.45,
+     "generic": 8.31,
      "swing_factor": 1.0,
-     "swing": 9.95,
-     "generic_margin": 17.04,
+     "swing": 9.81,
+     "generic_margin": 16.9,
      "candidate_adjustment": 0.0,
      "candidates": [],
      "carry_forward": 0.4,
-     "margin": 17.04,
+     "margin": 16.9,
      "note": null
     },
     "polls": {
@@ -161,7 +161,7 @@
   "In Maine all early voting is absentee voting. \u201cIn-person early\u201d here means absentee ballots cast at the town clerk\u2019s office; mail, drop-box and hand-delivered ballots count as mail.",
   "Maine\u2019s files have no age or race, so those breakdowns aren\u2019t shown."
  ],
- "generated_at": "2026-11-07T23:39:03+00:00",
+ "generated_at": "2026-11-08T18:50:21+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,
@@ -172,7 +172,7 @@
   "c_weight": 0.25,
   "c_cap": 2.0,
   "k_at_30_days": 2.0,
-  "days_left": -4,
+  "days_left": -5,
   "k_now": 0.0
  }
 }

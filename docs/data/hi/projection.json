@@ -44,19 +44,19 @@
     ]
    },
    "projection": {
-    "center": 34.99,
-    "lo": 34.99,
-    "hi": 34.99,
+    "center": 34.85,
+    "lo": 34.85,
+    "hi": 34.85,
     "rating": "Solid Green",
     "range_basis": "inputs",
     "environment": {
      "label": "2024 president (HI)",
      "base": 23.57,
      "national_then": -1.5,
-     "generic": 8.45,
+     "generic": 8.31,
      "swing_factor": 1.0,
-     "swing": 9.95,
-     "generic_margin": 33.52,
+     "swing": 9.81,
+     "generic_margin": 33.38,
      "candidate_adjustment": 1.47,
      "candidates": [
       {
@@ -72,12 +72,12 @@
       }
      ],
      "carry_forward": 0.4,
-     "margin": 34.99,
+     "margin": 34.85,
      "note": null
     },
     "polls": null,
     "poll_weight": 0.0,
-    "start": 34.99,
+    "start": 34.85,
     "early_vote": null
    }
   },
@@ -269,7 +269,7 @@
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-11-07T23:39:03+00:00",
+ "generated_at": "2026-11-08T18:50:21+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,
@@ -280,7 +280,7 @@
   "c_weight": 0.25,
   "c_cap": 2.0,
   "k_at_30_days": 2.0,
-  "days_left": -4,
+  "days_left": -5,
   "k_now": 0.0
  }
 }

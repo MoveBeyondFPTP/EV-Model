@@ -3,16 +3,16 @@
  "source_url": "https://votehub.com/polls/",
  "license": "CC BY 4.0",
  "method": "One poll per pollster from the last 30 days (60 if fewer than 3), likely voters preferred, weighted by recency (half-life 14 days) and sample size; partisan or internal polls count half. Margins are two-party.",
- "fetched_at": "2026-11-07T23:39:02+00:00",
+ "fetched_at": "2026-11-08T18:50:20+00:00",
  "generic": {
-  "avg": 8.45,
-  "n": 6,
+  "avg": 8.31,
+  "n": 5,
   "window_days": 60,
   "polls": [
    {
     "pollster": "Ipsos",
     "end_date": "2026-11-02",
-    "age": 5,
+    "age": 6,
     "population": "lv",
     "sample_size": 1212,
     "dem": 52.0,
@@ -20,12 +20,12 @@
     "margin": 8.33,
     "partisan": false,
     "url": "https://www.ipsos.com/en-us/reutersipsos-early-november-survey",
-    "weight": 1.11
+    "weight": 1.056
    },
    {
     "pollster": "Pew Research Center",
     "end_date": "2026-10-04",
-    "age": 34,
+    "age": 35,
     "population": "rv",
     "sample_size": 3917,
     "dem": 44.0,
@@ -33,12 +33,12 @@
     "margin": 10.0,
     "partisan": false,
     "url": "https://www.pewresearch.org/politics/2026/10/08/with-americans-in-a-sour-mood-democratic-voters-are-more-engaged-in-midterms",
-    "weight": 0.279
+    "weight": 0.265
    },
    {
     "pollster": "YouGov - CBS News",
     "end_date": "2026-10-02",
-    "age": 36,
+    "age": 37,
     "population": "lv",
     "sample_size": 1572,
     "dem": 54.0,
@@ -46,12 +46,12 @@
     "margin": 9.09,
     "partisan": false,
     "url": "https://assets1.cbsnewsstatic.com/hub/cms/prod_cms_alt/file/2026/10/04/0957ee32-a848-4872-b659-14303d3d3734/cbsnews_20261004_sun.pdf",
-    "weight": 0.252
+    "weight": 0.24
    },
    {
     "pollster": "HarrisX/Harris",
     "end_date": "2026-09-28",
-    "age": 40,
+    "age": 41,
     "population": "lv",
     "sample_size": null,
     "dem": 51.0,
@@ -59,12 +59,12 @@
     "margin": 2.0,
     "partisan": false,
     "url": "https://harvardharrispoll.com/assets/uploads/2026/09/HHP_Sep2026_KeyResults.pdf",
-    "weight": 0.138
+    "weight": 0.131
    },
    {
     "pollster": "The Argument/Verasight",
     "end_date": "2026-09-22",
-    "age": 46,
+    "age": 47,
     "population": "lv",
     "sample_size": null,
     "dem": 55.0,
@@ -72,20 +72,7 @@
     "margin": 10.0,
     "partisan": false,
     "url": "https://www.theargumentmag.com/p/the-least-popular-war-since-vietnam",
-    "weight": 0.103
-   },
-   {
-    "pollster": "YouGov",
-    "end_date": "2026-09-08",
-    "age": 60,
-    "population": "lv",
-    "sample_size": 1015,
-    "dem": 49.0,
-    "rep": 38.0,
-    "margin": 12.64,
-    "partisan": false,
-    "url": "https://d3nkl3psvxxpe9.cloudfront.net/documents/econTabReport_SlcWdVd.pdf",
-    "weight": 0.067
+    "weight": 0.098
    }
   ]
  },
