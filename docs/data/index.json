@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-08T23:43:45+00:00",
+ "generated_at": "2026-11-09T23:26:23+00:00",
  "generic": {
   "avg": 8.31,
   "n": 5,
@@ -8,7 +8,7 @@
    {
     "pollster": "Ipsos",
     "end_date": "2026-11-02",
-    "age": 6,
+    "age": 7,
     "population": "lv",
     "sample_size": 1212,
     "dem": 52.0,
@@ -16,12 +16,12 @@
     "margin": 8.33,
     "partisan": false,
     "url": "https://www.ipsos.com/en-us/reutersipsos-early-november-survey",
-    "weight": 1.056
+    "weight": 1.005
    },
    {
     "pollster": "Pew Research Center",
     "end_date": "2026-10-04",
-    "age": 35,
+    "age": 36,
     "population": "rv",
     "sample_size": 3917,
     "dem": 44.0,
@@ -29,12 +29,12 @@
     "margin": 10.0,
     "partisan": false,
     "url": "https://www.pewresearch.org/politics/2026/10/08/with-americans-in-a-sour-mood-democratic-voters-are-more-engaged-in-midterms",
-    "weight": 0.265
+    "weight": 0.252
    },
    {
     "pollster": "YouGov - CBS News",
     "end_date": "2026-10-02",
-    "age": 37,
+    "age": 38,
     "population": "lv",
     "sample_size": 1572,
     "dem": 54.0,
@@ -42,12 +42,12 @@
     "margin": 9.09,
     "partisan": false,
     "url": "https://assets1.cbsnewsstatic.com/hub/cms/prod_cms_alt/file/2026/10/04/0957ee32-a848-4872-b659-14303d3d3734/cbsnews_20261004_sun.pdf",
-    "weight": 0.24
+    "weight": 0.229
    },
    {
     "pollster": "HarrisX/Harris",
     "end_date": "2026-09-28",
-    "age": 41,
+    "age": 42,
     "population": "lv",
     "sample_size": null,
     "dem": 51.0,
@@ -55,12 +55,12 @@
     "margin": 2.0,
     "partisan": false,
     "url": "https://harvardharrispoll.com/assets/uploads/2026/09/HHP_Sep2026_KeyResults.pdf",
-    "weight": 0.131
+    "weight": 0.125
    },
    {
     "pollster": "The Argument/Verasight",
     "end_date": "2026-09-22",
-    "age": 47,
+    "age": 48,
     "population": "lv",
     "sample_size": null,
     "dem": 55.0,
@@ -68,7 +68,7 @@
     "margin": 10.0,
     "partisan": false,
     "url": "https://www.theargumentmag.com/p/the-least-popular-war-since-vietnam",
-    "weight": 0.098
+    "weight": 0.093
    }
   ]
  },
