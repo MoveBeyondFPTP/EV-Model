@@ -1,29 +1,29 @@
-[23:25:43] ak
+[02:44:46] ak
 ak: no early-vote source configured; skipping
 No registration config; skipping
-[23:25:44] ca
+[02:44:46] ca
 ca: no early-vote source configured; skipping
 No registration config; skipping
-[23:25:44] co
+[02:44:47] co
 co: no early-vote source configured; skipping
 No registration config; skipping
-[23:25:44] fl
+[02:44:47] fl
   Florida snapshot 2026-11-08: mail 2,079,467, early 3,467,306
   wrote docs/data/fl/manifest.json (0 KB)
 No registration config; skipping
-[23:25:46] ga
+[02:44:49] ga
 ga: no early-vote source configured; skipping
 No registration config; skipping
-[23:25:46] hi
+[02:44:49] hi
 hi: no early-vote source configured; skipping
 No registration config; skipping
-[23:25:47] ia
+[02:44:50] ia
 ia: no early-vote source configured; skipping
 No registration config; skipping
-[23:25:47] ks
+[02:44:50] ks
 ks: no early-vote source configured; skipping
 No registration config; skipping
-[23:25:47] me
+[02:44:51] me
 == ME 2026
 Downloading https://www.maine.gov/sos/sites/maine.gov.sos/files/inline-files/11-3-26%20AB%20Voter%20File%20as%20of%2011-3-26%202pm.txt
   accepted: 311,329; unmapped municipalities: 826
@@ -33,16 +33,16 @@ Downloading https://www.maine.gov/sos/sites/maine.gov.sos/files/inline-files/11-
   wrote docs/data/me/2026.json (20 KB)
 == 2022: already built, skipping
   wrote docs/data/me/manifest.json (0 KB)
-[23:25:54] mi
+[02:45:10] mi
 mi: no early-vote source configured; skipping
 No registration config; skipping
-[23:25:54] mn
+[02:45:10] mn
 mn: no early-vote source configured; skipping
 No registration config; skipping
-[23:25:54] mt
+[02:45:11] mt
 mt: no early-vote source configured; skipping
 No registration config; skipping
-[23:25:55] nc
+[02:45:11] nc
 == NC 2026
 Downloading https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2026_11_03/absentee_20261103.zip
   127.2 MB
@@ -56,21 +56,21 @@ Downloading https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2026_11_03/absentee_20261
 == 2024: already built, skipping
 == 2020: already built, skipping
   wrote docs/data/nc/manifest.json (1 KB)
-[23:26:18] ne
+[02:45:41] ne
 ne: no early-vote source configured; skipping
 No registration config; skipping
-[23:26:19] nh
+[02:45:41] nh
 nh: no early-vote source configured; skipping
 No registration config; skipping
-[23:26:19] tx
+[02:45:42] tx
   Dallas 2026: https://www.dallascountyvotes.org/wp-content/uploads/2026/10/Early-Voting-Turnout-By-Date-Location-Report_10.30.26.xlsx
   Dallas 2022 unavailable: XMLSyntaxError('no text parsed from document')
   tx dallas: ok
 tx: no early-vote source configured; skipping
 No registration config; skipping
-[23:26:20] vt
+[02:45:44] vt
 vt: no early-vote source configured; skipping
 No registration config; skipping
-[23:26:21] wi
+[02:45:44] wi
 wi: no early-vote source configured; skipping
 No registration config; skipping

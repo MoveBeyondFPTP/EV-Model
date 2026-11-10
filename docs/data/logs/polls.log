@@ -11,8 +11,8 @@ co senate: 15.56 from 1 polls
 co governor: 17.24 from 1 polls
 !! co longmont-3c failed: KeyError('poll_type')
 !! co longmont-3d failed: KeyError('poll_type')
-fl senate: -5.64 from 6 polls
-fl governor: -3.65 from 8 polls
+fl senate: -5.51 from 5 polls
+fl governor: -4.01 from 6 polls
 ga senate: 8.88 from 5 polls
 ga governor: -0.61 from 5 polls
 hi governor: None from 0 polls
