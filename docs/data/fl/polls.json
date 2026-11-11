@@ -3,7 +3,7 @@
  "source_url": "https://votehub.com/polls/",
  "license": "CC BY 4.0",
  "method": "One poll per pollster from the last 30 days (60 if fewer than 3), likely voters preferred, weighted by recency (half-life 14 days) and sample size; partisan or internal polls count half. Margins are two-party.",
- "fetched_at": "2026-11-10T20:49:07+00:00",
+ "fetched_at": "2026-11-11T00:41:22+00:00",
  "races": {
   "senate": {
    "avg": -5.51,
@@ -13,7 +13,7 @@
     {
      "pollster": "RedBox Research",
      "end_date": "2026-10-31",
-     "age": 10,
+     "age": 11,
      "population": "lv",
      "sample_size": 2898,
      "dem": 45.0,
@@ -21,12 +21,12 @@
      "margin": -2.17,
      "partisan": true,
      "url": "https://afightworthhaving.com/polling/2026/florida",
-     "weight": 0.457
+     "weight": 0.435
     },
     {
      "pollster": "ActiVote",
      "end_date": "2026-10-27",
-     "age": 14,
+     "age": 15,
      "population": "lv",
      "sample_size": 400,
      "dem": 47.0,
@@ -34,12 +34,12 @@
      "margin": -6.0,
      "partisan": false,
      "url": "https://www.activote.net/polls/2026/fl-u-s-senate/",
-     "weight": 0.408
+     "weight": 0.389
     },
     {
      "pollster": "Echelon Insights",
      "end_date": "2026-10-23",
-     "age": 18,
+     "age": 19,
      "population": "lv",
      "sample_size": 515,
      "dem": 43.0,
@@ -47,12 +47,12 @@
      "margin": -8.51,
      "partisan": false,
      "url": "https://netchoice.org/netchoice-echelon-insights-poll-voters-rank-ai-regulation-far-behind-cost-of-living-want-one-national-ai-standard/",
-     "weight": 0.38
+     "weight": 0.362
     },
     {
      "pollster": "co/efficient",
      "end_date": "2026-10-20",
-     "age": 21,
+     "age": 22,
      "population": "lv",
      "sample_size": 1014,
      "dem": 40.0,
@@ -60,12 +60,12 @@
      "margin": -9.09,
      "partisan": true,
      "url": "https://battlegrounds.coefficient.org/fl/",
-     "weight": 0.23
+     "weight": 0.219
     },
     {
      "pollster": "University of North Florida",
      "end_date": "2026-10-19",
-     "age": 22,
+     "age": 23,
      "population": "lv",
      "sample_size": 1414,
      "dem": 45.0,
@@ -73,7 +73,7 @@
      "margin": -4.26,
      "partisan": false,
      "url": "https://static1.squarespace.com/static/6994d571bce3436c60d86870/t/6ad8a5ec13c20404a1f8052b/1792583148294/UNF+PORL+FALL+Statewide+2026+FLLV+-+Press+Release+1021+EMBARGO.pdf",
-     "weight": 0.505
+     "weight": 0.48
     }
    ]
   },
@@ -85,7 +85,7 @@
     {
      "pollster": "RedBox Research",
      "end_date": "2026-10-31",
-     "age": 10,
+     "age": 11,
      "population": "lv",
      "sample_size": 2898,
      "dem": 46.0,
@@ -93,12 +93,12 @@
      "margin": -1.08,
      "partisan": false,
      "url": "https://afightworthhaving.com/polling/2026/florida",
-     "weight": 0.914
+     "weight": 0.87
     },
     {
      "pollster": "Echelon Insights",
      "end_date": "2026-10-23",
-     "age": 18,
+     "age": 19,
      "population": "lv",
      "sample_size": 515,
      "dem": 44.0,
@@ -106,12 +106,12 @@
      "margin": -6.38,
      "partisan": false,
      "url": "https://netchoice.org/netchoice-echelon-insights-poll-voters-rank-ai-regulation-far-behind-cost-of-living-want-one-national-ai-standard/",
-     "weight": 0.38
+     "weight": 0.362
     },
     {
      "pollster": "co/efficient",
      "end_date": "2026-10-20",
-     "age": 21,
+     "age": 22,
      "population": "lv",
      "sample_size": 1014,
      "dem": 40.0,
@@ -119,12 +119,12 @@
      "margin": -10.11,
      "partisan": true,
      "url": "https://battlegrounds.coefficient.org/fl/",
-     "weight": 0.23
+     "weight": 0.219
     },
     {
      "pollster": "ActiVote",
      "end_date": "2026-10-19",
-     "age": 22,
+     "age": 23,
      "population": "lv",
      "sample_size": 400,
      "dem": 48.3,
@@ -132,12 +132,12 @@
      "margin": -3.4,
      "partisan": false,
      "url": "https://www.activote.net/polls/2026/fl-governor/",
-     "weight": 0.275
+     "weight": 0.261
     },
     {
      "pollster": "University of North Florida",
      "end_date": "2026-10-19",
-     "age": 22,
+     "age": 23,
      "population": "lv",
      "sample_size": 1378,
      "dem": 47.0,
@@ -145,12 +145,12 @@
      "margin": -2.08,
      "partisan": false,
      "url": "https://static1.squarespace.com/static/6994d571bce3436c60d86870/t/6ad8a5ec13c20404a1f8052b/1792583148294/UNF+PORL+FALL+Statewide+2026+FLLV+-+Press+Release+1021+EMBARGO.pdf",
-     "weight": 0.505
+     "weight": 0.48
     },
     {
      "pollster": "YouGov",
      "end_date": "2026-10-15",
-     "age": 26,
+     "age": 27,
      "population": "rv",
      "sample_size": 825,
      "dem": 42.0,
@@ -158,7 +158,7 @@
      "margin": -8.7,
      "partisan": false,
      "url": "https://www.univision.com/noticias/politica/republicans-lead-florida-as-most-latino-voters-say-immigration-enforcement-has-gone-too-far",
-     "weight": 0.324
+     "weight": 0.308
     }
    ]
   }

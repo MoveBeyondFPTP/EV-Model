@@ -67,9 +67,9 @@
     "margin": -3.3
    },
    "projection": {
-    "center": 14.34,
-    "lo": 12.46,
-    "hi": 14.46,
+    "center": 14.16,
+    "lo": 12.28,
+    "hi": 14.28,
     "rating": "Solid Cooper",
     "range_basis": "inputs",
     "environment": {
@@ -99,12 +99,12 @@
      "note": null
     },
     "polls": {
-     "avg": 12.46,
-     "n": 7,
+     "avg": 12.28,
+     "n": 6,
      "window_days": 30
     },
     "poll_weight": 1.0,
-    "start": 12.46,
+    "start": 12.28,
     "early_vote": {
      "adjustment": 1.88,
      "weight": 0.25,
@@ -116,7 +116,7 @@
  "ev_notes": [
   "Rules change. Photo ID applies in 2026 but not in 2018 or 2022, and mail ballots now must arrive by the close of polls instead of within the old three-day grace period. Early voting schedules and sites also vary by cycle."
  ],
- "generated_at": "2026-11-10T20:49:08+00:00",
+ "generated_at": "2026-11-11T00:41:24+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,
@@ -127,7 +127,7 @@
   "c_weight": 0.25,
   "c_cap": 2.0,
   "k_at_30_days": 2.0,
-  "days_left": -7,
+  "days_left": -8,
   "k_now": 0.0
  }
 }
