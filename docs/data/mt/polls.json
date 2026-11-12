@@ -3,17 +3,17 @@
  "source_url": "https://votehub.com/polls/",
  "license": "CC BY 4.0",
  "method": "One poll per pollster from the last 30 days (60 if fewer than 3), likely voters preferred, weighted by recency (half-life 14 days) and sample size; partisan or internal polls count half. Margins are two-party.",
- "fetched_at": "2026-11-11T21:24:01+00:00",
+ "fetched_at": "2026-11-12T01:54:48+00:00",
  "races": {
   "senate": {
-   "avg": -12.29,
-   "n": 4,
+   "avg": -11.31,
+   "n": 3,
    "window_days": 30,
    "polls": [
     {
      "pollster": "Concord Public Opinion Partners",
      "end_date": "2026-10-23",
-     "age": 19,
+     "age": 20,
      "population": "lv",
      "sample_size": 410,
      "dem": 39.0,
@@ -21,12 +21,12 @@
      "margin": 1.3,
      "partisan": true,
      "url": "https://www.pollcheck.co.uk/us-midterms-2026/senate/montana",
-     "weight": 0.161
+     "weight": 0.154
     },
     {
      "pollster": "Montana State University Billings",
      "end_date": "2026-10-21",
-     "age": 21,
+     "age": 22,
      "population": "a",
      "sample_size": 720,
      "dem": 26.0,
@@ -34,12 +34,12 @@
      "margin": -7.14,
      "partisan": false,
      "url": "https://dailymontanan.com/2026/10/29/mountain-state-poll-shows-close-races-for-federal-offices/",
-     "weight": 0.387
+     "weight": 0.369
     },
     {
      "pollster": "Quantus Insights",
      "end_date": "2026-10-18",
-     "age": 24,
+     "age": 25,
      "population": "lv",
      "sample_size": 667,
      "dem": 29.0,
@@ -47,20 +47,7 @@
      "margin": -22.67,
      "partisan": false,
      "url": "https://www.pollcheck.co.uk/us-midterms-2026/senate/montana",
-     "weight": 0.321
-    },
-    {
-     "pollster": "Peak Insights",
-     "end_date": "2026-10-12",
-     "age": 30,
-     "population": "lv",
-     "sample_size": 500,
-     "dem": 29.0,
-     "rep": 44.0,
-     "margin": -20.55,
-     "partisan": true,
-     "url": "https://www.pollcheck.co.uk/us-midterms-2026/senate/montana",
-     "weight": 0.103
+     "weight": 0.306
     }
    ],
    "source": "PollCheck (full-field polls; sponsors noted)",

@@ -28,9 +28,9 @@
     ]
    },
    "projection": {
-    "center": 2.71,
-    "lo": 2.71,
-    "hi": 2.71,
+    "center": 2.93,
+    "lo": 2.93,
+    "hi": 2.93,
     "rating": "Tilt Flanagan",
     "range_basis": "inputs",
     "environment": {
@@ -48,12 +48,12 @@
      "note": null
     },
     "polls": {
-     "avg": 2.71,
-     "n": 3,
-     "window_days": 30
+     "avg": 2.93,
+     "n": 5,
+     "window_days": 60
     },
     "poll_weight": 1.0,
-    "start": 2.71,
+    "start": 2.93,
     "early_vote": null
    }
   },
@@ -95,9 +95,9 @@
     ]
    },
    "projection": {
-    "center": 10.74,
-    "lo": 10.74,
-    "hi": 10.74,
+    "center": 10.65,
+    "lo": 10.65,
+    "hi": 10.65,
     "rating": "Likely Klobuchar",
     "range_basis": "inputs",
     "environment": {
@@ -127,18 +127,18 @@
      "note": null
     },
     "polls": {
-     "avg": 10.74,
-     "n": 3,
-     "window_days": 30
+     "avg": 10.65,
+     "n": 4,
+     "window_days": 60
     },
     "poll_weight": 1.0,
-    "start": 10.74,
+    "start": 10.65,
     "early_vote": null
    }
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-11-11T21:24:03+00:00",
+ "generated_at": "2026-11-12T01:54:50+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,
@@ -149,7 +149,7 @@
   "c_weight": 0.25,
   "c_cap": 2.0,
   "k_at_30_days": 2.0,
-  "days_left": -8,
+  "days_left": -9,
   "k_now": 0.0
  }
 }

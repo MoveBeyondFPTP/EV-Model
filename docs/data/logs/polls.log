@@ -17,17 +17,17 @@ ga senate: 8.88 from 5 polls
 ga governor: -0.61 from 5 polls
 hi governor: None from 0 polls
 !! hi honolulu-q5 failed: KeyError('poll_type')
-ia senate: -0.48 from 8 polls
-ia governor: 7.08 from 6 polls
+ia senate: -0.42 from 6 polls
+ia governor: 7.26 from 5 polls
 ks senate: 5.26 from 6 polls
 ks governor: -0.17 from 6 polls
 me senate: 4.7 from 8 polls
 me governor: 10.75 from 8 polls
 mi senate: 6.12 from 10 polls
 mi governor: 9.18 from 9 polls
-mn senate: 2.71 from 3 polls
-mn governor: 10.74 from 3 polls
-mt senate: -12.29 from 4 polls
+mn senate: 2.93 from 5 polls
+mn governor: 10.65 from 4 polls
+mt senate: -11.31 from 3 polls
 nc senate: 12.28 from 6 polls
 ne senate: -2.06 from 2 polls
 ne governor: -5.02 from 3 polls
