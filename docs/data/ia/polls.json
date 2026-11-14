@@ -3,7 +3,7 @@
  "source_url": "https://votehub.com/polls/",
  "license": "CC BY 4.0",
  "method": "One poll per pollster from the last 30 days (60 if fewer than 3), likely voters preferred, weighted by recency (half-life 14 days) and sample size; partisan or internal polls count half. Margins are two-party.",
- "fetched_at": "2026-11-13T20:54:14+00:00",
+ "fetched_at": "2026-11-14T00:54:04+00:00",
  "races": {
   "senate": {
    "avg": -0.68,
@@ -13,7 +13,7 @@
     {
      "pollster": "The New York Times/Siena University",
      "end_date": "2026-11-01",
-     "age": 12,
+     "age": 13,
      "population": "lv",
      "sample_size": 705,
      "dem": 48.0,
@@ -21,12 +21,12 @@
      "margin": 1.05,
      "partisan": false,
      "url": "https://www.nytimes.com/interactive/2026/11/01/polls/times-siena-ia-poll-toplines.html",
-     "weight": 0.598
+     "weight": 0.569
     },
     {
      "pollster": "GrayHouse",
      "end_date": "2026-10-31",
-     "age": 13,
+     "age": 14,
      "population": "lv",
      "sample_size": 601,
      "dem": 46.0,
@@ -34,12 +34,12 @@
      "margin": -2.13,
      "partisan": false,
      "url": "https://www.grayhouse.com/post/grayhouse-poll-hinson-leads-in-iowa-by-2",
-     "weight": 0.526
+     "weight": 0.5
     },
     {
      "pollster": "co/efficient",
      "end_date": "2026-10-28",
-     "age": 16,
+     "age": 17,
      "population": "lv",
      "sample_size": 1020,
      "dem": 46.0,
@@ -47,12 +47,12 @@
      "margin": -2.13,
      "partisan": true,
      "url": "https://battlegrounds.coefficient.org/ia/",
-     "weight": 0.295
+     "weight": 0.281
     },
     {
      "pollster": "Echelon Insights",
      "end_date": "2026-10-23",
-     "age": 21,
+     "age": 22,
      "population": "lv",
      "sample_size": 403,
      "dem": 45.0,
@@ -60,12 +60,12 @@
      "margin": 2.27,
      "partisan": false,
      "url": "https://netchoice.org/netchoice-echelon-insights-poll-voters-rank-ai-regulation-far-behind-cost-of-living-want-one-national-ai-standard/",
-     "weight": 0.29
+     "weight": 0.276
     },
     {
      "pollster": "InsiderAdvantage",
      "end_date": "2026-10-22",
-     "age": 22,
+     "age": 23,
      "population": "lv",
      "sample_size": 1200,
      "dem": 45.0,
@@ -73,7 +73,7 @@
      "margin": -2.17,
      "partisan": false,
      "url": "https://insideradvantage.com/insideradvantage-senate-surveys-mi-el-sayed-47-rogers-46-ia-hinson-47-turek-45-oh-brown-47-husted-44/",
-     "weight": 0.476
+     "weight": 0.453
     }
    ]
   },
@@ -85,7 +85,7 @@
     {
      "pollster": "The New York Times/Siena University",
      "end_date": "2026-11-01",
-     "age": 12,
+     "age": 13,
      "population": "lv",
      "sample_size": 705,
      "dem": 51.0,
@@ -93,12 +93,12 @@
      "margin": 8.51,
      "partisan": false,
      "url": "https://www.nytimes.com/interactive/2026/11/01/polls/times-siena-ia-poll-toplines.html",
-     "weight": 0.598
+     "weight": 0.569
     },
     {
      "pollster": "YouGov",
      "end_date": "2026-10-29",
-     "age": 15,
+     "age": 16,
      "population": "lv",
      "sample_size": 2020,
      "dem": 53.0,
@@ -106,12 +106,12 @@
      "margin": 7.07,
      "partisan": false,
      "url": "https://d3nkl3psvxxpe9.cloudfront.net/documents/ttw_ia_20261026_lv.pdf",
-     "weight": 0.714
+     "weight": 0.679
     },
     {
      "pollster": "co/efficient",
      "end_date": "2026-10-28",
-     "age": 16,
+     "age": 17,
      "population": "lv",
      "sample_size": 1020,
      "dem": 50.0,
@@ -119,12 +119,12 @@
      "margin": 5.26,
      "partisan": true,
      "url": "https://battlegrounds.coefficient.org/ia/",
-     "weight": 0.295
+     "weight": 0.281
     },
     {
      "pollster": "Echelon Insights",
      "end_date": "2026-10-23",
-     "age": 21,
+     "age": 22,
      "population": "lv",
      "sample_size": 403,
      "dem": 50.0,
@@ -132,7 +132,7 @@
      "margin": 4.17,
      "partisan": false,
      "url": "https://netchoice.org/netchoice-echelon-insights-poll-voters-rank-ai-regulation-far-behind-cost-of-living-want-one-national-ai-standard/",
-     "weight": 0.29
+     "weight": 0.276
     }
    ]
   }

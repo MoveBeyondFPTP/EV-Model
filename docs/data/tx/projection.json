@@ -44,9 +44,9 @@
     }
    },
    "projection": {
-    "center": 3.26,
-    "lo": 3.26,
-    "hi": 3.26,
+    "center": 3.52,
+    "lo": 3.52,
+    "hi": 3.52,
     "rating": "Lean Talarico",
     "range_basis": "inputs",
     "environment": {
@@ -76,12 +76,12 @@
      "note": null
     },
     "polls": {
-     "avg": 3.26,
-     "n": 13,
+     "avg": 3.52,
+     "n": 12,
      "window_days": 30
     },
     "poll_weight": 1.0,
-    "start": 3.26,
+    "start": 3.52,
     "early_vote": null
    }
   },
@@ -166,7 +166,7 @@
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-11-13T20:54:16+00:00",
+ "generated_at": "2026-11-14T00:54:06+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,
@@ -177,7 +177,7 @@
   "c_weight": 0.25,
   "c_cap": 2.0,
   "k_at_30_days": 2.0,
-  "days_left": -10,
+  "days_left": -11,
   "k_now": 0.0
  }
 }

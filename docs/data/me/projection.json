@@ -56,9 +56,9 @@
     "margin": 13.32
    },
    "projection": {
-    "center": 5.1,
-    "lo": 4.7,
-    "hi": 5.49,
+    "center": 5.3,
+    "lo": 4.91,
+    "hi": 5.7,
     "rating": "Lean Jackson",
     "range_basis": "inputs",
     "environment": {
@@ -88,12 +88,12 @@
      "note": null
     },
     "polls": {
-     "avg": 4.7,
-     "n": 8,
+     "avg": 4.91,
+     "n": 7,
      "window_days": 30
     },
     "poll_weight": 1.0,
-    "start": 4.7,
+    "start": 4.91,
     "early_vote": {
      "adjustment": 0.4,
      "weight": 0.25,
@@ -161,7 +161,7 @@
   "In Maine all early voting is absentee voting. \u201cIn-person early\u201d here means absentee ballots cast at the town clerk\u2019s office; mail, drop-box and hand-delivered ballots count as mail.",
   "Maine\u2019s files have no age or race, so those breakdowns aren\u2019t shown."
  ],
- "generated_at": "2026-11-13T20:54:16+00:00",
+ "generated_at": "2026-11-14T00:54:06+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,
@@ -172,7 +172,7 @@
   "c_weight": 0.25,
   "c_cap": 2.0,
   "k_at_30_days": 2.0,
-  "days_left": -10,
+  "days_left": -11,
   "k_now": 0.0
  }
 }

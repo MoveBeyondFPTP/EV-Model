@@ -3,7 +3,7 @@
  "source_url": "https://votehub.com/polls/",
  "license": "CC BY 4.0",
  "method": "One poll per pollster from the last 30 days (60 if fewer than 3), likely voters preferred, weighted by recency (half-life 14 days) and sample size; partisan or internal polls count half. Margins are two-party.",
- "fetched_at": "2026-11-13T20:54:14+00:00",
+ "fetched_at": "2026-11-14T00:54:04+00:00",
  "races": {
   "senate": {
    "avg": 2.93,
@@ -13,7 +13,7 @@
     {
      "pollster": "AtlasIntel",
      "end_date": "2026-11-01",
-     "age": 12,
+     "age": 13,
      "population": "lv",
      "sample_size": 2133,
      "dem": 48.0,
@@ -21,12 +21,12 @@
      "margin": 2.13,
      "partisan": false,
      "url": "https://pollstergraph.com/poll/exclusive-atlas-us-mn-20261101-senate",
-     "weight": 0.828
+     "weight": 0.788
     },
     {
      "pollster": "InsiderAdvantage",
      "end_date": "2026-10-30",
-     "age": 14,
+     "age": 15,
      "population": "lv",
      "sample_size": 1200,
      "dem": 49.0,
@@ -34,12 +34,12 @@
      "margin": 3.16,
      "partisan": false,
      "url": "https://insideradvantage.com/insideradvantage-final-minnesota-senate-survey-flanagan-49-tafoya-46/",
-     "weight": 0.707
+     "weight": 0.673
     },
     {
      "pollster": "SurveyUSA",
      "end_date": "2026-10-12",
-     "age": 32,
+     "age": 33,
      "population": "lv",
      "sample_size": 718,
      "dem": 45.0,
@@ -47,12 +47,12 @@
      "margin": 3.45,
      "partisan": false,
      "url": "https://kstp.com/kstp-news/top-news/kstp-surveyusa-poll-swing-in-senate-and-ag-races-klobuchar-up-slightly-on-demuth/",
-     "weight": 0.224
+     "weight": 0.214
     },
     {
      "pollster": "GQR",
      "end_date": "2026-10-04",
-     "age": 40,
+     "age": 41,
      "population": "lv",
      "sample_size": 800,
      "dem": 50.0,
@@ -60,12 +60,12 @@
      "margin": 8.7,
      "partisan": true,
      "url": "https://x.com/DrewSav/status/2108502733045334207",
-     "weight": 0.08
+     "weight": 0.076
     },
     {
      "pollster": "Big Data Poll",
      "end_date": "2026-09-30",
-     "age": 44,
+     "age": 45,
      "population": "lv",
      "sample_size": 622,
      "dem": 46.0,
@@ -73,7 +73,7 @@
      "margin": 2.22,
      "partisan": false,
      "url": "https://www.bigdatapoll.com/blog/lone-star-state-poll-peggy-flanagan-holds-slight-lead-over-michele-tafoya-for-us-senate-in-minnesota/",
-     "weight": 0.115
+     "weight": 0.11
     }
    ]
   },
@@ -85,7 +85,7 @@
     {
      "pollster": "Survey 160",
      "end_date": "2026-11-01",
-     "age": 12,
+     "age": 13,
      "population": "lv",
      "sample_size": 1365,
      "dem": 53.0,
@@ -93,12 +93,12 @@
      "margin": 11.58,
      "partisan": false,
      "url": "https://www.survey160.com/methodological-research-blog/survey-160-pre-election-surveys-in-four-states",
-     "weight": 0.828
+     "weight": 0.788
     },
     {
      "pollster": "State Navigate",
      "end_date": "2026-10-28",
-     "age": 16,
+     "age": 17,
      "population": "lv",
      "sample_size": 806,
      "dem": 52.0,
@@ -106,12 +106,12 @@
      "margin": 10.64,
      "partisan": false,
      "url": "https://articles.statenavigate.com/mn/new-minnesota-governor-poll-shows-amy-klobuchars-crossover-appeal-fading/",
-     "weight": 0.525
+     "weight": 0.5
     },
     {
      "pollster": "SurveyUSA",
      "end_date": "2026-10-12",
-     "age": 32,
+     "age": 33,
      "population": "lv",
      "sample_size": 718,
      "dem": 48.0,
@@ -119,12 +119,12 @@
      "margin": 7.87,
      "partisan": false,
      "url": "https://kstp.com/kstp-news/top-news/kstp-surveyusa-poll-swing-in-senate-and-ag-races-klobuchar-up-slightly-on-demuth/",
-     "weight": 0.224
+     "weight": 0.214
     },
     {
      "pollster": "Mason-Dixon",
      "end_date": "2026-10-07",
-     "age": 37,
+     "age": 38,
      "population": "lv",
      "sample_size": 800,
      "dem": 50.0,
@@ -132,7 +132,7 @@
      "margin": 9.89,
      "partisan": false,
      "url": "https://www.startribune.com/minnesota-poll-klobuchar-demuth-governor/601887444",
-     "weight": 0.185
+     "weight": 0.176
     }
    ]
   }
