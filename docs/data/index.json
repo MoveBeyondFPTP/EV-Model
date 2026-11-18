@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-17T22:17:53+00:00",
+ "generated_at": "2026-11-18T02:27:05+00:00",
  "generic": {
   "avg": 8.31,
   "n": 5,
@@ -8,7 +8,7 @@
    {
     "pollster": "Ipsos",
     "end_date": "2026-11-02",
-    "age": 15,
+    "age": 16,
     "population": "lv",
     "sample_size": 1212,
     "dem": 52.0,
@@ -16,12 +16,12 @@
     "margin": 8.33,
     "partisan": false,
     "url": "https://www.ipsos.com/en-us/reutersipsos-early-november-survey",
-    "weight": 0.676
+    "weight": 0.644
    },
    {
     "pollster": "Pew Research Center",
     "end_date": "2026-10-04",
-    "age": 44,
+    "age": 45,
     "population": "rv",
     "sample_size": 3917,
     "dem": 44.0,
@@ -29,12 +29,12 @@
     "margin": 10.0,
     "partisan": false,
     "url": "https://www.pewresearch.org/politics/2026/10/08/with-americans-in-a-sour-mood-democratic-voters-are-more-engaged-in-midterms",
-    "weight": 0.17
+    "weight": 0.162
    },
    {
     "pollster": "YouGov - CBS News",
     "end_date": "2026-10-02",
-    "age": 46,
+    "age": 47,
     "population": "lv",
     "sample_size": 1572,
     "dem": 54.0,
@@ -42,12 +42,12 @@
     "margin": 9.09,
     "partisan": false,
     "url": "https://assets1.cbsnewsstatic.com/hub/cms/prod_cms_alt/file/2026/10/04/0957ee32-a848-4872-b659-14303d3d3734/cbsnews_20261004_sun.pdf",
-    "weight": 0.154
+    "weight": 0.146
    },
    {
     "pollster": "HarrisX/Harris",
     "end_date": "2026-09-28",
-    "age": 50,
+    "age": 51,
     "population": "lv",
     "sample_size": null,
     "dem": 51.0,
@@ -55,12 +55,12 @@
     "margin": 2.0,
     "partisan": false,
     "url": "https://harvardharrispoll.com/assets/uploads/2026/09/HHP_Sep2026_KeyResults.pdf",
-    "weight": 0.084
+    "weight": 0.08
    },
    {
     "pollster": "The Argument/Verasight",
     "end_date": "2026-09-22",
-    "age": 56,
+    "age": 57,
     "population": "lv",
     "sample_size": null,
     "dem": 55.0,
@@ -68,7 +68,7 @@
     "margin": 10.0,
     "partisan": false,
     "url": "https://www.theargumentmag.com/p/the-least-popular-war-since-vietnam",
-    "weight": 0.062
+    "weight": 0.059
    }
   ]
  },
@@ -502,11 +502,11 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": 6.12,
-     "lo": 6.12,
-     "hi": 6.12,
+     "center": 6.38,
+     "lo": 6.38,
+     "hi": 6.38,
      "rating": "Lean El-Sayed",
-     "n_polls": 10
+     "n_polls": 9
     },
     {
      "id": "governor",
@@ -518,11 +518,11 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": 9.18,
-     "lo": 9.18,
-     "hi": 9.18,
+     "center": 9.38,
+     "lo": 9.38,
+     "hi": 9.38,
      "rating": "Likely Benson",
-     "n_polls": 9
+     "n_polls": 8
     }
    ]
   },
@@ -582,11 +582,11 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": -11.31,
-     "lo": -22.67,
-     "hi": -7.14,
-     "rating": "Likely Alme",
-     "n_polls": 3
+     "center": -4.66,
+     "lo": -7.14,
+     "hi": -4.66,
+     "rating": "Lean Alme",
+     "n_polls": 2
     }
    ]
   },
@@ -710,11 +710,11 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": 3.52,
-     "lo": 3.52,
-     "hi": 3.52,
+     "center": 3.4,
+     "lo": 3.4,
+     "hi": 3.4,
      "rating": "Lean Talarico",
-     "n_polls": 12
+     "n_polls": 10
     },
     {
      "id": "governor",
@@ -726,11 +726,11 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": -2.46,
-     "lo": -2.46,
-     "hi": -2.46,
+     "center": -2.56,
+     "lo": -2.56,
+     "hi": -2.56,
      "rating": "Tilt Abbott",
-     "n_polls": 11
+     "n_polls": 9
     }
    ]
   },
