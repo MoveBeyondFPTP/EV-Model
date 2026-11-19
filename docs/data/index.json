@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-18T21:55:08+00:00",
+ "generated_at": "2026-11-19T01:53:16+00:00",
  "generic": {
   "avg": 8.31,
   "n": 5,
@@ -8,7 +8,7 @@
    {
     "pollster": "Ipsos",
     "end_date": "2026-11-02",
-    "age": 16,
+    "age": 17,
     "population": "lv",
     "sample_size": 1212,
     "dem": 52.0,
@@ -16,12 +16,12 @@
     "margin": 8.33,
     "partisan": false,
     "url": "https://www.ipsos.com/en-us/reutersipsos-early-november-survey",
-    "weight": 0.644
+    "weight": 0.613
    },
    {
     "pollster": "Pew Research Center",
     "end_date": "2026-10-04",
-    "age": 45,
+    "age": 46,
     "population": "rv",
     "sample_size": 3917,
     "dem": 44.0,
@@ -29,12 +29,12 @@
     "margin": 10.0,
     "partisan": false,
     "url": "https://www.pewresearch.org/politics/2026/10/08/with-americans-in-a-sour-mood-democratic-voters-are-more-engaged-in-midterms",
-    "weight": 0.162
+    "weight": 0.154
    },
    {
     "pollster": "YouGov - CBS News",
     "end_date": "2026-10-02",
-    "age": 47,
+    "age": 48,
     "population": "lv",
     "sample_size": 1572,
     "dem": 54.0,
@@ -42,12 +42,12 @@
     "margin": 9.09,
     "partisan": false,
     "url": "https://assets1.cbsnewsstatic.com/hub/cms/prod_cms_alt/file/2026/10/04/0957ee32-a848-4872-b659-14303d3d3734/cbsnews_20261004_sun.pdf",
-    "weight": 0.146
+    "weight": 0.139
    },
    {
     "pollster": "HarrisX/Harris",
     "end_date": "2026-09-28",
-    "age": 51,
+    "age": 52,
     "population": "lv",
     "sample_size": null,
     "dem": 51.0,
@@ -55,12 +55,12 @@
     "margin": 2.0,
     "partisan": false,
     "url": "https://harvardharrispoll.com/assets/uploads/2026/09/HHP_Sep2026_KeyResults.pdf",
-    "weight": 0.08
+    "weight": 0.076
    },
    {
     "pollster": "The Argument/Verasight",
     "end_date": "2026-09-22",
-    "age": 57,
+    "age": 58,
     "population": "lv",
     "sample_size": null,
     "dem": 55.0,
@@ -68,7 +68,7 @@
     "margin": 10.0,
     "partisan": false,
     "url": "https://www.theargumentmag.com/p/the-least-popular-war-since-vietnam",
-    "weight": 0.059
+    "weight": 0.057
    }
   ]
  },
@@ -150,11 +150,11 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": 27.43,
-     "lo": 27.43,
-     "hi": 27.43,
+     "center": 26.56,
+     "lo": 26.56,
+     "hi": 26.56,
      "rating": "Solid Becerra",
-     "n_polls": 3
+     "n_polls": 4
     },
     {
      "id": "irvine-d",
@@ -262,11 +262,11 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": -5.51,
-     "lo": -5.51,
-     "hi": -5.51,
+     "center": -5.94,
+     "lo": -5.94,
+     "hi": -5.94,
      "rating": "Lean Moody",
-     "n_polls": 5
+     "n_polls": 4
     },
     {
      "id": "governor",
@@ -278,11 +278,11 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": -3.35,
-     "lo": -3.35,
-     "hi": -3.35,
+     "center": -3.76,
+     "lo": -3.76,
+     "hi": -3.76,
      "rating": "Lean Donalds",
-     "n_polls": 5
+     "n_polls": 3
     }
    ]
   },
@@ -502,11 +502,11 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": 6.38,
-     "lo": 6.38,
-     "hi": 6.38,
+     "center": 6.7,
+     "lo": 6.7,
+     "hi": 6.7,
      "rating": "Lean El-Sayed",
-     "n_polls": 9
+     "n_polls": 8
     },
     {
      "id": "governor",
@@ -518,11 +518,11 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": 9.38,
-     "lo": 9.38,
-     "hi": 9.38,
+     "center": 9.03,
+     "lo": 9.03,
+     "hi": 9.03,
      "rating": "Likely Benson",
-     "n_polls": 8
+     "n_polls": 7
     }
    ]
   },
@@ -670,11 +670,11 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": 9.55,
-     "lo": 9.55,
-     "hi": 9.55,
+     "center": 9.88,
+     "lo": 9.88,
+     "hi": 9.88,
      "rating": "Likely Pappas",
-     "n_polls": 4
+     "n_polls": 3
     },
     {
      "id": "governor",
@@ -686,11 +686,11 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": -4.7,
-     "lo": -4.7,
-     "hi": -4.7,
+     "center": -4.33,
+     "lo": -4.33,
+     "hi": -4.33,
      "rating": "Lean Ayotte",
-     "n_polls": 4
+     "n_polls": 3
     }
    ]
   },
@@ -710,11 +710,11 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": 3.4,
-     "lo": 3.4,
-     "hi": 3.4,
+     "center": 3.88,
+     "lo": 3.88,
+     "hi": 3.88,
      "rating": "Lean Talarico",
-     "n_polls": 10
+     "n_polls": 8
     },
     {
      "id": "governor",
@@ -726,11 +726,11 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": -2.56,
-     "lo": -2.56,
-     "hi": -2.56,
+     "center": -2.12,
+     "lo": -2.12,
+     "hi": -2.12,
      "rating": "Tilt Abbott",
-     "n_polls": 9
+     "n_polls": 7
     }
    ]
   },

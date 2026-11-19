@@ -3,7 +3,7 @@
  "source_url": "https://votehub.com/polls/",
  "license": "CC BY 4.0",
  "method": "One poll per pollster from the last 30 days (60 if fewer than 3), likely voters preferred, weighted by recency (half-life 14 days) and sample size; partisan or internal polls count half. Margins are two-party.",
- "fetched_at": "2026-11-18T21:55:06+00:00",
+ "fetched_at": "2026-11-19T01:53:15+00:00",
  "races": {
   "senate": {
    "avg": 9.19,
@@ -13,7 +13,7 @@
     {
      "pollster": "InsiderAdvantage",
      "end_date": "2026-11-02",
-     "age": 16,
+     "age": 17,
      "population": "lv",
      "sample_size": 2500,
      "dem": 53.0,
@@ -21,12 +21,12 @@
      "margin": 7.07,
      "partisan": false,
      "url": "https://jamesmagazinega.com/2026/11/02/48131/",
-     "weight": 0.679
+     "weight": 0.646
     },
     {
      "pollster": "Echelon Insights",
      "end_date": "2026-10-23",
-     "age": 26,
+     "age": 27,
      "population": "lv",
      "sample_size": 508,
      "dem": 55.0,
@@ -34,12 +34,12 @@
      "margin": 15.79,
      "partisan": false,
      "url": "https://netchoice.org/netchoice-echelon-insights-poll-voters-rank-ai-regulation-far-behind-cost-of-living-want-one-national-ai-standard/",
-     "weight": 0.254
+     "weight": 0.242
     },
     {
      "pollster": "ActiVote",
      "end_date": "2026-10-20",
-     "age": 29,
+     "age": 30,
      "population": "lv",
      "sample_size": 400,
      "dem": 54.0,
@@ -47,7 +47,7 @@
      "margin": 8.0,
      "partisan": false,
      "url": "https://www.activote.net/polls/2026/ga-u-s-senate/",
-     "weight": 0.194
+     "weight": 0.185
     }
    ]
   },
@@ -59,7 +59,7 @@
     {
      "pollster": "InsiderAdvantage",
      "end_date": "2026-11-02",
-     "age": 16,
+     "age": 17,
      "population": "lv",
      "sample_size": 2500,
      "dem": 49.03,
@@ -67,12 +67,12 @@
      "margin": 0.03,
      "partisan": false,
      "url": "https://jamesmagazinega.com/2026/11/02/48131/",
-     "weight": 0.679
+     "weight": 0.646
     },
     {
      "pollster": "Echelon Insights",
      "end_date": "2026-10-23",
-     "age": 26,
+     "age": 27,
      "population": "lv",
      "sample_size": 508,
      "dem": 49.0,
@@ -80,12 +80,12 @@
      "margin": 1.03,
      "partisan": false,
      "url": "https://netchoice.org/netchoice-echelon-insights-poll-voters-rank-ai-regulation-far-behind-cost-of-living-want-one-national-ai-standard/",
-     "weight": 0.254
+     "weight": 0.242
     },
     {
      "pollster": "ActiVote",
      "end_date": "2026-10-20",
-     "age": 29,
+     "age": 30,
      "population": "lv",
      "sample_size": 400,
      "dem": 48.5,
@@ -93,7 +93,7 @@
      "margin": -3.0,
      "partisan": false,
      "url": "https://www.activote.net/polls/2026/ga-governor/",
-     "weight": 0.194
+     "weight": 0.185
     }
    ]
   }
