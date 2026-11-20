@@ -3,17 +3,17 @@
  "source_url": "https://votehub.com/polls/",
  "license": "CC BY 4.0",
  "method": "One poll per pollster from the last 30 days (60 if fewer than 3), likely voters preferred, weighted by recency (half-life 14 days) and sample size; partisan or internal polls count half. Margins are two-party.",
- "fetched_at": "2026-11-19T22:08:51+00:00",
+ "fetched_at": "2026-11-20T01:46:56+00:00",
  "races": {
   "senate": {
-   "avg": -5.94,
-   "n": 4,
+   "avg": -5.36,
+   "n": 3,
    "window_days": 30,
    "polls": [
     {
      "pollster": "RedBox Research",
      "end_date": "2026-10-31",
-     "age": 19,
+     "age": 20,
      "population": "lv",
      "sample_size": 2898,
      "dem": 45.0,
@@ -21,12 +21,12 @@
      "margin": -2.17,
      "partisan": true,
      "url": "https://afightworthhaving.com/polling/2026/florida",
-     "weight": 0.293
+     "weight": 0.279
     },
     {
      "pollster": "ActiVote",
      "end_date": "2026-10-27",
-     "age": 23,
+     "age": 24,
      "population": "lv",
      "sample_size": 400,
      "dem": 47.0,
@@ -34,12 +34,12 @@
      "margin": -6.0,
      "partisan": false,
      "url": "https://www.activote.net/polls/2026/fl-u-s-senate/",
-     "weight": 0.261
+     "weight": 0.249
     },
     {
      "pollster": "Echelon Insights",
      "end_date": "2026-10-23",
-     "age": 27,
+     "age": 28,
      "population": "lv",
      "sample_size": 515,
      "dem": 43.0,
@@ -47,32 +47,19 @@
      "margin": -8.51,
      "partisan": false,
      "url": "https://netchoice.org/netchoice-echelon-insights-poll-voters-rank-ai-regulation-far-behind-cost-of-living-want-one-national-ai-standard/",
-     "weight": 0.243
-    },
-    {
-     "pollster": "co/efficient",
-     "end_date": "2026-10-20",
-     "age": 30,
-     "population": "lv",
-     "sample_size": 1014,
-     "dem": 40.0,
-     "rep": 48.0,
-     "margin": -9.09,
-     "partisan": true,
-     "url": "https://battlegrounds.coefficient.org/fl/",
-     "weight": 0.147
+     "weight": 0.232
     }
    ]
   },
   "governor": {
-   "avg": -3.76,
-   "n": 3,
-   "window_days": 30,
+   "avg": -4.07,
+   "n": 11,
+   "window_days": 60,
    "polls": [
     {
      "pollster": "RedBox Research",
      "end_date": "2026-10-31",
-     "age": 19,
+     "age": 20,
      "population": "lv",
      "sample_size": 2898,
      "dem": 46.0,
@@ -80,12 +67,12 @@
      "margin": -1.08,
      "partisan": false,
      "url": "https://afightworthhaving.com/polling/2026/florida",
-     "weight": 0.586
+     "weight": 0.557
     },
     {
      "pollster": "Echelon Insights",
      "end_date": "2026-10-23",
-     "age": 27,
+     "age": 28,
      "population": "lv",
      "sample_size": 515,
      "dem": 44.0,
@@ -93,12 +80,12 @@
      "margin": -6.38,
      "partisan": false,
      "url": "https://netchoice.org/netchoice-echelon-insights-poll-voters-rank-ai-regulation-far-behind-cost-of-living-want-one-national-ai-standard/",
-     "weight": 0.243
+     "weight": 0.232
     },
     {
      "pollster": "co/efficient",
      "end_date": "2026-10-20",
-     "age": 30,
+     "age": 31,
      "population": "lv",
      "sample_size": 1014,
      "dem": 40.0,
@@ -106,7 +93,111 @@
      "margin": -10.11,
      "partisan": true,
      "url": "https://battlegrounds.coefficient.org/fl/",
-     "weight": 0.147
+     "weight": 0.14
+    },
+    {
+     "pollster": "ActiVote",
+     "end_date": "2026-10-19",
+     "age": 32,
+     "population": "lv",
+     "sample_size": 400,
+     "dem": 48.3,
+     "rep": 51.7,
+     "margin": -3.4,
+     "partisan": false,
+     "url": "https://www.activote.net/polls/2026/fl-governor/",
+     "weight": 0.167
+    },
+    {
+     "pollster": "University of North Florida",
+     "end_date": "2026-10-19",
+     "age": 32,
+     "population": "lv",
+     "sample_size": 1378,
+     "dem": 47.0,
+     "rep": 49.0,
+     "margin": -2.08,
+     "partisan": false,
+     "url": "https://static1.squarespace.com/static/6994d571bce3436c60d86870/t/6ad8a5ec13c20404a1f8052b/1792583148294/UNF+PORL+FALL+Statewide+2026+FLLV+-+Press+Release+1021+EMBARGO.pdf",
+     "weight": 0.308
+    },
+    {
+     "pollster": "YouGov",
+     "end_date": "2026-10-15",
+     "age": 36,
+     "population": "rv",
+     "sample_size": 825,
+     "dem": 42.0,
+     "rep": 50.0,
+     "margin": -8.7,
+     "partisan": false,
+     "url": "https://www.univision.com/noticias/politica/republicans-lead-florida-as-most-latino-voters-say-immigration-enforcement-has-gone-too-far",
+     "weight": 0.197
+    },
+    {
+     "pollster": "Change Research",
+     "end_date": "2026-10-10",
+     "age": 41,
+     "population": "lv",
+     "sample_size": 920,
+     "dem": 47.0,
+     "rep": 47.0,
+     "margin": 0.0,
+     "partisan": true,
+     "url": "https://changeresearch.com/research/2026/2026-10-12-florida-aapor-methodology-statement",
+     "weight": 0.081
+    },
+    {
+     "pollster": "MDW Communications",
+     "end_date": "2026-10-10",
+     "age": 41,
+     "population": "lv",
+     "sample_size": 2351,
+     "dem": 44.0,
+     "rep": 46.0,
+     "margin": -2.22,
+     "partisan": false,
+     "url": "https://www.mdwcomm.com/media/florida-statewide-poll-october-2026.html",
+     "weight": 0.197
+    },
+    {
+     "pollster": "St. Pete Polls",
+     "end_date": "2026-10-07",
+     "age": 44,
+     "population": "lv",
+     "sample_size": 836,
+     "dem": 45.0,
+     "rep": 45.0,
+     "margin": 0.0,
+     "partisan": false,
+     "url": "https://floridapolitics.com/archives/823921-new-st-pete-polls-survey-has-ashley-moody-at-47-angie-nixon-at-45-and-the-senate-race-still-inside-the-margin-of-error/",
+     "weight": 0.134
+    },
+    {
+     "pollster": "Targoz Market Research",
+     "end_date": "2026-10-04",
+     "age": 47,
+     "population": "lv",
+     "sample_size": 857,
+     "dem": 42.0,
+     "rep": 52.0,
+     "margin": -10.64,
+     "partisan": false,
+     "url": "https://jmipoll.com",
+     "weight": 0.117
+    },
+    {
+     "pollster": "Stetson University Center for Public Opinion Research",
+     "end_date": "2026-09-21",
+     "age": 60,
+     "population": "lv",
+     "sample_size": 830,
+     "dem": 39.0,
+     "rep": 51.0,
+     "margin": -13.33,
+     "partisan": false,
+     "url": "https://www.stetson.edu/artsci/cpor/media/cpor-sept.-2026-poll-final.pdf",
+     "weight": 0.06
     }
    ]
   }

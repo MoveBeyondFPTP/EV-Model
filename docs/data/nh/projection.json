@@ -28,9 +28,9 @@
     ]
    },
    "projection": {
-    "center": 9.88,
-    "lo": 9.88,
-    "hi": 9.88,
+    "center": 9.38,
+    "lo": 9.38,
+    "hi": 9.38,
     "rating": "Likely Pappas",
     "range_basis": "inputs",
     "environment": {
@@ -48,12 +48,12 @@
      "note": null
     },
     "polls": {
-     "avg": 9.88,
-     "n": 3,
-     "window_days": 30
+     "avg": 9.38,
+     "n": 5,
+     "window_days": 60
     },
     "poll_weight": 1.0,
-    "start": 9.88,
+    "start": 9.38,
     "early_vote": null
    }
   },
@@ -95,9 +95,9 @@
     }
    },
    "projection": {
-    "center": -4.33,
-    "lo": -4.33,
-    "hi": -4.33,
+    "center": -4.99,
+    "lo": -4.99,
+    "hi": -4.99,
     "rating": "Lean Ayotte",
     "range_basis": "inputs",
     "environment": {
@@ -127,18 +127,18 @@
      "note": null
     },
     "polls": {
-     "avg": -4.33,
-     "n": 3,
-     "window_days": 30
+     "avg": -4.99,
+     "n": 5,
+     "window_days": 60
     },
     "poll_weight": 1.0,
-    "start": -4.33,
+    "start": -4.99,
     "early_vote": null
    }
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-11-19T22:08:52+00:00",
+ "generated_at": "2026-11-20T01:46:57+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,
@@ -149,7 +149,7 @@
   "c_weight": 0.25,
   "c_cap": 2.0,
   "k_at_30_days": 2.0,
-  "days_left": -16,
+  "days_left": -17,
   "k_now": 0.0
  }
 }

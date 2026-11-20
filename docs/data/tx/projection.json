@@ -44,9 +44,9 @@
     }
    },
    "projection": {
-    "center": 3.88,
-    "lo": 3.88,
-    "hi": 3.88,
+    "center": 3.98,
+    "lo": 3.98,
+    "hi": 3.98,
     "rating": "Lean Talarico",
     "range_basis": "inputs",
     "environment": {
@@ -76,12 +76,12 @@
      "note": null
     },
     "polls": {
-     "avg": 3.88,
-     "n": 8,
+     "avg": 3.98,
+     "n": 7,
      "window_days": 30
     },
     "poll_weight": 1.0,
-    "start": 3.88,
+    "start": 3.98,
     "early_vote": null
    }
   },
@@ -123,9 +123,9 @@
     }
    },
    "projection": {
-    "center": -2.12,
-    "lo": -2.12,
-    "hi": -2.12,
+    "center": -2.18,
+    "lo": -2.18,
+    "hi": -2.18,
     "rating": "Tilt Abbott",
     "range_basis": "inputs",
     "environment": {
@@ -155,18 +155,18 @@
      "note": null
     },
     "polls": {
-     "avg": -2.12,
-     "n": 7,
+     "avg": -2.18,
+     "n": 6,
      "window_days": 30
     },
     "poll_weight": 1.0,
-    "start": -2.12,
+    "start": -2.18,
     "early_vote": null
    }
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-11-19T22:08:52+00:00",
+ "generated_at": "2026-11-20T01:46:57+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,
@@ -177,7 +177,7 @@
   "c_weight": 0.25,
   "c_cap": 2.0,
   "k_at_30_days": 2.0,
-  "days_left": -16,
+  "days_left": -17,
   "k_now": 0.0
  }
 }
