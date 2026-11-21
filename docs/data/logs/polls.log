@@ -12,7 +12,7 @@ co governor: 17.24 from 1 polls
 !! co longmont-3c failed: KeyError('poll_type')
 !! co longmont-3d failed: KeyError('poll_type')
 fl senate: -5.36 from 3 polls
-fl governor: -4.07 from 11 polls
+fl governor: -3.8 from 10 polls
 ga senate: 9.02 from 7 polls
 ga governor: -0.7 from 7 polls
 hi governor: None from 0 polls
@@ -27,13 +27,13 @@ mi senate: 6.7 from 8 polls
 mi governor: 9.03 from 7 polls
 mn senate: 2.93 from 5 polls
 mn governor: 10.65 from 4 polls
-mt senate: -4.66 from 2 polls
+mt senate: -13.56 from 5 polls
 nc senate: 11.79 from 3 polls
 ne senate: -2.06 from 2 polls
 ne governor: -5.02 from 3 polls
 nh senate: 9.38 from 5 polls
 nh governor: -4.99 from 5 polls
-tx senate: 3.98 from 7 polls
+tx senate: 3.83 from 6 polls
 tx governor: -2.18 from 6 polls
 vt governor: 3.33 from 2 polls
 wi governor: 3.55 from 3 polls
