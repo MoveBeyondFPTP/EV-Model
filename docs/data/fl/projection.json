@@ -53,10 +53,10 @@
      "label": "2024 president (FL)",
      "base": -13.22,
      "national_then": -1.5,
-     "generic": 8.31,
+     "generic": 8.21,
      "swing_factor": 1.0,
-     "swing": 9.81,
-     "generic_margin": -3.41,
+     "swing": 9.71,
+     "generic_margin": -3.51,
      "candidate_adjustment": -2.09,
      "candidates": [
       {
@@ -72,7 +72,7 @@
       }
      ],
      "carry_forward": 0.4,
-     "margin": -5.5,
+     "margin": -5.6,
      "note": null
     },
     "polls": {
@@ -116,14 +116,14 @@
      "label": "2024 president (FL)",
      "base": -13.22,
      "national_then": -1.5,
-     "generic": 8.31,
+     "generic": 8.21,
      "swing_factor": 1.0,
-     "swing": 9.81,
-     "generic_margin": -3.41,
+     "swing": 9.71,
+     "generic_margin": -3.51,
      "candidate_adjustment": 0.0,
      "candidates": [],
      "carry_forward": 0.4,
-     "margin": -3.41,
+     "margin": -3.51,
      "note": null
     },
     "polls": {
@@ -140,7 +140,7 @@
  "ev_notes": [
   "Florida publishes running totals rather than ballot-level files, so 2026 is compared with 2022\u2019s final early and mail vote, not with the same day in 2022. The day-by-day chart builds up from the first day this tracker collected data."
  ],
- "generated_at": "2026-11-21T20:31:13+00:00",
+ "generated_at": "2026-11-22T00:21:37+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,
@@ -151,7 +151,7 @@
   "c_weight": 0.25,
   "c_cap": 2.0,
   "k_at_30_days": 2.0,
-  "days_left": -18,
+  "days_left": -19,
   "k_now": 0.0
  }
 }

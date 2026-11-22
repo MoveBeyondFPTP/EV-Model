@@ -1,5 +1,5 @@
 fetched 12 generic-ballot polls
-generic ballot: 8.31 from 5 polls
+generic ballot: 8.21 from 4 polls
 fetched 282 us-senator polls
 ak senate: 1.62 from 4 polls
 fetched 283 governor polls
@@ -17,22 +17,22 @@ ga senate: 9.02 from 7 polls
 ga governor: -0.7 from 7 polls
 hi governor: None from 0 polls
 !! hi honolulu-q5 failed: KeyError('poll_type')
-ia senate: -0.68 from 5 polls
+ia senate: -0.27 from 4 polls
 ia governor: 6.8 from 4 polls
 ks senate: 5.95 from 5 polls
 ks governor: -0.17 from 6 polls
 me senate: 5.54 from 6 polls
 me governor: 10.68 from 7 polls
-mi senate: 6.7 from 8 polls
-mi governor: 9.03 from 7 polls
+mi senate: 7.59 from 6 polls
+mi governor: 9.21 from 6 polls
 mn senate: 2.93 from 5 polls
 mn governor: 10.65 from 4 polls
 mt senate: -13.56 from 5 polls
 nc senate: 11.79 from 3 polls
 ne senate: -2.06 from 2 polls
 ne governor: -5.02 from 3 polls
-nh senate: 9.38 from 5 polls
-nh governor: -4.99 from 5 polls
+nh senate: 9.55 from 4 polls
+nh governor: -4.7 from 4 polls
 tx senate: 3.83 from 6 polls
 tx governor: -2.18 from 6 polls
 vt governor: 3.33 from 2 polls

@@ -46,19 +46,19 @@
     }
    },
    "projection": {
-    "center": 6.7,
-    "lo": 6.7,
-    "hi": 6.7,
-    "rating": "Lean El-Sayed",
+    "center": 7.59,
+    "lo": 7.59,
+    "hi": 7.59,
+    "rating": "Likely El-Sayed",
     "range_basis": "inputs",
     "environment": {
      "label": "2024 president (MI)",
      "base": -1.44,
      "national_then": -1.5,
-     "generic": 8.31,
+     "generic": 8.21,
      "swing_factor": 1.0,
-     "swing": 9.81,
-     "generic_margin": 8.37,
+     "swing": 9.71,
+     "generic_margin": 8.27,
      "candidate_adjustment": 0.72,
      "candidates": [
       {
@@ -74,16 +74,16 @@
       }
      ],
      "carry_forward": 0.4,
-     "margin": 9.09,
+     "margin": 8.99,
      "note": null
     },
     "polls": {
-     "avg": 6.7,
-     "n": 8,
+     "avg": 7.59,
+     "n": 6,
      "window_days": 30
     },
     "poll_weight": 1.0,
-    "start": 6.7,
+    "start": 7.59,
     "early_vote": null
    }
   },
@@ -141,19 +141,19 @@
     }
    },
    "projection": {
-    "center": 9.03,
-    "lo": 9.03,
-    "hi": 9.03,
+    "center": 9.21,
+    "lo": 9.21,
+    "hi": 9.21,
     "rating": "Likely Benson",
     "range_basis": "inputs",
     "environment": {
      "label": "2024 president (MI)",
      "base": -1.44,
      "national_then": -1.5,
-     "generic": 8.31,
+     "generic": 8.21,
      "swing_factor": 1.0,
-     "swing": 9.81,
-     "generic_margin": 8.37,
+     "swing": 9.71,
+     "generic_margin": 8.27,
      "candidate_adjustment": 3.31,
      "candidates": [
       {
@@ -180,22 +180,22 @@
       }
      ],
      "carry_forward": 0.4,
-     "margin": 11.68,
+     "margin": 11.58,
      "note": null
     },
     "polls": {
-     "avg": 9.03,
-     "n": 7,
+     "avg": 9.21,
+     "n": 6,
      "window_days": 30
     },
     "poll_weight": 1.0,
-    "start": 9.03,
+    "start": 9.21,
     "early_vote": null
    }
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-11-21T20:31:13+00:00",
+ "generated_at": "2026-11-22T00:21:37+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,
@@ -206,7 +206,7 @@
   "c_weight": 0.25,
   "c_cap": 2.0,
   "k_at_30_days": 2.0,
-  "days_left": -18,
+  "days_left": -19,
   "k_now": 0.0
  }
 }

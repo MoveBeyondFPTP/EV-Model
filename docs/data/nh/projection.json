@@ -28,32 +28,32 @@
     ]
    },
    "projection": {
-    "center": 9.38,
-    "lo": 9.38,
-    "hi": 9.38,
+    "center": 9.55,
+    "lo": 9.55,
+    "hi": 9.55,
     "rating": "Likely Pappas",
     "range_basis": "inputs",
     "environment": {
      "label": "2024 president (NH)",
      "base": 2.82,
      "national_then": -1.5,
-     "generic": 8.31,
+     "generic": 8.21,
      "swing_factor": 1.0,
-     "swing": 9.81,
-     "generic_margin": 12.63,
+     "swing": 9.71,
+     "generic_margin": 12.53,
      "candidate_adjustment": 0.0,
      "candidates": [],
      "carry_forward": 0.4,
-     "margin": 12.63,
+     "margin": 12.53,
      "note": null
     },
     "polls": {
-     "avg": 9.38,
-     "n": 5,
+     "avg": 9.55,
+     "n": 4,
      "window_days": 60
     },
     "poll_weight": 1.0,
-    "start": 9.38,
+    "start": 9.55,
     "early_vote": null
    }
   },
@@ -95,19 +95,19 @@
     }
    },
    "projection": {
-    "center": -4.99,
-    "lo": -4.99,
-    "hi": -4.99,
+    "center": -4.7,
+    "lo": -4.7,
+    "hi": -4.7,
     "rating": "Lean Ayotte",
     "range_basis": "inputs",
     "environment": {
      "label": "2024 president (NH)",
      "base": 2.82,
      "national_then": -1.5,
-     "generic": 8.31,
+     "generic": 8.21,
      "swing_factor": 1.0,
-     "swing": 9.81,
-     "generic_margin": 12.63,
+     "swing": 9.71,
+     "generic_margin": 12.53,
      "candidate_adjustment": -4.95,
      "candidates": [
       {
@@ -123,22 +123,22 @@
       }
      ],
      "carry_forward": 0.4,
-     "margin": 7.68,
+     "margin": 7.58,
      "note": null
     },
     "polls": {
-     "avg": -4.99,
-     "n": 5,
+     "avg": -4.7,
+     "n": 4,
      "window_days": 60
     },
     "poll_weight": 1.0,
-    "start": -4.99,
+    "start": -4.7,
     "early_vote": null
    }
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-11-21T20:31:13+00:00",
+ "generated_at": "2026-11-22T00:21:37+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,
@@ -149,7 +149,7 @@
   "c_weight": 0.25,
   "c_cap": 2.0,
   "k_at_30_days": 2.0,
-  "days_left": -18,
+  "days_left": -19,
   "k_now": 0.0
  }
 }
