@@ -46,9 +46,9 @@
     }
    },
    "projection": {
-    "center": 7.59,
-    "lo": 7.59,
-    "hi": 7.59,
+    "center": 7.52,
+    "lo": 7.52,
+    "hi": 7.52,
     "rating": "Likely El-Sayed",
     "range_basis": "inputs",
     "environment": {
@@ -78,12 +78,12 @@
      "note": null
     },
     "polls": {
-     "avg": 7.59,
-     "n": 6,
+     "avg": 7.52,
+     "n": 5,
      "window_days": 30
     },
     "poll_weight": 1.0,
-    "start": 7.59,
+    "start": 7.52,
     "early_vote": null
    }
   },
@@ -141,9 +141,9 @@
     }
    },
    "projection": {
-    "center": 9.21,
-    "lo": 9.21,
-    "hi": 9.21,
+    "center": 9.04,
+    "lo": 9.04,
+    "hi": 9.04,
     "rating": "Likely Benson",
     "range_basis": "inputs",
     "environment": {
@@ -184,18 +184,18 @@
      "note": null
     },
     "polls": {
-     "avg": 9.21,
-     "n": 6,
+     "avg": 9.04,
+     "n": 5,
      "window_days": 30
     },
     "poll_weight": 1.0,
-    "start": 9.21,
+    "start": 9.04,
     "early_vote": null
    }
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-11-22T20:43:51+00:00",
+ "generated_at": "2026-11-23T00:54:37+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,
@@ -206,7 +206,7 @@
   "c_weight": 0.25,
   "c_cap": 2.0,
   "k_at_30_days": 2.0,
-  "days_left": -19,
+  "days_left": -20,
   "k_now": 0.0
  }
 }

@@ -44,9 +44,9 @@
     ]
    },
    "projection": {
-    "center": 9.02,
-    "lo": 9.02,
-    "hi": 9.02,
+    "center": 8.95,
+    "lo": 8.95,
+    "hi": 8.95,
     "rating": "Likely Ossoff",
     "range_basis": "inputs",
     "environment": {
@@ -76,12 +76,12 @@
      "note": null
     },
     "polls": {
-     "avg": 9.02,
-     "n": 7,
+     "avg": 8.95,
+     "n": 6,
      "window_days": 60
     },
     "poll_weight": 1.0,
-    "start": 9.02,
+    "start": 8.95,
     "early_vote": null
    }
   },
@@ -107,9 +107,9 @@
     ]
    },
    "projection": {
-    "center": -0.7,
-    "lo": -0.7,
-    "hi": -0.7,
+    "center": -0.69,
+    "lo": -0.69,
+    "hi": -0.69,
     "rating": "Toss-up, slight edge Jackson",
     "range_basis": "inputs",
     "environment": {
@@ -127,18 +127,18 @@
      "note": null
     },
     "polls": {
-     "avg": -0.7,
-     "n": 7,
+     "avg": -0.69,
+     "n": 6,
      "window_days": 60
     },
     "poll_weight": 1.0,
-    "start": -0.7,
+    "start": -0.69,
     "early_vote": null
    }
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-11-22T20:43:51+00:00",
+ "generated_at": "2026-11-23T00:54:37+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,
@@ -149,7 +149,7 @@
   "c_weight": 0.25,
   "c_cap": 2.0,
   "k_at_30_days": 2.0,
-  "days_left": -19,
+  "days_left": -20,
   "k_now": 0.0
  }
 }
