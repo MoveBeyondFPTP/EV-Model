@@ -3,17 +3,17 @@
  "source_url": "https://votehub.com/polls/",
  "license": "CC BY 4.0",
  "method": "One poll per pollster from the last 30 days (60 if fewer than 3), likely voters preferred, weighted by recency (half-life 14 days) and sample size; partisan or internal polls count half. Margins are two-party.",
- "fetched_at": "2026-11-25T23:04:57+00:00",
+ "fetched_at": "2026-11-26T02:51:56+00:00",
  "races": {
   "senate": {
-   "avg": 6.1,
-   "n": 4,
+   "avg": 6.49,
+   "n": 3,
    "window_days": 30,
    "polls": [
     {
      "pollster": "The New York Times/Siena University",
      "end_date": "2026-11-01",
-     "age": 24,
+     "age": 25,
      "population": "lv",
      "sample_size": 714,
      "dem": 51.0,
@@ -21,12 +21,12 @@
      "margin": 6.25,
      "partisan": false,
      "url": "https://www.nytimes.com/interactive/2026/11/01/polls/times-siena-me-poll-toplines.html",
-     "weight": 0.332
+     "weight": 0.316
     },
     {
      "pollster": "Survey 160",
      "end_date": "2026-11-01",
-     "age": 24,
+     "age": 25,
      "population": "lv",
      "sample_size": 1322,
      "dem": 50.0,
@@ -34,12 +34,12 @@
      "margin": 4.17,
      "partisan": false,
      "url": "https://www.survey160.com/methodological-research-blog/survey-160-pre-election-surveys-in-four-states",
-     "weight": 0.452
+     "weight": 0.431
     },
     {
      "pollster": "University of New Hampshire",
      "end_date": "2026-10-31",
-     "age": 25,
+     "age": 26,
      "population": "lv",
      "sample_size": 1654,
      "dem": 54.0,
@@ -47,32 +47,19 @@
      "margin": 9.09,
      "partisan": false,
      "url": "https://scholars.unh.edu/survey_center_polls/1013/",
-     "weight": 0.435
-    },
-    {
-     "pollster": "CNN/SSRS",
-     "end_date": "2026-10-26",
-     "age": 30,
-     "population": "lv",
-     "sample_size": 783,
-     "dem": 49.0,
-     "rep": 45.0,
-     "margin": 4.26,
-     "partisan": false,
-     "url": "https://www.cnn.com/2026/10/29/politics/cnn-polls-michigan-maine-texas-kansas-senate-races-midterms-vis",
-     "weight": 0.259
+     "weight": 0.414
     }
    ]
   },
   "governor": {
-   "avg": 12.19,
-   "n": 5,
+   "avg": 11.7,
+   "n": 4,
    "window_days": 30,
    "polls": [
     {
      "pollster": "The New York Times/Siena University",
      "end_date": "2026-11-01",
-     "age": 24,
+     "age": 25,
      "population": "lv",
      "sample_size": 714,
      "dem": 49.0,
@@ -80,12 +67,12 @@
      "margin": 13.95,
      "partisan": false,
      "url": "https://www.nytimes.com/interactive/2026/11/01/polls/times-siena-me-poll-toplines.html",
-     "weight": 0.332
+     "weight": 0.316
     },
     {
      "pollster": "Survey 160",
      "end_date": "2026-11-01",
-     "age": 24,
+     "age": 25,
      "population": "lv",
      "sample_size": 1322,
      "dem": 53.0,
@@ -93,12 +80,12 @@
      "margin": 12.77,
      "partisan": false,
      "url": "https://www.survey160.com/methodological-research-blog/survey-160-pre-election-surveys-in-four-states",
-     "weight": 0.452
+     "weight": 0.431
     },
     {
      "pollster": "University of New Hampshire",
      "end_date": "2026-10-31",
-     "age": 25,
+     "age": 26,
      "population": "lv",
      "sample_size": 1654,
      "dem": 51.0,
@@ -106,12 +93,12 @@
      "margin": 12.09,
      "partisan": false,
      "url": "https://scholars.unh.edu/survey_center_polls/1013/",
-     "weight": 0.435
+     "weight": 0.414
     },
     {
      "pollster": "YouGov",
      "end_date": "2026-10-29",
-     "age": 27,
+     "age": 28,
      "population": "lv",
      "sample_size": 1503,
      "dem": 53.0,
@@ -119,20 +106,7 @@
      "margin": 8.16,
      "partisan": false,
      "url": "https://d3nkl3psvxxpe9.cloudfront.net/documents/ttw_me_20261026_lv.pdf",
-     "weight": 0.394
-    },
-    {
-     "pollster": "CNN/SSRS",
-     "end_date": "2026-10-26",
-     "age": 30,
-     "population": "lv",
-     "sample_size": 783,
-     "dem": 53.0,
-     "rep": 39.0,
-     "margin": 15.22,
-     "partisan": false,
-     "url": "https://www.cnn.com/2026/10/29/politics/cnn-polls-michigan-maine-texas-kansas-senate-races-midterms-vis",
-     "weight": 0.259
+     "weight": 0.375
     }
    ]
   }

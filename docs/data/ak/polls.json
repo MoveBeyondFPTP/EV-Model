@@ -3,7 +3,7 @@
  "source_url": "https://votehub.com/polls/",
  "license": "CC BY 4.0",
  "method": "One poll per pollster from the last 30 days (60 if fewer than 3), likely voters preferred, weighted by recency (half-life 14 days) and sample size; partisan or internal polls count half. Margins are two-party.",
- "fetched_at": "2026-11-25T23:04:57+00:00",
+ "fetched_at": "2026-11-26T02:51:56+00:00",
  "races": {
   "senate": {
    "avg": 1.62,
@@ -13,7 +13,7 @@
     {
      "pollster": "The New York Times/Siena University",
      "end_date": "2026-10-30",
-     "age": 26,
+     "age": 27,
      "population": "lv",
      "sample_size": 610,
      "dem": 48.0,
@@ -21,12 +21,12 @@
      "margin": 2.13,
      "partisan": false,
      "url": "https://www.nytimes.com/interactive/2026/11/01/polls/times-siena-ak-poll-toplines.html",
-     "weight": 0.278
+     "weight": 0.265
     },
     {
      "pollster": "Data for Progress",
      "end_date": "2026-10-16",
-     "age": 40,
+     "age": 41,
      "population": "lv",
      "sample_size": 671,
      "dem": 51.0,
@@ -34,12 +34,12 @@
      "margin": 2.0,
      "partisan": false,
      "url": "https://www.dataforprogress.org/blog/2026/10/20/every-statewide-race-in-alaska-is-close-as-7-in-10-voters-worry-about-affording-gas-and-food",
-     "weight": 0.146
+     "weight": 0.139
     },
     {
      "pollster": "Public Policy Polling",
      "end_date": "2026-10-15",
-     "age": 41,
+     "age": 42,
      "population": "rv",
      "sample_size": 578,
      "dem": 48.0,
@@ -47,12 +47,12 @@
      "margin": 1.05,
      "partisan": true,
      "url": "https://x.com/AndrewSolender/status/2110867168892014803",
-     "weight": 0.064
+     "weight": 0.061
     },
     {
      "pollster": "Quantus Insights",
      "end_date": "2026-09-30",
-     "age": 56,
+     "age": 57,
      "population": "lv",
      "sample_size": 758,
      "dem": 47.2,
@@ -60,7 +60,7 @@
      "margin": -0.63,
      "partisan": false,
      "url": "https://quantusinsights.org/polling/f/quantus-insights-survey-sullivan-peltola-deadlocked-in-alaska",
-     "weight": 0.07
+     "weight": 0.067
     }
    ]
   },
@@ -72,7 +72,7 @@
     {
      "pollster": "The New York Times/Siena University",
      "end_date": "2026-10-30",
-     "age": 26,
+     "age": 27,
      "population": "lv",
      "sample_size": 610,
      "dem": 54.0,
@@ -80,12 +80,12 @@
      "margin": 8.0,
      "partisan": false,
      "url": "https://www.nytimes.com/interactive/2026/11/01/polls/times-siena-ak-poll-toplines.html",
-     "weight": 0.278
+     "weight": 0.265
     },
     {
      "pollster": "Alaska Survey Research",
      "end_date": "2026-10-25",
-     "age": 31,
+     "age": 32,
      "population": "lv",
      "sample_size": 1068,
      "dem": 53.4,
@@ -93,12 +93,12 @@
      "margin": 6.8,
      "partisan": false,
      "url": "https://x.com/The_Real_ASR/status/2114855199819051178",
-     "weight": 0.288
+     "weight": 0.274
     },
     {
      "pollster": "Data for Progress",
      "end_date": "2026-10-16",
-     "age": 40,
+     "age": 41,
      "population": "lv",
      "sample_size": 629,
      "dem": 53.0,
@@ -106,12 +106,12 @@
      "margin": 6.0,
      "partisan": false,
      "url": "https://www.dataforprogress.org/blog/2026/10/20/every-statewide-race-in-alaska-is-close-as-7-in-10-voters-worry-about-affording-gas-and-food",
-     "weight": 0.141
+     "weight": 0.134
     },
     {
      "pollster": "Cygnal",
      "end_date": "2026-09-27",
-     "age": 59,
+     "age": 60,
      "population": "lv",
      "sample_size": 502,
      "dem": 44.0,
@@ -119,7 +119,7 @@
      "margin": 3.53,
      "partisan": true,
      "url": "https://www.cygn.al/wp-content/uploads/2026/10/AK_GOV_Memo.pdf",
-     "weight": 0.025
+     "weight": 0.023
     }
    ]
   },
@@ -131,7 +131,7 @@
     {
      "pollster": "Alaska Survey Research",
      "end_date": "2026-10-25",
-     "age": 31,
+     "age": 32,
      "population": "lv",
      "sample_size": 1068,
      "dem": 52.7,
@@ -139,12 +139,12 @@
      "margin": 5.4,
      "partisan": false,
      "url": "https://x.com/The_Real_ASR/status/2115125751553106385",
-     "weight": 0.288
+     "weight": 0.274
     },
     {
      "pollster": "Fabrizio Ward / Impact Research",
      "end_date": "2026-09-11",
-     "age": 75,
+     "age": 76,
      "population": "lv",
      "sample_size": 800,
      "dem": 47.0,
@@ -152,7 +152,7 @@
      "margin": 3.3,
      "partisan": false,
      "url": "https://en.wikipedia.org/wiki/2026_Alaska_Measure_2",
-     "weight": 0.028
+     "weight": 0.027
     }
    ],
    "source": "Alaska Survey Research (X) and Wikipedia, 2026 Alaska Measure 2",
