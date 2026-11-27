@@ -1,9 +1,9 @@
 fetched 12 generic-ballot polls
 generic ballot: 8.21 from 4 polls
-fetched 279 us-senator polls
+fetched 277 us-senator polls
 ak senate: 1.62 from 4 polls
-fetched 280 governor polls
-ak governor: 6.99 from 4 polls
+fetched 274 governor polls
+ak governor: 7.11 from 3 polls
 ak measure2: 5.21 from 2 polls
 ca governor: 26.56 from 4 polls
 !! ca irvine-d failed: KeyError('poll_type')
@@ -11,7 +11,7 @@ co senate: 15.56 from 1 polls
 co governor: 17.24 from 1 polls
 !! co longmont-3c failed: KeyError('poll_type')
 !! co longmont-3d failed: KeyError('poll_type')
-fl senate: -5.46 from 9 polls
+fl senate: -5.72 from 8 polls
 fl governor: -3.8 from 10 polls
 ga senate: 8.95 from 6 polls
 ga governor: -0.69 from 6 polls
@@ -23,8 +23,8 @@ ks senate: 5.51 from 3 polls
 ks governor: -0.39 from 4 polls
 me senate: 6.49 from 3 polls
 me governor: 11.7 from 4 polls
-mi senate: 7.52 from 5 polls
-mi governor: 9.04 from 5 polls
+mi senate: 7.51 from 3 polls
+mi governor: 9.2 from 11 polls
 mn senate: 2.93 from 5 polls
 mn governor: 10.65 from 4 polls
 mt senate: -12.29 from 4 polls
@@ -33,7 +33,7 @@ ne senate: -2.06 from 2 polls
 ne governor: -5.02 from 3 polls
 nh senate: 9.55 from 4 polls
 nh governor: -4.7 from 4 polls
-tx senate: 4.2 from 5 polls
-tx governor: -2.01 from 5 polls
+tx senate: 3.78 from 3 polls
+tx governor: -1.98 from 4 polls
 vt governor: 3.33 from 2 polls
 wi governor: 3.66 from 2 polls

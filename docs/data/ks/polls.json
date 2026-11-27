@@ -3,7 +3,7 @@
  "source_url": "https://votehub.com/polls/",
  "license": "CC BY 4.0",
  "method": "One poll per pollster from the last 30 days (60 if fewer than 3), likely voters preferred, weighted by recency (half-life 14 days) and sample size; partisan or internal polls count half. Margins are two-party.",
- "fetched_at": "2026-11-26T22:58:46+00:00",
+ "fetched_at": "2026-11-27T02:51:59+00:00",
  "races": {
   "senate": {
    "avg": 5.51,
@@ -13,7 +13,7 @@
     {
      "pollster": "The New York Times/Siena University",
      "end_date": "2026-11-01",
-     "age": 25,
+     "age": 26,
      "population": "lv",
      "sample_size": 736,
      "dem": 49.0,
@@ -21,12 +21,12 @@
      "margin": 5.38,
      "partisan": false,
      "url": "https://www.nytimes.com/interactive/2026/11/01/polls/times-siena-ks-poll-toplines.html",
-     "weight": 0.321
+     "weight": 0.306
     },
     {
      "pollster": "Survey 160",
      "end_date": "2026-11-01",
-     "age": 25,
+     "age": 26,
      "population": "lv",
      "sample_size": 1365,
      "dem": 50.0,
@@ -34,12 +34,12 @@
      "margin": 7.53,
      "partisan": false,
      "url": "https://www.survey160.com/methodological-research-blog/survey-160-pre-election-surveys-in-four-states",
-     "weight": 0.435
+     "weight": 0.414
     },
     {
      "pollster": "Emerson College",
      "end_date": "2026-10-28",
-     "age": 29,
+     "age": 30,
      "population": "lv",
      "sample_size": 800,
      "dem": 49.5,
@@ -47,7 +47,7 @@
      "margin": 2.48,
      "partisan": false,
      "url": "https://emersoncollegepolling.com/october-2026-kansas-poll-hamilton-maintains-edge-over-marshall/",
-     "weight": 0.275
+     "weight": 0.261
     }
    ]
   },
@@ -59,7 +59,7 @@
     {
      "pollster": "The New York Times/Siena University",
      "end_date": "2026-11-01",
-     "age": 25,
+     "age": 26,
      "population": "lv",
      "sample_size": 736,
      "dem": 48.0,
@@ -67,12 +67,12 @@
      "margin": 1.05,
      "partisan": false,
      "url": "https://www.nytimes.com/interactive/2026/11/01/polls/times-siena-ks-poll-toplines.html",
-     "weight": 0.321
+     "weight": 0.306
     },
     {
      "pollster": "Survey 160",
      "end_date": "2026-11-01",
-     "age": 25,
+     "age": 26,
      "population": "lv",
      "sample_size": 1267,
      "dem": 49.0,
@@ -80,12 +80,12 @@
      "margin": 2.08,
      "partisan": false,
      "url": "https://www.survey160.com/methodological-research-blog/survey-160-pre-election-surveys-in-four-states",
-     "weight": 0.421
+     "weight": 0.401
     },
     {
      "pollster": "YouGov",
      "end_date": "2026-10-29",
-     "age": 28,
+     "age": 29,
      "population": "lv",
      "sample_size": 2092,
      "dem": 49.0,
@@ -93,12 +93,12 @@
      "margin": -1.01,
      "partisan": false,
      "url": "https://d3nkl3psvxxpe9.cloudfront.net/documents/ttw_ks_20261026_lv.pdf",
-     "weight": 0.375
+     "weight": 0.357
     },
     {
      "pollster": "Emerson College",
      "end_date": "2026-10-28",
-     "age": 29,
+     "age": 30,
      "population": "lv",
      "sample_size": 800,
      "dem": 47.5,
@@ -106,7 +106,7 @@
      "margin": -5.0,
      "partisan": false,
      "url": "https://emersoncollegepolling.com/october-2026-kansas-poll-hamilton-maintains-edge-over-marshall/",
-     "weight": 0.275
+     "weight": 0.261
     }
    ]
   }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-26T22:58:47+00:00",
+ "generated_at": "2026-11-27T02:52:01+00:00",
  "generic": {
   "avg": 8.21,
   "n": 4,
@@ -8,7 +8,7 @@
    {
     "pollster": "Ipsos",
     "end_date": "2026-11-02",
-    "age": 24,
+    "age": 25,
     "population": "lv",
     "sample_size": 1212,
     "dem": 52.0,
@@ -16,12 +16,12 @@
     "margin": 8.33,
     "partisan": false,
     "url": "https://www.ipsos.com/en-us/reutersipsos-early-november-survey",
-    "weight": 0.433
+    "weight": 0.412
    },
    {
     "pollster": "Pew Research Center",
     "end_date": "2026-10-04",
-    "age": 53,
+    "age": 54,
     "population": "rv",
     "sample_size": 3917,
     "dem": 44.0,
@@ -29,12 +29,12 @@
     "margin": 10.0,
     "partisan": false,
     "url": "https://www.pewresearch.org/politics/2026/10/08/with-americans-in-a-sour-mood-democratic-voters-are-more-engaged-in-midterms",
-    "weight": 0.109
+    "weight": 0.104
    },
    {
     "pollster": "YouGov - CBS News",
     "end_date": "2026-10-02",
-    "age": 55,
+    "age": 56,
     "population": "lv",
     "sample_size": 1572,
     "dem": 54.0,
@@ -42,12 +42,12 @@
     "margin": 9.09,
     "partisan": false,
     "url": "https://assets1.cbsnewsstatic.com/hub/cms/prod_cms_alt/file/2026/10/04/0957ee32-a848-4872-b659-14303d3d3734/cbsnews_20261004_sun.pdf",
-    "weight": 0.099
+    "weight": 0.094
    },
    {
     "pollster": "HarrisX/Harris",
     "end_date": "2026-09-28",
-    "age": 59,
+    "age": 60,
     "population": "lv",
     "sample_size": null,
     "dem": 51.0,
@@ -55,7 +55,7 @@
     "margin": 2.0,
     "partisan": false,
     "url": "https://harvardharrispoll.com/assets/uploads/2026/09/HHP_Sep2026_KeyResults.pdf",
-    "weight": 0.054
+    "weight": 0.051
    }
   ]
  },
@@ -97,11 +97,11 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": 6.99,
-     "lo": 6.99,
-     "hi": 6.99,
-     "rating": "Lean Kreiss-Tomkins",
-     "n_polls": 4
+     "center": 7.11,
+     "lo": 7.11,
+     "hi": 7.11,
+     "rating": "Likely Kreiss-Tomkins",
+     "n_polls": 3
     },
     {
      "id": "measure2",
@@ -249,11 +249,11 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": -5.46,
-     "lo": -5.46,
-     "hi": -5.46,
+     "center": -5.72,
+     "lo": -5.72,
+     "hi": -5.72,
      "rating": "Lean Moody",
-     "n_polls": 9
+     "n_polls": 8
     },
     {
      "id": "governor",
@@ -489,11 +489,11 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": 7.52,
-     "lo": 7.52,
-     "hi": 7.52,
+     "center": 7.51,
+     "lo": 7.51,
+     "hi": 7.51,
      "rating": "Likely El-Sayed",
-     "n_polls": 5
+     "n_polls": 3
     },
     {
      "id": "governor",
@@ -505,11 +505,11 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": 9.04,
-     "lo": 9.04,
-     "hi": 9.04,
+     "center": 9.2,
+     "lo": 9.2,
+     "hi": 9.2,
      "rating": "Likely Benson",
-     "n_polls": 5
+     "n_polls": 11
     }
    ]
   },
@@ -697,11 +697,11 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": 4.2,
-     "lo": 4.2,
-     "hi": 4.2,
+     "center": 3.78,
+     "lo": 3.78,
+     "hi": 3.78,
      "rating": "Lean Talarico",
-     "n_polls": 5
+     "n_polls": 3
     },
     {
      "id": "governor",
@@ -713,11 +713,11 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": -2.01,
-     "lo": -2.01,
-     "hi": -2.01,
+     "center": -1.98,
+     "lo": -1.98,
+     "hi": -1.98,
      "rating": "Tilt Abbott",
-     "n_polls": 5
+     "n_polls": 4
     }
    ]
   },
