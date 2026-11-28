@@ -44,19 +44,19 @@
     }
    },
    "projection": {
-    "center": 3.78,
-    "lo": 3.78,
-    "hi": 3.78,
+    "center": 3.39,
+    "lo": 3.39,
+    "hi": 3.39,
     "rating": "Lean Talarico",
     "range_basis": "inputs",
     "environment": {
      "label": "2024 president (TX)",
      "base": -13.88,
      "national_then": -1.5,
-     "generic": 8.21,
+     "generic": 8.73,
      "swing_factor": 1.0,
-     "swing": 9.71,
-     "generic_margin": -4.17,
+     "swing": 10.23,
+     "generic_margin": -3.65,
      "candidate_adjustment": 0.59,
      "candidates": [
       {
@@ -72,16 +72,16 @@
       }
      ],
      "carry_forward": 0.4,
-     "margin": -3.58,
+     "margin": -3.06,
      "note": null
     },
     "polls": {
-     "avg": 3.78,
-     "n": 3,
-     "window_days": 30
+     "avg": 3.39,
+     "n": 15,
+     "window_days": 60
     },
     "poll_weight": 1.0,
-    "start": 3.78,
+    "start": 3.39,
     "early_vote": null
    }
   },
@@ -123,19 +123,19 @@
     }
    },
    "projection": {
-    "center": -1.98,
-    "lo": -1.98,
-    "hi": -1.98,
-    "rating": "Tilt Abbott",
+    "center": -0.81,
+    "lo": -0.81,
+    "hi": -0.81,
+    "rating": "Toss-up, slight edge Abbott",
     "range_basis": "inputs",
     "environment": {
      "label": "2024 president (TX)",
      "base": -13.88,
      "national_then": -1.5,
-     "generic": 8.21,
+     "generic": 8.73,
      "swing_factor": 1.0,
-     "swing": 9.71,
-     "generic_margin": -4.17,
+     "swing": 10.23,
+     "generic_margin": -3.65,
      "candidate_adjustment": 0.78,
      "candidates": [
       {
@@ -151,22 +151,22 @@
       }
      ],
      "carry_forward": 0.4,
-     "margin": -3.39,
+     "margin": -2.87,
      "note": null
     },
     "polls": {
-     "avg": -1.98,
-     "n": 4,
+     "avg": -0.81,
+     "n": 3,
      "window_days": 30
     },
     "poll_weight": 1.0,
-    "start": -1.98,
+    "start": -0.81,
     "early_vote": null
    }
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-11-27T22:41:05+00:00",
+ "generated_at": "2026-11-28T02:41:12+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,
@@ -177,7 +177,7 @@
   "c_weight": 0.25,
   "c_cap": 2.0,
   "k_at_30_days": 2.0,
-  "days_left": -24,
+  "days_left": -25,
   "k_now": 0.0
  }
 }

@@ -1,14 +1,14 @@
 {
- "generated_at": "2026-11-27T22:41:05+00:00",
+ "generated_at": "2026-11-28T02:41:12+00:00",
  "generic": {
-  "avg": 8.21,
-  "n": 4,
+  "avg": 8.73,
+  "n": 3,
   "window_days": 60,
   "polls": [
    {
     "pollster": "Ipsos",
     "end_date": "2026-11-02",
-    "age": 25,
+    "age": 26,
     "population": "lv",
     "sample_size": 1212,
     "dem": 52.0,
@@ -16,12 +16,12 @@
     "margin": 8.33,
     "partisan": false,
     "url": "https://www.ipsos.com/en-us/reutersipsos-early-november-survey",
-    "weight": 0.412
+    "weight": 0.392
    },
    {
     "pollster": "Pew Research Center",
     "end_date": "2026-10-04",
-    "age": 54,
+    "age": 55,
     "population": "rv",
     "sample_size": 3917,
     "dem": 44.0,
@@ -29,12 +29,12 @@
     "margin": 10.0,
     "partisan": false,
     "url": "https://www.pewresearch.org/politics/2026/10/08/with-americans-in-a-sour-mood-democratic-voters-are-more-engaged-in-midterms",
-    "weight": 0.104
+    "weight": 0.099
    },
    {
     "pollster": "YouGov - CBS News",
     "end_date": "2026-10-02",
-    "age": 56,
+    "age": 57,
     "population": "lv",
     "sample_size": 1572,
     "dem": 54.0,
@@ -42,20 +42,7 @@
     "margin": 9.09,
     "partisan": false,
     "url": "https://assets1.cbsnewsstatic.com/hub/cms/prod_cms_alt/file/2026/10/04/0957ee32-a848-4872-b659-14303d3d3734/cbsnews_20261004_sun.pdf",
-    "weight": 0.094
-   },
-   {
-    "pollster": "HarrisX/Harris",
-    "end_date": "2026-09-28",
-    "age": 60,
-    "population": "lv",
-    "sample_size": null,
-    "dem": 51.0,
-    "rep": 49.0,
-    "margin": 2.0,
-    "partisan": false,
-    "url": "https://harvardharrispoll.com/assets/uploads/2026/09/HHP_Sep2026_KeyResults.pdf",
-    "weight": 0.051
+    "weight": 0.089
    }
   ]
  },
@@ -329,9 +316,9 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": 34.75,
-     "lo": 34.75,
-     "hi": 34.75,
+     "center": 35.27,
+     "lo": 35.27,
+     "hi": 35.27,
      "rating": "Solid Green",
      "n_polls": 0
     },
@@ -369,11 +356,11 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": -0.79,
-     "lo": -0.79,
-     "hi": -0.79,
-     "rating": "Toss-up, slight edge Hinson",
-     "n_polls": 3
+     "center": -0.34,
+     "lo": -0.34,
+     "hi": -0.34,
+     "rating": "Toss-up",
+     "n_polls": 11
     },
     {
      "id": "governor",
@@ -385,11 +372,11 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": 7.27,
-     "lo": 7.27,
-     "hi": 7.27,
+     "center": 7.07,
+     "lo": 7.07,
+     "hi": 7.07,
      "rating": "Likely Sand",
-     "n_polls": 3
+     "n_polls": 9
     }
    ]
   },
@@ -409,11 +396,11 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": 5.51,
-     "lo": 5.51,
-     "hi": 5.51,
+     "center": 5.26,
+     "lo": 5.26,
+     "hi": 5.26,
      "rating": "Lean Hamilton",
-     "n_polls": 3
+     "n_polls": 6
     },
     {
      "id": "governor",
@@ -425,11 +412,11 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": -0.39,
-     "lo": -0.39,
-     "hi": -0.39,
-     "rating": "Toss-up",
-     "n_polls": 4
+     "center": 0.75,
+     "lo": 0.75,
+     "hi": 0.75,
+     "rating": "Toss-up, slight edge Holscher",
+     "n_polls": 3
     }
    ]
   },
@@ -489,11 +476,11 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": 7.51,
-     "lo": 7.51,
-     "hi": 7.51,
-     "rating": "Likely El-Sayed",
-     "n_polls": 3
+     "center": 5.92,
+     "lo": 5.92,
+     "hi": 5.92,
+     "rating": "Lean El-Sayed",
+     "n_polls": 13
     },
     {
      "id": "governor",
@@ -509,7 +496,7 @@
      "lo": 9.2,
      "hi": 9.2,
      "rating": "Likely Benson",
-     "n_polls": 11
+     "n_polls": 10
     }
    ]
   },
@@ -697,11 +684,11 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": 3.78,
-     "lo": 3.78,
-     "hi": 3.78,
+     "center": 3.39,
+     "lo": 3.39,
+     "hi": 3.39,
      "rating": "Lean Talarico",
-     "n_polls": 3
+     "n_polls": 15
     },
     {
      "id": "governor",
@@ -713,11 +700,11 @@
      "rep_party": "R",
      "place": null,
      "yes": null,
-     "center": -1.98,
-     "lo": -1.98,
-     "hi": -1.98,
-     "rating": "Tilt Abbott",
-     "n_polls": 4
+     "center": -0.81,
+     "lo": -0.81,
+     "hi": -0.81,
+     "rating": "Toss-up, slight edge Abbott",
+     "n_polls": 3
     }
    ]
   },

@@ -3,16 +3,16 @@
  "source_url": "https://votehub.com/polls/",
  "license": "CC BY 4.0",
  "method": "One poll per pollster from the last 30 days (60 if fewer than 3), likely voters preferred, weighted by recency (half-life 14 days) and sample size; partisan or internal polls count half. Margins are two-party.",
- "fetched_at": "2026-11-27T22:41:03+00:00",
+ "fetched_at": "2026-11-28T02:41:11+00:00",
  "generic": {
-  "avg": 8.21,
-  "n": 4,
+  "avg": 8.73,
+  "n": 3,
   "window_days": 60,
   "polls": [
    {
     "pollster": "Ipsos",
     "end_date": "2026-11-02",
-    "age": 25,
+    "age": 26,
     "population": "lv",
     "sample_size": 1212,
     "dem": 52.0,
@@ -20,12 +20,12 @@
     "margin": 8.33,
     "partisan": false,
     "url": "https://www.ipsos.com/en-us/reutersipsos-early-november-survey",
-    "weight": 0.412
+    "weight": 0.392
    },
    {
     "pollster": "Pew Research Center",
     "end_date": "2026-10-04",
-    "age": 54,
+    "age": 55,
     "population": "rv",
     "sample_size": 3917,
     "dem": 44.0,
@@ -33,12 +33,12 @@
     "margin": 10.0,
     "partisan": false,
     "url": "https://www.pewresearch.org/politics/2026/10/08/with-americans-in-a-sour-mood-democratic-voters-are-more-engaged-in-midterms",
-    "weight": 0.104
+    "weight": 0.099
    },
    {
     "pollster": "YouGov - CBS News",
     "end_date": "2026-10-02",
-    "age": 56,
+    "age": 57,
     "population": "lv",
     "sample_size": 1572,
     "dem": 54.0,
@@ -46,20 +46,7 @@
     "margin": 9.09,
     "partisan": false,
     "url": "https://assets1.cbsnewsstatic.com/hub/cms/prod_cms_alt/file/2026/10/04/0957ee32-a848-4872-b659-14303d3d3734/cbsnews_20261004_sun.pdf",
-    "weight": 0.094
-   },
-   {
-    "pollster": "HarrisX/Harris",
-    "end_date": "2026-09-28",
-    "age": 60,
-    "population": "lv",
-    "sample_size": null,
-    "dem": 51.0,
-    "rep": 49.0,
-    "margin": 2.0,
-    "partisan": false,
-    "url": "https://harvardharrispoll.com/assets/uploads/2026/09/HHP_Sep2026_KeyResults.pdf",
-    "weight": 0.051
+    "weight": 0.089
    }
   ]
  },

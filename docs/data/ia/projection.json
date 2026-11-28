@@ -28,32 +28,32 @@
     ]
    },
    "projection": {
-    "center": -0.79,
-    "lo": -0.79,
-    "hi": -0.79,
-    "rating": "Toss-up, slight edge Hinson",
+    "center": -0.34,
+    "lo": -0.34,
+    "hi": -0.34,
+    "rating": "Toss-up",
     "range_basis": "inputs",
     "environment": {
      "label": "2024 president (IA)",
      "base": -13.45,
      "national_then": -1.5,
-     "generic": 8.21,
+     "generic": 8.73,
      "swing_factor": 1.0,
-     "swing": 9.71,
-     "generic_margin": -3.74,
+     "swing": 10.23,
+     "generic_margin": -3.22,
      "candidate_adjustment": 0.0,
      "candidates": [],
      "carry_forward": 0.4,
-     "margin": -3.74,
+     "margin": -3.22,
      "note": null
     },
     "polls": {
-     "avg": -0.79,
-     "n": 3,
-     "window_days": 30
+     "avg": -0.34,
+     "n": 11,
+     "window_days": 60
     },
     "poll_weight": 1.0,
-    "start": -0.79,
+    "start": -0.34,
     "early_vote": null
    }
   },
@@ -95,19 +95,19 @@
     ]
    },
    "projection": {
-    "center": 7.27,
-    "lo": 7.27,
-    "hi": 7.27,
+    "center": 7.07,
+    "lo": 7.07,
+    "hi": 7.07,
     "rating": "Likely Sand",
     "range_basis": "inputs",
     "environment": {
      "label": "2024 president (IA)",
      "base": -13.45,
      "national_then": -1.5,
-     "generic": 8.21,
+     "generic": 8.73,
      "swing_factor": 1.0,
-     "swing": 9.71,
-     "generic_margin": -3.74,
+     "swing": 10.23,
+     "generic_margin": -3.22,
      "candidate_adjustment": 3.19,
      "candidates": [
       {
@@ -123,22 +123,22 @@
       }
      ],
      "carry_forward": 0.4,
-     "margin": -0.55,
+     "margin": -0.03,
      "note": null
     },
     "polls": {
-     "avg": 7.27,
-     "n": 3,
-     "window_days": 30
+     "avg": 7.07,
+     "n": 9,
+     "window_days": 60
     },
     "poll_weight": 1.0,
-    "start": 7.27,
+    "start": 7.07,
     "early_vote": null
    }
   }
  ],
  "ev_notes": [],
- "generated_at": "2026-11-27T22:41:05+00:00",
+ "generated_at": "2026-11-28T02:41:12+00:00",
  "assumptions": {
   "dem": 0.92,
   "rep": 0.92,
@@ -149,7 +149,7 @@
   "c_weight": 0.25,
   "c_cap": 2.0,
   "k_at_30_days": 2.0,
-  "days_left": -24,
+  "days_left": -25,
   "k_now": 0.0
  }
 }
